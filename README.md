@@ -22,10 +22,13 @@ Working installation of GNU Make is recommended, but not required. You can test 
         cd ./biaslab
 
 4. Install [hugo-academic-group](https://github.com/biaslab/hugo-academic-group/) theme:
+        
         make install-theme
+        
     If you don't have a working installation of GNU Make, follow the installation instructions from [hugo-academic-group](https://github.com/biaslab/hugo-academic-group/) repository.
 
 5. To add new content use `hugo new` command:
+        
         hugo new post/post-title.md
 
     This way `hugo` will generate a template markdown file based on corresponding archetype with some of attributes filled with default values (creation timestamp, etc.), which you can later edit.
