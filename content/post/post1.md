@@ -1,8 +1,6 @@
 +++
 date = "2016-07-12T15:50:58+02:00"
-post_title = ""
 short_text = ""
-text = ""
 title = "Markdown ipsum"
 [[authors]]
     name = "member1"

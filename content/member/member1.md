@@ -1,12 +1,10 @@
 +++
-bio = ""
 date = "2016-07-12T15:52:22+02:00"
 id = "member1"
 interests = ["Deep Learning", "Pattern Recognition", "Computer Science"]
 name = "Member Member"
 portrait = "/portraits/portrait.jpg"
 short_bio = "My short bio. I am Member Member."
-short_name = ""
 title = "Member 1"
 
 [[social]]
@@ -57,4 +55,3 @@ equarum ubi non laetoque pice.
 > lactea](http://habenas.com/.php) quae? Animus feriendus ductae! *Theron* sua
 > amans, est nulla cadavera, aquarum servavit quoque missus, hac texit videre,
 > valuere est erant?
-

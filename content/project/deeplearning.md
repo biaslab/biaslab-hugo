@@ -1,11 +1,10 @@
 +++
 date = "2016-07-12T16:10:22+02:00"
-description = ""
 external_link = ""
 image = ""
 participants = [""]
 project_id = ""
-short_description = "Short description of the project."
+description = "Short description of the project."
 title = "Deep Learning"
 
 +++

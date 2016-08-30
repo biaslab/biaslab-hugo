@@ -1,6 +1,5 @@
 +++
 date = "2016-07-12T16:50:58+02:00"
-post_title = ""
 short_text = "Short description of post."
 title = "Test post please ignore"
 [[authors]]
