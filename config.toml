@@ -3,12 +3,13 @@ publishdir = "public"
 static = "/static"
 builddrafts = false
 # Replace this with your website URL
-baseurl = "http://example.org/"
+baseurl = "http://example.org"
 canonifyurls = true
 theme = "hugo-academic-group"
 title = "BIASlab"
 math = true
 copyright = "&copy; BIASlab, 2016 "
+enableRobotsTXT = true
 
 [taxonomies]
 category = "categories"
