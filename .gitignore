@@ -126,5 +126,4 @@ sympy-plots-for-*.tex/
 *.sav
 
 .DS_Store
-themes/
 public/
