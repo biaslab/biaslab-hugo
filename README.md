@@ -17,23 +17,22 @@ Working installation of GNU Make is recommended, but not required. You can test 
         mkdir biaslab
 
 2. Clone this repository and step into the directory:
-```
-git clone git@github.com:biaslab/biaslab-hugo.git ./biaslab
-cd ./biaslab
-```
+        
+        git clone git@github.com:biaslab/biaslab-hugo.git ./biaslab
+        cd ./biaslab
 
-3. Install [hugo-academic-group](https://github.com/biaslab/hugo-academic-group/) theme:
+4. Install [hugo-academic-group](https://github.com/biaslab/hugo-academic-group/) theme:
         make install-theme
     If you don't have a working installation of GNU Make, follow the installation instructions from [hugo-academic-group](https://github.com/biaslab/hugo-academic-group/) repository.
 
-3. To add new content use `hugo new` command:
+5. To add new content use `hugo new` command:
         hugo new post/post-title.md
 
     This way `hugo` will generate a template markdown file based on corresponding archetype with some of attributes filled with default values (creation timestamp, etc.), which you can later edit.
 
     More information on adding content can be found in the Hugo documentation in [Content](https://gohugo.io/content/organization/) and [Getting Started](https://gohugo.io/overview/quickstart/) sections.
 
-4. All the basic build operations might be carried with the use of `make` command. If you do not have a working installation of GNU Make, study the contents of the `Makefile` and use the corresponding commands to operate the website. Currently following commands are defined in the file:
+6. All the basic build operations might be carried with the use of `make` command. If you do not have a working installation of GNU Make, study the contents of the `Makefile` and use the corresponding commands to operate the website. Currently following commands are defined in the file:
 
     * `install-theme`: Installs [hugo-academic-group](https://github.com/biaslab/hugo-academic-group/) theme.
     * `update-theme`: Updates the theme.
