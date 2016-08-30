@@ -1,0 +1,245 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Diagnostics and reporting &mdash; ForneyLab.jl 0.4.0 documentation</title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/julia.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="_static/julia.css" type="text/css" />
+  
+    <link rel="top" title="ForneyLab.jl 0.4.0 documentation" href="index.html"/>
+        <link rel="prev" title="Algorithms" href="algorithms.html"/> 
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="http://julialang.org/"><img src="_static/julia-logo.svg" class="logo"></a>
+        <!--
+        <a href="index.html" class="fa fa-home"> ForneyLab.jl</a>
+        -->
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="graphical_model.html">Setting up the graphical model</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="graphical_model.html#the-factorgraph-type">The <tt class="docutils literal"><span class="pre">FactorGraph</span></tt> type</a></li>
+<li class="toctree-l2"><a class="reference internal" href="graphical_model.html#nodes">Nodes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="graphical_model.html#the-edge-type">The <tt class="docutils literal"><span class="pre">Edge</span></tt> type</a></li>
+<li class="toctree-l2"><a class="reference internal" href="graphical_model.html#example">Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="graphical_model.html#chaining-factor-graph-sections">Chaining factor graph sections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="graphical_model.html#interfacing-to-and-from-the-graph">Interfacing to and from the graph</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="distributions_messages.html">Probability distributions and messages</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="distributions_messages.html#the-probabilitydistribution-type">The <tt class="docutils literal"><span class="pre">ProbabilityDistribution</span></tt> type</a></li>
+<li class="toctree-l2"><a class="reference internal" href="distributions_messages.html#messages">Messages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="distributions_messages.html#marginals">Marginals</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="nodes.html">Nodes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="nodes.html#the-anatomy-of-nodes">The anatomy of nodes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nodes.html#message-calculation-rules">Message calculation rules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nodes.html#composite-nodes">Composite nodes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="algorithms.html">Algorithms</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="algorithms.html#execution">Execution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="algorithms.html#schedules">Schedules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="algorithms.html#the-sum-product-algorithm">The sum-product algorithm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="algorithms.html#the-loopy-sum-product-algorithm">The loopy sum-product algorithm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="algorithms.html#the-variational-message-passing-algorithm">The variational message passing algorithm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="algorithms.html#the-expectation-propagation-algorithm">The expectation propagation algorithm</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Diagnostics and reporting</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#inspect-objects">Inspect objects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#draw-graphs-and-subgraphs">Draw graphs and subgraphs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#verify-algorithm-execution">Verify algorithm execution</a></li>
+</ul>
+</li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">ForneyLab.jl</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Diagnostics and reporting</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          <a href="_sources/diagnostics_reporting.txt" rel="nofollow"> View page source</a>
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document">
+            
+  <div class="section" id="diagnostics-and-reporting">
+<h1>Diagnostics and reporting<a class="headerlink" href="#diagnostics-and-reporting" title="Permalink to this headline">¶</a></h1>
+<p>Several helper functions for inspecting constructed objects are available. This can be useful for debugging or inpecting (large) graphs.</p>
+<div class="section" id="inspect-objects">
+<h2>Inspect objects<a class="headerlink" href="#inspect-objects" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="show">
+<tt class="descname">show</tt><big>(</big><big>)</big><a class="headerlink" href="#show" title="Permalink to this definition">¶</a></dt>
+<dd><p>Can be called on any object to display a summary of that instance and sometimes provides more detailed show suggestions.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="draw-graphs-and-subgraphs">
+<h2>Draw graphs and subgraphs<a class="headerlink" href="#draw-graphs-and-subgraphs" title="Permalink to this headline">¶</a></h2>
+<p>The <tt class="docutils literal"><span class="pre">draw(object)</span></tt> function visualizes the argument object. Messages that are present at the moment of rendering are denoted with filled black circles. Setting the optional keyword argument <tt class="docutils literal"><span class="pre">external_viewer</span></tt> to one of the possible values (<tt class="docutils literal"><span class="pre">:Default</span></tt>, <tt class="docutils literal"><span class="pre">:iTerm</span></tt>) will render the drawing in an external viewer of your choice. The related function <tt class="docutils literal"><span class="pre">drawPdf(object,</span> <span class="pre">filename)</span></tt> is similar to <tt class="docutils literal"><span class="pre">draw</span></tt> but writes the visualization to a pdf file.</p>
+<p>If you want to use graph visualizations, the GraphViz package needs to be installed.</p>
+<dl class="function">
+<dt id="draw">
+<tt class="descname">draw</tt><big>(</big><em>::FactorGraph</em><big>)</big><a class="headerlink" href="#draw" title="Permalink to this definition">¶</a></dt>
+<dd><p>Visualizes the argument graph. A dotted green edge indicates a <tt class="docutils literal"><span class="pre">wrap</span></tt>.</p>
+</dd></dl>
+
+<dl class="function">
+<dt>
+<tt class="descname">draw</tt><big>(</big><em>::Subgraph</em><big>)</big></dt>
+<dd><p>This method is only relevant when working with variational message passing and visualizes a subgraph. A dashed red edge indicates an external edge from the perspective of the argument subgraph.</p>
+</dd></dl>
+
+<dl class="function">
+<dt>
+<tt class="descname">draw</tt><big>(</big><em>::Set{Node}</em><big>)</big></dt>
+<dd><p>Visualizes a set of nodes and all edges inbetween.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="verify-algorithm-execution">
+<h2>Verify algorithm execution<a class="headerlink" href="#verify-algorithm-execution" title="Permalink to this headline">¶</a></h2>
+<p>Sometimes you want an overview of all the computation rules that were executed. This can be accomplished by enabling the vebose mode using <tt class="docutils literal"><span class="pre">setVerbosity()</span></tt> before algorithm execution. ForneyLab will print a table of all update calls in verbose mode.</p>
+<dl class="function">
+<dt id="setVerbosity">
+<tt class="descname">setVerbosity</tt><big>(</big><em>::Bool</em><big>)</big><a class="headerlink" href="#setVerbosity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Enable/disable the verbose mode.</p>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="algorithms.html" class="btn btn-neutral" title="Algorithms"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+    </p>
+  </div>
+
+  <a href="https://github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.4.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
