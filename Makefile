@@ -14,7 +14,13 @@ build-website:
 	hugo -t academic-group
 debug-website:
 	hugo server -t academic-group -w
-preview-website: build-website
+debug-website-local:
+	hugo server -t academic-group -w --config config.local.toml
+preview-website:
+	hugo -t academic-group
+	cd ./public; ${my_cmd}
+preview-website-local:
+	hugo -t academic-group --config config.local.toml
 	cd ./public; ${my_cmd}
 publish:
 	./publish.sh
