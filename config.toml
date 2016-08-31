@@ -1,11 +1,11 @@
-layoutdir = "themes/hugo-academic-group/layouts"
+layoutdir = "themes/academic-group/layouts"
 publishdir = "public"
 static = "/static"
 builddrafts = false
 # Replace this with your website URL
 baseurl = "http://example.org"
 canonifyurls = true
-theme = "hugo-academic-group"
+theme = "academic-group"
 title = "BIASlab"
 math = true
 copyright = "&copy; BIASlab, 2016 "
