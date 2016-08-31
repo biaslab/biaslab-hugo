@@ -17,18 +17,23 @@ Working installation of GNU Make is recommended, but not required. You can test 
         mkdir biaslab
 
 2. Clone this repository and step into the directory:
-        
+
         git clone git@github.com:biaslab/biaslab-hugo.git ./biaslab
         cd ./biaslab
+3. Create `config.local.toml` file by copying the contents of the `config.toml` file:
+
+        cp config.toml config.local.toml
+
+    This will allow you to debug and edit the website without touching the main configuration file, `config.toml`.
 
 4. Install [hugo-academic-group](https://github.com/biaslab/hugo-academic-group/) theme:
-        
+
         make install-theme
-        
+
     If you don't have a working installation of GNU Make, follow the installation instructions from [hugo-academic-group](https://github.com/biaslab/hugo-academic-group/) repository.
 
 5. To add new content use `hugo new` command:
-        
+
         hugo new post/post-title.md
 
     This way `hugo` will generate a template markdown file based on corresponding archetype with some of attributes filled with default values (creation timestamp, etc.), which you can later edit.
@@ -41,5 +46,7 @@ Working installation of GNU Make is recommended, but not required. You can test 
     * `update-theme`: Updates the theme.
     * `build-website`: Generates all the static content for the website.
     * `debug-website`: Builds the website content and starts Hugo debugging server with live reload enabled.
+    * `debug-website-local`: Same as `debug-website`, but uses local config file.
     * `preview-website`: Builds the website content and starts other server to serve the content. Working installation of `python` is required (no additional libraries needed).
+    * `preview-website-local`: Same as `preview-website`, but uses local config file.
     * `publish`: Publishes the contents of the `./public` directory to the `master` branch of [https://biaslab.github.io](https://biaslab.github.io) repository.
