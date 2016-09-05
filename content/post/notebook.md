@@ -5,9 +5,11 @@ title = "Jupyter Notebook"
 [[authors]]
     name = "member1"
     is_member = true
+    link = "/member1"
 [[authors]]
     name = "member2"
     is_member = true
+    link = "/member2"
 +++
 
 # An IJulia Preview

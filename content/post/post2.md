@@ -5,6 +5,7 @@ title = "Test post please ignore"
 [[authors]]
     name = "member1"
     is_member = true
+    link = "/member1"
 [[authors]]
     name = "Not a Member"
     is_member = false

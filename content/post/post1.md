@@ -5,6 +5,7 @@ title = "Markdown ipsum"
 [[authors]]
     name = "member1"
     is_member = true
+    link = "/member1"
 +++
 
 # Magorum notissima limite sua pars simus sumptis
