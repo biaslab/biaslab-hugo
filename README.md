@@ -25,6 +25,7 @@ Working installation of GNU Make is recommended, but not required. You can test 
         cp config.toml config.local.toml
 
     This will allow you to debug and edit the website without touching the main configuration file, `config.toml`.
+    If you want to use the `make preview-website-local` command, don't forget to change the `baseurl` parameter to `http://localhost:8000` in your newly created local config file.
 
 4. Install [hugo-academic-group](https://github.com/biaslab/hugo-academic-group/) theme:
 
