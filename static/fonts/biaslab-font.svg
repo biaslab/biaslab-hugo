@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2016 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="spsbrats_logo" unicode="&#xe800;" d="M791 393h-85v147h-12-11-113v28c0 13-11 23-23 23h-79c-13 0-23-10-23-23v-28h-113-17-6v-147h-85c-16 0-28-13-28-28v-102c0-16-13-29-29-29h-34c-15 0-28-13-28-28v-125c0-15 13-28 28-28h125c15 0 28 13 28 28v34c0 16 13 29 29 29h102c15 0 28 12 28 28v193c0 15-13 28-28 28h-85v124h113v-28c0-12 10-23 23-23h79c12 0 23 11 23 23v28h113v-124h-85c-16 0-28-13-28-28v-193c0-16 12-28 28-28h193c15 0 28 12 28 28v193c0 15-13 28-28 28z" horiz-adv-x="1000" />
+</font>
+</defs>
+</svg>
