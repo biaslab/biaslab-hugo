@@ -28,7 +28,7 @@ tag = "tags"
   [[params.slogan_columns]]
     title = "About"
     text =  "We are an academic research team in the Signal Processing Systems group (EE department) at Eindhoven University of Technology. Our main research interest is in *developing autonomous agents that teach themselves to behave intelligently through interactions with the environment*. Typical application areas include (medical) device personalization, automated vehicle control and robotics."
-    link = "/about"
+    link = "/member"
     link_text = "Meet the team"
     weight = 1
 
