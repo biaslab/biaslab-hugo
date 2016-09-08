@@ -1,6 +1,6 @@
 +++
 date = "2016-09-08T09:59:35+02:00"
-id = "bert"
+id = "thijs"
 interests = ["Bayesian Machine Learning", "User Interaction"]
 name = "Thijs van de Laar"
 portrait = "portraits/Thijs.jpg"
