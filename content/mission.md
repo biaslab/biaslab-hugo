@@ -2,63 +2,30 @@
 title = "Mission"
 +++
 
-# Auras queritur facientes dixit venti sustinui
+## Bayesian Intelligent Agents
 
-## E in mora
+In this note we describe by an example the research scope and mission of BIASlab.
 
-Lorem markdownum poenaque nuper destituit silendo quoniam, nec ait consorte
-membra, figuram hanc cum. Manifesta vitae facies exiguumque iunctam dictis.
-Vidit eadem, hanc cum descendit **sinu** misit quem fecit, positisque pastorve.
-Missus solos *potentia in* erant noctem est!
+### Example: a hearing aid design problem
 
-    if (dvdProcessorVolume < mpegProcess(slashdot, gigahertz)) {
-        transferAnsiBotnet.and(logSoftware, hsfClipboardSubnet.queue_publishing(
-                systemMemory, 5, yahoo));
-    } else {
-        swappableIpv -= spoolingAdwareCrossplatform;
-        extranetAppArchitecture(1, dtd_rpc_font(45, 67, development_sli));
-    }
-    antivirus_ipv = touchscreenFiosGrep.portIcsDrive(zone_vista);
-    bootExpression = 2 * sprite_dv + apache;
-    if (cifsZone(status) > wddm_cifs) {
-        disk_access_www.halftone_plagiarism = 4;
-    } else {
-        domainFat(vectorCdnMalware, -2, hard.smartphone_e_wep(phreaking_memory,
-                5, kerningError));
-        address += troubleshooting;
-        rdramRegistry(printerHoc);
-    }
+Consider a situation where a person (named Sarah) is having coffee at a lunch cafe. Sarah wears hearing aids (HA), but due to other conversations across the room, she has trouble understanding Mark who sits about 3 ft away from her.
 
-Ipsa namque impetus crinem nefandas, parant inmensum noviens specie vita. Ire
-locus quietis, amata occiderat Achaidas cervum quos pavit dissiluit an
-[loqui](http://artenitido.org/non.html) consolantia fontes; *tenus quae*. Facit
-verumque per Pindusque paelice inmensi: vino exire, fuisse munera. Quam pars
-quod gravidi pennas: non illa et senex, et Iunone.
+It is not clear to Sarah how to improve the situation through changing some settings of her HAs. Perhaps she needs more amplification, perhaps more directional processing or maybe the noise reduction module actually has an inactive 'babble noise' mode that would help out in this setting.
 
-## Spumosis tenet et vicem
+### A Solution Proposal
 
-Siquidem paternos at erit narrare nunc mordetur Phorbas. Puer nec movet est
-templa parentem, nostri deam, bracchia erigite terram quales, sit raro barbarus
-et. Facit nos [poena](http://www.libro.com/medendi.aspx) quasque; nunc adeunt
-vigili solitis eloquio pendet. In ima res umquam certa urbis deam oraque
-[demissior magnus ligno](http://inpulit-adulterium.io/) undis qua esse
-[vibrantia](http://www.tamen.org/cantibustenentem). Carebat ut inmitem
-*pignora*: suis securi quod curvantem gentis ostia vocisque, Aeneaeque laevaque.
+Now consider Fig.1 and assume that Sarah's phone contains an **Hearing Aid Design App** (HADA).
 
-    var speakers_brouter_service = server.mainframe(3, graphic_software_daemon(
-            gateway.wizardOperating(station_fifo_output, spoofingPrinter, 1), 4,
-            ictDataDma));
-    var chipsetLagParty = interpreterExternalWord;
-    wanCaps(mebibyte_mca_ospf + icon_meta);
+<img src="/img/mission/Intelligent-Agent-for-Hearable.png" alt="Drawing" style="width: 500px;"/>
 
-Iniqui inventa et adiacet centum. Felix fortibus esse virginitate annis. Nox
-aequa iungere mentem: [vult](http://nam.net/) insuper latis insula convicia **ad
-non**. Stridente parce; multifori ambrosiam videt, nec carmen dura.
+At any time, Sarah may submit a positive or negative evaluation of the ongoing HA processing by pressing a thumbs-up or thumbs-down button, respectively. HADA's task is to respond after negative appraisals by sending _interesting_ alternative parameter settings to the HA (the 'try' arc in Fig.1). Thus, Sarah can switch to new audio processing algorithms simply by pressing the dislike button. In order for HADA to propose interesting HA alternatives, it must learn from Sarah's appraisals. In this framework, _HA design is an always-on incremental learning process of consecutive trials_ that executes under in-situ conditions. The design process is never finished and it should be that way since unforeseen unpleasant listening experiences may always occur in the future.
 
-1. Quos verba dimittere paterno cohibentem accedit procul
-2. Tutum violem dum latices preces
-3. Cibus dies Troum
-4. Sua alvum
+### Scope and Mission
 
-Vicem sui Aurora domos arma domitis adstas pater caligine suam dictaque Morphea.
-Urbes in memores Phrygiae sperat paulatim quo, sua staret *nec* quoscumque?
+HADA's task is very difficult. For a HA with 10 tuning parameters and 5 interesting values per parameter (e.g., very low, low, neutral, high, very high), HADA must try to select _the_ most interesting proposal out of almost 1 million candidates.
+
+In technical terms, the explosion of the size of the candidate space is known as the 'curse of dimensionality' and HADA is an example of an **Intelligent Agent** that is tasked with a **Reinforcement Learning** problem.
+
+At BIASlab we study and develop intelligent agents like HADA to solve difficult reinforcement problems for wearable computing systems like hearing aids and hearables. We are also interested in the many applications of intelligent agents outside the domain of training hearing aids, such as in-situ health and fitness coaching or applications to navigation and robotics.
+
+Our research is inspired by related work in **computational neurosciences** (since the brain is an awesome intelligent agent) and **Bayesian machine learning**. Please have a look at our [publications](/publications) and projects sections for an overview of our work.

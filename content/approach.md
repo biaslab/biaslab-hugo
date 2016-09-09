@@ -6,6 +6,10 @@ title = "Approach"
 
 ## Inde sidera moenia lacertis nomen nostra membra
 
+> Design is more the art of preserving changeability than it is the art of achieving perfection.
+
+-Sandi Metz (pg.16 in [Practical Object-Oriented Design in Ruby](http://poodr.com), 2012)
+
 Lorem markdownum miranti. Sonus faciunt omnibus frustra: illa possem ad regio
 Anubis tamen. Sustulerat debent fluviis herbis attollere rogus et formae
 nitentem avellere motis clipeus Achilles felix videam undas. *Posuit haec ipse*
