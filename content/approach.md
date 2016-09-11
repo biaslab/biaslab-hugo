@@ -29,4 +29,8 @@ The task of the automated designer, which in the technical literature is called 
 
 ### The broader picture
 
-Next to hearing aid design, Bayesian intelligent agents may have applications to solving problems whenever we don't have a clean problem description. Most interesting problems are of this nature. In our team, the focus lies on applications to hearing aids and hearables for health and fitness monitoring and coaching, but we are also interested in other wearable smart computing applications.  
+Next to hearing aid design, Bayesian intelligent agents may have applications to solving problems whenever we don't have a clean problem description. Most interesting problems are of this nature. In our team, the focus lies on applications to hearing aids and hearables for health and fitness monitoring and coaching, but we are also interested in other wearable smart computing applications.
+
+Finally, the idea of focusing on fast iterations as a fundamental _design principle_ has permeated various related disciplines. In the context of software design, Sandi Metz summarizes the idea as follows (pg.16 in [Practical Object-Oriented Design in Ruby](http://poodr.com), 2012):  
+
+> Design is more the art of preserving changeability than it is the art of achieving perfection.
