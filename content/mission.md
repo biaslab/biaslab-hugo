@@ -16,7 +16,7 @@ It is not clear to Sarah how to improve the situation through changing some sett
 
 Now consider Fig.1 and assume that Sarah's phone contains an **Hearing Aid Design App** (HADA).
 
-<img src="/img/mission/Intelligent-Agent-for-Hearable.png" alt="Drawing" style="width: 500px;"/>
+<img class="centered" src="/img/mission/Intelligent-Agent-for-Hearable.png" alt="Drawing" style="width: 500px;"/>
 
 At any time, Sarah may submit a positive or negative evaluation of the ongoing HA processing by pressing a thumbs-up or thumbs-down button, respectively. HADA's task is to respond after negative appraisals by sending _interesting_ alternative parameter settings to the HA (the 'try' arc in Fig.1). Thus, Sarah can switch to new audio processing algorithms simply by pressing the dislike button. In order for HADA to propose interesting HA alternatives, it must learn from Sarah's appraisals. In this framework, _HA design is an always-on incremental learning process of consecutive trials_ that executes under in-situ conditions. The design process is never finished and it should be that way since unforeseen unpleasant listening experiences may always occur in the future.
 
