@@ -15,17 +15,17 @@ Hearing aid (HA) design is also a problem with lots of uncertainties. When engin
 
 Still, both the HA industry and academic researchers on HA algorithms by and large focus their efforts directly on designing the 'best' HA solution. Engineers design HA algorithms and tinker with those algorithms in an off-line setting (at their desks) in an effort to improve those algorithms on the basis of patient feedback, see Fig.1. Each design iteration for a HA module (such as a noise reduction or feedback cancellation algorithm) with a human engineer in-the-loop often takes years.
 
-<img src="/img/approach/Direct-HA-Design.png" alt="direct HA design approach" width="400">
+<img class="centered" src="/img/approach/Direct-HA-Design.png" alt="direct HA design approach" width="400">
 
-### Our approach      
+### Our approach
 
 Our approach to HA algorithm design is focused on getting algorithm design loops down to hours or even seconds, thus facilitating learning about the problem as fast as possible. Like MacCready, our design loops comprises fast iterative testing of solution proposals, so problem definition development goes hand-in-hand with the development of solutions.
 
 In order to scale down a design iteration from years to seconds, we cannot afford to have a human engineer in the design loop. Rather, in our approach, we (the engineers) aim to design an _automated HA designer_ instead of the hearing aid algorithm itself, see Fig.2.
 
-<img src="/img/approach/HA-Design-with-IA.png" alt="HA design with IA" width="400">
+<img class="centered" src="/img/approach/HA-Design-with-IA.png" alt="HA design with IA" width="400">
 
-The task of the automated designer, which in the technical literature is called an **intelligent agent** (IA), is to propose an _interesting_ alternative algorithm each time when the patient is hot happy, under in-situ conditions. This is a monumental task that involves learning from experiences and rational decision making under uncertainty. We take a fully Bayesian (= probabilistic) approach to designing such intelligent agents (see also our [mission]() page).   
+The task of the automated designer, which in the technical literature is called an **intelligent agent** (IA), is to propose an _interesting_ alternative algorithm each time when the patient is hot happy, under in-situ conditions. This is a monumental task that involves learning from experiences and rational decision making under uncertainty. We take a fully Bayesian (= probabilistic) approach to designing such intelligent agents (see also our [mission](/mission) page).   
 
 ### The broader picture
 
