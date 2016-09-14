@@ -3,9 +3,9 @@ date = "2016-09-14T11:45:56+02:00"
 id = "eric"
 interests = ["Statistical Machine Learning", "Probabilistic Modeling", "Optimization for Machine Learning"]
 name = "Quan (Eric) Nguyen"
-portrait = "portraits/eric.jpg"
+portrait = "portraits/Eric.jpg"
 short_bio = "I'm a PhD candidate at the Electrical Engineering department, Eindhoven University of Technology"
-title = "eric"
+title = "Quan (Eric) Nguyen"
 
 [[social]]
     icon = "envelope"
