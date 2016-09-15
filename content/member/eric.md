@@ -10,7 +10,7 @@ title = "Quan (Eric) Nguyen"
 [[social]]
     icon = "envelope"
     icon_pack = "fa"
-    link = "m.nguyen@tue.nl"
+    link = "mailto:m.nguyen@tue.nl"
 
 [[social]]
     icon = "github"

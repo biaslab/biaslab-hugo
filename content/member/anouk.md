@@ -10,7 +10,7 @@ title = "Anouk van Diepen"
 [[social]]
     icon = "envelope"
     icon_pack = "fa"
-    link = "a.v.diepen@student.tue.nl"
+    link = "mailto:a.v.diepen@student.tue.nl"
 
 [[social]]
     icon = "github"
@@ -28,4 +28,4 @@ title = "Anouk van Diepen"
 
 +++
 
-Anouk van Diepen received her BSc degree in Biomedical Engineering from the TU Eindhoven in 2014. She is currently working on her graduation project in the [BIASlab](http://biaslab.org) team. Her project consists of developing an in-situ trainable gesture recognition agent. 
+Anouk van Diepen received her BSc degree in Biomedical Engineering from the TU Eindhoven in 2014. She is currently working on her graduation project in the [BIASlab](http://biaslab.org) team. Her project consists of developing an in-situ trainable gesture recognition agent.
