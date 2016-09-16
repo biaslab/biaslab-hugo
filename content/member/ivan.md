@@ -4,7 +4,7 @@ id = "ivan"
 interests = ["Bayesian Machine Learning", "Variational methods", "Natural Language Processing"]
 name = "Ivan Bocharov"
 portrait = "portraits/Ivan.png"
-short_bio = "I am a PhD student at TU Eindhoven working on variational inference and hierarchical dynamical systems."
+short_bio = "I am a PhD candidate at TU Eindhoven working on variational inference and hierarchical dynamical systems."
 title = "Ivan Bocharov"
 
 [[social]]
@@ -23,13 +23,13 @@ title = "Ivan Bocharov"
     link = "//github.com/bocharov-ivan/"
 
 [[education]]
-    course = "MSc in Computer Science"
+    course = "M.Sc. in Computer Science"
     institution = 'NRU "MPEI"'
-    year = 1991
+    year = 2014
 
 [[organizations]]
     name = "TU Eindhoven"
-    role = "PhD student"
+    role = "PhD candidate"
 
 +++
-I'm a PhD student in the SPS group of Electrical Engineering department in Eindhoven University of Technology. My research focuses on variational methods for machine learning and hierarchical dynamical systems. Aside from that I'm interested in natural language processing and compiler design.
+Ivan Bocharov is a PhD candidate in the SPS group of Electrical Engineering department in Eindhoven University of Technology. His research focuses on variational methods for machine learning and hierarchical dynamical systems. Aside from that he's interested in natural language processing and compiler design.
