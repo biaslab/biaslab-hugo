@@ -19,8 +19,8 @@ tag = "tags"
 [params]
   description = "Website of research group"
   author = "BIASlab"
-  email = "mail@example.org"
-  address = "3566 Spirit Drive NEW HAVEN Connecticut"
+  email = "info<at>biaslab.org"
+  address = "Flux building 7.060 Groene Loper 19 5612 AP Eindhoven, the Netherlands."
   slogan = "BIASlab"
   slogan_text = "Bayesian Intelligent Autonomous Systems"
 
@@ -49,6 +49,16 @@ tag = "tags"
     link = "/approach"
     link_text = "Read more"
     weight = 3
+
+  [[params.sponsors]]
+    name = "STW"
+    link = "http://www.stw.nl"
+    image = "/img/sponsors/STW.png"
+  [[params.sponsors]]
+    name = "GN Resound"
+    link = "http://www.resound.com/"
+    image = "/img/sponsors/GNResound.png"
+
 
   # Selected Publications section.
   [params.publications_selected]
