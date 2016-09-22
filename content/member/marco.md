@@ -6,6 +6,8 @@ name = "Marco Cox"
 portrait = "portraits/Marco.jpg"
 short_bio = "PhD candidate working on probabilistic models and Bayesian machine learning."
 title = "Marco Cox"
+sort_position = 4
+
 
 [[social]]
     icon = "envelope"

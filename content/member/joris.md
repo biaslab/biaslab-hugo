@@ -6,6 +6,7 @@ name = "Joris Kraak"
 portrait = "portraits/joris.jpg"
 short_bio = "I am a senior software engineer at [GN Hearing](http://www.gn.com)."
 title = "Joris Kraak"
+sort_position = 3
 
 [[social]]
     icon = "envelope"

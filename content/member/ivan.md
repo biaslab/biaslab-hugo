@@ -6,6 +6,7 @@ name = "Ivan Bocharov"
 portrait = "portraits/Ivan.png"
 short_bio = "I am a PhD candidate at TU Eindhoven working on variational inference and hierarchical dynamical systems."
 title = "Ivan Bocharov"
+sort_position = 4
 
 [[social]]
     icon = "envelope"

@@ -6,6 +6,7 @@ name = "Thijs van de Laar"
 portrait = "portraits/Thijs.jpg"
 short_bio = "I am a PhD candidate at the signal processing systems group, working on personalized hearing aids."
 title = "Thijs van de Laar"
+sort_position = 4
 
 [[social]]
     icon = "envelope"

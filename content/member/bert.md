@@ -6,6 +6,7 @@ name = "Bert de Vries"
 portrait = "portraits/Bert.jpg"
 short_bio = "I am a professor at TU Eindhoven and team leader of BIASlab. I am also a principal scientist at [GN Hearing](http://gnhearing.com)."
 title = "Bert de Vries"
+sort_position = 1
 
 [[social]]
     icon = "envelope"

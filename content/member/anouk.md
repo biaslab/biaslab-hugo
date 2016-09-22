@@ -6,6 +6,7 @@ name = "Anouk van Diepen"
 portrait = "portraits/Anouk.jpg"
 short_bio = "I am currently pursuing a master's degree in Electrical Engineering at the TU Eindhoven"
 title = "Anouk van Diepen"
+sort_position = 5
 
 [[social]]
     icon = "envelope"
