@@ -2,7 +2,7 @@
 date = "2016-07-12T16:10:22+02:00"
 external_link = ""
 project_id = "phlc"
-description = "Hearing Aid (HA) algorithms need to be tuned (fitted) to match the impairment of each specific patient. The lack of a fundamental HA fitting theory is a strong contributing factor to an unsatisfying sound experience for about 20% of hearing aid patients. This paper proposes a probabilistic modeling approach to the design of HA algorithms. The proposed method relies on a generative probabilistic model for the hearing loss problem and provides for automated inference of the corresponding (1) signal processing algorithm, (2) the fitting solution as well as a principled (3) performance evaluation metric. All three tasks are realized as message passing algorithms in a factor graph representation of the generative model, which in principle allows for fast implementation on hearing aid or mobile device hardware. The methods are theoretically worked out and simulated with a custom-built factor graph toolbox for a specific hearing loss model."
+description = "Hearing Aid (HA) algorithms need to be tuned (fitted) to match the impairment of each specific patient. The lack of a fundamental HA fitting theory is a strong contributing factor to an unsatisfying sound experience for about 20% of hearing aid patients. We propose here a probabilistic modeling approach to the design of HA algorithms. Our method relies on a generative probabilistic model for the hearing loss problem and provides for automated inference of the corresponding (1) signal processing algorithm, (2) the fitting solution as well as a principled (3) performance evaluation metric. All three tasks are realized as message passing algorithms in a factor graph representation of the generative model, which in principle allows for fast implementation on hearing aid or mobile device hardware. The methods are theoretically worked out and simulated with a custom-built factor graph toolbox for a specific hearing loss model."
 title = "Probabilistic Hearing Loss Compensation"
 
 [[participants]]
@@ -20,36 +20,36 @@ title = "Probabilistic Hearing Loss Compensation"
 
 ## Problem Statement
 
-Hearing loss is a problem that affects millions of people, and each hearing loss is unique. For those people wearing a hearing aid to compensate for their hearing loss, each person also has his or her own preferred hearing aid settings. Therefore, it is hard to find the best setting for each individual, especially when problems often arise in the field.
+Hearing loss is a problem that affects millions of people. In order to alleviate the problem, many patients wear hearing aids that contain audio processing algorithms with lots of tuning parameters. Since hearing loss profiles are unique for each individual, it is hard to find the best hearing aid settings for a given patient, especially when unforeseen hearing problems may arise in-the-field.
 
-We aim to automate hearing aid algorithm design, and argue that a proper hearing aid design agent (HADA) should:
+We aim to automate hearing aid algorithm design under in-situ conditions and argue that a proper **hearing aid design agent** (HADA) should be able to support the following tasks:
 
-- describe hearing aid design as a personalized process;
-- decide what signal processing circuit to use for hearing loss compensation;
-- estimate tuning parameters of the signal processing algorthm;
-- evaluate the performance of one signal processing algorithm relative to an alternative.
+- describe in-situ hearing aid design as a personalized incremental tuning process;
+- decide which signal processing circuit to use for hearing loss compensation;
+- estimate the tuning parameters of a given signal processing algorithm;
+- evaluate the performance of a given signal processing algorithm relative to an alternative algorithm.
 
 
 ## Methods and Solution Proposal
 
-From a hearing aid, the HADA collects the signal input and compensation gain, and labels these input-gain pairs with a patient evaluation. A positive evaluation triggers parameter learning, while a negative evaluation sends a new parameter setting to the hearing aid, starting a new listening trial. This way, hearing aid design becomes an always-on process of consecutive trials. The HADA is illustrated in the figure below. From the HADA, a trial parameter setting is sent to the hearing aid. The user then offers direct feedback (thumbs up or down) on the perceived audio. In response to positive feedback, the HADA updates its state-of knowledge about preferred parameters from the training data (the current input-gain pair).
+The architecture of our proposed solution method is sketched in Fig.1. Under in-situ conditions, HADA receives both a HA module's input ($s_k$) and output signals (the gain $g_k$). Moreover, once in a while, HADA receives a thumbs-up or thumbs-down appraisal from the patient. A positive patient evaluation triggers HADA to execute an incremental update of the distribution over hearing aid parameters (i.e., it updates $p(\theta|D)$), while a negative evaluation prompts HADA to send alternative parameter settings ($\hat \theta$) to the hearing aid, thus starting a new listening trial. Note that in this way, hearing aid design becomes an always-on learning process of consecutive trials. The challenge for HADA is to learn to propose _interesting_ alternative HA algorithms whenever the patient is unhappy about his current listening experience. We used a fully Bayesian approach to infer both the signal processing algorithm, the HA parameter settings, the performance evaluation task and for deciding the next best alternative algorithm.   
 
 <img src="/img/projects/PHLC/PHLC-architecture.png" width="500px">
 
 
 ## Results
 
-In order to illustrate the process of personalized hearing aid design, we simulated the signal processing, parameter estimation and relative model comparison tasks of the HADA.
+In order to illustrate the process of personalized in-situ hearing aid design, we simulated HADA's execution of the signal processing, parameter estimation and model comparison tasks.
 
-For signal processing, the HADA inferred a personalized amplification gain, based on an input signal and a description (model) of a patient-specific hearing loss. The results show for a piecewise linear hearing loss (in the log-power domain) with a hearing threshold at 45 [dB HL], and a recruitment threshold at 90 [dB HL], for a single (arbitrary) frequency band, are plotted below. Here, the dashed line represents the input sound level, and the solid line the compensation gain. This signal processing result exhibits the behaviour of a dynamic range compressor. 
+For the **signal processing** task, we challenged HADA to infer a personalized hearing loss compensation algorithm, based on a received audio signal (by the HA microphones) and a generative probabilistic hearing loss model. The results are plotted below for a piecewise linear hearing loss model (in the log-power domain) in a single (arbitrary) frequency band, with a hearing threshold at 45 [dB HL], and a recruitment threshold at 90 [dB HL]. Here, the dashed line represents the input sound level, and the solid line the inferred compensation gain. We notice that HADA is able to generate a signal processing algorithm that exhibits the behaviour of a dynamic range compressor. 
 
 <img src="/img/projects/PHLC/SP.png" width="500px">
 
-For parameter estimation, a more complex latent hearing loss function was approximated from training data. The training data were generated from signal processing on the latent model itself. The approximating function was again a piecewise-linear hearning loss model. The figure below shows an appealing fit of the approximate model (solid curve) to the latent model (dash-dotted curve), and suggests that the hearing loss model can be learned from audio data.
+For the **parameter estimation** task, the challenge for HADA was to learn the parameters for a HA module with given piecewise-linear hearing loss model. We used a complex latent hearing loss model to generate a training data set for the HA module's input and output signals. The figure below shows a close fit between the piecewise-linear model (solid curve) to the complex latent model (dash-dotted curve). Thus we found that an appropriate hearing loss model (and algorithm) can be learned straight from audio data.
 
 <img src="/img/projects/PHLC/PE_fit.png" width="500px">
 
-For model comparison, we evaluated the performance difference (Bayes factor) between a model with and without a distortion-limiting gain restriction. On the training data, the model _with_ gain restriction strongly outperforms the simpler but restrictionless model, by 16.7 [dHart]. This model comparison example illustrates that the Bayes factor can be used as a model-agnostic comparison metric.
+For **model comparison**, HADA was tasked to evaluate the performance of an alternative hearing loss compensation algorithm relative to a reference algorithm. The alternative algorithm contained a mechanism that limits distortion on the inferred gains. The reference algorithm did not contain this mechanism. HADA estimated the **Bayes Factor** between both algorithms, based on a given training set of input-gain signal pairs. The alternative algorithm ourperformed the reference algorithm by 16.7 [dB]. This example illustrates that the Bayes factor can be used as a performance metric for competing audio processing algorithms.
 
 
 ### Reference
