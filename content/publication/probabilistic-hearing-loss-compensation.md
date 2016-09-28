@@ -12,7 +12,7 @@ title = "A Probabilistic Modeling Approach to Hearing Loss Compensation"
 url_code = ""
 url_dataset = ""
 url_pdf = "https://arxiv.org/abs/1602.01345"
-url_project = "/project/phlc"
+url_project = "/project/probabilistic-hearing-loss-compensation"
 url_slides = ""
 url_video = ""
 

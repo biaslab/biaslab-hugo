@@ -12,7 +12,7 @@ title = "A Bayesian binary classification approach to pure tone audiometry"
 url_code = ""
 url_dataset = ""
 url_pdf = "https://arxiv.org/abs/1511.08670"
-url_project = "/project/bpta"
+url_project = "/project/bayesian-pure-tone-audiometry"
 url_slides = ""
 url_video = ""
 
