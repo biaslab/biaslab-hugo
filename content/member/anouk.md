@@ -19,7 +19,7 @@ sort_position = 5
     link = "https://github.com/AnoukvDiepen"
 
 [[education]]
-    course = "Bsc in Biomedical Engineering"
+    course = "BSc in Biomedical Engineering"
     institution = "TU Eindhoven"
     year = "2015"
 
