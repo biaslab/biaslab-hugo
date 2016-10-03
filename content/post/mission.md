@@ -33,4 +33,4 @@ In technical terms, the explosion of the size of the candidate space is known as
 
 At BIASlab we study and develop intelligent agents like HADA to solve difficult reinforcement problems for wearable computing systems like hearing aids and hearables. We are also interested in the many applications of intelligent agents outside the domain of training hearing aids, such as in-situ health and fitness coaching or applications to navigation and robotics.
 
-Our research is inspired by related work in **computational neurosciences** (since the brain is an awesome intelligent agent) and **Bayesian machine learning**. Please have a look at our [publications](/publications) and projects sections for an overview of our work.
+Our research is inspired by related work in **computational neurosciences** (since the brain is an awesome intelligent agent) and **Bayesian machine learning**. Please have a look at our [publications](/publication) and [projects](/project) sections for an overview of our work.
