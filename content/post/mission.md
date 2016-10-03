@@ -1,8 +1,13 @@
 +++
-title = "Mission"
-+++
+title = "Bayesian Intelligent Agents"
+date = "2016-10-03T15:50:58+02:00"
+short_text = "In this note we describe by an example the research scope and mission of BIASlab."
 
-## Bayesian Intelligent Agents
+[[authors]]
+    name = "Bert de Vries"
+    is_member = true
+    link = "/bert"
++++
 
 In this note we describe by an example the research scope and mission of BIASlab.
 

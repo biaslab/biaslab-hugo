@@ -1,8 +1,12 @@
 +++
-title = "Approach"
-+++
-## A Solution Design Approach for Difficult Problems
+title = "A Solution Design Approach for Difficult Problems"
+date = "2016-10-03T15:50:58+02:00"
 
+[[authors]]
+    name = "Bert de Vries"
+    is_member = true
+    link = "/bert"
++++
 ### Solving the Wrong Problem
 
 When you need to solve a problem and you only have a vague description of that problem, the best strategy is to first gather more information about what the problem really is, rather than deeply investing in the design of a sophisticated solution. A great example of this approach to problem solving was described by Aza Raskin in his blog on the [development of the first human-powered airplane to cross the English channel](http://www.azarask.in/blog/post/the-wrong-problem/). Paul MacCready, who lead the successful development of said human-powered airplane, phrased it as "The problem is we don't understand the problem".

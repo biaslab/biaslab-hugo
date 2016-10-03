@@ -43,13 +43,13 @@ tag = "tags"
   [[params.slogan_columns]]
     title = "Mission"
     text = "Learning through environmental interactions also goes by the name *[Reinforcement Learning](https://en.wikipedia.org/wiki/Reinforcement_learning)*. Our research on reinforcement learning is strongly inspired by developments in  *[Bayesian Inference](https://en.wikipedia.org/wiki/Bayesian_inference)* and *[Computational Neurosciences](https://en.wikipedia.org/wiki/Free_energy_principle)*. Ultimately, we aim to develop a fully Bayesian reinforcement learning framework that is realized by message passing algorithms in highly modular *[Graphical Model](https://en.wikipedia.org/wiki/Graphical_model)* networks."
-    link = "/mission"
+    link = "post/mission"
     link_text = "Read more"
     weight = 2
   [[params.slogan_columns]]
     title = "Approach"
     text = "Our research projects are usually selected by our quest to develop (reinforcement learning) technology to support *in-situ hearing aid personalization*. We 'eat our own dogfood' by immersing ourselves in complex acoustic situations and use our own tools to optimize audio processing algorithms under in-situ conditions. This leads to new problems that drive our next research steps."
-    link = "/approach"
+    link = "post/approach"
     link_text = "Read more"
     weight = 3
 
