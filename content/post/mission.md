@@ -1,7 +1,7 @@
 +++
-title = "Bayesian Intelligent Agents"
+title = "On Bayesian Intelligent Agents"
 date = "2016-10-03T15:50:58+02:00"
-short_text = "In this note we describe by an example the research scope and mission of BIASlab."
+short_text = "The primary mission of the BIASlab team is to develop in-situ trainable Bayesian Intelligent Agents for applications to wearable technology."
 
 [[authors]]
     name = "Bert de Vries"
