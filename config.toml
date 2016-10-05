@@ -25,8 +25,11 @@ tag = "tags"
   slogan_icon = "icon-spsbrats_logo"
   slogan_text = "Bayesian Intelligent Autonomous Systems"
 
-  custom_css = ["biaslab.css"]
+  [params.university_logo]
+    image = "img/tue-logo.png"
+    link = "https://tue.nl"
 
+  custom_css = ["biaslab.css"]
 
   [params.parent_group]
     name = "SPS"
