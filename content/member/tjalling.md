@@ -14,14 +14,9 @@ sort_position = 2
     link = "mailto:t.j.tjalkens@tue.nl"
 
 [[education]]
-    course = "MSc in Electrical Engineering"
-    institution = 'Eindhoven University of Technology'
-    year = 1983
-
-[[education]]
     course = "PhD in Electrical Engineering"
     institution = 'Eindhoven University of Technology'
-    year = 1991
+    year = 1987
 
 [[organizations]]
     name = "TU Eindhoven"
