@@ -29,4 +29,6 @@ sort_position = 4
 
 +++
 
-Quan (Eric) Nguyen received a M.Sc. in Computer Science (with a specialization in Algorithms, Data Analytics and Machine Learning; and a minor in Statistics) from the University of Helsinki in 2015. He is interested in applying classic tools (statistical learning, probabilistic inference, mathematical optimization, etc.) to solve modern data analysis problems.
+Quan (Eric) Nguyen received a M.Sc. in Computer Science (with a specialization in Algorithms, Data Analytics and Machine Learning; and a minor in Statistics, both with distinction) from the University of Helsinki in 2015.
+He is interested in developing intelligent systems that can do human jobs with a little help from humans by learning from the experience/data, and adapting to new situations. Since the old experience is often a tiny and far from perfect representation of the unknown future, the key is to decide which is significant and relevant for future problems than relying completely on the past. This small (compared to the complicated real word) amount of data, on the other hand is often too big for most the machines to handle.
+He believes these issues of modern intelligent systems have been well addressed by the two classic disciplines: statistics and mathematical optimization. His research involves investigating how to put classic but plain good ideas together.
