@@ -26,16 +26,22 @@ tag = "tags"
   slogan_text = "Bayesian Intelligent Autonomous Systems"
   custom_css = ["biaslab.css"]
 
-  [params.university_logo]
+  [params.logo]
     image = "img/tue-logo.png"
     link = "https://tue.nl"
 
-  [params.parent_group]
+   [[params.navbar_hierarchy]]
     name = "SPS"
     link = "https://www.tue.nl/en/university/departments/electrical-engineering/research/research-groups/signal-processing-systems-sps/"
+    position = 1
+  
+  [[params.navbar_hierarchy]]
+    name = "BIASlab"
+    link = "/"
+    position = 2
 
 
-    [[params.slogan_columns]]
+   [[params.slogan_columns]]
     title = "About"
     text =  "We are an academic research team in the Signal Processing Systems group (EE department) at Eindhoven University of Technology. Our main research interest is in *developing autonomous agents that teach themselves to behave intelligently through interactions with the environment*. Typical application areas include (medical) device personalization, automated vehicle control and robotics."
     link = "#members"

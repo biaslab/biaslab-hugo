@@ -15,7 +15,6 @@ participants_block_position = "down"
     name = "Bert de Vries"
     is_member = true
     id = "bert"
-
 +++
 
 ## Problem Statement
