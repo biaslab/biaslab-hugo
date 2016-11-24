@@ -10,11 +10,13 @@ participants_block_position = "down"
     name = "Marco Cox"
     is_member = true
     id = "marco"
-
+    position = 1
+    
 [[participants]]
     name = "Bert de Vries"
     is_member = true
     id = "bert"
+    position = 2
 +++
 
 ## Problem Statement
