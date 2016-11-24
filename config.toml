@@ -1,4 +1,3 @@
-layoutdir = "themes/academic-group/layouts"
 publishdir = "public"
 static = "/static"
 builddrafts = false
@@ -34,7 +33,7 @@ tag = "tags"
     name = "SPS"
     link = "https://www.tue.nl/en/university/departments/electrical-engineering/research/research-groups/signal-processing-systems-sps/"
     position = 1
-  
+
   [[params.navbar_hierarchy]]
     name = "BIASlab"
     link = "/"
