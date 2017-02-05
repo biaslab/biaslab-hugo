@@ -8,8 +8,7 @@ short_bio = "I am a professor at TU Eindhoven and team leader of BIASlab. I am a
 title = "Bert de Vries"
 sort_position = 1
 personal_website = "http://bertdv.nl"
-cv_link = "https://dl.dropboxusercontent.com/u/4512522/cv/bdevries-cv.pdf"
-
+cv_link = "http://bertdv.github.io/cv/bdevries-cv.pdf"
 [[social]]
     icon = "envelope"
     icon_pack = "fa"
