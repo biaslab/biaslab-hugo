@@ -54,4 +54,4 @@ For **model comparison**, HADA was tasked to evaluate the performance of an alte
 
 
 ### Reference
-Thijs van de Laar and Bert de Vries, _A Probabilistic Modeling Approach to Hearing Loss Compensation_, (accepted for publication in) IEEE Tr. on Audio, Speech and Language Processing, available at http://arxiv.org/abs/1602.01345, July 2016
+Thijs van de Laar and Bert de Vries (2016). _A Probabilistic Modeling Approach to Hearing Loss Compensation_. IEEE Tr. on Audio, Speech and Language Processing 24(11), 2200-2213.
