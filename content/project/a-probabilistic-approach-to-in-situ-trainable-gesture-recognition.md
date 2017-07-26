@@ -56,3 +56,5 @@ To test the influence of the constructed prior distribution, we have also evalua
 <img src="/img/projects/ISTG/RR_results2.png" width="500px">
 
 Figure 3 shows the recognition rates of all algorithms. Both hidden Markov based algorithms feature a higher recognition rate than the 1-NN algorithm. In view of our interest for in-situ training of the gesture classifier, we are especially interested in classifier performance as a function of number of training examples. In particular for one training example (one-shot training), the hidden Markov model with learned prior distribution clearly outperforms both alternative models.
+
+{{< youtube o2V_wVBPIS0 >}}
