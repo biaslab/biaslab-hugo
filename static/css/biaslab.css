@@ -1,5 +1,61 @@
-.header-content .header-content-inner h1 b {
+.header-content{
     margin-top: 0;
     margin-bottom: 0;
     font-weight: 100;
+    width:auto;
+    height:auto;
+    max-width:100%;
+    max-height:100%;
+}
+
+header{
+    background-image: none;
+    text-align: center;
+    color: #fff;
+    background-position: center;
+    width:auto;
+    height:auto;
+}
+
+.header-content {
+    padding: 0;
+}
+
+* {
+    transition: all 0.25s ease;
+}
+
+svg:not(:root){
+    overflow:visible; 
+    position: relative;
+    left: 0; 
+    top: 0;
+}
+
+@media screen and (max-width: 988px) {
+    #Approach {
+        transform: translateY(227.5px)
+                   translateX(1500px);
+    }
+
+    #Mission {
+        transform: translateX(765px)
+                   translateY(527.5px);
+    }
+
+    #About {
+        transform: translatey(827.5px);
+
+    }
+   
+    #Tekst {
+        transform: translateX(-250px);
+    } 
+    
+    #Agents {
+        transform: translateX(-250px);
+    } 
+    #Crossroad {
+        transform: translateX(-250px);
+    }
 }
