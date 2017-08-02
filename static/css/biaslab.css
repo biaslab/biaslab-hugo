@@ -45,7 +45,7 @@ svg:not(:root){
 @media screen and (max-width: 988px) {
     
     #About {
-        transform:  translateX(480px)
+        transform:  translateX(360px)
                     translateY(840px);
     }
    
@@ -55,7 +55,7 @@ svg:not(:root){
     }
 
     #Approach {
-        transform:  translateX(1080px)
+        transform:  translateX(1200px)
                     translateY(240px);
     }
     
