@@ -1,5 +1,75 @@
-.header-content .header-content-inner h1 b {
+.header-content{
     margin-top: 0;
     margin-bottom: 0;
     font-weight: 100;
+    width:auto;
+    height:auto;
+    max-width:100%;
+    max-height:100%;
+}
+
+header{
+    max-width: 100%;
+    width:auto;
+    height:auto;
+    background: #A4BDC0;
+    background:
+        linear-gradient(
+            to bottom, 
+            #A4BDC0,
+            #A4BDC0 55%,
+            #729BA6 55%,
+            #729BA6 62%,
+            #5D848C 62%,
+            #5D848C 85%,
+            #729BA6 15%
+    );
+    background-repeat: no-repeat;
+}
+
+.header-content {
+     padding: 0; 
+}
+
+* {
+    transition: all 0.25s ease;
+}
+
+svg:not(:root){
+    position: relative;
+    left: 0; 
+    top: 0;
+}
+
+@media screen and (max-width: 988px) {
+    
+    #About {
+        transform:  translateX(360px)
+                    translateY(840px);
+    }
+   
+    #Mission {
+        transform:  translateX(780px)
+                    translateY(540px);
+    }
+
+    #Approach {
+        transform:  translateX(1200px)
+                    translateY(240px);
+    }
+    
+    #Tekst {
+        transform: translateX(-225px);
+    } 
+    
+    #Agents {
+        transform: translateX(-225px);
+    } 
+    #Crossroad {
+        transform: translateX(-225px);
+    }
+}
+
+.home-section:first-of-type {
+    padding: 30px 0 60px 0;
 }
