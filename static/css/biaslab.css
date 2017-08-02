@@ -9,12 +9,22 @@
 }
 
 header{
-    background-image: none;
-    text-align: center;
-    color: #fff;
-    background-position: center;
+    max-width: 100%;
     width:auto;
     height:auto;
+    background: #A4BDC0;
+    background:
+        linear-gradient(
+            to bottom, 
+            #A4BDC0,
+            #A4BDC0 55%,
+            #729BA6 55%,
+            #729BA6 62%,
+            #5D848C 62%,
+            #5D848C 85%,
+            #729BA6 15%
+    );
+    background-repeat: no-repeat;
 }
 
 .header-content {
@@ -33,30 +43,31 @@ svg:not(:root){
 }
 
 @media screen and (max-width: 988px) {
-    #Approach {
-        transform: translateY(227.5px)
-                   translateX(1500px);
-    }
-
-    #Mission {
-        transform: translateX(765px)
-                   translateY(527.5px);
-    }
-
+    
     #About {
-        transform: translatey(827.5px);
-
+        transform:  translateX(480px)
+                    translateY(840px);
     }
    
+    #Mission {
+        transform:  translateX(780px)
+                    translateY(540px);
+    }
+
+    #Approach {
+        transform:  translateX(1080px)
+                    translateY(240px);
+    }
+    
     #Tekst {
-        transform: translateX(-250px);
+        transform: translateX(-225px);
     } 
     
     #Agents {
-        transform: translateX(-250px);
+        transform: translateX(-225px);
     } 
     #Crossroad {
-        transform: translateX(-250px);
+        transform: translateX(-225px);
     }
 }
 
