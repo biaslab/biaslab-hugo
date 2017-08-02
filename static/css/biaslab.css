@@ -28,7 +28,7 @@ header{
 }
 
 .header-content {
-    padding: 0;
+     padding: 0; 
 }
 
 * {
@@ -36,7 +36,6 @@ header{
 }
 
 svg:not(:root){
-    /* overflow:visible;  */
     position: relative;
     left: 0; 
     top: 0;
