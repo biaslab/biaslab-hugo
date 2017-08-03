@@ -7,7 +7,7 @@ canonifyurls = true
 theme = "academic-group"
 title = "BIASlab"
 math = true
-copyright = "&copy; BIASlab, 2016 "
+copyright = "&copy; BIASlab, 2017 "
 enableRobotsTXT = true
 
 [taxonomies]
@@ -122,7 +122,7 @@ tag = "tags"
 
   [[menu.main]]
       name = "Home"
-      url = "#top"
+      url = "#home"
       weight = 1
 
   [[menu.main]]
