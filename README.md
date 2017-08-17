@@ -46,10 +46,7 @@ Working installation of GNU Make is recommended, but not required. You can test 
     * `install-theme`: Installs [hugo-academic-group](https://github.com/biaslab/hugo-academic-group/) theme.
     * `update-theme`: Updates the theme.
     * `build-website`: Generates all the static content for the website.
-    * `debug-website`: Builds the website content and starts Hugo debugging server with live reload enabled.
-    * `debug-website-local`: Same as `debug-website`, but uses local config file.
-    * `preview-website`: Builds the website content and starts other server to serve the content. Working installation of `python` is required (no additional libraries needed).
-    * `preview-website-local`: Same as `preview-website`, but uses local config file.
+    * `preview-website`: Builds the website content and starts Hugo debugging server with live reload enabled.
     * `publish`: Publishes the contents of the `./public` directory to the `master` branch of [https://biaslab.github.io](https://biaslab.github.io) repository.
 
 # How can I publish my Jupyter notebook on this website?
