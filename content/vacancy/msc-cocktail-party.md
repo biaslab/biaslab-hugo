@@ -1,27 +1,27 @@
 +++
-title = "MSc Project on solving the Cocktail Party problem with Intelligent Autonomous Agents"
+title = "MSc graduation project: Solving the Cocktail Party problem with Intelligent Autonomous Agents"
 date = "2017-08-24T15:50:58+02:00"
 
-description = "Test Description"
+description = "In this project, you are challenged to design an agent that learns to solve the cocktail party problem through on-the-spot interactions with a (human) listener."
 external_link = ""
 vacancy_id = "cocktail-party"
 +++
 
 
-# Context
+## Context
 
 {{< figure src="/img/proposals/image1.png" title="BIASlab" class="right-inline" width="300px" >}}
 
 **BIASlab** (Fig.1, <http://biaslab.org>, FLUX-7.060) is
 a subgroup of the Signal Processing Systems (SPS) that aims to develop
-*intelligent autonomous agents (IA)*. These agents interact with their
+*Intelligent Autonomous Agents* (IA). These agents interact with their
 environment through their sensors and actuators in order to learn
 purposeful behavior, e.g., to navigate, play soccer or they may learn to
 decode speech signals under bad acoustic conditions. Our research
 projects are inspired by the latest insights from machine learning,
 computational neuroscience and signal processing.
 
-# Project Description
+## Project Description
 
 {{< figure src="/img/proposals/image5.jpeg" title="Cocktail party" class="left-inline" width="200px" >}}
 
@@ -47,7 +47,13 @@ interaction and (2) be smart about selecting the most promising
 algorithm candidates. It will also give you an opportunity to learn
 about how biological brains solve real-time design issues.
 
-# Financial Support
+## Timing
+
+Start date: the project is available from **September 2017** (or any time thereafter).
+
+Duration: 9 months (fte).
+
+## Financial Support
 
 {{< figure src="/img/proposals/image7.png" class="left-inline" width="100px" >}}
 
@@ -55,7 +61,7 @@ For strong candidates (qualifications to be discussed with prof. de Vries), the
 audio solutions company GN (<http://www.gn.com/>) makes available a
 **scholarship** of 500 euro/month during execution of the project.
 
-# Contact
+## Contact
 
 For more information about this project, please contact Prof. Bert de
 Vries (<bert.de.vries@tue.nl>). Also, feel free to make an appointment
