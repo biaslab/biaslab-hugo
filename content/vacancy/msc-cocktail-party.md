@@ -10,7 +10,7 @@ vacancy_id = "cocktail-party"
 
 ## Context
 
-{{< figure src="/img/proposals/image1.png" title="BIASlab" class="right-inline" width="300px" >}}
+{{< figure src="/img/biaslab-logo.png" title="BIASlab logo" class="right-inline" width="200px" >}}
 
 **BIASlab** (Fig.1, <http://biaslab.org>, FLUX-7.060) is
 a subgroup of the Signal Processing Systems (SPS) that aims to develop

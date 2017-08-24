@@ -138,7 +138,7 @@ tag = "tags"
   [[menu.main]]
       name = "Members"
       url = "#members"
-      weight = 6
+      weight = 5
 
   [[menu.main]]
       name = "Blog"
@@ -148,7 +148,7 @@ tag = "tags"
   [[menu.main]]
       name = "Recruitment"
       url = "#vacancies"
-      weight = 5
+      weight = 6
 
   [[menu.main]]
       name = "Contact"
