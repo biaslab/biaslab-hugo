@@ -3,6 +3,7 @@ date = "2016-07-12T16:10:22+02:00"
 external_link = ""
 project_id = "phlc"
 description = "Hearing Aid (HA) algorithms need to be tuned (fitted) to match the impairment of each specific patient. The lack of a fundamental HA fitting theory is a strong contributing factor to an unsatisfying sound experience for about 20% of hearing aid patients. We propose here a probabilistic modeling approach to the design of HA algorithms. Our method relies on a generative probabilistic model for the hearing loss problem and provides for automated inference of the corresponding (1) signal processing algorithm, (2) the fitting solution as well as a principled (3) performance evaluation metric. All three tasks are realized as message passing algorithms in a factor graph representation of the generative model, which in principle allows for fast implementation on hearing aid or mobile device hardware. The methods are theoretically worked out and simulated with a custom-built factor graph toolbox for a specific hearing loss model."
+short_description = "We want to provide a hearing impaired patient with the best setting for her hearing aid device. By recording in-situ user feedback on device performance, we are able to better understand the specific hearing loss problem and preferences of the user. Using this knowledge, we can provide a better and personalized hearing experience."
 title = "Probabilistic Hearing Loss Compensation"
 participants_block_position = "down"
 
