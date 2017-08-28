@@ -61,9 +61,9 @@ tag = "tags"
     weight = 3
 
   [[params.sponsors]]
-    name = "STW"
+    name = "NWO"
     link = "http://www.stw.nl"
-    image = "/img/sponsors/STW.png"
+    image = "/img/sponsors/NWO.png"
   [[params.sponsors]]
     name = "GN Resound"
     link = "http://www.resound.com/"
