@@ -2,6 +2,7 @@
 date = "2016-07-12T16:10:22+02:00"
 external_link = ""
 project_id = "istg"
+picture = "projects/ISTG/myobracelet-square.jpg"
 short_description = "Gesture recognition enables a natural extension of the way we currently interact with devices. Commercially available gesture recognition systems are usually pre-trained. We propose a method that allows users to define their own gestures using only a few training examples."
 description = "Gesture recognition enables a natural extension of the way we currently interact with devices. Commercially available gesture recognition systems are usually pre-trained and offer no option for customization by the user. In order to improve the user experience, it is desirable to allow users to define their own gestures. To avoid overburdening the user, this scenario requires learning from just a few training examples. To this end, we propose a gesture classifier based on a hierarchical probabilistic modeling approach. In this framework, high-level features that are shared among different gestures can be extracted from a large labeled data set, yielding a prior distribution for gestures. Using this prior when learning new types of gestures reduces the number of required training examples for individual gestures. As a result, our system needs very few examples to learn to detect previously unseen gestures."
 title = "A Probabilistic Modeling Approach to In-situ Trainable Gesture Recognition"
