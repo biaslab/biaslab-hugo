@@ -12,7 +12,7 @@ title = "Variational Stabilized Linear Forgetting in State-Space Models"
 url_code = ""
 url_dataset = ""
 url_pdf = "/pdf/slf/main.pdf"
-url_project = "/project/probabilistic-hearing-loss-compensation"
+url_project = ""
 url_slides = ""
 url_video = ""
 
