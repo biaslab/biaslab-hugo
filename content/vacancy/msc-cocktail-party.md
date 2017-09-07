@@ -14,7 +14,7 @@ vacancy_id = "cocktail-party"
 
 **BIASlab** (Fig.1, <http://biaslab.org>, FLUX-7.060) is
 a subgroup of the Signal Processing Systems (SPS) that aims to develop
-*Intelligent Autonomous Agents* (IA). These agents interact with their
+**Intelligent Autonomous Agents** (IA). These agents interact with their
 environment through their sensors and actuators in order to learn
 purposeful behavior, e.g., to navigate, play soccer or they may learn to
 decode speech signals under bad acoustic conditions. Our research
@@ -23,11 +23,11 @@ computational neuroscience and signal processing.
 
 ## Project Description
 
-{{< figure src="/img/proposals/image5.jpeg" title="Cocktail party" class="left-inline" width="200px" >}}
+{{< figure src="/img/proposals/cocktail-party.jpeg" title="Cocktail party" class="left-inline" width="200px" >}}
 
 In this project, you are challenged to design **an agent that learns to solve
 the cocktail party problem** through on-the-spot interactions with a (human)
-listener. {{< figure src="/img/proposals/image3.png" title="Intelligent agent"
+listener. {{< figure src="/img/proposals/IA-loop.png" title="Intelligent agent"
 class="right-inline" width="300px" >}} The cocktail party problem refers to the
 issue of not being able to understand your conversation partner in the presence
 of many simultaneously competing voices (Fig.2). The learning protocol is
@@ -55,11 +55,9 @@ Duration: 9 months (fte).
 
 ## Financial Support
 
-{{< figure src="/img/proposals/image7.png" class="left-inline" width="100px" >}}
+{{< figure src="/img/proposals/GN-logo.png" class="left-inline" width="100px" >}}
 
-For strong candidates (qualifications to be discussed with prof. de Vries), the
-audio solutions company GN (<http://www.gn.com/>) makes available a
-**scholarship** of 500 euro/month during execution of the project.
+The audio solutions company GN (<http://www.gn.com/>) may financially support strong candidates (qualifications to be discussed with prof. de Vries) by a **GN scholarship**.
 
 ## Contact
 
