@@ -31,6 +31,16 @@ header{
      padding: 0; 
 }
 
+.landing-heading, .landing-description {
+    font-weight: 300;
+}
+
+.landing-pitch {
+    background: #A4BDC0;
+    text-align: center;
+    color: #fff;
+}
+
 * {
     transition: all 0.25s ease;
 }

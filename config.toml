@@ -24,6 +24,8 @@ tag = "tags"
   slogan_icon = "icon-spsbrats_logo"
   slogan_text = "Bayesian Intelligent Autonomous Systems"
   custom_css = ["biaslab.css"]
+  landing_heading = "Developing autonomous agents that learn from their environment"
+  landing_description = "Using these agents to develop novel signal processing systems"
 
   [params.logo]
     image = "img/tue-logo.png"
