@@ -35,6 +35,18 @@ header{
     font-weight: 300;
 }
 
+@media screen and (max-width: 768px) {
+    .landing-heading {
+        font-weight: 300;
+        font-size: 30px;
+    }
+
+    .landing-description {
+        font-weight: 300;
+        font-size: 24px;
+    }
+}
+
 .landing-pitch {
     background: #A4BDC0;
     text-align: center;
