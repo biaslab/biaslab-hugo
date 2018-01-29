@@ -40,28 +40,7 @@ tag = "tags"
     name = "BIASlab"
     link = "/"
     position = 2
-
-
-   [[params.slogan_columns]]
-    title = "About"
-    text =  "We are an academic research team in the Signal Processing Systems group (EE department) at Eindhoven University of Technology. Our main research interest is in *developing autonomous agents that teach themselves to behave intelligently through interactions with the environment*. Typical application areas include (medical) device personalization, automated vehicle control and robotics."
-    link = "#members"
-    link_text = "Meet the team"
-    weight = 1
-
-  [[params.slogan_columns]]
-    title = "Mission"
-    text = "Learning through environmental interactions also goes by the name *[Reinforcement Learning](https://en.wikipedia.org/wiki/Reinforcement_learning)*. Our research on reinforcement learning is strongly inspired by developments in  *[Bayesian Inference](https://en.wikipedia.org/wiki/Bayesian_inference)* and *[Computational Neurosciences](https://en.wikipedia.org/wiki/Free_energy_principle)*. Ultimately, we aim to develop a fully Bayesian reinforcement learning framework that is realized by message passing algorithms in highly modular *[Graphical Model](https://en.wikipedia.org/wiki/Graphical_model)* networks."
-    link = "post/mission"
-    link_text = "Read more"
-    weight = 2
-  [[params.slogan_columns]]
-    title = "Approach"
-    text = "Our research projects are usually selected by our quest to develop (reinforcement learning) technology to support *in-situ hearing aid personalization*. We 'eat our own dogfood' by immersing ourselves in complex acoustic situations and use our own tools to optimize audio processing algorithms under in-situ conditions. This leads to new problems that drive our next research steps."
-    link = "post/approach"
-    link_text = "Read more"
-    weight = 3
-
+   
   [[params.sponsors]]
     name = "NWO"
     link = "http://www.stw.nl"
@@ -70,7 +49,6 @@ tag = "tags"
     name = "GN Resound"
     link = "http://www.resound.com/"
     image = "/img/sponsors/GNResound.png"
-
 
   # Selected Publications section.
   [params.publications_selected]
@@ -123,36 +101,52 @@ tag = "tags"
   #   The weight parameter defines the order that the links will appear in.
 
   [[menu.main]]
-      name = "Home"
-      url = "#home"
-      weight = 1
+    name = "Home"
+    url = "#home"
+    weight = 1
 
   [[menu.main]]
-      name = "Publications"
-      url = "#publications"
-      weight = 3
-
-    [[menu.main]]
-      name = "Projects"
-      url = "#projects"
-      weight = 2
+    name = "Publications"
+    url = "#publications"
+    weight = 3
 
   [[menu.main]]
-      name = "Members"
-      url = "#members"
-      weight = 5
+    name = "Projects"
+    url = "#projects"
+    weight = 2
 
   [[menu.main]]
-      name = "Blog"
-      url = "#posts"
-      weight = 4
+    name = "Members"
+    url = "#members"
+    weight = 5
 
   [[menu.main]]
-      name = "Recruitment"
-      url = "#vacancies"
-      weight = 6
+    name = "Blog"
+    url = "#posts"
+    weight = 4
 
   [[menu.main]]
-      name = "Contact"
-      url = "#contact"
-      weight = 7
+    name = "Recruitment"
+    url = "#vacancies"
+    weight = 6
+    identifier="recruitment"
+
+  [[menu.main]]
+    name = "PhD vacancies"
+    url = "#vacancies"
+    parent = "recruitment"
+  
+  [[menu.main]]
+    name = "MSc projects"
+    url = "#vacancies"
+    parent = "recruitment"
+
+  [[menu.main]]
+    name = "BSc projects"
+    url = "#vacancies"
+    parent = "recruitment"
+
+  [[menu.main]]
+    name = "Contact"
+    url = "#contact"
+    weight = 7
