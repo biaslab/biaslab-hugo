@@ -1,4 +1,12 @@
+
+
 <div class="landing-pitch">
+  {{ if .Site.Params.positions_available }}
+    <div class="open-positions-row">
+        <a class="open-positions visible-xs" href="#vacancies" data-ribbon="Open positions available" title="Open positions available">Open positions available</a>      
+    </div>  
+  {{ end }}
+  
   <div class="container">
     <div class="row">
       {{ with .Site.Params.landing_heading }}<h1 class="landing-heading">{{.}}</h1>{{end}}
@@ -6,7 +14,7 @@
     </div>
   </div>
 </div>
-
+  
 <header class="space-below ">
   <div class="container">
     <div class="row">
