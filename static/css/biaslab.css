@@ -101,3 +101,17 @@ svg:not(:root){
     flex-wrap: wrap;
     align-items: center;
 }
+
+.open-positions-row {
+    background-color: #a00;
+    border-width: .03em 0;
+    border-style: dotted;
+    border-color: #fff;
+    border-color: rgba(255, 255, 255, 0.7);
+}
+
+a.open-positions {
+    content: attr(data-ribbon);
+    color: #fff;
+    font: 400 1.5em "Lato", Helvetica, Arial, sans-serif;
+}
