@@ -2,7 +2,7 @@
 title = "PhD Position on Bayesian machine learning for signal processing applications"
 date = "2018-03-13T12:50:58+02:00"
 
-description = "In this project, you are challenged to design an agent that learns to solve the cocktail party problem through on-the-spot interactions with a (human) listener."
+description = "This research program is aimed at developing modern machine learning methods that lead to improved design of signal processing algorithms, e.g., for audio processing or quantified-self applications."
 external_link = "https://jobs.tue.nl/en/vacancy/phd-position-on-bayesian-machine-learning-for-signal-processing-applications-334358.html"
 vacancy_id = "phd-bayesian-ml"
 +++
