@@ -104,7 +104,7 @@ svg:not(:root){
 
 .open-positions-row {
     background-color: #a00;
-    border-width: .08em 0;
+    border-width: .03em 0;
     border-style: dotted;
     border-color: #fff;
     border-color: rgba(255, 255, 255, 0.7);
@@ -113,19 +113,5 @@ svg:not(:root){
 a.open-positions {
     content: attr(data-ribbon);
     color: #fff;
-    font: 700 1em "Lato", Helvetica, Arial, sans-serif;
-    
-  /* Set a gradient: transparent black at the top to almost-transparent black at the bottom */
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.15)));
-  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15));
-  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15));
-  background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15));
-  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15));
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15));
-
-  /* Add a drop shadow */
-  -webkit-box-shadow: 0 .15em .23em 0 rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0 .15em .23em 0 rgba(0, 0, 0, 0.5);
-  box-shadow: 0 .15em .23em 0 rgba(0, 0, 0, 0.5);
-
+    font: 400 1.5em "Lato", Helvetica, Arial, sans-serif;
 }
