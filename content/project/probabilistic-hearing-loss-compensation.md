@@ -52,8 +52,8 @@ For the **parameter estimation** task, the challenge for HADA was to learn the p
 
 <img src="/img/projects/PHLC/PE_fit.png" width="500px">
 
-For **model comparison**, HADA was tasked to evaluate the performance of an alternative hearing loss compensation algorithm relative to a reference algorithm. The alternative algorithm contained a mechanism that limits distortion on the inferred gains. The reference algorithm did not contain this mechanism. HADA estimated the **Bayes Factor** between both algorithms, based on a given training set of input-gain signal pairs. The alternative algorithm ourperformed the reference algorithm by 16.7 [dB]. This example illustrates that the Bayes factor can be used as a performance metric for competing audio processing algorithms.
+For **model comparison**, HADA was tasked to evaluate the performance of an alternative hearing loss compensation algorithm relative to a reference algorithm. The alternative algorithm contained a mechanism that limits distortion on the inferred gains. The reference algorithm did not contain this mechanism. HADA estimated the **Bayes Factor** between both algorithms, based on a given training set of input-gain signal pairs. The alternative algorithm outperformed the reference algorithm by 16.7 [dB]. This example illustrates that the Bayes factor can be used as a performance metric for competing audio processing algorithms.
 
 
 ### Reference
-Thijs van de Laar and Bert de Vries (2016). _A Probabilistic Modeling Approach to Hearing Loss Compensation_. IEEE Tr. on Audio, Speech and Language Processing 24(11), 2200-2213.
+Thijs van de Laar and Bert de Vries (2016). [A Probabilistic Modeling Approach to Hearing Loss Compensation](https://arxiv.org/abs/1602.01345). IEEE Tr. on Audio, Speech and Language Processing 24(11), 2200-2213.
