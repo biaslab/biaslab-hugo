@@ -1,6 +1,6 @@
 +++
 title = "MSc graduation project: an intelligent agent that learns to read text"
-date = ""
+date = "2018-03-28T15:50:58+02:00"
 
 description = "In this project you are challenged to develop a software demonstrator for an intelligent agent that learns how to read text."
 external_link = ""
