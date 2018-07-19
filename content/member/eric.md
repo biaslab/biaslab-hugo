@@ -7,6 +7,7 @@ portrait = "portraits/Eric.jpg"
 short_bio = "I'm a PhD candidate at the Electrical Engineering department, Eindhoven University of Technology"
 title = "Quan (Eric) Nguyen"
 sort_position = 4
+is_former_member = true
 
 [[social]]
     icon = "envelope"
