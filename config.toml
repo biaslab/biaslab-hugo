@@ -109,11 +109,24 @@ tag = "tags"
   [[menu.main]]
     name = "Publications"
     url = "#publications"
+    parent="research"
     weight = 3
+  
+  [[menu.main]]
+    name = "Starter's guide"
+    url = "/research/starter-guide"
+    parent="research"
+    weight = 3
+  
+  [[menu.main]]
+    name = "Research"
+    weight = 2
+    identifier = "research"
 
   [[menu.main]]
     name = "Projects"
     url = "#projects"
+    parent = "research"
     weight = 2
 
   [[menu.main]]
