@@ -1,6 +1,5 @@
 +++
 title="Starter's Guide for students at BIASlab research team"
-type = "post"
 date = "2018-07-19T8:50:58+02:00"
 [[authors]]
     name = "Bert de Vries"
