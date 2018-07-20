@@ -1,7 +1,7 @@
 +++
 date = "2016-07-12T15:52:22+02:00"
 id = "ismail"
-interests = ["Hierarchical Dynamical Systems, "Approximate Inference Methods"]
+interests = ["Hierarchical Dynamical Systems", "Approximate Inference Methods"]
 name = "Ismail Senoz"
 portrait = "portraits/ismail.jpg"
 short_bio = "I am a PhD candidate at the Electrical Engineering department in Eindhoven University of Technology "
