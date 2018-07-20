@@ -4,14 +4,10 @@ id = "eric"
 interests = ["Machine Learning", "Artificial Intelligence", "Statistical Data Analytics", "Optimization for Machine Learning"]
 name = "Quan (Eric) Nguyen"
 portrait = "portraits/Eric.jpg"
-short_bio = "I'm a PhD candidate at the Electrical Engineering department, Eindhoven University of Technology"
+short_bio = ""
 title = "Quan (Eric) Nguyen"
 sort_position = 4
-
-[[social]]
-    icon = "envelope"
-    icon_pack = "fa"
-    link = "mailto:m.nguyen@tue.nl"
+is_former_member = true
 
 [[social]]
     icon = "github"
@@ -25,7 +21,7 @@ sort_position = 4
 
 [[organizations]]
     name = "TU Eindhoven"
-    role = "PhD Candidate"
+    role = "PhD Candidate (formerly)"
 
 +++
 Quan (Eric) Nguyen received a M.Sc. in Computer Science (with a specialization in Algorithms, Data Analytics and Machine Learning; and a minor in Statistics, both with distinction) from the University of Helsinki in 2015.
