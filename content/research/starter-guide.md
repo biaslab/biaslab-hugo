@@ -13,7 +13,7 @@ This document is a starter's guide for students who do an internship or graduate
 
 ### Mission
 
-{{< figure src="https://bertdv.github.io/images/design-loop.png" width="450px" class="right-inline" >}}
+{{< figure src="/img/starter-guide/design-loop.png" width="450px" class="right-inline" >}}
 
 We are interested in methods that support **in situ design of real-world signal processing systems by
 end users**, in particular in the context of audio processing algorithms. For instance, if I have a problem with (the signal processing of) my hearing aid when I am at a cocktail party, I want to fix it right there so I can stay and enjoy the party. Today, there are no proper tools that support the end user in fine-tuning his hearing aid.  We aim to develop such a support tool, and our methods are inspired by theories about learning and adaptation in the fields of (Bayesian) **machine learning** and **computational neuroscience**. In particular, we derive inspiration from recent work on **probabilistic graphical models** (PGM) and **message passing** (MP) algorithms for machine learning and inference. In our team, we are building a very efficient PGM/MP toolbox ourselves and 'eat our own dogfood' by putting ourselves in complex acoustic situations and use our own tools to tune our audio processing algorithms. This leads to new demands on the toolbox, which drives our next research steps.
@@ -54,7 +54,7 @@ If you want to talk to me, you can always check if I'm available to meet, and if
 
 ### Slack
 
-{{< figure src="https://bertdv.github.io/images/slack-logo.png" width="100px"
+{{< figure src="/img/starter-guide/slack-logo.png" width="100px"
 class="left-inline" >}}
 
 Ideas are usually discussed in a [slack](https://slack.com/) chatroom. Slack stores a record of the chats so our discussions are automatically documented for later use, such as getting newcomers in the team up to speed.
@@ -63,14 +63,14 @@ Ideas are usually discussed in a [slack](https://slack.com/) chatroom. Slack sto
 
 ### Git and Github
 
-{{< figure src="https://bertdv.github.io/images/Octocat.jpg" width="100px" class="left-inline" >}}
+{{< figure src="/img/starter-guide/Octocat.jpg" width="100px" class="left-inline" >}}
 
  We use the [git](http://git-scm.com) version control system to track the various developments of our code base and we organize our projects in repositories at [github](http://github.com). It is important to become a smooth user of both git and github. We use git and github also to track all documents that we write ourselves, including your thesis report. In the windows environment, I recommend that you install [github for windows](http://windows.github.com/) and/or [TortoiseGit](http://code.google.com/p/tortoisegit/).  [Github bootcamp](https://help.github.com/articles/set-up-git) and Dudler's [git guide](http://rogerdudler.github.com/git-guide/) are good places to start. Our workflow is loosely based on [github flow](http://scottchacon.com/2011/08/31/github-flow.html). The articles on [Team collaboration with github](http://net.tutsplus.com/articles/general/team-collaboration-with-github/) and [How to collaborate on Github](http://code.tutsplus.com/tutorials/how-to-collaborate-on-github--net-34267) also contain interesting discussions.
 
 
 ### Julia
 
-{{< figure src="https://bertdv.github.io/images/julia-logo.png" width="120px" class="left-inline" >}}
+{{< figure src="/img/starter-guide/julia-logo.png" width="120px" class="left-inline" >}}
 We use [Julia](http://julialang.org/) as our main programming language. You are probably used to MATLAB and may be put off by the idea of having to learn another language. Don't worry, Julia is more-or-less an open source MATLAB variant, but much faster (within 2x speed of C) and much cooler than MATLAB. It is a very promising language for data science in general and it will help your research work a lot if you become proficient in Julia.
 
 I also recommend that you spend some time on getting familiar with [Test-Driven Development](https://www.youtube.com/watch?t=11&v=ZB66AKW87M0) (TDD) of code.
@@ -78,13 +78,13 @@ I also recommend that you spend some time on getting familiar with [Test-Driven 
 
 ### LaTeX
 
-{{< figure src="https://bertdv.github.io/images/latex-logo.png" width="120px" class="left-inline" >}}
+{{< figure src="/img/starter-guide/latex-logo.png" width="120px" class="left-inline" >}}
 
 The project's final report should be written in [LaTeX](http://www.latex-project.org/). You must get familiar with LaTeX early during your project, because we start writing the final report very soon after the start of the project.
 
 ### Zotero
 
-{{< figure src="https://bertdv.github.io/images/zotero-logo.png" width="100px" class="left-inline" >}}
+{{< figure src="/img/starter-guide/zotero-logo.png" width="100px" class="left-inline" >}}
 
 After you join the BIASlab team you will also get access to our literature collection that we store online in a  [Zotero](https://www.zotero.org/) repository. This will help you get an overview of all relevant papers in our field.
 
