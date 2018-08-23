@@ -2,7 +2,7 @@
 title = "Our Approach to Solving Difficult Design Problems"
 date = "2016-10-03T15:50:58+02:00"
 short_text = "How do you solve a problem that is only vaguely described? We describe here an engineering approach that guides our research on solving vaguely defined problems such as hearing impairment."
-
+sort_position = 2
 [[authors]]
     name = "Bert de Vries"
     is_member = true

@@ -7,6 +7,7 @@ description = "The pure-tone hearing threshold is usually estimated from respons
 short_description = "We develop a fully probabilistic approach to pure-tone audiometry. By assuming a Gaussian process based response model for test tones, the hearing threshold estimation problem becomes one of Bayesian inference. This allows the use of information-theoretic criteria to select optimal test tones."
 title = "Bayesian Pure-tone Audiometry"
 participants_block_position = "down"
+sort_position = 2
 
 [[participants]]
     name = "Marco Cox"

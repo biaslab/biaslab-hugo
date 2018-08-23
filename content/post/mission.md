@@ -2,7 +2,7 @@
 title = "Our Mission: Bayesian Intelligent Agents"
 date = "2016-10-03T15:50:58+02:00"
 short_text = "The primary mission of the BIASlab team is to develop in-situ trainable Bayesian Intelligent Agents for applications to wearable technology."
-
+sort_position = 1
 [[authors]]
     name = "Bert de Vries"
     is_member = true
