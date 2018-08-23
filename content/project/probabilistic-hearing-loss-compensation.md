@@ -7,7 +7,7 @@ description = "Hearing Aid (HA) algorithms need to be tuned (fitted) to match th
 short_description = "We want to provide a hearing impaired patient with the best setting for her hearing aid device. By recording in-situ user feedback on device performance, we are able to better understand the specific hearing loss problem and preferences of the user. Using this knowledge, we can provide a better and personalized hearing experience."
 title = "Probabilistic Hearing Loss Compensation"
 participants_block_position = "down"
-sort_position = 3
+sort_position = 4
 
 [[participants]]
     name = "Thijs van de Laar"
