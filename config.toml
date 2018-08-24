@@ -140,6 +140,11 @@ tag = "tags"
     weight = 4
 
   [[menu.main]]
+    name = "ForneyLab"
+    url = "/project/forneylab"
+    weight = 3
+
+  [[menu.main]]
     name = "Recruitment"
     url = "#vacancies"
     weight = 6
