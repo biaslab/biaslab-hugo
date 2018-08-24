@@ -40,7 +40,7 @@ The goal of scientific modeling is to find increasingly better models for given 
 
 The message passing paradigm offers a convenient method for leveraging model-specific structures, while remaining generally applicable. Message passing can be conveniently formulated on a Forney-style factor graph (FFG) representation of the model [2]. Inference tasks on the model can then be decomposed in local computations, represented by messages that flow across the graph. This locality allows for storing pre-computed message updates in a look-up table that can be re-used across models. Automated algorithm construction then amounts to scheduling these messages in the order required by the inference task (see also [this conference paper at JuliaCon](/publication/forneylab-julia-toolbox/)).
 
-ForneyLab ([GitHub](https://github.com/biaslab/ForneyLab.jl)) is a novel Julia package that allows the user to specify a probabilistic model as an FFG and pose inference problems on this FFG. In return, ForneyLab automatically constructs a Julia program that executes a message passing-based (approximate) inference procedure (see also [this presentation at JuliaCon](https://youtu.be/RS4hJ4oBr9c)). ForneyLab is designed with a focus on flexibility, extensibility and applicability to biologically plausible models for perception and decision making, such as the hierarchical Gaussian filter (HGF) [3]. With ForneyLab, the search for better models for perception and action can be accelerated (see also [this conference paper at CCS](/publication/forneylab-biologically-plausible-fem/)).
+ForneyLab ([GitHub](https://github.com/biaslab/ForneyLab.jl)) is a novel Julia package that allows the user to specify a probabilistic model as an FFG and pose inference problems on this FFG. In return, ForneyLab automatically constructs a Julia program that executes a message passing-based (approximate) inference procedure. ForneyLab is designed with a focus on flexibility, extensibility and applicability to biologically plausible models for perception and decision making, such as the hierarchical Gaussian filter (HGF) [3]. With ForneyLab, the search for better models for perception and action can be accelerated (see also [this conference paper at CCS](/publication/forneylab-biologically-plausible-fem/)).
 
 
 ## Methods and Solution Proposal
@@ -49,7 +49,9 @@ An FFG offers a computational network representation of a probabilistic model, w
 
 <img src="/img/projects/ForneyLab/hgf.png" width="500px">
 
-With ForneyLab, the automated derivation of this message passing algorithm may be completed in three phases. (1) The _build_ phase specifies the model by a domain-specific syntax that (under the hood) constructs the model FFG. (2) The _schedule_ phase specifies the inference problem. ForneyLab automatically constructs a message passing algorithm that computes the posterior marginal beliefs over the quantities of interest. (3) The _infer_ phase parses and executes the automatically generated algorithm code and optional model performance metric.
+With ForneyLab, the automated derivation of this message passing algorithm may be completed in three phases. (1) The _build_ phase specifies the model by a domain-specific syntax that (under the hood) constructs the model FFG. (2) The _schedule_ phase specifies the inference problem. ForneyLab automatically constructs a message passing algorithm that computes the posterior marginal beliefs over the quantities of interest. (3) The _infer_ phase parses and executes the automatically generated algorithm code and optional model performance metric. See the video below from JuliaCon for a quick introduction to ForneyLab.
+
+{{< youtube RS4hJ4oBr9c >}}
 
 
 ## Results
