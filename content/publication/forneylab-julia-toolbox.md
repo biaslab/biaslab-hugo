@@ -12,7 +12,7 @@ title = "ForneyLab.jl: a Julia Toolbox for Factor Graph-based Probabilistic Prog
 url_code = ""
 url_dataset = ""
 url_pdf = "/pdf/forneylab/van_de_laar_forneylab_julia_toolbox.pdf"
-url_project = "/project/forneylab-julia-toolbox"
+url_project = "/project/forneylab"
 url_slides = "/pdf/van_de_laar_slides_juliacon.pdf"
 url_video = "https://youtu.be/RS4hJ4oBr9c"
 

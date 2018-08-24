@@ -12,7 +12,7 @@ title = "ForneyLab: A Toolbox for Biologically Plausible Free Energy Minimizatio
 url_code = ""
 url_dataset = ""
 url_pdf = "/pdf/forneylab/van_de_laar_forneylab_biologically_plausible_free_energy_minimization.pdf"
-url_project = "/project/forneylab-biologically-plausible-fem"
+url_project = "/project/forneylab"
 url_slides = ""
 url_video = ""
 

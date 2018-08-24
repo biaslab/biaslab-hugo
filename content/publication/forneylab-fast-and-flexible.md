@@ -12,7 +12,7 @@ title = "ForneyLab.jl: Fast and flexible automated inference through message pas
 url_code = ""
 url_dataset = ""
 url_pdf = "/pdf/forneylab/cox_forneylab_fast_and_flexible.pdf"
-url_project = "/project/forneylab-fast-and-flexible"
+url_project = "/project/forneylab"
 url_slides = ""
 url_video = ""
 
