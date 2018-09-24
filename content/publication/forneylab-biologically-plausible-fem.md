@@ -1,7 +1,7 @@
 +++
 abstract = "The free energy principle (FEP) claims that self-organization in biological agents is driven by variational free energy (FE) minimization in a generative probabilistic model of the agent’s environment. We have developed ForneyLab as a freely available toolbox for FE minimization by variational message passing in probabilistic dynamic models. We introduce the FFG formalism and ForneyLab by presenting two example applications that are well-known to FEP researchers. With this toolbox we aim to lubricate the execution of research projects on biologically plausible probabilistic modeling."
 abstract_short = ""
-date = "2018-08-23T13:42:00+02:00"
+date = "2018-09-23T13:42:00+02:00"
 image = ""
 image_preview = ""
 math = false
