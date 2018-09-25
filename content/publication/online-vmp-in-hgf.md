@@ -6,6 +6,7 @@ image = ""
 image_preview = ""
 math = false
 publication = "MLSP 2018"
+award = "Best Student Paper award"
 publication_short = ""
 publication_date = "2018-10-01T14:07:00+02:00"
 to_be_published = false
