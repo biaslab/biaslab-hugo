@@ -3,9 +3,10 @@ date = "2016-07-12T15:52:22+02:00"
 id = "magnus"
 interests = ["Computational Neuroscience" ,"Bayesian Machine Learning", "Reinforcement Learning"]
 name = "Magnus Tønder Koudahl"
-portrait = "portraits/magnus.jpg"
+portrait = "portraits/magnus.png"
 short_bio = "I am a PhD candidate at the Signal Processing Systems group in TU Eindhoven" 
 sort_position = 4
+title = "Magnus Kouhdal"
 
 [[social]]
     icon = "envelope"
