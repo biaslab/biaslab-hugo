@@ -6,7 +6,7 @@ name = "Magnus Tønder Koudahl"
 portrait = "portraits/magnus.png"
 short_bio = "I am a PhD candidate at the Signal Processing Systems group in TU Eindhoven" 
 sort_position = 4
-title = "Magnus Kouhdal"
+title = "Magnus Koudahl"
 
 [[social]]
     icon = "envelope"
