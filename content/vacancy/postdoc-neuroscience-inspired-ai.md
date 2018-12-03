@@ -3,7 +3,6 @@ title = "Postdoc position on neuroscience-inspired intelligent autonomous agents
 date = "2018-06-21T12:50:58+02:00"
 
 description = "This position is aimed at developing intelligent autonomous agents that learn from interacting with their environmnent."
-external_link = "https://jobs.tue.nl/en/vacancy/postdoc-neuroscienceinspired-intelligent-autonomous-agents-337301.html"
 vacancy_id = "postdoc-neuroscience-ai"
 +++
 
