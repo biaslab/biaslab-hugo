@@ -130,14 +130,15 @@ tag = "tags"
     weight = 2
 
   [[menu.main]]
+    name = "Blog"
+    url = "#posts"
+    parent = "research"
+    weight = 4
+
+  [[menu.main]]
     name = "Members"
     url = "#members"
     weight = 5
-
-  [[menu.main]]
-    name = "Blog"
-    url = "#posts"
-    weight = 4
 
   [[menu.main]]
     name = "ForneyLab"
