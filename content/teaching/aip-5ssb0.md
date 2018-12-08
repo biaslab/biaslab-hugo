@@ -10,6 +10,9 @@ participants_block_position = "down"
 sort_position = 1
 type = "teaching"
 
+[blackfriday]
+    fractions = false
+
 [[participants]]
     name = "Bert de Vries"
     is_member = true
