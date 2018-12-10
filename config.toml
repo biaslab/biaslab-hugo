@@ -41,7 +41,7 @@ tag = "tags"
     name = "BIASlab"
     link = "/"
     position = 2
-   
+
   [[params.sponsors]]
     name = "NWO"
     link = "http://www.stw.nl"
@@ -111,13 +111,13 @@ tag = "tags"
     url = "#publications"
     parent="research"
     weight = 3
-  
+
   [[menu.main]]
     name = "Starter's guide"
     url = "/research/starter-guide"
     parent="research"
     weight = 3
-  
+
   [[menu.main]]
     name = "Research"
     weight = 2
@@ -130,14 +130,15 @@ tag = "tags"
     weight = 2
 
   [[menu.main]]
+    name = "Blog"
+    url = "#posts"
+    parent = "research"
+    weight = 4
+
+  [[menu.main]]
     name = "Members"
     url = "#members"
     weight = 5
-
-  [[menu.main]]
-    name = "Blog"
-    url = "#posts"
-    weight = 4
 
   [[menu.main]]
     name = "ForneyLab"
@@ -154,7 +155,7 @@ tag = "tags"
     name = "PhD vacancies"
     url = "#vacancies"
     parent = "recruitment"
-  
+
   [[menu.main]]
     name = "MSc projects"
     url = "#vacancies"
@@ -169,3 +170,8 @@ tag = "tags"
     name = "Contact"
     url = "#contact"
     weight = 7
+
+  [[menu.main]]
+    name = "Teaching"
+    url = "/teaching/aip-5ssb0"
+    weight = 2
