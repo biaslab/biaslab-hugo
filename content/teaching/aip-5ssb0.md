@@ -20,11 +20,6 @@ type = "teaching"
     id = "tjalling"
     position = 2
 
-[[participants]]
-    name = "Marco Cox"
-    is_member = true
-    id = "marco"
-    position = 3
 +++
 
 <img src="/img/teaching/5SSB0-banner.png" width="1200px">
@@ -35,13 +30,15 @@ an introduction to **machine learning** and **data science**. Typical
 application areas include pattern recognition, medical signal analysis, speech
 and language processing, image processing, bio-informatics and robotics.
 
-In the 2017/18 academic year, this class is taught in semester B (3rd quarter)
-and **starts on 5-Feb-2018**.
+In the 2018/19 academic year, this class is taught in semester B (3rd quarter)
+and **starts on 4-Feb-2019**.
 
 
 ## News
 
 ### Watch this section for announcements
+
+<!---
 
 - **8-Mar-2018**: Added answers to question 15 (on temporal models) in the [exercises for part-1](https://github.com/bertdv/AIP-5SSB0/blob/master/lessons/exercises/5MB20-exercises-part-1-with-solutions.pdf).
 
@@ -53,6 +50,7 @@ and **starts on 5-Feb-2018**.
 
 - **21-Mar-2018** Per request of some students, I added the corresponding lesson number to the [exercises for part 1](https://github.com/bertdv/AIP-5SSB0/blob/master/lessons/exercises/5MB20-exercises-part-1-with-solutions.pdf) (and reshuffled the sequence of exercises to match the sequence order of the lessons).
 
+--->
 
 ## Materials
 
@@ -62,7 +60,7 @@ Machine
 Learning](https://www.bol.com/nl/p/pattern-recognition-and-machine-learning/1001004002773122)
 (Springer, 2006) by [Christopher M.
 Bishop](http://research.microsoft.com/en-us/um/people/cmbishop/index.htm). You
-can also download this book in PDF format
+can also download this book for free in PDF format
 [here](https://www.microsoft.com/en-us/research/uploads/prod/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf).
 Try to get the book before classes start.
 
@@ -85,10 +83,15 @@ Markov models and various latent component analysis models. Furthermore, we deri
 - [8 - Discriminative Classification](http://nbviewer.ipython.org/github/bertdv/AIP-5SSB0/blob/master/lessons/notebooks/08_Discriminative-Classification.ipynb)
 - [9 - Clustering with Gaussian Mixture Models](http://nbviewer.ipython.org/github/bertdv/AIP-5SSB0/blob/master/lessons/notebooks/09_Clustering-with-Gaussian-Mixture-Models.ipynb)
 - [10- The EM Algorithm](http://nbviewer.ipython.org/github/bertdv/AIP-5SSB0/blob/master/lessons/notebooks/10_The-General-EM-Algorithm.ipynb)
-- [11- Continuous Latent Variable Models - PCA and FA](http://nbviewer.ipython.org/github/bertdv/AIP-5SSB0/blob/master/lessons/notebooks/11_Continuous-Latent-Variable-Models-PCA-and-FA.ipynb)
-- [12- Factor Graphs and Message Passing Algorithms](http://nbviewer.ipython.org/github/bertdv/AIP-5SSB0/blob/master/lessons/notebooks/12_Factor-Graphs-and-Message-Passing-Algorithms.ipynb)
-- [13- Dynamic Latent Variable Models](http://nbviewer.ipython.org/github/bertdv/AIP-5SSB0/blob/master/lessons/notebooks/13_Dynamic-Latent-Variable-Models.ipynb)
+- [11- Continuous Latent Variable Models - PCA and FA](http://nbviewer.ipython.org/github/bertdv/AIP-5SSB0/blob/master/lessons/notebooks/11_Continuous-Latent-Variable-Models-PCA-and-FA.ipynb)     
+- [12- Dynamic Latent Variable Models](http://nbviewer.ipython.org/github/bertdv/AIP-5SSB0/blob/master/lessons/notebooks/12_Dynamic-Latent-Variable-Models.ipynb)     
+- [13- Factor Graphs and Message Passing Algorithms](http://nbviewer.ipython.org/github/bertdv/AIP-5SSB0/blob/master/lessons/notebooks/13_Factor-Graphs-and-Message-Passing-Algorithms.ipynb)
+
+
+<!---
 - [14- EM as a Message Passing Algorithm](http://nbviewer.ipython.org/github/bertdv/AIP-5SSB0/blob/master/lessons/notebooks/14_EM-as-Message-Passing.ipynb) (this lesson not at exam!)
+--->
+<br/>
 
 - The [source files for these lecture notes are accessible at github](https://github.com/bertdv/AIP-5SSB0). If you catch an error or if you have a specific update request, please [file a github issue](https://github.com/bertdv/AIP-5SSB0/issues/new).
 
@@ -98,7 +101,7 @@ Markov models and various latent component analysis models. Furthermore, we deri
 
 ### Part 2: Model Complexity Control and the MDL Principle
 
-Instructor: [Dr.ir. Tjalling J. Tjalkens](https://www.tue.nl/en/university/departments/electrical-engineering/department/staff/detail/ep/e/d/ep-uid/19830719/)
+Instructor: [Dr.ir. Tjalling J. Tjalkens](https://research.tue.nl/en/persons/tjalling-tjalkens)
 
 In part 2, the discussion on probabilistic modeling extends to model specification itself. Specifically, the notion of **Stochastic Complexity** will be developed and the **Minimum Description Length** (MDL) principle will be used to _select_ appropriate models. The lessons are structured as follows:
 
@@ -141,8 +144,6 @@ follow the class only from video.
 
 - **Prerequisites**: Mathematical maturity equivalent to undergraduate engineering program.
 Some MATLAB programming skills are helpful.
-
-- This course is a replacement for the 3-ECTS course **5MB20-Adaptive Information Processing**, which was taught between 2005-2014. The new course 5SSB0 is a 5-ECTS course and while the contents are similar to 5MB20, some lessons have been extended with new materials. The slide materials for [5MB20 for the academic year 2014/15 are still available here](https://github.com/bertdv/AIP-5SSB0/blob/master/lessons/booklet/5MB20-part-1-slides-all.pdf?dl=0).
 
 - You're advised to bring the lecture notes (either in soft- or hardcopy) with you to class in order to add your personal comments.
 
