@@ -34,7 +34,7 @@ tag = "tags"
 
    [[params.navbar_hierarchy]]
     name = "SPS"
-    link = "https://www.tue.nl/en/university/departments/electrical-engineering/research/research-groups/signal-processing-systems-sps/"
+    link = "https://www.tue.nl/en/research/research-groups/signal-processing-systems/"
     position = 1
 
   [[params.navbar_hierarchy]]
