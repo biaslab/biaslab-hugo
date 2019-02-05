@@ -36,7 +36,7 @@ and **starts on 4-Feb-2019**.
 
 ## News
 
-- **5-Feb-2018** The [pdf bundle for part-1](https://github.com/bertdv/AIP-5SSB0/raw/master/output/AIP-5SSB0.pdf) has been updated.
+- **5-Feb-2019** The [pdf bundle for part-1](https://github.com/bertdv/AIP-5SSB0/raw/master/output/AIP-5SSB0.pdf) has been updated.
 
 <!---
 
