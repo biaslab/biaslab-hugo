@@ -36,7 +36,7 @@ and **starts on 4-Feb-2019**.
 
 ## News
 
-### Watch this section for announcements
+- **5-Feb-2018** The [pdf bundle for part-1](https://github.com/bertdv/AIP-5SSB0/raw/master/output/AIP-5SSB0.pdf) has been updated.
 
 <!---
 
@@ -94,8 +94,8 @@ Markov models and various latent component analysis models. Furthermore, we deri
 <br/>
 
 - The [source files for these lecture notes are accessible at github](https://github.com/bertdv/AIP-5SSB0). If you catch an error or if you have a specific update request, please [file a github issue](https://github.com/bertdv/AIP-5SSB0/issues/new).
-
-- Here is a [PDF bundle of all classes for part-1](https://github.com/bertdv/AIP-5SSB0/raw/master/lessons/booklet/AIP-5SSB0-part-1-lectures-booklet.pdf). The lecture notes may change a bit during the course, e.g., to process comments by students. A final PDF version will be posted after the last lecture.
+.
+- Here is a [PDF bundle of all classes for part-1](https://github.com/bertdv/AIP-5SSB0/raw/master/output/AIP-5SSB0.pdf). The lecture notes may change a bit during the course, e.g., to process comments by students. A final PDF version will be posted after the last lecture.
 
 - Code examples in the lecture notes are in the [Julia](http://julialang.org/) language, which is syntactically similar to MATLAB. In order to run the code examples straight in the browser, you will need to run the lecture notes files in a [Jupyter](http://jupyter.org/) notebook. We recommend that you run the cloud-based [JuliaBox](https://www.juliabox.com/) service to run Jupyter notebooks. Please see [these instructions](https://github.com/bertdv/AIP-5SSB0) (scroll to down to the README) if you want to run the lecture notes in JuliaBox.
 
