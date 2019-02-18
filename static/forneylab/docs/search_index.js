@@ -13,7 +13,7 @@ var documenterSearchIndex = {"docs": [
     "page": "Home",
     "title": "ForneyLab.jl",
     "category": "section",
-    "text": "ForneyLab.jl is a Julia package for automatic generation of (Bayesian) inference algorithms. Given a probabilistic model, ForneyLab generates efficient Julia code for message-passing based inference. It uses the model structure to generate an algorithm that consists of a sequence of local computations on a Forney-style factor graph (FFG) representation of the model. For an excellent introduction to message passing and FFGs, see The Factor Graph Approach to Model-Based Signal Processing by Loeliger et al. (2007).We designed ForneyLab with a focus on flexible and modular modeling of time-series data. ForneyLab enables a user to:Conveniently specify a probabilistic model;\nAutomatically generate an efficient inference algorithm;\nCompile the inference algorithm to executable Julia code.The current version supports belief propagation (sum-product message passing), variational message passing and expectation propagation.The ForneyLab project page provides more background on ForneyLab as well as pointers to related literature and talks. For a practical introduction, have a look at the demos."
+    "text": "ForneyLab.jl is a Julia package for automatic generation of (Bayesian) inference algorithms. Given a probabilistic model, ForneyLab generates efficient Julia code for message-passing based inference. It uses the model structure to generate an algorithm that consists of a sequence of local computations on a Forney-style factor graph (FFG) representation of the model. For an excellent introduction to message passing and FFGs, see The Factor Graph Approach to Model-Based Signal Processing by Loeliger et al. (2007). Moreover, for a comprehensive overview of the underlying principles behind this tool, see A Factor Graph Approach to Automated Design of Bayesian Signal Processing Algorithms by Cox et. al. (2018).We designed ForneyLab with a focus on flexible and modular modeling of time-series data. ForneyLab enables a user to:Conveniently specify a probabilistic model;\nAutomatically generate an efficient inference algorithm;\nCompile the inference algorithm to executable Julia code.The current version supports belief propagation (sum-product message passing), variational message passing and expectation propagation.The ForneyLab project page provides more background on ForneyLab as well as pointers to related literature and talks. For a practical introduction, have a look at the demos."
 },
 
 {
@@ -165,7 +165,15 @@ var documenterSearchIndex = {"docs": [
     "page": "Construct a model",
     "title": "ForneyLab.Addition",
     "category": "type",
-    "text": "Description:\n\nAn addition constraint factor node\n\nf(out,in1,in2) = δ(in1 + in2 - out)\n\nInterfaces:\n\n1. out\n2. in1\n3. in2\n\nConstruction:\n\nAddition(out, in1, in2, id=:some_id)\n\n\n\n\n\n"
+    "text": "Description:\n\nAn addition constraint factor node.\n\nf(out,in1,in2) = δ(in1 + in2 - out)\n\nInterfaces:\n\n1. out\n2. in1\n3. in2\n\nConstruction:\n\nAddition(out, in1, in2, id=:some_id)\n\n\n\n\n\n"
+},
+
+{
+    "location": "user-API/construct-a-model/#Base.:--Tuple{Variable,Variable}",
+    "page": "Construct a model",
+    "title": "Base.:-",
+    "category": "method",
+    "text": "-(in1::Variable, in2::Variable)\n\nA subtraction constraint based on the addition factor node.\n\n\n\n\n\n"
 },
 
 {
@@ -553,6 +561,22 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
+    "location": "user-API/construct-algorithm-code/#ForneyLab.freeEnergyAlgorithm",
+    "page": "Construct algorithm code",
+    "title": "ForneyLab.freeEnergyAlgorithm",
+    "category": "function",
+    "text": "The freeEnergyAlgorithm function accepts a RecognitionFactorization and returns (if possible) Julia code for computing the variational free energy with respect to  the argument recognition factorization and corresponding FactorGraph (model).\n\n\n\n\n\n"
+},
+
+{
+    "location": "user-API/construct-algorithm-code/#Free-energy-algorithm-1",
+    "page": "Construct algorithm code",
+    "title": "Free energy algorithm",
+    "category": "section",
+    "text": "ForneyLab.freeEnergyAlgorithm"
+},
+
+{
     "location": "user-API/construct-algorithm-code/#ForneyLab.sumProductAlgorithm",
     "page": "Construct algorithm code",
     "title": "ForneyLab.sumProductAlgorithm",
@@ -598,22 +622,6 @@ var documenterSearchIndex = {"docs": [
     "title": "Variational expectation propagation algorithm",
     "category": "section",
     "text": "ForneyLab.variationalExpectationPropagationAlgorithm"
-},
-
-{
-    "location": "user-API/construct-algorithm-code/#ForneyLab.freeEnergyAlgorithm",
-    "page": "Construct algorithm code",
-    "title": "ForneyLab.freeEnergyAlgorithm",
-    "category": "function",
-    "text": "The freeEnergyAlgorithm function accepts a RecognitionFactorization and returns (if possible) Julia code for computing the variational free energy with respect to  the argument recognition factorization and corresponding FactorGraph (model).\n\n\n\n\n\n"
-},
-
-{
-    "location": "user-API/construct-algorithm-code/#Free-energy-algorithm-1",
-    "page": "Construct algorithm code",
-    "title": "Free energy algorithm",
-    "category": "section",
-    "text": "ForneyLab.freeEnergyAlgorithm"
 },
 
 {
@@ -1001,9 +1009,9 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
-    "location": "developer-API/scheduler/#Graph-(low-level)-1",
+    "location": "developer-API/scheduler/#Scheduler-(low-level)-1",
     "page": "Scheduler (low-level)",
-    "title": "Graph (low-level)",
+    "title": "Scheduler (low-level)",
     "category": "section",
     "text": ""
 },
@@ -1013,39 +1021,7 @@ var documenterSearchIndex = {"docs": [
     "page": "Scheduler (low-level)",
     "title": "Index",
     "category": "section",
-    "text": "Modules = [ForneyLab]\nPages = [\"graph.md\"]\nOrder = [:macro, :module, :constant, :type, :function]"
-},
-
-{
-    "location": "developer-API/scheduler/#ForneyLab.RecognitionFactor",
-    "page": "Scheduler (low-level)",
-    "title": "ForneyLab.RecognitionFactor",
-    "category": "type",
-    "text": "A RecognitionFactor specifies the subset of variables that comprise a joint factor in the recognition factorization.\n\n\n\n\n\n"
-},
-
-{
-    "location": "developer-API/scheduler/#Recognition-factor-1",
-    "page": "Scheduler (low-level)",
-    "title": "Recognition factor",
-    "category": "section",
-    "text": "ForneyLab.RecognitionFactor"
-},
-
-{
-    "location": "developer-API/scheduler/#ForneyLab.MarginalScheduleEntry",
-    "page": "Scheduler (low-level)",
-    "title": "ForneyLab.MarginalScheduleEntry",
-    "category": "type",
-    "text": "A MarginalScheduleEntry defines a marginal computation. The marginal_update_rule <: MarginalUpdateRule defines the rule that is used to calculate the (joint) marginal over target.\n\n\n\n\n\n"
-},
-
-{
-    "location": "developer-API/scheduler/#Marginal-schedule-entry-1",
-    "page": "Scheduler (low-level)",
-    "title": "Marginal schedule entry",
-    "category": "section",
-    "text": "ForneyLab.MarginalScheduleEntry"
+    "text": "Modules = [ForneyLab]\nPages = [\"scheduler.md\"]\nOrder = [:macro, :module, :constant, :type, :function]"
 },
 
 {
@@ -1062,6 +1038,22 @@ var documenterSearchIndex = {"docs": [
     "title": "Marginal rule",
     "category": "section",
     "text": "ForneyLab.MarginalRule"
+},
+
+{
+    "location": "developer-API/scheduler/#ForneyLab.MarginalScheduleEntry",
+    "page": "Scheduler (low-level)",
+    "title": "ForneyLab.MarginalScheduleEntry",
+    "category": "type",
+    "text": "A MarginalScheduleEntry defines a marginal computation. The marginal_update_rule <: MarginalUpdateRule defines the rule that is used to calculate the (joint) marginal over target.\n\n\n\n\n\n"
+},
+
+{
+    "location": "developer-API/scheduler/#Marginal-schedule-entry-1",
+    "page": "Scheduler (low-level)",
+    "title": "Marginal schedule entry",
+    "category": "section",
+    "text": "ForneyLab.MarginalScheduleEntry"
 },
 
 {
@@ -1094,6 +1086,22 @@ var documenterSearchIndex = {"docs": [
     "title": "Message update rule",
     "category": "section",
     "text": "ForneyLab.MessageUpdateRule"
+},
+
+{
+    "location": "developer-API/scheduler/#ForneyLab.RecognitionFactor",
+    "page": "Scheduler (low-level)",
+    "title": "ForneyLab.RecognitionFactor",
+    "category": "type",
+    "text": "A RecognitionFactor specifies the subset of variables that comprise a joint factor in the recognition factorization.\n\n\n\n\n\n"
+},
+
+{
+    "location": "developer-API/scheduler/#Recognition-factor-1",
+    "page": "Scheduler (low-level)",
+    "title": "Recognition factor",
+    "category": "section",
+    "text": "ForneyLab.RecognitionFactor"
 },
 
 {
