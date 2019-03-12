@@ -36,6 +36,7 @@ and **starts on 4-Feb-2019**.
 
 ## News
 
+- **12-Mar-2019** The [pdf handout for part-2](https://github.com/bertdv/AIP-5SSB0/blob/master/lessons/Tjalling/AIP-part2-handout.pdf) has been updated.
 - **5-Feb-2019** The [pdf bundle for part-1](https://github.com/bertdv/AIP-5SSB0/raw/master/output/AIP-5SSB0.pdf) has been updated.
 
 <!---
