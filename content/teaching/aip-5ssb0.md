@@ -36,6 +36,7 @@ and **starts on 4-Feb-2019**.
 
 ## News
 
+- **26-Mar-2019** We added an extra old exam (from April 2017, [with solutions](https://github.com/bertdv/AIP-5SSB0/raw/master/lessons/exercises/170410-5SSB0-exam-with-solutions.pdf)) to aid your exam preparation.   
 - **12-Mar-2019** The [pdf handout for part-2](https://github.com/bertdv/AIP-5SSB0/raw/master/lessons/Tjalling/AIP-part2-handout.pdf) has been updated.
 - **5-Feb-2019** The [pdf bundle for part-1](https://github.com/bertdv/AIP-5SSB0/raw/master/output/AIP-5SSB0.pdf) has been updated.
 
