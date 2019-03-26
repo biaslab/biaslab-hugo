@@ -129,6 +129,8 @@ In part 2, the discussion on probabilistic modeling extends to model specificati
   * [exam 2011/04/14](https://github.com/bertdv/AIP-5SSB0/raw/master/lessons/exercises/110414-5mb20-exam.pdf); [with solutions](https://github.com/bertdv/AIP-5SSB0/raw/master/lessons/exercises/110414-5mb20-exam-with-solutions.pdf)
   * [exam 2011/06/20](https://github.com/bertdv/AIP-5SSB0/raw/master/lessons/exercises/110620-5MB20-exam.pdf); [with solutions](https://github.com/bertdv/AIP-5SSB0/raw/master/lessons/exercises/110620-5MB20-exam-with-solutions.pdf)
   * [exam 2016/04/15](https://github.com/bertdv/AIP-5SSB0/raw/master/lessons/exercises/160415-5mb20-5SSB0-exam.pdf); [with solutions](https://github.com/bertdv/AIP-5SSB0/raw/master/lessons/exercises/160415-5mb20-5SSB0-exam-with-solutions.pdf)
+ * [exam 2017/04/10](https://github.com/bertdv/AIP-5SSB0/raw/master/lessons/exercises/170410-5SSB0-exam.pdf); [with solutions](https://github.com/bertdv/AIP-5SSB0/raw/master/lessons/exercises/170410-5SSB0-exam-with-solutions.pdf)
+
 - Please feel free to consult the following matrix and Gaussian cheat sheets (by Sam Roweis) when making exercises.
   * [Gaussian Identities](https://github.com/bertdv/AIP-5SSB0/raw/master/lessons/notebooks/files/RoweisS-gaussian_formulas.pdf?dl=0)
   * [Matrix Identities](https://github.com/bertdv/AIP-5SSB0/raw/master/lessons/notebooks/files/RoweisS-matrix_identities.pdf?dl=0)
