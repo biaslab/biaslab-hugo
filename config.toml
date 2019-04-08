@@ -7,7 +7,7 @@ canonifyurls = true
 theme = "academic-group"
 title = "BIASlab"
 math = true
-copyright = "&copy; BIASlab, 2017 "
+copyright = "&copy; BIASlab, 2019 "
 enableRobotsTXT = true
 
 [taxonomies]
@@ -103,12 +103,12 @@ tag = "tags"
 
   [[menu.main]]
     name = "Home"
-    url = "#home"
+    url = "/#home"
     weight = 1
 
   [[menu.main]]
     name = "Publications"
-    url = "#publications"
+    url = "/#publications"
     parent="research"
     weight = 3
 
@@ -125,25 +125,43 @@ tag = "tags"
 
   [[menu.main]]
     name = "Projects"
-    url = "#projects"
+    url = "/#projects"
     parent = "research"
     weight = 2
 
   [[menu.main]]
     name = "Blog"
-    url = "#posts"
+    url = "/#posts"
     parent = "research"
     weight = 4
 
   [[menu.main]]
     name = "Members"
-    url = "#members"
+    url = "/#members"
     weight = 5
 
   [[menu.main]]
     name = "ForneyLab"
-    url = "/project/forneylab"
     weight = 3
+    identifier = "forneylab"
+
+  [[menu.main]]
+    name = "Project page"
+    url = "/project/forneylab"
+    parent = "forneylab"
+    weight = 1
+
+  [[menu.main]]
+    name = "GitHub repository"
+    url = "https://github.com/biaslab/ForneyLab.jl"
+    parent = "forneylab"
+    weight = 3
+
+  [[menu.main]]
+    name = "Documentation"
+    url = "/forneylab/docs"
+    parent = "forneylab"
+    weight = 2
 
   [[menu.main]]
     name = "Recruitment"
@@ -153,22 +171,22 @@ tag = "tags"
 
   [[menu.main]]
     name = "PhD vacancies"
-    url = "#vacancies"
+    url = "/#vacancies"
     parent = "recruitment"
 
   [[menu.main]]
     name = "MSc projects"
-    url = "#vacancies"
+    url = "/#vacancies"
     parent = "recruitment"
 
   [[menu.main]]
     name = "BSc projects"
-    url = "#vacancies"
+    url = "/#vacancies"
     parent = "recruitment"
 
   [[menu.main]]
     name = "Contact"
-    url = "#contact"
+    url = "/#contact"
     weight = 7
 
   [[menu.main]]

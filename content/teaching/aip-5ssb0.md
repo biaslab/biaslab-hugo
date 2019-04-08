@@ -36,6 +36,8 @@ and **starts on 4-Feb-2019**.
 
 ## News
 
+- **26-Mar-2019** We added an extra old exam (from April 2017, [with solutions](https://github.com/bertdv/AIP-5SSB0/raw/master/lessons/exercises/170410-5SSB0-exam-with-solutions.pdf)) to aid your exam preparation.   
+- **12-Mar-2019** The [pdf handout for part-2](https://github.com/bertdv/AIP-5SSB0/raw/master/lessons/Tjalling/AIP-part2-handout.pdf) has been updated.
 - **5-Feb-2019** The [pdf bundle for part-1](https://github.com/bertdv/AIP-5SSB0/raw/master/output/AIP-5SSB0.pdf) has been updated.
 
 <!---
@@ -111,26 +113,28 @@ In part 2, the discussion on probabilistic modeling extends to model specificati
 
 <!-- break -->
 
-* [Click here to view or download the lecture notes for part-2](https://github.com/bertdv/AIP-5SSB0/blob/master/lessons/Tjalling/AIP-part2-handout.pdf?dl=0).
+* [Click here to view or download the lecture notes for part-2](https://github.com/bertdv/AIP-5SSB0/raw/master/lessons/Tjalling/AIP-part2-handout.pdf?dl=0).
   * An extended version of the part-2 handouts is in preparation but only
     half-finished. You can download this [UNFINISHED
-    work](https://github.com/bertdv/AIP-5SSB0/blob/master/lessons/Tjalling/AIP-part2-article.pdf?dl=0)
+    work](https://github.com/bertdv/AIP-5SSB0/raw/master/lessons/Tjalling/AIP-part2-article.pdf?dl=0)
     as well.
-* Background on [information theory](https://github.com/bertdv/AIP-5SSB0/blob/master/lessons/Tjalling/information-theory-background.pdf?dl=0).
-* [Markov structures and summary of essential content](https://github.com/bertdv/AIP-5SSB0/blob/master/lessons/Tjalling/summary-of-essential-content.pdf?dl=0).
+* Background on [information theory](https://github.com/bertdv/AIP-5SSB0/raw/master/lessons/Tjalling/information-theory-background.pdf?dl=0).
+* [Markov structures and summary of essential content](https://github.com/bertdv/AIP-5SSB0/raw/master/lessons/Tjalling/summary-of-essential-content.pdf?dl=0).
 
 ## Exam Preparation
 
 - Each year there will be two written exam opportunities. Check the official TUE course site for exam dates.
 - In preparation for the exam, we recommend that you work through the following exercises and old exams:
-  * [exercises for part 1](https://github.com/bertdv/AIP-5SSB0/blob/master/lessons/exercises/5MB20-exercises-part-1.pdf); [same with solutions](https://github.com/bertdv/AIP-5SSB0/blob/master/lessons/exercises/5MB20-exercises-part-1-with-solutions.pdf)
-  * [exercises for part 2](https://github.com/bertdv/AIP-5SSB0/blob/master/lessons/exercises/5MB20-exercises-part-2.pdf); [same with solutions](https://github.com/bertdv/AIP-5SSB0/blob/master/lessons/exercises/5MB20-exercises-part-2-hints.pdf)
-  * [exam 2011/04/14](https://github.com/bertdv/AIP-5SSB0/blob/master/lessons/exercises/110414-5mb20-exam.pdf); [with solutions](https://github.com/bertdv/AIP-5SSB0/blob/master/lessons/exercises/110414-5mb20-exam-with-solutions.pdf)
-  * [exam 2011/06/20](https://github.com/bertdv/AIP-5SSB0/blob/master/lessons/exercises/110620-5MB20-exam.pdf); [with solutions](https://github.com/bertdv/AIP-5SSB0/blob/master/lessons/exercises/110620-5MB20-exam-with-solutions.pdf)
-  * [exam 2016/04/15](https://github.com/bertdv/AIP-5SSB0/blob/master/lessons/exercises/160415-5mb20-5SSB0-exam.pdf); [with solutions](https://github.com/bertdv/AIP-5SSB0/blob/master/lessons/exercises/160415-5mb20-5SSB0-exam-with-solutions.pdf)
+  * [exercises for part 1](https://github.com/bertdv/AIP-5SSB0/raw/master/lessons/exercises/5MB20-exercises-part-1.pdf); [same with solutions](https://github.com/bertdv/AIP-5SSB0/raw/master/lessons/exercises/5MB20-exercises-part-1-with-solutions.pdf)
+  * [exercises for part 2](https://github.com/bertdv/AIP-5SSB0/raw/master/lessons/exercises/5MB20-exercises-part-2.pdf); [same with solutions](https://github.com/bertdv/AIP-5SSB0/raw/master/lessons/exercises/5MB20-exercises-part-2-hints.pdf)
+  * [exam 2011/04/14](https://github.com/bertdv/AIP-5SSB0/raw/master/lessons/exercises/110414-5mb20-exam.pdf); [with solutions](https://github.com/bertdv/AIP-5SSB0/raw/master/lessons/exercises/110414-5mb20-exam-with-solutions.pdf)
+  * [exam 2011/06/20](https://github.com/bertdv/AIP-5SSB0/raw/master/lessons/exercises/110620-5MB20-exam.pdf); [with solutions](https://github.com/bertdv/AIP-5SSB0/raw/master/lessons/exercises/110620-5MB20-exam-with-solutions.pdf)
+  * [exam 2016/04/15](https://github.com/bertdv/AIP-5SSB0/raw/master/lessons/exercises/160415-5mb20-5SSB0-exam.pdf); [with solutions](https://github.com/bertdv/AIP-5SSB0/raw/master/lessons/exercises/160415-5mb20-5SSB0-exam-with-solutions.pdf)
+ * [exam 2017/04/10](https://github.com/bertdv/AIP-5SSB0/raw/master/lessons/exercises/170410-5SSB0-exam.pdf); [with solutions](https://github.com/bertdv/AIP-5SSB0/raw/master/lessons/exercises/170410-5SSB0-exam-with-solutions.pdf)
+
 - Please feel free to consult the following matrix and Gaussian cheat sheets (by Sam Roweis) when making exercises.
-  * [Gaussian Identities](https://github.com/bertdv/AIP-5SSB0/blob/master/lessons/notebooks/files/RoweisS-gaussian_formulas.pdf?dl=0)
-  * [Matrix Identities](https://github.com/bertdv/AIP-5SSB0/blob/master/lessons/notebooks/files/RoweisS-matrix_identities.pdf?dl=0)
+  * [Gaussian Identities](https://github.com/bertdv/AIP-5SSB0/raw/master/lessons/notebooks/files/RoweisS-gaussian_formulas.pdf?dl=0)
+  * [Matrix Identities](https://github.com/bertdv/AIP-5SSB0/raw/master/lessons/notebooks/files/RoweisS-matrix_identities.pdf?dl=0)
 - Note however that **you cannot bring notes or books to the exam. All needed formulas are supplied at the exam sheet**.
 
 ## Video
