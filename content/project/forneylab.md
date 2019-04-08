@@ -71,4 +71,4 @@ ForneyLab is especially potent when applied to time-series data. In this section
 
 [4] Loeliger, H-A. "An introduction to factor graphs." _IEEE Signal Processing Magazine 21.1_ (2004): 28-41.
 
-[5] Cox, M., van de Laar, T., de Vries, B. "A Factor Graph Approach to Automated Design of Bayesian Signal Processing Algorithms", International Journal of Approximate Reasoning (2018), 10.1016/j.ijar.2018.11.002.
+[5] Cox, M., van de Laar, T., de Vries, B. "A Factor Graph Approach to Automated Design of Bayesian Signal Processing Algorithms", International Journal of Approximate Reasoning (2019), 10.1016/j.ijar.2018.11.002.
