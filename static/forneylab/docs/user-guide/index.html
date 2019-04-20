@@ -1,158 +1,179 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>User guide · ForneyLab.jl</title><link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css" rel="stylesheet" type="text/css"/><link href="https://fonts.googleapis.com/css?family=Lato|Roboto+Mono" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css" rel="stylesheet" type="text/css"/><script>documenterBaseURL=".."</script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.2.0/require.min.js" data-main="../assets/documenter.js"></script><script src="../siteinfo.js"></script><script src="../../versions.js"></script><link href="../assets/documenter.css" rel="stylesheet" type="text/css"/><link href="../assets/favicon.ico" rel="icon" type="image/x-icon"/></head><body><nav class="toc"><a href="../index.html"><img class="logo" src="../assets/logo.png" alt="ForneyLab.jl logo"/></a><h1>ForneyLab.jl</h1><select id="version-selector" onChange="window.location.href=this.value" style="visibility: hidden"></select><form class="search" id="search-form" action="../search/"><input id="search-query" name="q" type="text" placeholder="Search docs"/></form><ul><li><a class="toctext" href="../">Home</a></li><li><a class="toctext" href="../getting-started/">Getting started</a></li><li class="current"><a class="toctext" href>User guide</a><ul class="internal"><li><a class="toctext" href="#Specifying-a-model-1">Specifying a model</a></li><li><a class="toctext" href="#Generating-an-algorithm-1">Generating an algorithm</a></li><li><a class="toctext" href="#Executing-an-algorithm-1">Executing an algorithm</a></li></ul></li><li><span class="toctext">Library</span><ul><li><a class="toctext" href="../library/public-api/">Public API</a></li><li><a class="toctext" href="../library/internal-api/">Internal API</a></li></ul></li><li><a class="toctext" href="../contributing/">Contributing</a></li><li><a class="toctext" href="../internals/">Internals</a></li></ul></nav><article id="docs"><header><nav><ul><li><a href>User guide</a></li></ul><a class="edit-page" href="https://github.com/mroavi/ForneyLab.jl/blob/master/docs/src/user-guide.md"><span class="fa"></span> Edit on GitHub</a></nav><hr/><div id="topbar"><span>User guide</span><a class="fa fa-bars" href="#"></a></div></header><h1><a class="nav-anchor" id="User-guide-1" href="#User-guide-1">User guide</a></h1><p>This user guide outlines the usage of ForneyLab for solving inference problems. The main content is divided in three parts:</p><ul><li><a href="#Specifying-a-model-1">Specifying a model</a></li><li><a href="#Generating-an-algorithm-1">Generating an algorithm</a></li><li><a href="#Executing-an-algorithm-1">Executing an algorithm</a></li></ul><p>For installation instructions see the <a href="../getting-started/#Getting-started-1">Getting started</a> page. To import ForneyLab into the active Julia session run  </p><div><pre><code class="language-julia">using ForneyLab</code></pre></div><h2><a class="nav-anchor" id="Specifying-a-model-1" href="#Specifying-a-model-1">Specifying a model</a></h2><p>Probabilistic models incorporate the element of randomness to describe an event or phenomenon. They do this by using random variables and probability distributions. These models can be represented diagrammatically using probabilistic graphical models (PGMs). A factor graph is a type of PGM that is well suited to cast inference tasks in terms of graphical manipulations.</p><h3><a class="nav-anchor" id="Creating-a-new-factor-graph-1" href="#Creating-a-new-factor-graph-1">Creating a new factor graph</a></h3><p>Factor graphs are represented by the <code>FactorGraph</code> composite type (struct). To instantiate a new (empty) factor graph we use its constructor function that takes no arguments</p><div><pre><code class="language-julia">g = FactorGraph()</code></pre></div><p>ForneyLab keeps track of an <em>active</em> factor graph at all times. Future operations on the graph, such as adding variables or nodes, affect the active graph. The call to <code>FactorGraph()</code> creates a new instance of a factor graph and registers it as the active graph.</p><p>To get the active graph run</p><div><pre><code class="language-julia">fg = currentGraph()</code></pre></div><p>To set the active graph run</p><div><pre><code class="language-julia">setCurrentGraph(g)</code></pre></div><h3><a class="nav-anchor" id="Adding-random-variables-(edges)-1" href="#Adding-random-variables-(edges)-1">Adding random variables (edges)</a></h3><p>Random variables are represented as edges on Forney-style factor graphs. You can add a random variable to the active factor graph by instantiating the <code>Variable</code> composite type. The constructor function takes an <code>id</code> of type <code>Symbol</code> as argument. For example, running</p><div><pre><code class="language-julia">x = Variable(id=:x)</code></pre></div><p>associates the variable <code>x</code> to an edge of the active factor graph.</p><p>Alternatively, the <code>@RV</code> macro can be used for the same purpose in a more compact form. Executing the following line has the same effect as the previous one.</p><div><pre><code class="language-julia">@RV x</code></pre></div><p>By default, the <code>@RV</code> macro uses the variable&#39;s name to create a Julia <code>Symbol</code> that is assigned to the <code>id</code> field of the <code>Variable</code> object (<code>:x</code> in this example). However, if this id value has already been assigned to a variable in the factor graph, then ForneyLab will create a default id of the form <code>:variable_x</code>, where <code>x</code> is a number that increments. In case you want to provide a custom <code>id</code>, the <code>@RV</code> macro accepts an optional keyword argument between square brackets that allows this. For example,</p><div><pre><code class="language-julia">@RV [id=:my_id] x</code></pre></div><p>adds the variable <code>x</code> to the active graph and assigns the <code>:my_id</code> symbol to its <code>id</code> field. Later we will see that this is useful once we start visualizing the factor graph.</p><h3><a class="nav-anchor" id="Adding-factor-nodes-1" href="#Adding-factor-nodes-1">Adding factor nodes</a></h3><p>Factor nodes are used to define the relationship between different random variables. They assign probability distributions to a random variable as a function of other variables. See <a href="../library/public-api/#Factor-nodes-1">Factor nodes</a> for a complete list of the available factor nodes in ForneyLab.</p><p>We can assign a probability distribution to a random variable using the <code>~</code> operator together with the <code>@RV</code> macro. For example, to create a Gaussian distributed random variable <code>y</code>, where its mean and variance are controlled by the random variables <code>m</code> and <code>v</code> respectively, we could run</p><div><pre><code class="language-julia">@RV m
+<html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>User guide · ForneyLab.jl</title><link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css" rel="stylesheet" type="text/css"/><link href="https://fonts.googleapis.com/css?family=Lato|Roboto+Mono" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css" rel="stylesheet" type="text/css"/><script>documenterBaseURL=".."</script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.2.0/require.min.js" data-main="../assets/documenter.js"></script><script src="../siteinfo.js"></script><script src="../../versions.js"></script><link href="../assets/documenter.css" rel="stylesheet" type="text/css"/><link href="../assets/favicon.ico" rel="icon" type="image/x-icon"/></head><body><nav class="toc"><a href="../index.html"><img class="logo" src="../assets/logo.png" alt="ForneyLab.jl logo"/></a><h1>ForneyLab.jl</h1><select id="version-selector" onChange="window.location.href=this.value" style="visibility: hidden"></select><form class="search" id="search-form" action="../search/"><input id="search-query" name="q" type="text" placeholder="Search docs"/></form><ul><li><a class="toctext" href="../">Home</a></li><li><a class="toctext" href="../getting-started/">Getting started</a></li><li class="current"><a class="toctext" href>User guide</a><ul class="internal"><li><a class="toctext" href="#Specifying-a-model-1">Specifying a model</a></li><li><a class="toctext" href="#Generating-an-algorithm-1">Generating an algorithm</a></li><li><a class="toctext" href="#Executing-an-algorithm-1">Executing an algorithm</a></li></ul></li><li><span class="toctext">Library</span><ul><li><a class="toctext" href="../library/public-api/">Public API</a></li><li><a class="toctext" href="../library/internal-api/">Internal API</a></li></ul></li><li><a class="toctext" href="../contributing/">Contributing</a></li><li><a class="toctext" href="../internals/">Internals</a></li></ul></nav><article id="docs"><header><nav><ul><li><a href>User guide</a></li></ul><a class="edit-page" href="https://github.com/biaslab/ForneyLab.jl/blob/master/docs/src/user-guide.md"><span class="fa"></span> Edit on GitHub</a></nav><hr/><div id="topbar"><span>User guide</span><a class="fa fa-bars" href="#"></a></div></header><h1><a class="nav-anchor" id="User-guide-1" href="#User-guide-1">User guide</a></h1><p>This user guide outlines the usage of ForneyLab for solving inference problems. The main content is divided in three parts:</p><ul><li><a href="#Specifying-a-model-1">Specifying a model</a></li><li><a href="#Generating-an-algorithm-1">Generating an algorithm</a></li><li><a href="#Executing-an-algorithm-1">Executing an algorithm</a></li></ul><p>For installation instructions see the <a href="../getting-started/#Getting-started-1">Getting started</a> page. To import ForneyLab into the active Julia session run  </p><pre><code class="language-julia">using ForneyLab</code></pre><h2><a class="nav-anchor" id="Specifying-a-model-1" href="#Specifying-a-model-1">Specifying a model</a></h2><p>Probabilistic models incorporate the element of randomness to describe an event or phenomenon. They do this by using random variables and probability distributions. These models can be represented diagrammatically using probabilistic graphical models (PGMs). A factor graph is a type of PGM that is well suited to cast inference tasks in terms of graphical manipulations.</p><h3><a class="nav-anchor" id="Creating-a-new-factor-graph-1" href="#Creating-a-new-factor-graph-1">Creating a new factor graph</a></h3><p>Factor graphs are represented by the <code>FactorGraph</code> composite type (struct). To instantiate a new (empty) factor graph we use its constructor function that takes no arguments</p><pre><code class="language-julia">g = FactorGraph()</code></pre><p>ForneyLab keeps track of an <em>active</em> factor graph at all times. Future operations on the graph, such as adding variables or nodes, affect the active graph. The call to <code>FactorGraph()</code> creates a new instance of a factor graph and registers it as the active graph.</p><p>To get the active graph run</p><pre><code class="language-julia">fg = currentGraph()</code></pre><p>To set the active graph run</p><pre><code class="language-julia">setCurrentGraph(g)</code></pre><h3><a class="nav-anchor" id="Adding-random-variables-(edges)-1" href="#Adding-random-variables-(edges)-1">Adding random variables (edges)</a></h3><p>Random variables are represented as edges on Forney-style factor graphs. You can add a random variable to the active factor graph by instantiating the <code>Variable</code> composite type. The constructor function takes an <code>id</code> of type <code>Symbol</code> as argument. For example, running</p><pre><code class="language-julia">x = Variable(id=:x)</code></pre><p>associates the variable <code>x</code> to an edge of the active factor graph.</p><p>Alternatively, the <code>@RV</code> macro can be used for the same purpose in a more compact form. Executing the following line has the same effect as the previous one.</p><pre><code class="language-julia">@RV x</code></pre><p>By default, the <code>@RV</code> macro uses the variable&#39;s name to create a Julia <code>Symbol</code> that is assigned to the <code>id</code> field of the <code>Variable</code> object (<code>:x</code> in this example). However, if this id value has already been assigned to a variable in the factor graph, then ForneyLab will create a default id of the form <code>:variable_x</code>, where <code>x</code> is a number that increments. In case you want to provide a custom <code>id</code>, the <code>@RV</code> macro accepts an optional keyword argument between square brackets that allows this. For example,</p><pre><code class="language-julia">@RV [id=:my_id] x</code></pre><p>adds the variable <code>x</code> to the active graph and assigns the <code>:my_id</code> symbol to its <code>id</code> field. Later we will see that this is useful once we start visualizing the factor graph.</p><h3><a class="nav-anchor" id="Adding-factor-nodes-1" href="#Adding-factor-nodes-1">Adding factor nodes</a></h3><p>Factor nodes are used to define the relationship between different random variables. They assign probability distributions to a random variable as a function of other variables. See <a href="../library/public-api/#Factor-nodes-1">Factor nodes</a> for a complete list of the available factor nodes in ForneyLab.</p><p>We can assign a probability distribution to a random variable using the <code>~</code> operator together with the <code>@RV</code> macro. For example, to create a Gaussian distributed random variable <code>y</code>, where its mean and variance are controlled by the random variables <code>m</code> and <code>v</code> respectively, we could run</p><pre><code class="language-julia">@RV m
 @RV v
-@RV y ~ GaussianMeanVariance(m, v)</code></pre></div><h3><a class="nav-anchor" id="Visualizing-a-factor-graph-1" href="#Visualizing-a-factor-graph-1">Visualizing a factor graph</a></h3><p>Factor graphs can be visualized using the <code>draw</code> function. It takes a <code>FactorGraph</code> object as argument. Let&#39;s visualize the factor graph that we defined in the previous section.</p><div><pre><code class="language-julia">ForneyLab.draw(g)</code></pre><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+@RV y ~ GaussianMeanVariance(m, v)</code></pre><h3><a class="nav-anchor" id="Visualizing-a-factor-graph-1" href="#Visualizing-a-factor-graph-1">Visualizing a factor graph</a></h3><p>Factor graphs can be visualized using the <code>draw</code> function. It takes a <code>FactorGraph</code> object as argument. Let&#39;s visualize the factor graph that we defined in the previous section.</p><pre><code class="language-julia">ForneyLab.draw(g)</code></pre><?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<!-- Generated by graphviz version 2.38.0 (20140413.2041)
+<!-- Generated by graphviz version 2.40.1 (20161225.0304)
  -->
 <!-- Title: G Pages: 1 -->
-<svg width="400pt" height="179pt"
- viewBox="0.00 0.00 400.00 179.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 175)">
+<svg width="400pt" height="178pt"
+ viewBox="0.00 0.00 400.00 178.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 174)">
 <title>G</title>
-<polygon fill="white" stroke="none" points="-4,4 -4,-175 396,-175 396,4 -4,4"/>
-<!-- 211156605601728797 -->
-<g id="node1" class="node"><title>211156605601728797</title>
-<polygon fill="none" stroke="black" points="248,-72 144,-72 144,-0 248,-0 248,-72"/>
-<text text-anchor="middle" x="196" y="-38.8" font-family="Times New Roman,serif" font-size="9.00">𝒩</text>
-<text text-anchor="middle" x="196" y="-28.8" font-family="Times New Roman,serif" font-size="9.00">gaussianmeanvariance_1</text>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-174 396,-174 396,4 -4,4"/>
+<!-- 5388982362865746751 -->
+<g id="node1" class="node">
+<title>5388982362865746751</title>
+<polygon fill="none" stroke="#000000" points="248.9605,-72 143.0395,-72 143.0395,0 248.9605,0 248.9605,-72"/>
+<text text-anchor="middle" x="196" y="-38.43" font-family="Times,serif" font-size="9.00" fill="#000000">𝒩</text>
+<text text-anchor="middle" x="196" y="-28.17" font-family="Times,serif" font-size="9.00" fill="#000000">gaussianmeanvariance_1</text>
 </g>
-<!-- 40852476713850210092 -->
-<g id="node2" class="node"><title>40852476713850210092</title>
+<!-- 173779272134795284172 -->
+<g id="node2" class="node">
+<title>173779272134795284172</title>
 </g>
-<!-- 40852476713850210092&#45;&#45;211156605601728797 -->
-<g id="edge1" class="edge"><title>40852476713850210092&#45;&#45;211156605601728797</title>
-<path fill="none" stroke="black" d="M54.1528,-125.969C78.2256,-110.87 114.056,-88.3971 143.681,-69.8154"/>
-<text text-anchor="start" x="112" y="-92.6" font-family="Times New Roman,serif" font-size="8.00" fill="red">y</text>
-<text text-anchor="start" x="122.681" y="-72.4154" font-family="Times New Roman,serif" font-size="8.00">1 out </text>
+<!-- 173779272134795284172&#45;&#45;5388982362865746751 -->
+<g id="edge1" class="edge">
+<title>173779272134795284172&#45;&#45;5388982362865746751</title>
+<path fill="none" stroke="#000000" d="M54.1528,-125.8086C78.039,-110.6854 113.5008,-88.2332 142.991,-69.5619"/>
+<text text-anchor="start" x="107" y="-91.6" font-family="Times,serif" font-size="8.00" fill="#ff0000">y</text>
+<text text-anchor="start" x="124.7684" y="-71.1619" font-family="Times,serif" font-size="8.00" fill="#000000">1 out </text>
 </g>
-<!-- 143552526247202049502 -->
-<g id="node3" class="node"><title>143552526247202049502</title>
+<!-- 6861553387805299062 -->
+<g id="node3" class="node">
+<title>6861553387805299062</title>
 </g>
-<!-- 143552526247202049502&#45;&#45;211156605601728797 -->
-<g id="edge2" class="edge"><title>143552526247202049502&#45;&#45;211156605601728797</title>
-<path fill="none" stroke="black" d="M196,-116.798C196,-103.31 196,-86.6801 196,-72.0987"/>
-<text text-anchor="start" x="196" y="-92.6" font-family="Times New Roman,serif" font-size="8.00" fill="red">v</text>
-<text text-anchor="start" x="182" y="-74.6987" font-family="Times New Roman,serif" font-size="8.00">3 v </text>
+<!-- 6861553387805299062&#45;&#45;5388982362865746751 -->
+<g id="edge2" class="edge">
+<title>6861553387805299062&#45;&#45;5388982362865746751</title>
+<path fill="none" stroke="#000000" d="M196,-115.9994C196,-102.7507 196,-86.6013 196,-72.2906"/>
+<text text-anchor="start" x="196" y="-91.6" font-family="Times,serif" font-size="8.00" fill="#ff0000">m</text>
+<text text-anchor="start" x="181.7773" y="-73.8906" font-family="Times,serif" font-size="8.00" fill="#000000">2 m </text>
 </g>
-<!-- 152991824642522555262 -->
-<g id="node4" class="node"><title>152991824642522555262</title>
+<!-- 179187420481703916372 -->
+<g id="node4" class="node">
+<title>179187420481703916372</title>
 </g>
-<!-- 152991824642522555262&#45;&#45;211156605601728797 -->
-<g id="edge3" class="edge"><title>152991824642522555262&#45;&#45;211156605601728797</title>
-<path fill="none" stroke="black" d="M337.847,-125.969C313.774,-110.87 277.944,-88.3971 248.319,-69.8154"/>
-<text text-anchor="start" x="290" y="-92.6" font-family="Times New Roman,serif" font-size="8.00" fill="red">m</text>
-<text text-anchor="start" x="248.319" y="-72.4154" font-family="Times New Roman,serif" font-size="8.00">2 m </text>
+<!-- 179187420481703916372&#45;&#45;5388982362865746751 -->
+<g id="edge3" class="edge">
+<title>179187420481703916372&#45;&#45;5388982362865746751</title>
+<path fill="none" stroke="#000000" d="M337.8472,-125.8086C313.961,-110.6854 278.4992,-88.2332 249.009,-69.5619"/>
+<text text-anchor="start" x="290" y="-91.6" font-family="Times,serif" font-size="8.00" fill="#ff0000">v</text>
+<text text-anchor="start" x="249.009" y="-71.1619" font-family="Times,serif" font-size="8.00" fill="#000000">3 v </text>
 </g>
 </g>
 </svg>
-</div><p>Edges that are not connected to any factor node are not drawn.</p><h3><a class="nav-anchor" id="Clamping-1" href="#Clamping-1">Clamping</a></h3><p>Suppose we know that the variance of the random variable <code>y</code>, of the previous model, is fixed to a certain value. ForneyLab provides a special factor node to impose this kind of constraint called a <code>Clamp</code>. Clamp factor nodes can be implicitly defined by using literals like in the following example</p><div><pre><code class="language-julia">g = FactorGraph() # create a new factor graph
+<p>Edges that are not connected to any factor node are not drawn.</p><h3><a class="nav-anchor" id="Clamping-1" href="#Clamping-1">Clamping</a></h3><p>Suppose we know that the variance of the random variable <code>y</code>, of the previous model, is fixed to a certain value. ForneyLab provides a special factor node to impose this kind of constraint called a <code>Clamp</code>. Clamp factor nodes can be implicitly defined by using literals like in the following example</p><pre><code class="language-julia">g = FactorGraph() # create a new factor graph
 @RV m
 @RV y ~ GaussianMeanVariance(m, 1.0)
 ForneyLab.draw(g)</code></pre><?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<!-- Generated by graphviz version 2.38.0 (20140413.2041)
+<!-- Generated by graphviz version 2.40.1 (20161225.0304)
  -->
 <!-- Title: G Pages: 1 -->
-<svg width="231pt" height="278pt"
- viewBox="0.00 0.00 231.00 278.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 274)">
+<svg width="231pt" height="276pt"
+ viewBox="0.00 0.00 231.00 276.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 272)">
 <title>G</title>
-<polygon fill="white" stroke="none" points="-4,4 -4,-274 227,-274 227,4 -4,4"/>
-<!-- 17385772661694988039 -->
-<g id="node1" class="node"><title>17385772661694988039</title>
-<polygon fill="lightgrey" stroke="black" points="138,-54 84,-54 84,-0 138,-0 138,-54"/>
-<text text-anchor="middle" x="111" y="-24.8" font-family="Times New Roman,serif" font-size="9.00">clamp_1</text>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-272 227,-272 227,4 -4,4"/>
+<!-- 6573746201356911945 -->
+<g id="node1" class="node">
+<title>6573746201356911945</title>
+<polygon fill="#d3d3d3" stroke="#000000" points="138,-54 84,-54 84,0 138,0 138,-54"/>
+<text text-anchor="middle" x="111" y="-24.3" font-family="Times,serif" font-size="9.00" fill="#000000">clamp_1</text>
 </g>
-<!-- 4738805152818163823 -->
-<g id="node2" class="node"><title>4738805152818163823</title>
-<polygon fill="none" stroke="black" points="163,-171 59,-171 59,-99 163,-99 163,-171"/>
-<text text-anchor="middle" x="111" y="-137.8" font-family="Times New Roman,serif" font-size="9.00">𝒩</text>
-<text text-anchor="middle" x="111" y="-127.8" font-family="Times New Roman,serif" font-size="9.00">gaussianmeanvariance_1</text>
+<!-- 71116614294248934 -->
+<g id="node2" class="node">
+<title>71116614294248934</title>
+<polygon fill="none" stroke="#000000" points="163.9605,-170 58.0395,-170 58.0395,-98 163.9605,-98 163.9605,-170"/>
+<text text-anchor="middle" x="111" y="-136.43" font-family="Times,serif" font-size="9.00" fill="#000000">𝒩</text>
+<text text-anchor="middle" x="111" y="-126.17" font-family="Times,serif" font-size="9.00" fill="#000000">gaussianmeanvariance_1</text>
 </g>
-<!-- 4738805152818163823&#45;&#45;17385772661694988039 -->
-<g id="edge3" class="edge"><title>4738805152818163823&#45;&#45;17385772661694988039</title>
-<path fill="none" stroke="black" d="M111,-98.9979C111,-84.4044 111,-67.7451 111,-54.2331"/>
-<text text-anchor="start" x="111" y="-74.6" font-family="Times New Roman,serif" font-size="8.00" fill="red">clamp_1</text>
-<text text-anchor="start" x="90" y="-56.8331" font-family="Times New Roman,serif" font-size="8.00">1 out </text>
-<text text-anchor="start" x="97" y="-92.5979" font-family="Times New Roman,serif" font-size="8.00">3 v </text>
+<!-- 71116614294248934&#45;&#45;6573746201356911945 -->
+<g id="edge2" class="edge">
+<title>71116614294248934&#45;&#45;6573746201356911945</title>
+<path fill="none" stroke="#000000" d="M111,-97.7747C111,-83.4665 111,-67.3116 111,-54.0525"/>
+<text text-anchor="start" x="111" y="-73.6" font-family="Times,serif" font-size="8.00" fill="#ff0000">clamp_1</text>
+<text text-anchor="start" x="92.7773" y="-55.6525" font-family="Times,serif" font-size="8.00" fill="#000000">1 out </text>
+<text text-anchor="start" x="99" y="-91.3747" font-family="Times,serif" font-size="8.00" fill="#000000">3 v </text>
 </g>
-<!-- 112754588480733290242 -->
-<g id="node3" class="node"><title>112754588480733290242</title>
+<!-- 136443125857390763562 -->
+<g id="node3" class="node">
+<title>136443125857390763562</title>
 </g>
-<!-- 112754588480733290242&#45;&#45;4738805152818163823 -->
-<g id="edge1" class="edge"><title>112754588480733290242&#45;&#45;4738805152818163823</title>
-<path fill="none" stroke="black" d="M34.4453,-215.889C37.7446,-206.874 42.2145,-197.03 48,-189 52.5117,-182.738 57.9232,-176.759 63.6541,-171.223"/>
-<text text-anchor="start" x="48" y="-191.6" font-family="Times New Roman,serif" font-size="8.00" fill="red">y</text>
-<text text-anchor="start" x="42.6541" y="-173.823" font-family="Times New Roman,serif" font-size="8.00">1 out </text>
+<!-- 136443125857390763562&#45;&#45;71116614294248934 -->
+<g id="edge1" class="edge">
+<title>136443125857390763562&#45;&#45;71116614294248934</title>
+<path fill="none" stroke="#000000" d="M35.4918,-213.8663C38.9225,-205.1563 43.413,-195.7626 49,-188 53.5028,-181.7439 58.8646,-175.7244 64.5228,-170.12"/>
+<text text-anchor="start" x="49" y="-189.6" font-family="Times,serif" font-size="8.00" fill="#ff0000">y</text>
+<text text-anchor="start" x="46.3001" y="-171.72" font-family="Times,serif" font-size="8.00" fill="#000000">1 out </text>
 </g>
-<!-- 8030575852041863452 -->
-<g id="node4" class="node"><title>8030575852041863452</title>
+<!-- 47858603193500577002 -->
+<g id="node4" class="node">
+<title>47858603193500577002</title>
 </g>
-<!-- 8030575852041863452&#45;&#45;4738805152818163823 -->
-<g id="edge2" class="edge"><title>8030575852041863452&#45;&#45;4738805152818163823</title>
-<path fill="none" stroke="black" d="M174.989,-215.798C164.173,-202.31 150.838,-185.68 139.145,-171.099"/>
-<text text-anchor="start" x="158" y="-191.6" font-family="Times New Roman,serif" font-size="8.00" fill="red">m</text>
-<text text-anchor="start" x="123.145" y="-173.699" font-family="Times New Roman,serif" font-size="8.00">2 m </text>
+<!-- 47858603193500577002&#45;&#45;71116614294248934 -->
+<g id="edge3" class="edge">
+<title>47858603193500577002&#45;&#45;71116614294248934</title>
+<path fill="none" stroke="#000000" d="M174.5509,-213.9994C164.0262,-200.7507 151.1973,-184.6013 139.829,-170.2906"/>
+<text text-anchor="start" x="158" y="-189.6" font-family="Times,serif" font-size="8.00" fill="#ff0000">m</text>
+<text text-anchor="start" x="125.6063" y="-171.8906" font-family="Times,serif" font-size="8.00" fill="#000000">2 m </text>
 </g>
 </g>
 </svg>
-</div><p>Here, the literal <code>1.0</code> that is passed as the second argument to <code>GaussianMeanVariance</code> function creates a clamp node implicitly. Clamp factor nodes are visualized with a gray background.</p><p>Alternatively, if you want to assign a custom <code>id</code> to a <code>Clamp</code> factor node, then you have to instantiate them explicitly using its constructor function, i.e.</p><div><pre><code class="language-julia">g = FactorGraph() # create a new factor graph
+<p>Here, the literal <code>1.0</code> that is passed as the second argument to <code>GaussianMeanVariance</code> function creates a clamp node implicitly. Clamp factor nodes are visualized with a gray background.</p><p>Alternatively, if you want to assign a custom <code>id</code> to a <code>Clamp</code> factor node, then you have to instantiate them explicitly using its constructor function, i.e.</p><pre><code class="language-julia">g = FactorGraph() # create a new factor graph
 @RV m
 @RV v ~ Clamp(1.0)
 @RV y ~ GaussianMeanVariance(m, v)
 ForneyLab.draw(g)</code></pre><?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<!-- Generated by graphviz version 2.38.0 (20140413.2041)
+<!-- Generated by graphviz version 2.40.1 (20161225.0304)
  -->
 <!-- Title: G Pages: 1 -->
-<svg width="231pt" height="278pt"
- viewBox="0.00 0.00 231.00 278.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 274)">
+<svg width="231pt" height="276pt"
+ viewBox="0.00 0.00 231.00 276.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 272)">
 <title>G</title>
-<polygon fill="white" stroke="none" points="-4,4 -4,-274 227,-274 227,4 -4,4"/>
-<!-- 13812072884377713653 -->
-<g id="node1" class="node"><title>13812072884377713653</title>
-<polygon fill="none" stroke="black" points="163,-171 59,-171 59,-99 163,-99 163,-171"/>
-<text text-anchor="middle" x="111" y="-137.8" font-family="Times New Roman,serif" font-size="9.00">𝒩</text>
-<text text-anchor="middle" x="111" y="-127.8" font-family="Times New Roman,serif" font-size="9.00">gaussianmeanvariance_1</text>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-272 227,-272 227,4 -4,4"/>
+<!-- 17146749947830474614 -->
+<g id="node1" class="node">
+<title>17146749947830474614</title>
+<polygon fill="#d3d3d3" stroke="#000000" points="138,-54 84,-54 84,0 138,0 138,-54"/>
+<text text-anchor="middle" x="111" y="-24.3" font-family="Times,serif" font-size="9.00" fill="#000000">clamp_1</text>
 </g>
-<!-- 5617223664984572362 -->
-<g id="node2" class="node"><title>5617223664984572362</title>
-<polygon fill="lightgrey" stroke="black" points="138,-54 84,-54 84,-0 138,-0 138,-54"/>
-<text text-anchor="middle" x="111" y="-24.8" font-family="Times New Roman,serif" font-size="9.00">clamp_1</text>
+<!-- 5041532970900700196 -->
+<g id="node2" class="node">
+<title>5041532970900700196</title>
+<polygon fill="none" stroke="#000000" points="163.9605,-170 58.0395,-170 58.0395,-98 163.9605,-98 163.9605,-170"/>
+<text text-anchor="middle" x="111" y="-136.43" font-family="Times,serif" font-size="9.00" fill="#000000">𝒩</text>
+<text text-anchor="middle" x="111" y="-126.17" font-family="Times,serif" font-size="9.00" fill="#000000">gaussianmeanvariance_1</text>
 </g>
-<!-- 13812072884377713653&#45;&#45;5617223664984572362 -->
-<g id="edge3" class="edge"><title>13812072884377713653&#45;&#45;5617223664984572362</title>
-<path fill="none" stroke="black" d="M111,-98.9979C111,-84.4044 111,-67.7451 111,-54.2331"/>
-<text text-anchor="start" x="111" y="-74.6" font-family="Times New Roman,serif" font-size="8.00" fill="red">v</text>
-<text text-anchor="start" x="90" y="-56.8331" font-family="Times New Roman,serif" font-size="8.00">1 out </text>
-<text text-anchor="start" x="97" y="-92.5979" font-family="Times New Roman,serif" font-size="8.00">3 v </text>
+<!-- 5041532970900700196&#45;&#45;17146749947830474614 -->
+<g id="edge1" class="edge">
+<title>5041532970900700196&#45;&#45;17146749947830474614</title>
+<path fill="none" stroke="#000000" d="M111,-97.7747C111,-83.4665 111,-67.3116 111,-54.0525"/>
+<text text-anchor="start" x="111" y="-73.6" font-family="Times,serif" font-size="8.00" fill="#ff0000">v</text>
+<text text-anchor="start" x="92.7773" y="-55.6525" font-family="Times,serif" font-size="8.00" fill="#000000">1 out </text>
+<text text-anchor="start" x="99" y="-91.3747" font-family="Times,serif" font-size="8.00" fill="#000000">3 v </text>
 </g>
-<!-- 184038638240067822082 -->
-<g id="node3" class="node"><title>184038638240067822082</title>
+<!-- 161601214246351711422 -->
+<g id="node3" class="node">
+<title>161601214246351711422</title>
 </g>
-<!-- 184038638240067822082&#45;&#45;13812072884377713653 -->
-<g id="edge1" class="edge"><title>184038638240067822082&#45;&#45;13812072884377713653</title>
-<path fill="none" stroke="black" d="M33.2805,-215.834C36.2228,-206.814 40.3565,-196.981 46,-189 50.4555,-182.699 55.8521,-176.735 61.6093,-171.239"/>
-<text text-anchor="start" x="46" y="-191.6" font-family="Times New Roman,serif" font-size="8.00" fill="red">m</text>
-<text text-anchor="start" x="45.6093" y="-173.839" font-family="Times New Roman,serif" font-size="8.00">2 m </text>
+<!-- 161601214246351711422&#45;&#45;5041532970900700196 -->
+<g id="edge2" class="edge">
+<title>161601214246351711422&#45;&#45;5041532970900700196</title>
+<path fill="none" stroke="#000000" d="M34.1504,-213.7977C37.2022,-205.0832 41.3422,-195.704 46.7773,-188 51.2281,-181.6913 56.5887,-175.6802 62.2916,-170.114"/>
+<text text-anchor="start" x="47" y="-189.6" font-family="Times,serif" font-size="8.00" fill="#ff0000">m</text>
+<text text-anchor="start" x="48.0689" y="-171.714" font-family="Times,serif" font-size="8.00" fill="#000000">2 m </text>
 </g>
-<!-- 180817066162706876722 -->
-<g id="node4" class="node"><title>180817066162706876722</title>
+<!-- 159865481810766567982 -->
+<g id="node4" class="node">
+<title>159865481810766567982</title>
 </g>
-<!-- 180817066162706876722&#45;&#45;13812072884377713653 -->
-<g id="edge2" class="edge"><title>180817066162706876722&#45;&#45;13812072884377713653</title>
-<path fill="none" stroke="black" d="M174.989,-215.798C164.173,-202.31 150.838,-185.68 139.145,-171.099"/>
-<text text-anchor="start" x="158" y="-191.6" font-family="Times New Roman,serif" font-size="8.00" fill="red">y</text>
-<text text-anchor="start" x="118.145" y="-173.699" font-family="Times New Roman,serif" font-size="8.00">1 out </text>
+<!-- 159865481810766567982&#45;&#45;5041532970900700196 -->
+<g id="edge3" class="edge">
+<title>159865481810766567982&#45;&#45;5041532970900700196</title>
+<path fill="none" stroke="#000000" d="M174.5509,-213.9994C164.0262,-200.7507 151.1973,-184.6013 139.829,-170.2906"/>
+<text text-anchor="start" x="158" y="-189.6" font-family="Times,serif" font-size="8.00" fill="#ff0000">y</text>
+<text text-anchor="start" x="121.6063" y="-171.8906" font-family="Times,serif" font-size="8.00" fill="#000000">1 out </text>
 </g>
 </g>
 </svg>
-</div><h3><a class="nav-anchor" id="Placeholders-1" href="#Placeholders-1">Placeholders</a></h3><p>Placeholders are a kind of <code>Clamp</code> factor nodes that act as entry points for data. They associate a given random variable with a buffer through which data is fed at a later point. This buffer has an <code>id</code>, a dimensionality and a data type. Placeholders are created with the <code>placeholder</code> function. Suppose that we want to feed an array of one-dimensional floating-point data to the <code>y</code> random variable of the previous model. We would then need to define <code>y</code> as a placeholder as follows.</p><div><pre><code class="language-julia">g = FactorGraph() # create a new factor graph
+<h3><a class="nav-anchor" id="Placeholders-1" href="#Placeholders-1">Placeholders</a></h3><p>Placeholders are a kind of <code>Clamp</code> factor nodes that act as entry points for data. They associate a given random variable with a buffer through which data is fed at a later point. This buffer has an <code>id</code>, a dimensionality and a data type. Placeholders are created with the <code>placeholder</code> function. Suppose that we want to feed an array of one-dimensional floating-point data to the <code>y</code> random variable of the previous model. We would then need to define <code>y</code> as a placeholder as follows.</p><pre><code class="language-julia">g = FactorGraph() # create a new factor graph
 @RV m
 @RV v ~ Clamp(1.0)
 @RV y ~ GaussianMeanVariance(m, v)
@@ -160,56 +181,63 @@ placeholder(y, :y)
 ForneyLab.draw(g)</code></pre><?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<!-- Generated by graphviz version 2.38.0 (20140413.2041)
+<!-- Generated by graphviz version 2.40.1 (20161225.0304)
  -->
 <!-- Title: G Pages: 1 -->
-<svg width="245pt" height="278pt"
- viewBox="0.00 0.00 245.00 278.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 274)">
+<svg width="243pt" height="276pt"
+ viewBox="0.00 0.00 243.49 276.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 272)">
 <title>G</title>
-<polygon fill="white" stroke="none" points="-4,4 -4,-274 241,-274 241,4 -4,4"/>
-<!-- 12523792892844912530 -->
-<g id="node1" class="node"><title>12523792892844912530</title>
-<polygon fill="lightgrey" stroke="black" points="68,-270 0,-270 0,-216 68,-216 68,-270"/>
-<text text-anchor="middle" x="34" y="-240.8" font-family="Times New Roman,serif" font-size="9.00">placeholder_y</text>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-272 239.4883,-272 239.4883,4 -4,4"/>
+<!-- 6818705005638190629 -->
+<g id="node1" class="node">
+<title>6818705005638190629</title>
+<polygon fill="none" stroke="#000000" points="173.4487,-170 67.5278,-170 67.5278,-98 173.4487,-98 173.4487,-170"/>
+<text text-anchor="middle" x="120.4883" y="-136.43" font-family="Times,serif" font-size="9.00" fill="#000000">𝒩</text>
+<text text-anchor="middle" x="120.4883" y="-126.17" font-family="Times,serif" font-size="9.00" fill="#000000">gaussianmeanvariance_1</text>
 </g>
-<!-- 9941745053930529046 -->
-<g id="node2" class="node"><title>9941745053930529046</title>
-<polygon fill="none" stroke="black" points="174,-171 70,-171 70,-99 174,-99 174,-171"/>
-<text text-anchor="middle" x="122" y="-137.8" font-family="Times New Roman,serif" font-size="9.00">𝒩</text>
-<text text-anchor="middle" x="122" y="-127.8" font-family="Times New Roman,serif" font-size="9.00">gaussianmeanvariance_1</text>
+<!-- 4644922354905448210 -->
+<g id="node2" class="node">
+<title>4644922354905448210</title>
+<polygon fill="#d3d3d3" stroke="#000000" points="147.4883,-54 93.4883,-54 93.4883,0 147.4883,0 147.4883,-54"/>
+<text text-anchor="middle" x="120.4883" y="-24.3" font-family="Times,serif" font-size="9.00" fill="#000000">clamp_1</text>
 </g>
-<!-- 12523792892844912530&#45;&#45;9941745053930529046 -->
-<g id="edge2" class="edge"><title>12523792892844912530&#45;&#45;9941745053930529046</title>
-<path fill="none" stroke="black" d="M45.4882,-215.784C49.9986,-206.857 55.6294,-197.097 62,-189 66.8988,-182.774 72.5906,-176.693 78.4795,-171.001"/>
-<text text-anchor="start" x="62" y="-191.6" font-family="Times New Roman,serif" font-size="8.00" fill="red">y</text>
-<text text-anchor="start" x="57.4795" y="-173.601" font-family="Times New Roman,serif" font-size="8.00">1 out </text>
-<text text-anchor="start" x="24.4882" y="-209.384" font-family="Times New Roman,serif" font-size="8.00">1 out </text>
+<!-- 6818705005638190629&#45;&#45;4644922354905448210 -->
+<g id="edge2" class="edge">
+<title>6818705005638190629&#45;&#45;4644922354905448210</title>
+<path fill="none" stroke="#000000" d="M120.4883,-97.7747C120.4883,-83.4665 120.4883,-67.3116 120.4883,-54.0525"/>
+<text text-anchor="start" x="120.4883" y="-73.6" font-family="Times,serif" font-size="8.00" fill="#ff0000">v</text>
+<text text-anchor="start" x="102.2656" y="-55.6525" font-family="Times,serif" font-size="8.00" fill="#000000">1 out </text>
+<text text-anchor="start" x="108.4883" y="-91.3747" font-family="Times,serif" font-size="8.00" fill="#000000">3 v </text>
 </g>
-<!-- 11966955800766421833 -->
-<g id="node3" class="node"><title>11966955800766421833</title>
-<polygon fill="lightgrey" stroke="black" points="149,-54 95,-54 95,-0 149,-0 149,-54"/>
-<text text-anchor="middle" x="122" y="-24.8" font-family="Times New Roman,serif" font-size="9.00">clamp_1</text>
+<!-- 15640328672632122304 -->
+<g id="node3" class="node">
+<title>15640328672632122304</title>
+<polygon fill="#d3d3d3" stroke="#000000" points="66.9648,-268 .0117,-268 .0117,-214 66.9648,-214 66.9648,-268"/>
+<text text-anchor="middle" x="33.4883" y="-238.3" font-family="Times,serif" font-size="9.00" fill="#000000">placeholder_y</text>
 </g>
-<!-- 9941745053930529046&#45;&#45;11966955800766421833 -->
-<g id="edge1" class="edge"><title>9941745053930529046&#45;&#45;11966955800766421833</title>
-<path fill="none" stroke="black" d="M122,-98.9979C122,-84.4044 122,-67.7451 122,-54.2331"/>
-<text text-anchor="start" x="122" y="-74.6" font-family="Times New Roman,serif" font-size="8.00" fill="red">v</text>
-<text text-anchor="start" x="101" y="-56.8331" font-family="Times New Roman,serif" font-size="8.00">1 out </text>
-<text text-anchor="start" x="108" y="-92.5979" font-family="Times New Roman,serif" font-size="8.00">3 v </text>
+<!-- 15640328672632122304&#45;&#45;6818705005638190629 -->
+<g id="edge1" class="edge">
+<title>15640328672632122304&#45;&#45;6818705005638190629</title>
+<path fill="none" stroke="#000000" d="M45.6103,-213.7618C50.0297,-205.1388 55.4439,-195.8232 61.4883,-188 66.2425,-181.8467 71.74,-175.8015 77.428,-170.1115"/>
+<text text-anchor="start" x="61.4883" y="-189.6" font-family="Times,serif" font-size="8.00" fill="#ff0000">y</text>
+<text text-anchor="start" x="59.2054" y="-171.7115" font-family="Times,serif" font-size="8.00" fill="#000000">1 out </text>
+<text text-anchor="start" x="27.3876" y="-207.3618" font-family="Times,serif" font-size="8.00" fill="#000000">1 out </text>
 </g>
-<!-- 31522764924547586812 -->
-<g id="node4" class="node"><title>31522764924547586812</title>
+<!-- 139442624504688887562 -->
+<g id="node4" class="node">
+<title>139442624504688887562</title>
 </g>
-<!-- 31522764924547586812&#45;&#45;9941745053930529046 -->
-<g id="edge3" class="edge"><title>31522764924547586812&#45;&#45;9941745053930529046</title>
-<path fill="none" stroke="black" d="M188.247,-215.798C177.05,-202.31 163.244,-185.68 151.139,-171.099"/>
-<text text-anchor="start" x="171" y="-191.6" font-family="Times New Roman,serif" font-size="8.00" fill="red">m</text>
-<text text-anchor="start" x="135.139" y="-173.699" font-family="Times New Roman,serif" font-size="8.00">2 m </text>
+<!-- 139442624504688887562&#45;&#45;6818705005638190629 -->
+<g id="edge3" class="edge">
+<title>139442624504688887562&#45;&#45;6818705005638190629</title>
+<path fill="none" stroke="#000000" d="M186.2822,-213.9994C175.386,-200.7507 162.1043,-184.6013 150.3348,-170.2906"/>
+<text text-anchor="start" x="169.4883" y="-189.6" font-family="Times,serif" font-size="8.00" fill="#ff0000">m</text>
+<text text-anchor="start" x="136.1121" y="-171.8906" font-family="Times,serif" font-size="8.00" fill="#000000">2 m </text>
 </g>
 </g>
 </svg>
-</div><p>Placeholders default to one-dimensional floating-point data. In case we want to override this with, for example, 3-dimensional integer data, we would need to specify the <code>dims</code> and <code>datatpye</code> parameters of the <code>placeholder</code> function as follows</p><pre><code class="language-julia">placeholder(y, :y, dims=(3,), datatype=Int)</code></pre><p>In the previous example, we first created the random variable <code>y</code> and then marked it as a placeholder. There is, however, a shorthand version to perform these two steps in one. The syntax consists of calling a <code>placeholder</code> method that takes an id <code>Symbol</code> as argument and returns the new random variable. Here is an example:</p><div><pre><code class="language-julia">x = placeholder(:x)</code></pre></div><p>where <code>x</code> is now a random variable linked to a placeholder with id <code>:x</code>.</p><p>In section <a href="#Executing-an-algorithm-1">Executing an algorithm</a> we will see how the data is fed to the placeholders.</p><h3><a class="nav-anchor" id="Overloaded-operators-1" href="#Overloaded-operators-1">Overloaded operators</a></h3><p>ForneyLab supports the use of the <code>+</code>, <code>-</code> and <code>*</code> operators between random variables that have certain types of probability distributions. This is known as <em>operator overloading</em>. These operators are represented as deterministic factor nodes in ForneyLab. As an example, a two-component Gaussian mixture can be defined as follows  </p><div><pre><code class="language-julia">g = FactorGraph() # create a new factor graph
+<p>Placeholders default to one-dimensional floating-point data. In case we want to override this with, for example, 3-dimensional integer data, we would need to specify the <code>dims</code> and <code>datatpye</code> parameters of the <code>placeholder</code> function as follows</p><pre><code class="language-julia">placeholder(y, :y, dims=(3,), datatype=Int)</code></pre><p>In the previous example, we first created the random variable <code>y</code> and then marked it as a placeholder. There is, however, a shorthand version to perform these two steps in one. The syntax consists of calling a <code>placeholder</code> method that takes an id <code>Symbol</code> as argument and returns the new random variable. Here is an example:</p><pre><code class="language-julia">x = placeholder(:x)</code></pre><p>where <code>x</code> is now a random variable linked to a placeholder with id <code>:x</code>.</p><p>In section <a href="#Executing-an-algorithm-1">Executing an algorithm</a> we will see how the data is fed to the placeholders.</p><h3><a class="nav-anchor" id="Overloaded-operators-1" href="#Overloaded-operators-1">Overloaded operators</a></h3><p>ForneyLab supports the use of the <code>+</code>, <code>-</code> and <code>*</code> operators between random variables that have certain types of probability distributions. This is known as <em>operator overloading</em>. These operators are represented as deterministic factor nodes in ForneyLab. As an example, a two-component Gaussian mixture can be defined as follows  </p><pre><code class="language-julia">g = FactorGraph() # create a new factor graph
 @RV x ~ GaussianMeanVariance(0.0, 1.0)
 @RV y ~ GaussianMeanVariance(2.0, 3.0)
 @RV z = x + y
@@ -217,109 +245,124 @@ placeholder(z, :z)
 ForneyLab.draw(g)</code></pre><?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<!-- Generated by graphviz version 2.38.0 (20140413.2041)
+<!-- Generated by graphviz version 2.40.1 (20161225.0304)
  -->
 <!-- Title: G Pages: 1 -->
-<svg width="581pt" height="395pt"
- viewBox="0.00 0.00 581.00 395.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 391)">
+<svg width="595pt" height="392pt"
+ viewBox="0.00 0.00 595.00 392.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 388)">
 <title>G</title>
-<polygon fill="white" stroke="none" points="-4,4 -4,-391 577,-391 577,4 -4,4"/>
-<!-- 1076786165438950904 -->
-<g id="node1" class="node"><title>1076786165438950904</title>
-<polygon fill="lightgrey" stroke="black" points="404,-54 350,-54 350,-0 404,-0 404,-54"/>
-<text text-anchor="middle" x="377" y="-24.8" font-family="Times New Roman,serif" font-size="9.00">clamp_1</text>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-388 591,-388 591,4 -4,4"/>
+<!-- 13951467395525729336 -->
+<g id="node1" class="node">
+<title>13951467395525729336</title>
+<polygon fill="none" stroke="#000000" points="235.9605,-170 130.0395,-170 130.0395,-98 235.9605,-98 235.9605,-170"/>
+<text text-anchor="middle" x="183" y="-136.43" font-family="Times,serif" font-size="9.00" fill="#000000">𝒩</text>
+<text text-anchor="middle" x="183" y="-126.17" font-family="Times,serif" font-size="9.00" fill="#000000">gaussianmeanvariance_2</text>
 </g>
-<!-- 1138601576796358156 -->
-<g id="node2" class="node"><title>1138601576796358156</title>
-<polygon fill="none" stroke="black" points="304,-288 232,-288 232,-216 304,-216 304,-288"/>
-<text text-anchor="middle" x="268" y="-254.8" font-family="Times New Roman,serif" font-size="9.00">+</text>
-<text text-anchor="middle" x="268" y="-244.8" font-family="Times New Roman,serif" font-size="9.00">addition_1</text>
+<!-- 14236191871573893030 -->
+<g id="node4" class="node">
+<title>14236191871573893030</title>
+<polygon fill="#d3d3d3" stroke="#000000" points="54,-54 0,-54 0,0 54,0 54,-54"/>
+<text text-anchor="middle" x="27" y="-24.3" font-family="Times,serif" font-size="9.00" fill="#000000">clamp_3</text>
 </g>
-<!-- 2841501392570497320 -->
-<g id="node5" class="node"><title>2841501392570497320</title>
-<polygon fill="none" stroke="black" points="235,-171 131,-171 131,-99 235,-99 235,-171"/>
-<text text-anchor="middle" x="183" y="-137.8" font-family="Times New Roman,serif" font-size="9.00">𝒩</text>
-<text text-anchor="middle" x="183" y="-127.8" font-family="Times New Roman,serif" font-size="9.00">gaussianmeanvariance_2</text>
+<!-- 13951467395525729336&#45;&#45;14236191871573893030 -->
+<g id="edge3" class="edge">
+<title>13951467395525729336&#45;&#45;14236191871573893030</title>
+<path fill="none" stroke="#000000" d="M130.1855,-97.7747C104.7286,-80.3138 75.2621,-60.1029 54.3516,-45.7604"/>
+<text text-anchor="start" x="101" y="-73.6" font-family="Times,serif" font-size="8.00" fill="#ff0000">clamp_3</text>
+<text text-anchor="start" x="54.3516" y="-47.3604" font-family="Times,serif" font-size="8.00" fill="#000000">1 out </text>
+<text text-anchor="start" x="115.9629" y="-99.3747" font-family="Times,serif" font-size="8.00" fill="#000000">2 m </text>
 </g>
-<!-- 1138601576796358156&#45;&#45;2841501392570497320 -->
-<g id="edge4" class="edge"><title>1138601576796358156&#45;&#45;2841501392570497320</title>
-<path fill="none" stroke="black" d="M242.035,-215.871C231.587,-201.736 219.56,-185.463 209.099,-171.31"/>
-<text text-anchor="start" x="229" y="-191.6" font-family="Times New Roman,serif" font-size="8.00" fill="red">y</text>
-<text text-anchor="start" x="188.099" y="-173.91" font-family="Times New Roman,serif" font-size="8.00">1 out </text>
-<text text-anchor="start" x="221.035" y="-209.471" font-family="Times New Roman,serif" font-size="8.00">3 in2 </text>
+<!-- 9239151933946922621 -->
+<g id="node8" class="node">
+<title>9239151933946922621</title>
+<polygon fill="#d3d3d3" stroke="#000000" points="223,-54 169,-54 169,0 223,0 223,-54"/>
+<text text-anchor="middle" x="196" y="-24.3" font-family="Times,serif" font-size="9.00" fill="#000000">clamp_4</text>
 </g>
-<!-- 18078854876101909107 -->
-<g id="node8" class="node"><title>18078854876101909107</title>
-<polygon fill="none" stroke="black" points="454,-171 350,-171 350,-99 454,-99 454,-171"/>
-<text text-anchor="middle" x="402" y="-137.8" font-family="Times New Roman,serif" font-size="9.00">𝒩</text>
-<text text-anchor="middle" x="402" y="-127.8" font-family="Times New Roman,serif" font-size="9.00">gaussianmeanvariance_1</text>
+<!-- 13951467395525729336&#45;&#45;9239151933946922621 -->
+<g id="edge6" class="edge">
+<title>13951467395525729336&#45;&#45;9239151933946922621</title>
+<path fill="none" stroke="#000000" d="M187.4012,-97.7747C189.1396,-83.4665 191.1023,-67.3116 192.7133,-54.0525"/>
+<text text-anchor="start" x="191" y="-73.6" font-family="Times,serif" font-size="8.00" fill="#ff0000">clamp_4</text>
+<text text-anchor="start" x="174.4906" y="-55.6525" font-family="Times,serif" font-size="8.00" fill="#000000">1 out </text>
+<text text-anchor="start" x="175.4012" y="-91.3747" font-family="Times,serif" font-size="8.00" fill="#000000">3 v </text>
 </g>
-<!-- 1138601576796358156&#45;&#45;18078854876101909107 -->
-<g id="edge6" class="edge"><title>1138601576796358156&#45;&#45;18078854876101909107</title>
-<path fill="none" stroke="black" d="M304.262,-219.879C321.779,-204.846 342.875,-186.741 360.978,-171.206"/>
-<text text-anchor="start" x="339" y="-191.6" font-family="Times New Roman,serif" font-size="8.00" fill="red">x</text>
-<text text-anchor="start" x="339.978" y="-173.806" font-family="Times New Roman,serif" font-size="8.00">1 out </text>
-<text text-anchor="start" x="304.262" y="-222.479" font-family="Times New Roman,serif" font-size="8.00">2 in1 </text>
+<!-- 8716716920034088348 -->
+<g id="node2" class="node">
+<title>8716716920034088348</title>
+<polygon fill="#d3d3d3" stroke="#000000" points="418,-54 364,-54 364,0 418,0 418,-54"/>
+<text text-anchor="middle" x="391" y="-24.3" font-family="Times,serif" font-size="9.00" fill="#000000">clamp_2</text>
 </g>
-<!-- 2641190624634984038 -->
-<g id="node3" class="node"><title>2641190624634984038</title>
-<polygon fill="lightgrey" stroke="black" points="54,-54 0,-54 0,-0 54,-0 54,-54"/>
-<text text-anchor="middle" x="27" y="-24.8" font-family="Times New Roman,serif" font-size="9.00">clamp_3</text>
+<!-- 12986402004703805880 -->
+<g id="node3" class="node">
+<title>12986402004703805880</title>
+<polygon fill="#d3d3d3" stroke="#000000" points="587,-54 533,-54 533,0 587,0 587,-54"/>
+<text text-anchor="middle" x="560" y="-24.3" font-family="Times,serif" font-size="9.00" fill="#000000">clamp_1</text>
 </g>
-<!-- 18202552708800445231 -->
-<g id="node4" class="node"><title>18202552708800445231</title>
-<polygon fill="lightgrey" stroke="black" points="223,-54 169,-54 169,-0 223,-0 223,-54"/>
-<text text-anchor="middle" x="196" y="-24.8" font-family="Times New Roman,serif" font-size="9.00">clamp_4</text>
+<!-- 6547040116332967971 -->
+<g id="node5" class="node">
+<title>6547040116332967971</title>
+<polygon fill="none" stroke="#000000" points="456.9605,-170 351.0395,-170 351.0395,-98 456.9605,-98 456.9605,-170"/>
+<text text-anchor="middle" x="404" y="-136.43" font-family="Times,serif" font-size="9.00" fill="#000000">𝒩</text>
+<text text-anchor="middle" x="404" y="-126.17" font-family="Times,serif" font-size="9.00" fill="#000000">gaussianmeanvariance_1</text>
 </g>
-<!-- 2841501392570497320&#45;&#45;2641190624634984038 -->
-<g id="edge2" class="edge"><title>2841501392570497320&#45;&#45;2641190624634984038</title>
-<path fill="none" stroke="black" d="M131.487,-98.9979C105.75,-81.5098 75.6473,-61.0552 54.381,-46.605"/>
-<text text-anchor="start" x="105" y="-74.6" font-family="Times New Roman,serif" font-size="8.00" fill="red">clamp_3</text>
-<text text-anchor="start" x="54.381" y="-49.205" font-family="Times New Roman,serif" font-size="8.00">1 out </text>
-<text text-anchor="start" x="115.487" y="-92.5979" font-family="Times New Roman,serif" font-size="8.00">2 m </text>
+<!-- 6547040116332967971&#45;&#45;8716716920034088348 -->
+<g id="edge1" class="edge">
+<title>6547040116332967971&#45;&#45;8716716920034088348</title>
+<path fill="none" stroke="#000000" d="M392.8898,-97.957C391.4628,-92.0108 390.2301,-85.8714 389.4531,-80 388.9867,-76.4752 389.392,-75.555 389.4531,-72 389.5525,-66.2162 389.7237,-60.0161 389.9168,-54.1236"/>
+<text text-anchor="start" x="390" y="-73.6" font-family="Times,serif" font-size="8.00" fill="#ff0000">clamp_2</text>
+<text text-anchor="start" x="371.6942" y="-55.7236" font-family="Times,serif" font-size="8.00" fill="#000000">1 out </text>
+<text text-anchor="start" x="380.8898" y="-91.557" font-family="Times,serif" font-size="8.00" fill="#000000">3 v </text>
 </g>
-<!-- 2841501392570497320&#45;&#45;18202552708800445231 -->
-<g id="edge3" class="edge"><title>2841501392570497320&#45;&#45;18202552708800445231</title>
-<path fill="none" stroke="black" d="M187.293,-98.9979C189.082,-84.4044 191.126,-67.7451 192.783,-54.2331"/>
-<text text-anchor="start" x="191" y="-74.6" font-family="Times New Roman,serif" font-size="8.00" fill="red">clamp_4</text>
-<text text-anchor="start" x="171.783" y="-56.8331" font-family="Times New Roman,serif" font-size="8.00">1 out </text>
-<text text-anchor="start" x="173.293" y="-92.5979" font-family="Times New Roman,serif" font-size="8.00">3 v </text>
+<!-- 6547040116332967971&#45;&#45;12986402004703805880 -->
+<g id="edge7" class="edge">
+<title>6547040116332967971&#45;&#45;12986402004703805880</title>
+<path fill="none" stroke="#000000" d="M456.8145,-97.7747C482.2714,-80.3138 511.7379,-60.1029 532.6484,-45.7604"/>
+<text text-anchor="start" x="492" y="-73.6" font-family="Times,serif" font-size="8.00" fill="#ff0000">clamp_1</text>
+<text text-anchor="start" x="514.4257" y="-47.3604" font-family="Times,serif" font-size="8.00" fill="#000000">1 out </text>
+<text text-anchor="start" x="442.5918" y="-91.3747" font-family="Times,serif" font-size="8.00" fill="#000000">2 m </text>
 </g>
-<!-- 4086683169667272313 -->
-<g id="node6" class="node"><title>4086683169667272313</title>
-<polygon fill="lightgrey" stroke="black" points="573,-54 519,-54 519,-0 573,-0 573,-54"/>
-<text text-anchor="middle" x="546" y="-24.8" font-family="Times New Roman,serif" font-size="9.00">clamp_2</text>
+<!-- 13519061553257623619 -->
+<g id="node6" class="node">
+<title>13519061553257623619</title>
+<polygon fill="none" stroke="#000000" points="329,-286 257,-286 257,-214 329,-214 329,-286"/>
+<text text-anchor="middle" x="293" y="-251.8" font-family="Times,serif" font-size="9.00" fill="#000000">+</text>
+<text text-anchor="middle" x="293" y="-242.8" font-family="Times,serif" font-size="9.00" fill="#000000">addition_1</text>
 </g>
-<!-- 566039146965851502 -->
-<g id="node7" class="node"><title>566039146965851502</title>
-<polygon fill="lightgrey" stroke="black" points="301.5,-387 234.5,-387 234.5,-333 301.5,-333 301.5,-387"/>
-<text text-anchor="middle" x="268" y="-357.8" font-family="Times New Roman,serif" font-size="9.00">placeholder_z</text>
+<!-- 13519061553257623619&#45;&#45;13951467395525729336 -->
+<g id="edge4" class="edge">
+<title>13519061553257623619&#45;&#45;13951467395525729336</title>
+<path fill="none" stroke="#000000" d="M256.9919,-216.1759C250.2447,-209.5869 243.3275,-202.6566 237,-196 229.2308,-187.8268 221.1143,-178.7937 213.6046,-170.2098"/>
+<text text-anchor="start" x="237" y="-189.6" font-family="Times,serif" font-size="8.00" fill="#ff0000">y</text>
+<text text-anchor="start" x="195.3819" y="-171.8098" font-family="Times,serif" font-size="8.00" fill="#000000">1 out </text>
+<text text-anchor="start" x="238.7692" y="-217.7759" font-family="Times,serif" font-size="8.00" fill="#000000">3 in2 </text>
 </g>
-<!-- 566039146965851502&#45;&#45;1138601576796358156 -->
-<g id="edge1" class="edge"><title>566039146965851502&#45;&#45;1138601576796358156</title>
-<path fill="none" stroke="black" d="M268,-332.798C268,-319.31 268,-302.68 268,-288.099"/>
-<text text-anchor="start" x="268" y="-308.6" font-family="Times New Roman,serif" font-size="8.00" fill="red">z</text>
-<text text-anchor="start" x="247" y="-290.699" font-family="Times New Roman,serif" font-size="8.00">1 out </text>
-<text text-anchor="start" x="247" y="-326.398" font-family="Times New Roman,serif" font-size="8.00">1 out </text>
+<!-- 13519061553257623619&#45;&#45;6547040116332967971 -->
+<g id="edge2" class="edge">
+<title>13519061553257623619&#45;&#45;6547040116332967971</title>
+<path fill="none" stroke="#000000" d="M327.5126,-213.9327C340.8773,-199.9661 356.1461,-184.0095 369.5087,-170.045"/>
+<text text-anchor="start" x="352" y="-189.6" font-family="Times,serif" font-size="8.00" fill="#ff0000">x</text>
+<text text-anchor="start" x="351.2861" y="-171.645" font-family="Times,serif" font-size="8.00" fill="#000000">1 out </text>
+<text text-anchor="start" x="309.29" y="-207.5327" font-family="Times,serif" font-size="8.00" fill="#000000">2 in1 </text>
 </g>
-<!-- 18078854876101909107&#45;&#45;1076786165438950904 -->
-<g id="edge7" class="edge"><title>18078854876101909107&#45;&#45;1076786165438950904</title>
-<path fill="none" stroke="black" d="M378.869,-98.8647C376.039,-93.0995 373.589,-87.0324 372,-81 369.74,-72.4201 369.878,-62.8219 370.934,-54.1759"/>
-<text text-anchor="start" x="372" y="-74.6" font-family="Times New Roman,serif" font-size="8.00" fill="red">clamp_1</text>
-<text text-anchor="start" x="349.934" y="-56.7759" font-family="Times New Roman,serif" font-size="8.00">1 out </text>
-<text text-anchor="start" x="362.869" y="-92.4647" font-family="Times New Roman,serif" font-size="8.00">2 m </text>
+<!-- 5483091294032432749 -->
+<g id="node7" class="node">
+<title>5483091294032432749</title>
+<polygon fill="#d3d3d3" stroke="#000000" points="326.4729,-384 259.5271,-384 259.5271,-330 326.4729,-330 326.4729,-384"/>
+<text text-anchor="middle" x="293" y="-354.3" font-family="Times,serif" font-size="9.00" fill="#000000">placeholder_z</text>
 </g>
-<!-- 18078854876101909107&#45;&#45;4086683169667272313 -->
-<g id="edge5" class="edge"><title>18078854876101909107&#45;&#45;4086683169667272313</title>
-<path fill="none" stroke="black" d="M449.55,-98.9979C472.488,-82.1129 499.183,-62.4623 518.666,-48.1209"/>
-<text text-anchor="start" x="482" y="-74.6" font-family="Times New Roman,serif" font-size="8.00" fill="red">clamp_2</text>
-<text text-anchor="start" x="497.666" y="-50.7209" font-family="Times New Roman,serif" font-size="8.00">1 out </text>
-<text text-anchor="start" x="435.55" y="-92.5979" font-family="Times New Roman,serif" font-size="8.00">3 v </text>
+<!-- 5483091294032432749&#45;&#45;13519061553257623619 -->
+<g id="edge5" class="edge">
+<title>5483091294032432749&#45;&#45;13519061553257623619</title>
+<path fill="none" stroke="#000000" d="M293,-329.9994C293,-316.7507 293,-300.6013 293,-286.2906"/>
+<text text-anchor="start" x="293" y="-305.6" font-family="Times,serif" font-size="8.00" fill="#ff0000">z</text>
+<text text-anchor="start" x="274.7773" y="-287.8906" font-family="Times,serif" font-size="8.00" fill="#000000">1 out </text>
+<text text-anchor="start" x="274.7773" y="-323.5994" font-family="Times,serif" font-size="8.00" fill="#000000">1 out </text>
 </g>
 </g>
 </svg>
-</div><h3><a class="nav-anchor" id="Online-vs.-offline-learning-1" href="#Online-vs.-offline-learning-1">Online vs. offline learning</a></h3><p>Online learning refers to a procedure where observations are processed as soon as they become available. In the context of factor graphs this means that observations need to be fed to the placeholders and processed one at a time. In a Bayesian setting, this reduces to the application of Bayes rule in a recursive fashion, i.e. the posterior distribution for a given random variable, becomes the prior for the next processing step. Since we are feeding one observation at each time step, the factor graph will have <em>one</em> placeholder for every observed variable. All of the factor graphs that we have seen so far were specified to process data in this fashion.</p><p>Let&#39;s take a look at an example in order to contrast it with its offline counterpart. In this simple example, the mean <code>x</code> of a Gaussian distributed random variable <code>y</code> is modelled by another Gaussian distribution with hyperparameters <code>m</code> and <code>v</code>. The variance of <code>y</code> is assumed to be known.</p><div><pre><code class="language-julia">g = FactorGraph() # create a new factor graph
+<h3><a class="nav-anchor" id="Online-vs.-offline-learning-1" href="#Online-vs.-offline-learning-1">Online vs. offline learning</a></h3><p>Online learning refers to a procedure where observations are processed as soon as they become available. In the context of factor graphs this means that observations need to be fed to the placeholders and processed one at a time. In a Bayesian setting, this reduces to the application of Bayes rule in a recursive fashion, i.e. the posterior distribution for a given random variable, becomes the prior for the next processing step. Since we are feeding one observation at each time step, the factor graph will have <em>one</em> placeholder for every observed variable. All of the factor graphs that we have seen so far were specified to process data in this fashion.</p><p>Let&#39;s take a look at an example in order to contrast it with its offline counterpart. In this simple example, the mean <code>x</code> of a Gaussian distributed random variable <code>y</code> is modelled by another Gaussian distribution with hyperparameters <code>m</code> and <code>v</code>. The variance of <code>y</code> is assumed to be known.</p><pre><code class="language-julia">g = FactorGraph() # create a new factor graph
 m = placeholder(:m)
 v = placeholder(:v)
 @RV x ~ GaussianMeanVariance(m, v)
@@ -328,84 +371,95 @@ placeholder(y, :y)
 ForneyLab.draw(g)</code></pre><?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<!-- Generated by graphviz version 2.38.0 (20140413.2041)
+<!-- Generated by graphviz version 2.40.1 (20161225.0304)
  -->
 <!-- Title: G Pages: 1 -->
-<svg width="354pt" height="395pt"
- viewBox="0.00 0.00 353.94 395.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 391)">
+<svg width="354pt" height="392pt"
+ viewBox="0.00 0.00 354.49 392.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 388)">
 <title>G</title>
-<polygon fill="white" stroke="none" points="-4,4 -4,-391 349.936,-391 349.936,4 -4,4"/>
-<!-- 2238224223504652361 -->
-<g id="node1" class="node"><title>2238224223504652361</title>
-<polygon fill="lightgrey" stroke="black" points="163.936,-54 94.9364,-54 94.9364,-0 163.936,-0 163.936,-54"/>
-<text text-anchor="middle" x="129.436" y="-24.8" font-family="Times New Roman,serif" font-size="9.00">placeholder_m</text>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-388 350.4883,-388 350.4883,4 -4,4"/>
+<!-- 3955439980201176316 -->
+<g id="node1" class="node">
+<title>3955439980201176316</title>
+<polygon fill="#d3d3d3" stroke="#000000" points="66.9648,-54 .0117,-54 .0117,0 66.9648,0 66.9648,-54"/>
+<text text-anchor="middle" x="33.4883" y="-24.3" font-family="Times,serif" font-size="9.00" fill="#000000">placeholder_v</text>
 </g>
-<!-- 7367294876812955255 -->
-<g id="node2" class="node"><title>7367294876812955255</title>
-<polygon fill="lightgrey" stroke="black" points="54.4364,-162 0.436381,-162 0.436381,-108 54.4364,-108 54.4364,-162"/>
-<text text-anchor="middle" x="27.4364" y="-132.8" font-family="Times New Roman,serif" font-size="9.00">clamp_1</text>
+<!-- 4340711685142095486 -->
+<g id="node2" class="node">
+<title>4340711685142095486</title>
+<polygon fill="none" stroke="#000000" points="177.4487,-170 71.5278,-170 71.5278,-98 177.4487,-98 177.4487,-170"/>
+<text text-anchor="middle" x="124.4883" y="-136.43" font-family="Times,serif" font-size="9.00" fill="#000000">𝒩</text>
+<text text-anchor="middle" x="124.4883" y="-126.17" font-family="Times,serif" font-size="9.00" fill="#000000">gaussianmeanvariance_1</text>
 </g>
-<!-- 8691574614243361758 -->
-<g id="node3" class="node"><title>8691574614243361758</title>
-<polygon fill="lightgrey" stroke="black" points="345.936,-54 278.936,-54 278.936,-0 345.936,-0 345.936,-54"/>
-<text text-anchor="middle" x="312.436" y="-24.8" font-family="Times New Roman,serif" font-size="9.00">placeholder_v</text>
+<!-- 4340711685142095486&#45;&#45;3955439980201176316 -->
+<g id="edge4" class="edge">
+<title>4340711685142095486&#45;&#45;3955439980201176316</title>
+<path fill="none" stroke="#000000" d="M85.6048,-97.752C80.0055,-91.9882 74.4622,-85.958 69.4883,-80 62.7875,-71.9734 56.1539,-62.6956 50.4415,-54.1675"/>
+<text text-anchor="start" x="69.4883" y="-73.6" font-family="Times,serif" font-size="8.00" fill="#ff0000">v</text>
+<text text-anchor="start" x="32.2188" y="-55.7675" font-family="Times,serif" font-size="8.00" fill="#000000">1 out </text>
+<text text-anchor="start" x="73.6048" y="-91.352" font-family="Times,serif" font-size="8.00" fill="#000000">3 v </text>
 </g>
-<!-- 4275841436495005543 -->
-<g id="node4" class="node"><title>4275841436495005543</title>
-<polygon fill="lightgrey" stroke="black" points="136.436,-387 68.4364,-387 68.4364,-333 136.436,-333 136.436,-387"/>
-<text text-anchor="middle" x="102.436" y="-357.8" font-family="Times New Roman,serif" font-size="9.00">placeholder_y</text>
+<!-- 4069473232421331899 -->
+<g id="node3" class="node">
+<title>4069473232421331899</title>
+<polygon fill="#d3d3d3" stroke="#000000" points="251.467,-54 181.5096,-54 181.5096,0 251.467,0 251.467,-54"/>
+<text text-anchor="middle" x="216.4883" y="-24.3" font-family="Times,serif" font-size="9.00" fill="#000000">placeholder_m</text>
 </g>
-<!-- 10236775611115354819 -->
-<g id="node5" class="node"><title>10236775611115354819</title>
-<polygon fill="none" stroke="black" points="154.436,-288 50.4364,-288 50.4364,-216 154.436,-216 154.436,-288"/>
-<text text-anchor="middle" x="102.436" y="-254.8" font-family="Times New Roman,serif" font-size="9.00">𝒩</text>
-<text text-anchor="middle" x="102.436" y="-244.8" font-family="Times New Roman,serif" font-size="9.00">gaussianmeanvariance_2</text>
+<!-- 4340711685142095486&#45;&#45;4069473232421331899 -->
+<g id="edge2" class="edge">
+<title>4340711685142095486&#45;&#45;4069473232421331899</title>
+<path fill="none" stroke="#000000" d="M155.6353,-97.7747C167.9377,-83.4665 181.8278,-67.3116 193.2282,-54.0525"/>
+<text text-anchor="start" x="176.4883" y="-73.6" font-family="Times,serif" font-size="8.00" fill="#ff0000">m</text>
+<text text-anchor="start" x="175.0056" y="-55.6525" font-family="Times,serif" font-size="8.00" fill="#000000">1 out </text>
+<text text-anchor="start" x="141.4126" y="-91.3747" font-family="Times,serif" font-size="8.00" fill="#000000">2 m </text>
 </g>
-<!-- 4275841436495005543&#45;&#45;10236775611115354819 -->
-<g id="edge3" class="edge"><title>4275841436495005543&#45;&#45;10236775611115354819</title>
-<path fill="none" stroke="black" d="M102.436,-332.798C102.436,-319.31 102.436,-302.68 102.436,-288.099"/>
-<text text-anchor="start" x="102.436" y="-308.6" font-family="Times New Roman,serif" font-size="8.00" fill="red">y</text>
-<text text-anchor="start" x="81.4364" y="-290.699" font-family="Times New Roman,serif" font-size="8.00">1 out </text>
-<text text-anchor="start" x="81.4364" y="-326.398" font-family="Times New Roman,serif" font-size="8.00">1 out </text>
+<!-- 6293103507698824387 -->
+<g id="node4" class="node">
+<title>6293103507698824387</title>
+<polygon fill="#d3d3d3" stroke="#000000" points="346.4883,-161 292.4883,-161 292.4883,-107 346.4883,-107 346.4883,-161"/>
+<text text-anchor="middle" x="319.4883" y="-131.3" font-family="Times,serif" font-size="9.00" fill="#000000">clamp_1</text>
 </g>
-<!-- 10236775611115354819&#45;&#45;7367294876812955255 -->
-<g id="edge4" class="edge"><title>10236775611115354819&#45;&#45;7367294876812955255</title>
-<path fill="none" stroke="black" d="M50.2779,-225.432C40.2932,-218.024 31.1754,-208.917 25.4364,-198 19.7237,-187.133 19.4955,-173.649 21,-162.035"/>
-<text text-anchor="start" x="25.4364" y="-191.6" font-family="Times New Roman,serif" font-size="8.00" fill="red">clamp_1</text>
-<text text-anchor="start" x="0" y="-164.635" font-family="Times New Roman,serif" font-size="8.00">1 out </text>
-<text text-anchor="start" x="36.2779" y="-228.032" font-family="Times New Roman,serif" font-size="8.00">3 v </text>
+<!-- 11700087100280350362 -->
+<g id="node5" class="node">
+<title>11700087100280350362</title>
+<polygon fill="none" stroke="#000000" points="275.4487,-286 169.5278,-286 169.5278,-214 275.4487,-214 275.4487,-286"/>
+<text text-anchor="middle" x="222.4883" y="-252.43" font-family="Times,serif" font-size="9.00" fill="#000000">𝒩</text>
+<text text-anchor="middle" x="222.4883" y="-242.17" font-family="Times,serif" font-size="9.00" fill="#000000">gaussianmeanvariance_2</text>
 </g>
-<!-- 6744069330633438925 -->
-<g id="node6" class="node"><title>6744069330633438925</title>
-<polygon fill="none" stroke="black" points="273.436,-171 169.436,-171 169.436,-99 273.436,-99 273.436,-171"/>
-<text text-anchor="middle" x="221.436" y="-137.8" font-family="Times New Roman,serif" font-size="9.00">𝒩</text>
-<text text-anchor="middle" x="221.436" y="-127.8" font-family="Times New Roman,serif" font-size="9.00">gaussianmeanvariance_1</text>
+<!-- 11700087100280350362&#45;&#45;4340711685142095486 -->
+<g id="edge5" class="edge">
+<title>11700087100280350362&#45;&#45;4340711685142095486</title>
+<path fill="none" stroke="#000000" d="M192.0177,-213.9327C180.2182,-199.9661 166.7377,-184.0095 154.9401,-170.045"/>
+<text text-anchor="start" x="176.4883" y="-189.6" font-family="Times,serif" font-size="8.00" fill="#ff0000">x</text>
+<text text-anchor="start" x="136.7174" y="-171.645" font-family="Times,serif" font-size="8.00" fill="#000000">1 out </text>
+<text text-anchor="start" x="177.795" y="-207.5327" font-family="Times,serif" font-size="8.00" fill="#000000">2 m </text>
 </g>
-<!-- 10236775611115354819&#45;&#45;6744069330633438925 -->
-<g id="edge1" class="edge"><title>10236775611115354819&#45;&#45;6744069330633438925</title>
-<path fill="none" stroke="black" d="M138.787,-215.871C153.414,-201.736 170.252,-185.463 184.898,-171.31"/>
-<text text-anchor="start" x="166.436" y="-191.6" font-family="Times New Roman,serif" font-size="8.00" fill="red">x</text>
-<text text-anchor="start" x="163.898" y="-173.91" font-family="Times New Roman,serif" font-size="8.00">1 out </text>
-<text text-anchor="start" x="122.787" y="-209.471" font-family="Times New Roman,serif" font-size="8.00">2 m </text>
+<!-- 11700087100280350362&#45;&#45;6293103507698824387 -->
+<g id="edge1" class="edge">
+<title>11700087100280350362&#45;&#45;6293103507698824387</title>
+<path fill="none" stroke="#000000" d="M252.648,-213.9327C266.8853,-196.9067 283.5953,-176.9235 296.7461,-161.1968"/>
+<text text-anchor="start" x="274.4883" y="-189.6" font-family="Times,serif" font-size="8.00" fill="#ff0000">clamp_1</text>
+<text text-anchor="start" x="278.5234" y="-162.7968" font-family="Times,serif" font-size="8.00" fill="#000000">1 out </text>
+<text text-anchor="start" x="240.648" y="-207.5327" font-family="Times,serif" font-size="8.00" fill="#000000">3 v </text>
 </g>
-<!-- 6744069330633438925&#45;&#45;2238224223504652361 -->
-<g id="edge5" class="edge"><title>6744069330633438925&#45;&#45;2238224223504652361</title>
-<path fill="none" stroke="black" d="M191.057,-98.9979C178.391,-84.4044 163.932,-67.7451 152.205,-54.2331"/>
-<text text-anchor="start" x="175.436" y="-74.6" font-family="Times New Roman,serif" font-size="8.00" fill="red">m</text>
-<text text-anchor="start" x="131.205" y="-56.8331" font-family="Times New Roman,serif" font-size="8.00">1 out </text>
-<text text-anchor="start" x="175.057" y="-92.5979" font-family="Times New Roman,serif" font-size="8.00">2 m </text>
+<!-- 11402887687665512861 -->
+<g id="node6" class="node">
+<title>11402887687665512861</title>
+<polygon fill="#d3d3d3" stroke="#000000" points="255.9648,-384 189.0117,-384 189.0117,-330 255.9648,-330 255.9648,-384"/>
+<text text-anchor="middle" x="222.4883" y="-354.3" font-family="Times,serif" font-size="9.00" fill="#000000">placeholder_y</text>
 </g>
-<!-- 6744069330633438925&#45;&#45;8691574614243361758 -->
-<g id="edge2" class="edge"><title>6744069330633438925&#45;&#45;8691574614243361758</title>
-<path fill="none" stroke="black" d="M251.485,-98.9979C264.014,-84.4044 278.316,-67.7451 289.916,-54.2331"/>
-<text text-anchor="start" x="271.436" y="-74.6" font-family="Times New Roman,serif" font-size="8.00" fill="red">v</text>
-<text text-anchor="start" x="268.916" y="-56.8331" font-family="Times New Roman,serif" font-size="8.00">1 out </text>
-<text text-anchor="start" x="237.485" y="-92.5979" font-family="Times New Roman,serif" font-size="8.00">3 v </text>
+<!-- 11402887687665512861&#45;&#45;11700087100280350362 -->
+<g id="edge3" class="edge">
+<title>11402887687665512861&#45;&#45;11700087100280350362</title>
+<path fill="none" stroke="#000000" d="M222.4883,-329.9994C222.4883,-316.7507 222.4883,-300.6013 222.4883,-286.2906"/>
+<text text-anchor="start" x="222.4883" y="-305.6" font-family="Times,serif" font-size="8.00" fill="#ff0000">y</text>
+<text text-anchor="start" x="204.2656" y="-287.8906" font-family="Times,serif" font-size="8.00" fill="#000000">1 out </text>
+<text text-anchor="start" x="204.2656" y="-323.5994" font-family="Times,serif" font-size="8.00" fill="#000000">1 out </text>
 </g>
 </g>
 </svg>
-</div><p>As we have seen in previous examples, there is one placeholder linked to the observed variable <code>y</code> that accepts one observation at a time. Perhaps what is less obvious is that the hyperparameters <code>m</code> and <code>v</code> are also defined as placeholders. The reason for this is that we will use them to input our current (prior) belief about <code>x</code> for every observation that is processed. In section <a href="#Executing-an-algorithm-1">Executing an algorithm</a> we will elaborate more on this.</p><p>Offline learning, on the other hand, involves feeding and processing a batch of <code>N</code> observations (typically all available observations) in a single step. This translates into a factor graph that has one placeholder linked to a random variable for <em>each</em> sample in the batch. We can specify this type of models using a <code>for</code> loop like in the following example.</p><div><pre><code class="language-julia">g = FactorGraph()   # create a new factor graph
+<p>As we have seen in previous examples, there is one placeholder linked to the observed variable <code>y</code> that accepts one observation at a time. Perhaps what is less obvious is that the hyperparameters <code>m</code> and <code>v</code> are also defined as placeholders. The reason for this is that we will use them to input our current (prior) belief about <code>x</code> for every observation that is processed. In section <a href="#Executing-an-algorithm-1">Executing an algorithm</a> we will elaborate more on this.</p><p>Offline learning, on the other hand, involves feeding and processing a batch of <code>N</code> observations (typically all available observations) in a single step. This translates into a factor graph that has one placeholder linked to a random variable for <em>each</em> sample in the batch. We can specify this type of models using a <code>for</code> loop like in the following example.</p><pre><code class="language-julia">g = FactorGraph()   # create a new factor graph
 N = 3               # number of observations
 y = Vector{Variable}(undef, N)
 @RV x ~ GaussianMeanVariance(0.0, 1.0)
@@ -416,184 +470,211 @@ end
 ForneyLab.draw(g)</code></pre><?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<!-- Generated by graphviz version 2.38.0 (20140413.2041)
+<!-- Generated by graphviz version 2.40.1 (20161225.0304)
  -->
 <!-- Title: G Pages: 1 -->
-<svg width="763pt" height="413pt"
- viewBox="0.00 0.00 763.00 413.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 409)">
+<svg width="875pt" height="410pt"
+ viewBox="0.00 0.00 874.97 410.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 406)">
 <title>G</title>
-<polygon fill="white" stroke="none" points="-4,4 -4,-409 759,-409 759,4 -4,4"/>
-<!-- 10244904936204346883 -->
-<g id="node1" class="node"><title>10244904936204346883</title>
-<polygon fill="none" stroke="black" points="104,-288 0,-288 0,-216 104,-216 104,-288"/>
-<text text-anchor="middle" x="52" y="-254.8" font-family="Times New Roman,serif" font-size="9.00">𝒩</text>
-<text text-anchor="middle" x="52" y="-244.8" font-family="Times New Roman,serif" font-size="9.00">gaussianmeanvariance_4</text>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-406 870.9685,-406 870.9685,4 -4,4"/>
+<!-- 12494201305579169597 -->
+<g id="node1" class="node">
+<title>12494201305579169597</title>
+<polygon fill="#d3d3d3" stroke="#000000" points="75.9648,-393 .0117,-393 .0117,-339 75.9648,-339 75.9648,-393"/>
+<text text-anchor="middle" x="37.9883" y="-363.3" font-family="Times,serif" font-size="9.00" fill="#000000">placeholder_y_3</text>
 </g>
-<!-- 16370764753358169502 -->
-<g id="node6" class="node"><title>16370764753358169502</title>
-<polygon fill="lightgrey" stroke="black" points="79,-162 25,-162 25,-108 79,-108 79,-162"/>
-<text text-anchor="middle" x="52" y="-132.8" font-family="Times New Roman,serif" font-size="9.00">clamp_5</text>
+<!-- 7921450954503472771 -->
+<g id="node8" class="node">
+<title>7921450954503472771</title>
+<polygon fill="none" stroke="#000000" points="143.9487,-286 38.0278,-286 38.0278,-214 143.9487,-214 143.9487,-286"/>
+<text text-anchor="middle" x="90.9883" y="-252.43" font-family="Times,serif" font-size="9.00" fill="#000000">𝒩</text>
+<text text-anchor="middle" x="90.9883" y="-242.17" font-family="Times,serif" font-size="9.00" fill="#000000">gaussianmeanvariance_4</text>
 </g>
-<!-- 10244904936204346883&#45;&#45;16370764753358169502 -->
-<g id="edge9" class="edge"><title>10244904936204346883&#45;&#45;16370764753358169502</title>
-<path fill="none" stroke="black" d="M52,-215.871C52,-198.565 52,-178.056 52,-162.154"/>
-<text text-anchor="start" x="52" y="-191.6" font-family="Times New Roman,serif" font-size="8.00" fill="red">clamp_5</text>
-<text text-anchor="start" x="31" y="-164.754" font-family="Times New Roman,serif" font-size="8.00">1 out </text>
-<text text-anchor="start" x="38" y="-209.471" font-family="Times New Roman,serif" font-size="8.00">3 v </text>
+<!-- 12494201305579169597&#45;&#45;7921450954503472771 -->
+<g id="edge10" class="edge">
+<title>12494201305579169597&#45;&#45;7921450954503472771</title>
+<path fill="none" stroke="#000000" d="M50.4144,-338.8032C57.5739,-323.1333 66.6642,-303.2377 74.4249,-286.252"/>
+<text text-anchor="start" x="66.9883" y="-305.6" font-family="Times,serif" font-size="8.00" fill="#ff0000">y_3</text>
+<text text-anchor="start" x="56.2022" y="-287.852" font-family="Times,serif" font-size="8.00" fill="#000000">1 out </text>
+<text text-anchor="start" x="32.1918" y="-332.4032" font-family="Times,serif" font-size="8.00" fill="#000000">1 out </text>
 </g>
-<!-- 5169957800779939100 -->
-<g id="node2" class="node"><title>5169957800779939100</title>
-<polygon fill="none" stroke="black" points="345,-405 273,-405 273,-333 345,-333 345,-405"/>
-<text text-anchor="middle" x="309" y="-371.8" font-family="Times New Roman,serif" font-size="9.00">=</text>
-<text text-anchor="middle" x="309" y="-361.8" font-family="Times New Roman,serif" font-size="9.00">equ_x_2</text>
+<!-- 18347089685084889301 -->
+<g id="node2" class="node">
+<title>18347089685084889301</title>
+<polygon fill="#d3d3d3" stroke="#000000" points="117.9883,-161 63.9883,-161 63.9883,-107 117.9883,-107 117.9883,-161"/>
+<text text-anchor="middle" x="90.9883" y="-131.3" font-family="Times,serif" font-size="9.00" fill="#000000">clamp_5</text>
 </g>
-<!-- 5169957800779939100&#45;&#45;10244904936204346883 -->
-<g id="edge5" class="edge"><title>5169957800779939100&#45;&#45;10244904936204346883</title>
-<path fill="none" stroke="black" d="M272.995,-351.889C229.065,-332.231 154.454,-298.845 104.219,-276.367"/>
-<text text-anchor="start" x="189" y="-308.6" font-family="Times New Roman,serif" font-size="8.00" fill="red">x</text>
-<text text-anchor="start" x="104.219" y="-278.967" font-family="Times New Roman,serif" font-size="8.00">2 m </text>
-<text text-anchor="start" x="258.995" y="-354.489" font-family="Times New Roman,serif" font-size="8.00">3 3 </text>
+<!-- 6580101440802176790 -->
+<g id="node3" class="node">
+<title>6580101440802176790</title>
+<polygon fill="none" stroke="#000000" points="388.9487,-286 283.0278,-286 283.0278,-214 388.9487,-214 388.9487,-286"/>
+<text text-anchor="middle" x="335.9883" y="-252.43" font-family="Times,serif" font-size="9.00" fill="#000000">𝒩</text>
+<text text-anchor="middle" x="335.9883" y="-242.17" font-family="Times,serif" font-size="9.00" fill="#000000">gaussianmeanvariance_3</text>
 </g>
-<!-- 2931795849394622137 -->
-<g id="node13" class="node"><title>2931795849394622137</title>
-<polygon fill="none" stroke="black" points="755,-288 651,-288 651,-216 755,-216 755,-288"/>
-<text text-anchor="middle" x="703" y="-254.8" font-family="Times New Roman,serif" font-size="9.00">𝒩</text>
-<text text-anchor="middle" x="703" y="-244.8" font-family="Times New Roman,serif" font-size="9.00">gaussianmeanvariance_3</text>
+<!-- 6166524033099250750 -->
+<g id="node6" class="node">
+<title>6166524033099250750</title>
+<polygon fill="#d3d3d3" stroke="#000000" points="362.9883,-161 308.9883,-161 308.9883,-107 362.9883,-107 362.9883,-161"/>
+<text text-anchor="middle" x="335.9883" y="-131.3" font-family="Times,serif" font-size="9.00" fill="#000000">clamp_4</text>
 </g>
-<!-- 5169957800779939100&#45;&#45;2931795849394622137 -->
-<g id="edge3" class="edge"><title>5169957800779939100&#45;&#45;2931795849394622137</title>
-<path fill="none" stroke="black" d="M345.426,-358.159C399.574,-343.434 504.436,-314.556 593,-288 611.908,-282.33 632.551,-275.842 650.794,-270.005"/>
-<text text-anchor="start" x="531" y="-308.6" font-family="Times New Roman,serif" font-size="8.00" fill="red">x</text>
-<text text-anchor="start" x="634.794" y="-272.605" font-family="Times New Roman,serif" font-size="8.00">2 m </text>
-<text text-anchor="start" x="345.426" y="-360.759" font-family="Times New Roman,serif" font-size="8.00">1 1 </text>
+<!-- 6580101440802176790&#45;&#45;6166524033099250750 -->
+<g id="edge9" class="edge">
+<title>6580101440802176790&#45;&#45;6166524033099250750</title>
+<path fill="none" stroke="#000000" d="M335.9883,-213.9327C335.9883,-196.9067 335.9883,-176.9235 335.9883,-161.1968"/>
+<text text-anchor="start" x="335.9883" y="-189.6" font-family="Times,serif" font-size="8.00" fill="#ff0000">clamp_4</text>
+<text text-anchor="start" x="317.7656" y="-162.7968" font-family="Times,serif" font-size="8.00" fill="#000000">1 out </text>
+<text text-anchor="start" x="323.9883" y="-207.5327" font-family="Times,serif" font-size="8.00" fill="#000000">3 v </text>
 </g>
-<!-- 5333943118256266390 -->
-<g id="node14" class="node"><title>5333943118256266390</title>
-<polygon fill="none" stroke="black" points="343,-288 271,-288 271,-216 343,-216 343,-288"/>
-<text text-anchor="middle" x="307" y="-254.8" font-family="Times New Roman,serif" font-size="9.00">=</text>
-<text text-anchor="middle" x="307" y="-244.8" font-family="Times New Roman,serif" font-size="9.00">equ_x_1</text>
+<!-- 574358248244441053 -->
+<g id="node4" class="node">
+<title>574358248244441053</title>
+<polygon fill="#d3d3d3" stroke="#000000" points="266.9648,-393 191.0117,-393 191.0117,-339 266.9648,-339 266.9648,-393"/>
+<text text-anchor="middle" x="228.9883" y="-363.3" font-family="Times,serif" font-size="9.00" fill="#000000">placeholder_y_2</text>
 </g>
-<!-- 5169957800779939100&#45;&#45;5333943118256266390 -->
-<g id="edge12" class="edge"><title>5169957800779939100&#45;&#45;5333943118256266390</title>
-<path fill="none" stroke="black" d="M308.389,-332.871C308.143,-318.736 307.86,-302.463 307.614,-288.31"/>
-<text text-anchor="start" x="309" y="-308.6" font-family="Times New Roman,serif" font-size="8.00" fill="red">x</text>
-<text text-anchor="start" x="293.614" y="-290.91" font-family="Times New Roman,serif" font-size="8.00">3 3 </text>
-<text text-anchor="start" x="294.389" y="-326.471" font-family="Times New Roman,serif" font-size="8.00">2 2 </text>
+<!-- 574358248244441053&#45;&#45;6580101440802176790 -->
+<g id="edge4" class="edge">
+<title>574358248244441053&#45;&#45;6580101440802176790</title>
+<path fill="none" stroke="#000000" d="M221.7646,-338.9461C220.216,-327.397 220.6282,-314.2487 226.9883,-304 239.4046,-283.9923 261.6825,-271.1694 282.8763,-263.068"/>
+<text text-anchor="start" x="226.9883" y="-305.6" font-family="Times,serif" font-size="8.00" fill="#ff0000">y_2</text>
+<text text-anchor="start" x="264.6537" y="-264.668" font-family="Times,serif" font-size="8.00" fill="#000000">1 out </text>
+<text text-anchor="start" x="203.5419" y="-332.5461" font-family="Times,serif" font-size="8.00" fill="#000000">1 out </text>
 </g>
-<!-- 13405400102526771610 -->
-<g id="node3" class="node"><title>13405400102526771610</title>
-<polygon fill="lightgrey" stroke="black" points="730,-162 676,-162 676,-108 730,-108 730,-162"/>
-<text text-anchor="middle" x="703" y="-132.8" font-family="Times New Roman,serif" font-size="9.00">clamp_4</text>
+<!-- 14652459548042313528 -->
+<g id="node5" class="node">
+<title>14652459548042313528</title>
+<polygon fill="none" stroke="#000000" points="631.9487,-170 526.0278,-170 526.0278,-98 631.9487,-98 631.9487,-170"/>
+<text text-anchor="middle" x="578.9883" y="-136.43" font-family="Times,serif" font-size="9.00" fill="#000000">𝒩</text>
+<text text-anchor="middle" x="578.9883" y="-126.17" font-family="Times,serif" font-size="9.00" fill="#000000">gaussianmeanvariance_1</text>
 </g>
-<!-- 4027763201943178773 -->
-<g id="node4" class="node"><title>4027763201943178773</title>
-<polygon fill="lightgrey" stroke="black" points="138,-54 84,-54 84,-0 138,-0 138,-54"/>
-<text text-anchor="middle" x="111" y="-24.8" font-family="Times New Roman,serif" font-size="9.00">clamp_2</text>
+<!-- 12893347737142820826 -->
+<g id="node12" class="node">
+<title>12893347737142820826</title>
+<polygon fill="#d3d3d3" stroke="#000000" points="632.9883,-54 578.9883,-54 578.9883,0 632.9883,0 632.9883,-54"/>
+<text text-anchor="middle" x="605.9883" y="-24.3" font-family="Times,serif" font-size="9.00" fill="#000000">clamp_2</text>
 </g>
-<!-- 8747240302404472162 -->
-<g id="node5" class="node"><title>8747240302404472162</title>
-<polygon fill="lightgrey" stroke="black" points="88.5,-396 11.5,-396 11.5,-342 88.5,-342 88.5,-396"/>
-<text text-anchor="middle" x="50" y="-366.8" font-family="Times New Roman,serif" font-size="9.00">placeholder_y_3</text>
+<!-- 14652459548042313528&#45;&#45;12893347737142820826 -->
+<g id="edge5" class="edge">
+<title>14652459548042313528&#45;&#45;12893347737142820826</title>
+<path fill="none" stroke="#000000" d="M588.1292,-97.7747C591.7397,-83.4665 595.8162,-67.3116 599.162,-54.0525"/>
+<text text-anchor="start" x="594.9883" y="-73.6" font-family="Times,serif" font-size="8.00" fill="#ff0000">clamp_2</text>
+<text text-anchor="start" x="580.9393" y="-55.6525" font-family="Times,serif" font-size="8.00" fill="#000000">1 out </text>
+<text text-anchor="start" x="576.1292" y="-91.3747" font-family="Times,serif" font-size="8.00" fill="#000000">3 v </text>
 </g>
-<!-- 8747240302404472162&#45;&#45;10244904936204346883 -->
-<g id="edge7" class="edge"><title>8747240302404472162&#45;&#45;10244904936204346883</title>
-<path fill="none" stroke="black" d="M46.9028,-341.76C45.9645,-330.721 45.3377,-317.738 46,-306 46.3286,-300.175 46.8589,-294.008 47.4717,-288.019"/>
-<text text-anchor="start" x="46" y="-308.6" font-family="Times New Roman,serif" font-size="8.00" fill="red">y_3</text>
-<text text-anchor="start" x="26.4717" y="-290.619" font-family="Times New Roman,serif" font-size="8.00">1 out </text>
-<text text-anchor="start" x="25.9028" y="-335.36" font-family="Times New Roman,serif" font-size="8.00">1 out </text>
+<!-- 3029858614622266010 -->
+<g id="node14" class="node">
+<title>3029858614622266010</title>
+<polygon fill="#d3d3d3" stroke="#000000" points="463.9883,-54 409.9883,-54 409.9883,0 463.9883,0 463.9883,-54"/>
+<text text-anchor="middle" x="436.9883" y="-24.3" font-family="Times,serif" font-size="9.00" fill="#000000">clamp_1</text>
 </g>
-<!-- 13678522740215945229 -->
-<g id="node7" class="node"><title>13678522740215945229</title>
-<polygon fill="lightgrey" stroke="black" points="509,-54 455,-54 455,-0 509,-0 509,-54"/>
-<text text-anchor="middle" x="482" y="-24.8" font-family="Times New Roman,serif" font-size="9.00">clamp_3</text>
+<!-- 14652459548042313528&#45;&#45;3029858614622266010 -->
+<g id="edge6" class="edge">
+<title>14652459548042313528&#45;&#45;3029858614622266010</title>
+<path fill="none" stroke="#000000" d="M530.9136,-97.7747C508.7067,-81.0414 483.148,-61.7823 464.3043,-47.5832"/>
+<text text-anchor="start" x="503.9883" y="-73.6" font-family="Times,serif" font-size="8.00" fill="#ff0000">clamp_1</text>
+<text text-anchor="start" x="464.3043" y="-49.1832" font-family="Times,serif" font-size="8.00" fill="#000000">1 out </text>
+<text text-anchor="start" x="516.6909" y="-91.3747" font-family="Times,serif" font-size="8.00" fill="#000000">2 m </text>
 </g>
-<!-- 7284209239083604202 -->
-<g id="node8" class="node"><title>7284209239083604202</title>
-<polygon fill="lightgrey" stroke="black" points="741.5,-396 664.5,-396 664.5,-342 741.5,-342 741.5,-396"/>
-<text text-anchor="middle" x="703" y="-366.8" font-family="Times New Roman,serif" font-size="9.00">placeholder_y_2</text>
+<!-- 7719780576108577319 -->
+<g id="node7" class="node">
+<title>7719780576108577319</title>
+<polygon fill="#d3d3d3" stroke="#000000" points="840.9883,-54 786.9883,-54 786.9883,0 840.9883,0 840.9883,-54"/>
+<text text-anchor="middle" x="813.9883" y="-24.3" font-family="Times,serif" font-size="9.00" fill="#000000">clamp_3</text>
 </g>
-<!-- 7284209239083604202&#45;&#45;2931795849394622137 -->
-<g id="edge10" class="edge"><title>7284209239083604202&#45;&#45;2931795849394622137</title>
-<path fill="none" stroke="black" d="M703,-341.905C703,-326 703,-305.471 703,-288.148"/>
-<text text-anchor="start" x="703" y="-308.6" font-family="Times New Roman,serif" font-size="8.00" fill="red">y_2</text>
-<text text-anchor="start" x="682" y="-290.748" font-family="Times New Roman,serif" font-size="8.00">1 out </text>
-<text text-anchor="start" x="682" y="-335.505" font-family="Times New Roman,serif" font-size="8.00">1 out </text>
+<!-- 7921450954503472771&#45;&#45;18347089685084889301 -->
+<g id="edge2" class="edge">
+<title>7921450954503472771&#45;&#45;18347089685084889301</title>
+<path fill="none" stroke="#000000" d="M90.9883,-213.9327C90.9883,-196.9067 90.9883,-176.9235 90.9883,-161.1968"/>
+<text text-anchor="start" x="90.9883" y="-189.6" font-family="Times,serif" font-size="8.00" fill="#ff0000">clamp_5</text>
+<text text-anchor="start" x="72.7656" y="-162.7968" font-family="Times,serif" font-size="8.00" fill="#000000">1 out </text>
+<text text-anchor="start" x="78.9883" y="-207.5327" font-family="Times,serif" font-size="8.00" fill="#000000">3 v </text>
 </g>
-<!-- 14354837735119701116 -->
-<g id="node9" class="node"><title>14354837735119701116</title>
-<polygon fill="none" stroke="black" points="534,-171 430,-171 430,-99 534,-99 534,-171"/>
-<text text-anchor="middle" x="482" y="-137.8" font-family="Times New Roman,serif" font-size="9.00">𝒩</text>
-<text text-anchor="middle" x="482" y="-127.8" font-family="Times New Roman,serif" font-size="9.00">gaussianmeanvariance_2</text>
+<!-- 15016838212598232514 -->
+<g id="node9" class="node">
+<title>15016838212598232514</title>
+<polygon fill="none" stroke="#000000" points="866.9487,-170 761.0278,-170 761.0278,-98 866.9487,-98 866.9487,-170"/>
+<text text-anchor="middle" x="813.9883" y="-136.43" font-family="Times,serif" font-size="9.00" fill="#000000">𝒩</text>
+<text text-anchor="middle" x="813.9883" y="-126.17" font-family="Times,serif" font-size="9.00" fill="#000000">gaussianmeanvariance_2</text>
 </g>
-<!-- 14354837735119701116&#45;&#45;13678522740215945229 -->
-<g id="edge6" class="edge"><title>14354837735119701116&#45;&#45;13678522740215945229</title>
-<path fill="none" stroke="black" d="M482,-98.9979C482,-84.4044 482,-67.7451 482,-54.2331"/>
-<text text-anchor="start" x="482" y="-74.6" font-family="Times New Roman,serif" font-size="8.00" fill="red">clamp_3</text>
-<text text-anchor="start" x="461" y="-56.8331" font-family="Times New Roman,serif" font-size="8.00">1 out </text>
-<text text-anchor="start" x="468" y="-92.5979" font-family="Times New Roman,serif" font-size="8.00">3 v </text>
+<!-- 15016838212598232514&#45;&#45;7719780576108577319 -->
+<g id="edge1" class="edge">
+<title>15016838212598232514&#45;&#45;7719780576108577319</title>
+<path fill="none" stroke="#000000" d="M813.9883,-97.7747C813.9883,-83.4665 813.9883,-67.3116 813.9883,-54.0525"/>
+<text text-anchor="start" x="813.9883" y="-73.6" font-family="Times,serif" font-size="8.00" fill="#ff0000">clamp_3</text>
+<text text-anchor="start" x="795.7656" y="-55.6525" font-family="Times,serif" font-size="8.00" fill="#000000">1 out </text>
+<text text-anchor="start" x="801.9883" y="-91.3747" font-family="Times,serif" font-size="8.00" fill="#000000">3 v </text>
 </g>
-<!-- 9539175479250121 -->
-<g id="node10" class="node"><title>9539175479250121</title>
-<polygon fill="none" stroke="black" points="299,-171 195,-171 195,-99 299,-99 299,-171"/>
-<text text-anchor="middle" x="247" y="-137.8" font-family="Times New Roman,serif" font-size="9.00">𝒩</text>
-<text text-anchor="middle" x="247" y="-127.8" font-family="Times New Roman,serif" font-size="9.00">gaussianmeanvariance_1</text>
+<!-- 14680615425032486994 -->
+<g id="node10" class="node">
+<title>14680615425032486994</title>
+<polygon fill="none" stroke="#000000" points="644.9883,-286 572.9883,-286 572.9883,-214 644.9883,-214 644.9883,-286"/>
+<text text-anchor="middle" x="608.9883" y="-251.8" font-family="Times,serif" font-size="9.00" fill="#000000">=</text>
+<text text-anchor="middle" x="608.9883" y="-242.8" font-family="Times,serif" font-size="9.00" fill="#000000">equ_x_1</text>
 </g>
-<!-- 9539175479250121&#45;&#45;4027763201943178773 -->
-<g id="edge8" class="edge"><title>9539175479250121&#45;&#45;4027763201943178773</title>
-<path fill="none" stroke="black" d="M202.092,-98.9979C180.892,-82.4747 156.295,-63.3032 138.008,-49.0501"/>
-<text text-anchor="start" x="179" y="-74.6" font-family="Times New Roman,serif" font-size="8.00" fill="red">clamp_2</text>
-<text text-anchor="start" x="138.008" y="-51.6501" font-family="Times New Roman,serif" font-size="8.00">1 out </text>
-<text text-anchor="start" x="188.092" y="-92.5979" font-family="Times New Roman,serif" font-size="8.00">3 v </text>
+<!-- 14680615425032486994&#45;&#45;14652459548042313528 -->
+<g id="edge8" class="edge">
+<title>14680615425032486994&#45;&#45;14652459548042313528</title>
+<path fill="none" stroke="#000000" d="M591.0805,-213.9768C588.7056,-208.0816 586.555,-201.9528 584.9883,-196 582.8139,-187.7381 581.4101,-178.6711 580.5084,-170.0827"/>
+<text text-anchor="start" x="584.9883" y="-189.6" font-family="Times,serif" font-size="8.00" fill="#ff0000">x</text>
+<text text-anchor="start" x="562.2858" y="-171.6827" font-family="Times,serif" font-size="8.00" fill="#000000">1 out </text>
+<text text-anchor="start" x="579.0805" y="-207.5768" font-family="Times,serif" font-size="8.00" fill="#000000">1 1 </text>
 </g>
-<!-- 6812259740404375687 -->
-<g id="node11" class="node"><title>6812259740404375687</title>
-<polygon fill="lightgrey" stroke="black" points="307,-54 253,-54 253,-0 307,-0 307,-54"/>
-<text text-anchor="middle" x="280" y="-24.8" font-family="Times New Roman,serif" font-size="9.00">clamp_1</text>
+<!-- 14680615425032486994&#45;&#45;15016838212598232514 -->
+<g id="edge3" class="edge">
+<title>14680615425032486994&#45;&#45;15016838212598232514</title>
+<path fill="none" stroke="#000000" d="M645.1663,-229.5286C677.2357,-211.3819 724.4845,-184.6461 760.8467,-164.0703"/>
+<text text-anchor="start" x="717.9883" y="-189.6" font-family="Times,serif" font-size="8.00" fill="#ff0000">x</text>
+<text text-anchor="start" x="746.6241" y="-165.6703" font-family="Times,serif" font-size="8.00" fill="#000000">2 m </text>
+<text text-anchor="start" x="645.1663" y="-231.1286" font-family="Times,serif" font-size="8.00" fill="#000000">2 2 </text>
 </g>
-<!-- 9539175479250121&#45;&#45;6812259740404375687 -->
-<g id="edge1" class="edge"><title>9539175479250121&#45;&#45;6812259740404375687</title>
-<path fill="none" stroke="black" d="M257.897,-98.9979C262.44,-84.4044 267.627,-67.7451 271.833,-54.2331"/>
-<text text-anchor="start" x="266" y="-74.6" font-family="Times New Roman,serif" font-size="8.00" fill="red">clamp_1</text>
-<text text-anchor="start" x="250.833" y="-56.8331" font-family="Times New Roman,serif" font-size="8.00">1 out </text>
-<text text-anchor="start" x="241.897" y="-92.5979" font-family="Times New Roman,serif" font-size="8.00">2 m </text>
+<!-- 13264588490251243821 -->
+<g id="node11" class="node">
+<title>13264588490251243821</title>
+<polygon fill="none" stroke="#000000" points="520.9883,-402 448.9883,-402 448.9883,-330 520.9883,-330 520.9883,-402"/>
+<text text-anchor="middle" x="484.9883" y="-367.8" font-family="Times,serif" font-size="9.00" fill="#000000">=</text>
+<text text-anchor="middle" x="484.9883" y="-358.8" font-family="Times,serif" font-size="9.00" fill="#000000">equ_x_2</text>
 </g>
-<!-- 14469553358846898341 -->
-<g id="node12" class="node"><title>14469553358846898341</title>
-<polygon fill="lightgrey" stroke="black" points="535.5,-279 458.5,-279 458.5,-225 535.5,-225 535.5,-279"/>
-<text text-anchor="middle" x="497" y="-249.8" font-family="Times New Roman,serif" font-size="9.00">placeholder_y_1</text>
+<!-- 13264588490251243821&#45;&#45;6580101440802176790 -->
+<g id="edge7" class="edge">
+<title>13264588490251243821&#45;&#45;6580101440802176790</title>
+<path fill="none" stroke="#000000" d="M448.9195,-337.9196C428.9381,-322.3636 403.8775,-302.8534 382.4434,-286.1664"/>
+<text text-anchor="start" x="414.9883" y="-305.6" font-family="Times,serif" font-size="8.00" fill="#ff0000">x</text>
+<text text-anchor="start" x="368.2208" y="-287.7664" font-family="Times,serif" font-size="8.00" fill="#000000">2 m </text>
+<text text-anchor="start" x="436.9195" y="-339.5196" font-family="Times,serif" font-size="8.00" fill="#000000">1 1 </text>
 </g>
-<!-- 14469553358846898341&#45;&#45;14354837735119701116 -->
-<g id="edge11" class="edge"><title>14469553358846898341&#45;&#45;14354837735119701116</title>
-<path fill="none" stroke="black" d="M493.596,-224.905C491.522,-209 488.844,-188.471 486.585,-171.148"/>
-<text text-anchor="start" x="490" y="-191.6" font-family="Times New Roman,serif" font-size="8.00" fill="red">y_1</text>
-<text text-anchor="start" x="465.585" y="-173.748" font-family="Times New Roman,serif" font-size="8.00">1 out </text>
-<text text-anchor="start" x="472.596" y="-218.505" font-family="Times New Roman,serif" font-size="8.00">1 out </text>
+<!-- 13264588490251243821&#45;&#45;7921450954503472771 -->
+<g id="edge13" class="edge">
+<title>13264588490251243821&#45;&#45;7921450954503472771</title>
+<path fill="none" stroke="#000000" d="M448.9789,-355.3983C379.2608,-334.8721 225.5553,-289.6187 144.0873,-265.6332"/>
+<text text-anchor="start" x="299.9883" y="-305.6" font-family="Times,serif" font-size="8.00" fill="#ff0000">x</text>
+<text text-anchor="start" x="144.0873" y="-267.2332" font-family="Times,serif" font-size="8.00" fill="#000000">2 m </text>
+<text text-anchor="start" x="436.9789" y="-356.9983" font-family="Times,serif" font-size="8.00" fill="#000000">3 3 </text>
 </g>
-<!-- 2931795849394622137&#45;&#45;13405400102526771610 -->
-<g id="edge2" class="edge"><title>2931795849394622137&#45;&#45;13405400102526771610</title>
-<path fill="none" stroke="black" d="M703,-215.871C703,-198.565 703,-178.056 703,-162.154"/>
-<text text-anchor="start" x="703" y="-191.6" font-family="Times New Roman,serif" font-size="8.00" fill="red">clamp_4</text>
-<text text-anchor="start" x="682" y="-164.754" font-family="Times New Roman,serif" font-size="8.00">1 out </text>
-<text text-anchor="start" x="689" y="-209.471" font-family="Times New Roman,serif" font-size="8.00">3 v </text>
+<!-- 13264588490251243821&#45;&#45;14680615425032486994 -->
+<g id="edge11" class="edge">
+<title>13264588490251243821&#45;&#45;14680615425032486994</title>
+<path fill="none" stroke="#000000" d="M521.1876,-332.1362C537.4861,-316.8891 556.6799,-298.9336 572.9584,-283.7054"/>
+<text text-anchor="start" x="550.9883" y="-305.6" font-family="Times,serif" font-size="8.00" fill="#ff0000">x</text>
+<text text-anchor="start" x="560.9584" y="-285.3054" font-family="Times,serif" font-size="8.00" fill="#000000">3 3 </text>
+<text text-anchor="start" x="521.1876" y="-333.7362" font-family="Times,serif" font-size="8.00" fill="#000000">2 2 </text>
 </g>
-<!-- 5333943118256266390&#45;&#45;14354837735119701116 -->
-<g id="edge13" class="edge"><title>5333943118256266390&#45;&#45;14354837735119701116</title>
-<path fill="none" stroke="black" d="M343.26,-227.172C368.289,-210.725 401.953,-188.602 429.853,-170.268"/>
-<text text-anchor="start" x="400" y="-191.6" font-family="Times New Roman,serif" font-size="8.00" fill="red">x</text>
-<text text-anchor="start" x="413.853" y="-172.868" font-family="Times New Roman,serif" font-size="8.00">2 m </text>
-<text text-anchor="start" x="343.26" y="-229.772" font-family="Times New Roman,serif" font-size="8.00">2 2 </text>
+<!-- 2631398690634052957 -->
+<g id="node13" class="node">
+<title>2631398690634052957</title>
+<polygon fill="#d3d3d3" stroke="#000000" points="864.9648,-277 789.0117,-277 789.0117,-223 864.9648,-223 864.9648,-277"/>
+<text text-anchor="middle" x="826.9883" y="-247.3" font-family="Times,serif" font-size="9.00" fill="#000000">placeholder_y_1</text>
 </g>
-<!-- 5333943118256266390&#45;&#45;9539175479250121 -->
-<g id="edge4" class="edge"><title>5333943118256266390&#45;&#45;9539175479250121</title>
-<path fill="none" stroke="black" d="M270.909,-223.605C263.437,-216.14 256.483,-207.468 252,-198 248.118,-189.801 246.246,-180.308 245.482,-171.252"/>
-<text text-anchor="start" x="252" y="-191.6" font-family="Times New Roman,serif" font-size="8.00" fill="red">x</text>
-<text text-anchor="start" x="224.482" y="-173.852" font-family="Times New Roman,serif" font-size="8.00">1 out </text>
-<text text-anchor="start" x="256.909" y="-226.205" font-family="Times New Roman,serif" font-size="8.00">1 1 </text>
+<!-- 2631398690634052957&#45;&#45;15016838212598232514 -->
+<g id="edge12" class="edge">
+<title>2631398690634052957&#45;&#45;15016838212598232514</title>
+<path fill="none" stroke="#000000" d="M823.9404,-222.8032C822.1843,-207.1333 819.9546,-187.2377 818.051,-170.252"/>
+<text text-anchor="start" x="820.9883" y="-189.6" font-family="Times,serif" font-size="8.00" fill="#ff0000">y_1</text>
+<text text-anchor="start" x="799.8284" y="-171.852" font-family="Times,serif" font-size="8.00" fill="#000000">1 out </text>
+<text text-anchor="start" x="805.7177" y="-216.4032" font-family="Times,serif" font-size="8.00" fill="#000000">1 out </text>
 </g>
 </g>
 </svg>
-</div><p>The important thing to note here is that we need an extra array of <code>N</code> observed random variables where each of them is linked to a dedicated index of the placeholder&#39;s buffer. This buffer can be thought of as an <code>N</code> dimensional array of <code>Clamp</code> factor nodes. We achieve this link by means of the <code>index</code> parameter of the <code>placeholder</code> function.</p><p>In section <a href="#Executing-an-algorithm-1">Executing an algorithm</a> we will see examples of how the data is fed to the placeholders in each of these two scenarios.</p><h2><a class="nav-anchor" id="Generating-an-algorithm-1" href="#Generating-an-algorithm-1">Generating an algorithm</a></h2><p>ForneyLab supports code generation for three different types of message-passing algorithms:</p><ul><li><a href="https://en.wikipedia.org/wiki/Belief_propagation">Belief propagation</a></li><li><a href="https://en.wikipedia.org/wiki/Variational_message_passing">Variational message passing</a></li><li><a href="https://en.wikipedia.org/wiki/Expectation_propagation">Expectation propagation</a></li></ul><p>Whereas belief propagation computes exact inference for the random variables of interest, variational message passing (VMP) and expectation propagation (EP) algorithms are approximation methods that can be applied to a larger range of models.</p><h3><a class="nav-anchor" id="Belief-propagation-1" href="#Belief-propagation-1">Belief propagation</a></h3><p>The way to instruct ForneyLab to generate a belief propagation algorithm (also known as a sum-product algorithm) is by using the <code>sumProductAlgorithm</code> function. This function takes as argument(s) the random variable(s) for which we want to infer the posterior distribution. As an example, consider the following hierarchical model in which the mean of a Gaussian distribution is represented by another Gaussian distribution whose mean is modelled by another Gaussian distribution.  </p><div><pre><code class="language-julia">g = FactorGraph() # create a new factor graph
+<p>The important thing to note here is that we need an extra array of <code>N</code> observed random variables where each of them is linked to a dedicated index of the placeholder&#39;s buffer. This buffer can be thought of as an <code>N</code> dimensional array of <code>Clamp</code> factor nodes. We achieve this link by means of the <code>index</code> parameter of the <code>placeholder</code> function.</p><p>In section <a href="#Executing-an-algorithm-1">Executing an algorithm</a> we will see examples of how the data is fed to the placeholders in each of these two scenarios.</p><h2><a class="nav-anchor" id="Generating-an-algorithm-1" href="#Generating-an-algorithm-1">Generating an algorithm</a></h2><p>ForneyLab supports code generation for three different types of message-passing algorithms:</p><ul><li><a href="https://en.wikipedia.org/wiki/Belief_propagation">Belief propagation</a></li><li><a href="https://en.wikipedia.org/wiki/Variational_message_passing">Variational message passing</a></li><li><a href="https://en.wikipedia.org/wiki/Expectation_propagation">Expectation propagation</a></li></ul><p>Whereas belief propagation computes exact inference for the random variables of interest, variational message passing (VMP) and expectation propagation (EP) algorithms are approximation methods that can be applied to a larger range of models.</p><h3><a class="nav-anchor" id="Belief-propagation-1" href="#Belief-propagation-1">Belief propagation</a></h3><p>The way to instruct ForneyLab to generate a belief propagation algorithm (also known as a sum-product algorithm) is by using the <code>sumProductAlgorithm</code> function. This function takes as argument(s) the random variable(s) for which we want to infer the posterior distribution. As an example, consider the following hierarchical model in which the mean of a Gaussian distribution is represented by another Gaussian distribution whose mean is modelled by another Gaussian distribution.  </p><pre><code class="language-julia">g = FactorGraph() # create a new factor graph
 @RV m2 ~ GaussianMeanVariance(0.0, 1.0)
 @RV m1 ~ GaussianMeanVariance(m2, 1.0)
 @RV y ~ GaussianMeanVariance(m1, 1.0)
@@ -601,109 +682,124 @@ placeholder(y, :y)
 ForneyLab.draw(g)</code></pre><?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<!-- Generated by graphviz version 2.38.0 (20140413.2041)
+<!-- Generated by graphviz version 2.40.1 (20161225.0304)
  -->
 <!-- Title: G Pages: 1 -->
-<svg width="470pt" height="512pt"
- viewBox="0.00 0.00 470.39 512.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 508)">
+<svg width="341pt" height="508pt"
+ viewBox="0.00 0.00 341.00 508.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 504)">
 <title>G</title>
-<polygon fill="white" stroke="none" points="-4,4 -4,-508 466.395,-508 466.395,4 -4,4"/>
-<!-- 10916963949271038088 -->
-<g id="node1" class="node"><title>10916963949271038088</title>
-<polygon fill="none" stroke="black" points="165.395,-171 61.3949,-171 61.3949,-99 165.395,-99 165.395,-171"/>
-<text text-anchor="middle" x="113.395" y="-137.8" font-family="Times New Roman,serif" font-size="9.00">𝒩</text>
-<text text-anchor="middle" x="113.395" y="-127.8" font-family="Times New Roman,serif" font-size="9.00">gaussianmeanvariance_1</text>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-504 337,-504 337,4 -4,4"/>
+<!-- 8383577433689264158 -->
+<g id="node1" class="node">
+<title>8383577433689264158</title>
+<polygon fill="#d3d3d3" stroke="#000000" points="54,-54 0,-54 0,0 54,0 54,-54"/>
+<text text-anchor="middle" x="27" y="-24.3" font-family="Times,serif" font-size="9.00" fill="#000000">clamp_2</text>
 </g>
-<!-- 12473540845579154789 -->
-<g id="node6" class="node"><title>12473540845579154789</title>
-<polygon fill="lightgrey" stroke="black" points="56.3949,-54 2.39488,-54 2.39488,-0 56.3949,-0 56.3949,-54"/>
-<text text-anchor="middle" x="29.3949" y="-24.8" font-family="Times New Roman,serif" font-size="9.00">clamp_2</text>
+<!-- 2384061647326192895 -->
+<g id="node2" class="node">
+<title>2384061647326192895</title>
+<polygon fill="#d3d3d3" stroke="#000000" points="57,-277 3,-277 3,-223 57,-223 57,-277"/>
+<text text-anchor="middle" x="30" y="-247.3" font-family="Times,serif" font-size="9.00" fill="#000000">clamp_4</text>
 </g>
-<!-- 10916963949271038088&#45;&#45;12473540845579154789 -->
-<g id="edge1" class="edge"><title>10916963949271038088&#45;&#45;12473540845579154789</title>
-<path fill="none" stroke="black" d="M61.1492,-114.586C46.6646,-106.511 32.6592,-95.5402 24.3949,-81 19.8279,-72.965 19.5918,-63.1201 21,-54.1055"/>
-<text text-anchor="start" x="24.3949" y="-74.6" font-family="Times New Roman,serif" font-size="8.00" fill="red">clamp_2</text>
-<text text-anchor="start" x="0" y="-56.7055" font-family="Times New Roman,serif" font-size="8.00">1 out </text>
-<text text-anchor="start" x="47.1492" y="-117.186" font-family="Times New Roman,serif" font-size="8.00">3 v </text>
+<!-- 8278427662047537448 -->
+<g id="node3" class="node">
+<title>8278427662047537448</title>
+<polygon fill="#d3d3d3" stroke="#000000" points="223,-54 169,-54 169,0 223,0 223,-54"/>
+<text text-anchor="middle" x="196" y="-24.3" font-family="Times,serif" font-size="9.00" fill="#000000">clamp_1</text>
 </g>
-<!-- 7071441844145614275 -->
-<g id="node8" class="node"><title>7071441844145614275</title>
-<polygon fill="lightgrey" stroke="black" points="225.395,-54 171.395,-54 171.395,-0 225.395,-0 225.395,-54"/>
-<text text-anchor="middle" x="198.395" y="-24.8" font-family="Times New Roman,serif" font-size="9.00">clamp_1</text>
+<!-- 13717831899041164570 -->
+<g id="node4" class="node">
+<title>13717831899041164570</title>
+<polygon fill="none" stroke="#000000" points="156.9605,-402 51.0395,-402 51.0395,-330 156.9605,-330 156.9605,-402"/>
+<text text-anchor="middle" x="104" y="-368.43" font-family="Times,serif" font-size="9.00" fill="#000000">𝒩</text>
+<text text-anchor="middle" x="104" y="-358.17" font-family="Times,serif" font-size="9.00" fill="#000000">gaussianmeanvariance_3</text>
 </g>
-<!-- 10916963949271038088&#45;&#45;7071441844145614275 -->
-<g id="edge4" class="edge"><title>10916963949271038088&#45;&#45;7071441844145614275</title>
-<path fill="none" stroke="black" d="M141.463,-98.9979C153.165,-84.4044 166.524,-67.7451 177.359,-54.2331"/>
-<text text-anchor="start" x="161.395" y="-74.6" font-family="Times New Roman,serif" font-size="8.00" fill="red">clamp_1</text>
-<text text-anchor="start" x="156.359" y="-56.8331" font-family="Times New Roman,serif" font-size="8.00">1 out </text>
-<text text-anchor="start" x="125.463" y="-92.5979" font-family="Times New Roman,serif" font-size="8.00">2 m </text>
+<!-- 13717831899041164570&#45;&#45;2384061647326192895 -->
+<g id="edge1" class="edge">
+<title>13717831899041164570&#45;&#45;2384061647326192895</title>
+<path fill="none" stroke="#000000" d="M50.8259,-336.6143C42.6214,-329.6537 35.2823,-321.4509 30.4531,-312 25.0655,-301.4561 24.2242,-288.5263 25.0169,-277.2076"/>
+<text text-anchor="start" x="31" y="-305.6" font-family="Times,serif" font-size="8.00" fill="#ff0000">clamp_4</text>
+<text text-anchor="start" x="6.7943" y="-278.8076" font-family="Times,serif" font-size="8.00" fill="#000000">1 out </text>
+<text text-anchor="start" x="38.8259" y="-338.2143" font-family="Times,serif" font-size="8.00" fill="#000000">3 v </text>
 </g>
-<!-- 1361409583119458499 -->
-<g id="node2" class="node"><title>1361409583119458499</title>
-<polygon fill="lightgrey" stroke="black" points="334.395,-162 280.395,-162 280.395,-108 334.395,-108 334.395,-162"/>
-<text text-anchor="middle" x="307.395" y="-132.8" font-family="Times New Roman,serif" font-size="9.00">clamp_3</text>
+<!-- 3558983888389077842 -->
+<g id="node5" class="node">
+<title>3558983888389077842</title>
+<polygon fill="none" stroke="#000000" points="277.9605,-286 172.0395,-286 172.0395,-214 277.9605,-214 277.9605,-286"/>
+<text text-anchor="middle" x="225" y="-252.43" font-family="Times,serif" font-size="9.00" fill="#000000">𝒩</text>
+<text text-anchor="middle" x="225" y="-242.17" font-family="Times,serif" font-size="9.00" fill="#000000">gaussianmeanvariance_2</text>
 </g>
-<!-- 6148872753886948749 -->
-<g id="node3" class="node"><title>6148872753886948749</title>
-<polygon fill="lightgrey" stroke="black" points="403.395,-504 335.395,-504 335.395,-450 403.395,-450 403.395,-504"/>
-<text text-anchor="middle" x="369.395" y="-474.8" font-family="Times New Roman,serif" font-size="9.00">placeholder_y</text>
+<!-- 13717831899041164570&#45;&#45;3558983888389077842 -->
+<g id="edge2" class="edge">
+<title>13717831899041164570&#45;&#45;3558983888389077842</title>
+<path fill="none" stroke="#000000" d="M141.6219,-329.9327C156.1906,-315.9661 172.8349,-300.0095 187.4014,-286.045"/>
+<text text-anchor="start" x="169" y="-305.6" font-family="Times,serif" font-size="8.00" fill="#ff0000">m1</text>
+<text text-anchor="start" x="169.1787" y="-287.645" font-family="Times,serif" font-size="8.00" fill="#000000">1 out </text>
+<text text-anchor="start" x="127.3992" y="-323.5327" font-family="Times,serif" font-size="8.00" fill="#000000">2 m </text>
 </g>
-<!-- 7311941164388898742 -->
-<g id="node7" class="node"><title>7311941164388898742</title>
-<polygon fill="none" stroke="black" points="421.395,-405 317.395,-405 317.395,-333 421.395,-333 421.395,-405"/>
-<text text-anchor="middle" x="369.395" y="-371.8" font-family="Times New Roman,serif" font-size="9.00">𝒩</text>
-<text text-anchor="middle" x="369.395" y="-361.8" font-family="Times New Roman,serif" font-size="9.00">gaussianmeanvariance_3</text>
+<!-- 17169208428619801455 -->
+<g id="node6" class="node">
+<title>17169208428619801455</title>
+<polygon fill="none" stroke="#000000" points="163.9605,-170 58.0395,-170 58.0395,-98 163.9605,-98 163.9605,-170"/>
+<text text-anchor="middle" x="111" y="-136.43" font-family="Times,serif" font-size="9.00" fill="#000000">𝒩</text>
+<text text-anchor="middle" x="111" y="-126.17" font-family="Times,serif" font-size="9.00" fill="#000000">gaussianmeanvariance_1</text>
 </g>
-<!-- 6148872753886948749&#45;&#45;7311941164388898742 -->
-<g id="edge5" class="edge"><title>6148872753886948749&#45;&#45;7311941164388898742</title>
-<path fill="none" stroke="black" d="M369.395,-449.798C369.395,-436.31 369.395,-419.68 369.395,-405.099"/>
-<text text-anchor="start" x="369.395" y="-425.6" font-family="Times New Roman,serif" font-size="8.00" fill="red">y</text>
-<text text-anchor="start" x="348.395" y="-407.699" font-family="Times New Roman,serif" font-size="8.00">1 out </text>
-<text text-anchor="start" x="348.395" y="-443.398" font-family="Times New Roman,serif" font-size="8.00">1 out </text>
+<!-- 3558983888389077842&#45;&#45;17169208428619801455 -->
+<g id="edge5" class="edge">
+<title>3558983888389077842&#45;&#45;17169208428619801455</title>
+<path fill="none" stroke="#000000" d="M189.5546,-213.9327C175.8287,-199.9661 160.1473,-184.0095 146.4235,-170.045"/>
+<text text-anchor="start" x="172" y="-189.6" font-family="Times,serif" font-size="8.00" fill="#ff0000">m2</text>
+<text text-anchor="start" x="128.2008" y="-171.645" font-family="Times,serif" font-size="8.00" fill="#000000">1 out </text>
+<text text-anchor="start" x="175.3319" y="-207.5327" font-family="Times,serif" font-size="8.00" fill="#000000">2 m </text>
 </g>
-<!-- 14184257186174390154 -->
-<g id="node4" class="node"><title>14184257186174390154</title>
-<polygon fill="none" stroke="black" points="293.395,-288 189.395,-288 189.395,-216 293.395,-216 293.395,-288"/>
-<text text-anchor="middle" x="241.395" y="-254.8" font-family="Times New Roman,serif" font-size="9.00">𝒩</text>
-<text text-anchor="middle" x="241.395" y="-244.8" font-family="Times New Roman,serif" font-size="9.00">gaussianmeanvariance_2</text>
+<!-- 6192186851545375999 -->
+<g id="node8" class="node">
+<title>6192186851545375999</title>
+<polygon fill="#d3d3d3" stroke="#000000" points="333,-161 279,-161 279,-107 333,-107 333,-161"/>
+<text text-anchor="middle" x="306" y="-131.3" font-family="Times,serif" font-size="9.00" fill="#000000">clamp_3</text>
 </g>
-<!-- 14184257186174390154&#45;&#45;10916963949271038088 -->
-<g id="edge2" class="edge"><title>14184257186174390154&#45;&#45;10916963949271038088</title>
-<path fill="none" stroke="black" d="M202.295,-215.871C186.562,-201.736 168.45,-185.463 152.696,-171.31"/>
-<text text-anchor="start" x="181.395" y="-191.6" font-family="Times New Roman,serif" font-size="8.00" fill="red">m2</text>
-<text text-anchor="start" x="131.696" y="-173.91" font-family="Times New Roman,serif" font-size="8.00">1 out </text>
-<text text-anchor="start" x="186.295" y="-209.471" font-family="Times New Roman,serif" font-size="8.00">2 m </text>
+<!-- 3558983888389077842&#45;&#45;6192186851545375999 -->
+<g id="edge7" class="edge">
+<title>3558983888389077842&#45;&#45;6192186851545375999</title>
+<path fill="none" stroke="#000000" d="M250.1849,-213.9327C262.0738,-196.9067 276.0275,-176.9235 287.0091,-161.1968"/>
+<text text-anchor="start" x="267" y="-189.6" font-family="Times,serif" font-size="8.00" fill="#ff0000">clamp_3</text>
+<text text-anchor="start" x="268.7864" y="-162.7968" font-family="Times,serif" font-size="8.00" fill="#000000">1 out </text>
+<text text-anchor="start" x="238.1849" y="-207.5327" font-family="Times,serif" font-size="8.00" fill="#000000">3 v </text>
 </g>
-<!-- 14184257186174390154&#45;&#45;1361409583119458499 -->
-<g id="edge6" class="edge"><title>14184257186174390154&#45;&#45;1361409583119458499</title>
-<path fill="none" stroke="black" d="M261.556,-215.871C271.488,-198.565 283.258,-178.056 292.385,-162.154"/>
-<text text-anchor="start" x="276.395" y="-191.6" font-family="Times New Roman,serif" font-size="8.00" fill="red">clamp_3</text>
-<text text-anchor="start" x="271.385" y="-164.754" font-family="Times New Roman,serif" font-size="8.00">1 out </text>
-<text text-anchor="start" x="247.556" y="-209.471" font-family="Times New Roman,serif" font-size="8.00">3 v </text>
+<!-- 17169208428619801455&#45;&#45;8383577433689264158 -->
+<g id="edge6" class="edge">
+<title>17169208428619801455&#45;&#45;8383577433689264158</title>
+<path fill="none" stroke="#000000" d="M58.0235,-111.9657C45.0737,-103.9039 32.8305,-93.3811 25.4531,-80 21.1865,-72.2611 20.3373,-62.8733 20.9426,-54.1615"/>
+<text text-anchor="start" x="26" y="-73.6" font-family="Times,serif" font-size="8.00" fill="#ff0000">clamp_2</text>
+<text text-anchor="start" x="2.7199" y="-55.7615" font-family="Times,serif" font-size="8.00" fill="#000000">1 out </text>
+<text text-anchor="start" x="46.0235" y="-113.5657" font-family="Times,serif" font-size="8.00" fill="#000000">3 v </text>
 </g>
-<!-- 10449182675525557326 -->
-<g id="node5" class="node"><title>10449182675525557326</title>
-<polygon fill="lightgrey" stroke="black" points="462.395,-279 408.395,-279 408.395,-225 462.395,-225 462.395,-279"/>
-<text text-anchor="middle" x="435.395" y="-249.8" font-family="Times New Roman,serif" font-size="9.00">clamp_4</text>
+<!-- 17169208428619801455&#45;&#45;8278427662047537448 -->
+<g id="edge3" class="edge">
+<title>17169208428619801455&#45;&#45;8278427662047537448</title>
+<path fill="none" stroke="#000000" d="M139.7771,-97.7747C151.1435,-83.4665 163.9767,-67.3116 174.5097,-54.0525"/>
+<text text-anchor="start" x="159" y="-73.6" font-family="Times,serif" font-size="8.00" fill="#ff0000">clamp_1</text>
+<text text-anchor="start" x="156.2871" y="-55.6525" font-family="Times,serif" font-size="8.00" fill="#000000">1 out </text>
+<text text-anchor="start" x="125.5545" y="-91.3747" font-family="Times,serif" font-size="8.00" fill="#000000">2 m </text>
 </g>
-<!-- 7311941164388898742&#45;&#45;14184257186174390154 -->
-<g id="edge3" class="edge"><title>7311941164388898742&#45;&#45;14184257186174390154</title>
-<path fill="none" stroke="black" d="M330.295,-332.871C314.562,-318.736 296.45,-302.463 280.696,-288.31"/>
-<text text-anchor="start" x="309.395" y="-308.6" font-family="Times New Roman,serif" font-size="8.00" fill="red">m1</text>
-<text text-anchor="start" x="259.696" y="-290.91" font-family="Times New Roman,serif" font-size="8.00">1 out </text>
-<text text-anchor="start" x="314.295" y="-326.471" font-family="Times New Roman,serif" font-size="8.00">2 m </text>
+<!-- 11941588629660962311 -->
+<g id="node7" class="node">
+<title>11941588629660962311</title>
+<polygon fill="#d3d3d3" stroke="#000000" points="137.4766,-500 70.5234,-500 70.5234,-446 137.4766,-446 137.4766,-500"/>
+<text text-anchor="middle" x="104" y="-470.3" font-family="Times,serif" font-size="9.00" fill="#000000">placeholder_y</text>
 </g>
-<!-- 7311941164388898742&#45;&#45;10449182675525557326 -->
-<g id="edge7" class="edge"><title>7311941164388898742&#45;&#45;10449182675525557326</title>
-<path fill="none" stroke="black" d="M389.556,-332.871C399.488,-315.565 411.258,-295.056 420.385,-279.154"/>
-<text text-anchor="start" x="403.395" y="-308.6" font-family="Times New Roman,serif" font-size="8.00" fill="red">clamp_4</text>
-<text text-anchor="start" x="399.385" y="-281.754" font-family="Times New Roman,serif" font-size="8.00">1 out </text>
-<text text-anchor="start" x="375.556" y="-326.471" font-family="Times New Roman,serif" font-size="8.00">3 v </text>
+<!-- 11941588629660962311&#45;&#45;13717831899041164570 -->
+<g id="edge4" class="edge">
+<title>11941588629660962311&#45;&#45;13717831899041164570</title>
+<path fill="none" stroke="#000000" d="M104,-445.9994C104,-432.7507 104,-416.6013 104,-402.2906"/>
+<text text-anchor="start" x="104" y="-421.6" font-family="Times,serif" font-size="8.00" fill="#ff0000">y</text>
+<text text-anchor="start" x="85.7773" y="-403.8906" font-family="Times,serif" font-size="8.00" fill="#000000">1 out </text>
+<text text-anchor="start" x="85.7773" y="-439.5994" font-family="Times,serif" font-size="8.00" fill="#000000">1 out </text>
 </g>
 </g>
 </svg>
-</div><p>If we were only interested in inferring the posterior distribution of <code>m1</code> then we would run</p><div><pre><code class="language-julia">algorithm_string = sumProductAlgorithm(m1)</code></pre></div><p>On the other hand, if we were interested in the posterior distributions of both <code>m1</code> and <code>m2</code> we would then need to pass them as elements of an array, i.e.</p><div><pre><code class="language-julia">algorithm_string = sumProductAlgorithm([m1, m2])</code></pre></div><p>Note that the message-passing algorithm returned by the <code>sumProductAlgorithm</code> function is a <code>String</code> that contains the definition of a Julia function. In order to be able to execute this function, we first need to parse this string as Julia expression to then evaluate it in the current scope that the program is running on. This can be done as follows</p><div><pre><code class="language-julia">algorithm_expr = Meta.parse(algorithm_string)</code></pre></div><pre><code class="language-julia">:(function step!(data::Dict, marginals::Dict=Dict(), messages::Vector{Message}=Array{Message}(undef, 4))
+<p>If we were only interested in inferring the posterior distribution of <code>m1</code> then we would run</p><pre><code class="language-julia">algorithm_string = sumProductAlgorithm(m1)</code></pre><p>On the other hand, if we were interested in the posterior distributions of both <code>m1</code> and <code>m2</code> we would then need to pass them as elements of an array, i.e.</p><pre><code class="language-julia">algorithm_string = sumProductAlgorithm([m1, m2])</code></pre><p>Note that the message-passing algorithm returned by the <code>sumProductAlgorithm</code> function is a <code>String</code> that contains the definition of a Julia function. In order to be able to execute this function, we first need to parse this string as Julia expression to then evaluate it in the current scope that the program is running on. This can be done as follows</p><pre><code class="language-julia">algorithm_expr = Meta.parse(algorithm_string)</code></pre><pre><code class="language-julia">:(function step!(data::Dict, marginals::Dict=Dict(), messages::Vector{Message}=Array{Message}(undef, 4))
       #= none:3 =#
       messages[1] = ruleSPGaussianMeanVarianceOutVPP(nothing, Message(Univariate, PointMass, m=0.0), Message(Univariate, PointMass, m=1.0))
       #= none:4 =#
@@ -718,7 +814,7 @@ ForneyLab.draw(g)</code></pre><?xml version="1.0" encoding="UTF-8" standalone="n
       marginals[:m2] = (messages[1]).dist * (messages[4]).dist
       #= none:11 =#
       return marginals
-  end)</code></pre><div><pre><code class="language-julia">eval(algorithm_expr)</code></pre><pre><code class="language-none">step! (generic function with 3 methods)</code></pre></div><p>At this point a new function named <code>step!</code> becomes available in the current scope. This function contains a message-passing algorithm that infers both <code>m1</code> and <code>m2</code> given one or more <code>y</code> observations. In the section <a href="#Executing-an-algorithm-1">Executing an algorithm</a> we will see how this function is used.</p><h3><a class="nav-anchor" id="Variational-message-passing-1" href="#Variational-message-passing-1">Variational message passing</a></h3><p>Variational message passing (VMP) algorithms are generated much in the same way as the belief propagation algorithm we saw in the previous section. There is a major difference though: for VMP algorithm generation we need to define the factorization properties of our approximate distribution. A common approach is to assume that all random variables of the model factorize with respect to each other. This is known as the <em>mean field</em> assumption. In ForneyLab, the specification of such factorization properties is defined using the <code>RecognitionFactorization</code> composite type. Let&#39;s take a look at a simple example to see how it is used. In this model we want to learn the mean and variance of a Gaussian distribution, where the former is modelled with a Gaussian distribution and the latter with a Gamma.</p><div><pre><code class="language-julia">g = FactorGraph() # create a new factor graph
+  end)</code></pre><pre><code class="language-julia">eval(algorithm_expr)</code></pre><pre><code class="language-none">step! (generic function with 3 methods)</code></pre><p>At this point a new function named <code>step!</code> becomes available in the current scope. This function contains a message-passing algorithm that infers both <code>m1</code> and <code>m2</code> given one or more <code>y</code> observations. In the section <a href="#Executing-an-algorithm-1">Executing an algorithm</a> we will see how this function is used.</p><h3><a class="nav-anchor" id="Variational-message-passing-1" href="#Variational-message-passing-1">Variational message passing</a></h3><p>Variational message passing (VMP) algorithms are generated much in the same way as the belief propagation algorithm we saw in the previous section. There is a major difference though: for VMP algorithm generation we need to define the factorization properties of our approximate distribution. A common approach is to assume that all random variables of the model factorize with respect to each other. This is known as the <em>mean field</em> assumption. In ForneyLab, the specification of such factorization properties is defined using the <code>RecognitionFactorization</code> composite type. Let&#39;s take a look at a simple example to see how it is used. In this model we want to learn the mean and variance of a Gaussian distribution, where the former is modelled with a Gaussian distribution and the latter with a Gamma.</p><pre><code class="language-julia">g = FactorGraph() # create a new factor graph
 @RV m ~ GaussianMeanVariance(0, 10)
 @RV w ~ Gamma(0.1, 0.1)
 @RV y ~ GaussianMeanPrecision(m, w)
@@ -726,247 +822,284 @@ placeholder(y, :y)
 draw(g)</code></pre><?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<!-- Generated by graphviz version 2.38.0 (20140413.2041)
+<!-- Generated by graphviz version 2.40.1 (20161225.0304)
  -->
 <!-- Title: G Pages: 1 -->
-<svg width="577pt" height="395pt"
- viewBox="0.00 0.00 577.00 395.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 391)">
+<svg width="586pt" height="392pt"
+ viewBox="0.00 0.00 586.00 392.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 388)">
 <title>G</title>
-<polygon fill="white" stroke="none" points="-4,4 -4,-391 573,-391 573,4 -4,4"/>
-<!-- 5992353859098115635 -->
-<g id="node1" class="node"><title>5992353859098115635</title>
-<polygon fill="none" stroke="black" points="322.5,-288 215.5,-288 215.5,-216 322.5,-216 322.5,-288"/>
-<text text-anchor="middle" x="269" y="-254.8" font-family="Times New Roman,serif" font-size="9.00">𝒩</text>
-<text text-anchor="middle" x="269" y="-244.8" font-family="Times New Roman,serif" font-size="9.00">gaussianmeanprecision_1</text>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-388 582,-388 582,4 -4,4"/>
+<!-- 537701254267761750 -->
+<g id="node1" class="node">
+<title>537701254267761750</title>
+<polygon fill="#d3d3d3" stroke="#000000" points="409,-54 355,-54 355,0 409,0 409,-54"/>
+<text text-anchor="middle" x="382" y="-24.3" font-family="Times,serif" font-size="9.00" fill="#000000">clamp_4</text>
 </g>
-<!-- 1539848764779035510 -->
-<g id="node5" class="node"><title>1539848764779035510</title>
-<polygon fill="none" stroke="black" points="239,-171 135,-171 135,-99 239,-99 239,-171"/>
-<text text-anchor="middle" x="187" y="-137.8" font-family="Times New Roman,serif" font-size="9.00">𝒩</text>
-<text text-anchor="middle" x="187" y="-127.8" font-family="Times New Roman,serif" font-size="9.00">gaussianmeanvariance_1</text>
+<!-- 8047266541158533139 -->
+<g id="node2" class="node">
+<title>8047266541158533139</title>
+<polygon fill="none" stroke="#000000" points="343.4752,-286 234.5248,-286 234.5248,-214 343.4752,-214 343.4752,-286"/>
+<text text-anchor="middle" x="289" y="-252.43" font-family="Times,serif" font-size="9.00" fill="#000000">𝒩</text>
+<text text-anchor="middle" x="289" y="-242.17" font-family="Times,serif" font-size="9.00" fill="#000000">gaussianmeanprecision_1</text>
 </g>
-<!-- 5992353859098115635&#45;&#45;1539848764779035510 -->
-<g id="edge7" class="edge"><title>5992353859098115635&#45;&#45;1539848764779035510</title>
-<path fill="none" stroke="black" d="M235.021,-215.747C230.088,-209.998 225.248,-203.966 221,-198 215.09,-189.7 209.438,-180.265 204.498,-171.303"/>
-<text text-anchor="start" x="221" y="-191.6" font-family="Times New Roman,serif" font-size="8.00" fill="red">m</text>
-<text text-anchor="start" x="183.498" y="-173.903" font-family="Times New Roman,serif" font-size="8.00">1 out </text>
-<text text-anchor="start" x="219.021" y="-209.347" font-family="Times New Roman,serif" font-size="8.00">2 m </text>
+<!-- 9228962903596832904 -->
+<g id="node3" class="node">
+<title>9228962903596832904</title>
+<polygon fill="none" stroke="#000000" points="239.9605,-170 134.0395,-170 134.0395,-98 239.9605,-98 239.9605,-170"/>
+<text text-anchor="middle" x="187" y="-136.43" font-family="Times,serif" font-size="9.00" fill="#000000">𝒩</text>
+<text text-anchor="middle" x="187" y="-126.17" font-family="Times,serif" font-size="9.00" fill="#000000">gaussianmeanvariance_1</text>
 </g>
-<!-- 10551552155918985078 -->
-<g id="node8" class="node"><title>10551552155918985078</title>
-<polygon fill="none" stroke="black" points="426,-171 354,-171 354,-99 426,-99 426,-171"/>
-<text text-anchor="middle" x="390" y="-137.8" font-family="Times New Roman,serif" font-size="9.00">Gam</text>
-<text text-anchor="middle" x="390" y="-127.8" font-family="Times New Roman,serif" font-size="9.00">gamma_1</text>
+<!-- 8047266541158533139&#45;&#45;9228962903596832904 -->
+<g id="edge1" class="edge">
+<title>8047266541158533139&#45;&#45;9228962903596832904</title>
+<path fill="none" stroke="#000000" d="M247.0447,-213.9696C241.0274,-208.1758 235.0849,-202.0793 229.7773,-196 222.8109,-188.0205 215.9703,-178.8836 209.8734,-170.1204"/>
+<text text-anchor="start" x="230" y="-189.6" font-family="Times,serif" font-size="8.00" fill="#ff0000">m</text>
+<text text-anchor="start" x="191.6508" y="-171.7204" font-family="Times,serif" font-size="8.00" fill="#000000">1 out </text>
+<text text-anchor="start" x="232.822" y="-207.5696" font-family="Times,serif" font-size="8.00" fill="#000000">2 m </text>
 </g>
-<!-- 5992353859098115635&#45;&#45;10551552155918985078 -->
-<g id="edge4" class="edge"><title>5992353859098115635&#45;&#45;10551552155918985078</title>
-<path fill="none" stroke="black" d="M305.961,-215.871C321.112,-201.472 338.597,-184.854 353.681,-170.518"/>
-<text text-anchor="start" x="333" y="-191.6" font-family="Times New Roman,serif" font-size="8.00" fill="red">w</text>
-<text text-anchor="start" x="332.681" y="-173.118" font-family="Times New Roman,serif" font-size="8.00">1 out </text>
-<text text-anchor="start" x="290.961" y="-209.471" font-family="Times New Roman,serif" font-size="8.00">3 w </text>
+<!-- 6651954046927026099 -->
+<g id="node6" class="node">
+<title>6651954046927026099</title>
+<polygon fill="none" stroke="#000000" points="427,-170 355,-170 355,-98 427,-98 427,-170"/>
+<text text-anchor="middle" x="391" y="-135.8" font-family="Times,serif" font-size="9.00" fill="#000000">Gam</text>
+<text text-anchor="middle" x="391" y="-126.8" font-family="Times,serif" font-size="9.00" fill="#000000">gamma_1</text>
 </g>
-<!-- 3187556981572408731 -->
-<g id="node2" class="node"><title>3187556981572408731</title>
-<polygon fill="lightgrey" stroke="black" points="54,-54 0,-54 0,-0 54,-0 54,-54"/>
-<text text-anchor="middle" x="27" y="-24.8" font-family="Times New Roman,serif" font-size="9.00">clamp_2</text>
+<!-- 8047266541158533139&#45;&#45;6651954046927026099 -->
+<g id="edge2" class="edge">
+<title>8047266541158533139&#45;&#45;6651954046927026099</title>
+<path fill="none" stroke="#000000" d="M320.7143,-213.9327C332.9953,-199.9661 347.0261,-184.0095 359.3053,-170.045"/>
+<text text-anchor="start" x="344" y="-189.6" font-family="Times,serif" font-size="8.00" fill="#ff0000">w</text>
+<text text-anchor="start" x="341.0826" y="-171.645" font-family="Times,serif" font-size="8.00" fill="#000000">1 out </text>
+<text text-anchor="start" x="306.937" y="-207.5327" font-family="Times,serif" font-size="8.00" fill="#000000">3 w </text>
 </g>
-<!-- 2998664122237550971 -->
-<g id="node3" class="node"><title>2998664122237550971</title>
-<polygon fill="lightgrey" stroke="black" points="400,-54 346,-54 346,-0 400,-0 400,-54"/>
-<text text-anchor="middle" x="373" y="-24.8" font-family="Times New Roman,serif" font-size="9.00">clamp_3</text>
+<!-- 6356855874063074076 -->
+<g id="node4" class="node">
+<title>6356855874063074076</title>
+<polygon fill="#d3d3d3" stroke="#000000" points="54,-54 0,-54 0,0 54,0 54,-54"/>
+<text text-anchor="middle" x="27" y="-24.3" font-family="Times,serif" font-size="9.00" fill="#000000">clamp_2</text>
 </g>
-<!-- 1487808065477757259 -->
-<g id="node4" class="node"><title>1487808065477757259</title>
-<polygon fill="lightgrey" stroke="black" points="223,-54 169,-54 169,-0 223,-0 223,-54"/>
-<text text-anchor="middle" x="196" y="-24.8" font-family="Times New Roman,serif" font-size="9.00">clamp_1</text>
+<!-- 9228962903596832904&#45;&#45;6356855874063074076 -->
+<g id="edge7" class="edge">
+<title>9228962903596832904&#45;&#45;6356855874063074076</title>
+<path fill="none" stroke="#000000" d="M133.7223,-98.3705C106.9958,-80.4972 75.7738,-59.6175 54.0315,-45.0773"/>
+<text text-anchor="start" x="103" y="-73.6" font-family="Times,serif" font-size="8.00" fill="#ff0000">clamp_2</text>
+<text text-anchor="start" x="54.0315" y="-46.6773" font-family="Times,serif" font-size="8.00" fill="#000000">1 out </text>
+<text text-anchor="start" x="121.7223" y="-99.9705" font-family="Times,serif" font-size="8.00" fill="#000000">3 v </text>
 </g>
-<!-- 1539848764779035510&#45;&#45;3187556981572408731 -->
-<g id="edge6" class="edge"><title>1539848764779035510&#45;&#45;3187556981572408731</title>
-<path fill="none" stroke="black" d="M134.61,-99.2916C107.815,-81.5402 76.3108,-60.6684 54.3402,-46.1129"/>
-<text text-anchor="start" x="107" y="-74.6" font-family="Times New Roman,serif" font-size="8.00" fill="red">clamp_2</text>
-<text text-anchor="start" x="54.3402" y="-48.7129" font-family="Times New Roman,serif" font-size="8.00">1 out </text>
-<text text-anchor="start" x="120.61" y="-101.892" font-family="Times New Roman,serif" font-size="8.00">3 v </text>
+<!-- 4654668829587391618 -->
+<g id="node5" class="node">
+<title>4654668829587391618</title>
+<polygon fill="#d3d3d3" stroke="#000000" points="223,-54 169,-54 169,0 223,0 223,-54"/>
+<text text-anchor="middle" x="196" y="-24.3" font-family="Times,serif" font-size="9.00" fill="#000000">clamp_1</text>
 </g>
-<!-- 1539848764779035510&#45;&#45;1487808065477757259 -->
-<g id="edge3" class="edge"><title>1539848764779035510&#45;&#45;1487808065477757259</title>
-<path fill="none" stroke="black" d="M189.972,-98.9979C191.211,-84.4044 192.625,-67.7451 193.773,-54.2331"/>
-<text text-anchor="start" x="193" y="-74.6" font-family="Times New Roman,serif" font-size="8.00" fill="red">clamp_1</text>
-<text text-anchor="start" x="172.773" y="-56.8331" font-family="Times New Roman,serif" font-size="8.00">1 out </text>
-<text text-anchor="start" x="173.972" y="-92.5979" font-family="Times New Roman,serif" font-size="8.00">2 m </text>
+<!-- 9228962903596832904&#45;&#45;4654668829587391618 -->
+<g id="edge6" class="edge">
+<title>9228962903596832904&#45;&#45;4654668829587391618</title>
+<path fill="none" stroke="#000000" d="M190.047,-97.7747C191.2505,-83.4665 192.6093,-67.3116 193.7246,-54.0525"/>
+<text text-anchor="start" x="193" y="-73.6" font-family="Times,serif" font-size="8.00" fill="#ff0000">clamp_1</text>
+<text text-anchor="start" x="175.5019" y="-55.6525" font-family="Times,serif" font-size="8.00" fill="#000000">1 out </text>
+<text text-anchor="start" x="175.8243" y="-91.3747" font-family="Times,serif" font-size="8.00" fill="#000000">2 m </text>
 </g>
-<!-- 9341619190399396924 -->
-<g id="node6" class="node"><title>9341619190399396924</title>
-<polygon fill="lightgrey" stroke="black" points="569,-54 515,-54 515,-0 569,-0 569,-54"/>
-<text text-anchor="middle" x="542" y="-24.8" font-family="Times New Roman,serif" font-size="9.00">clamp_4</text>
+<!-- 6651954046927026099&#45;&#45;537701254267761750 -->
+<g id="edge5" class="edge">
+<title>6651954046927026099&#45;&#45;537701254267761750</title>
+<path fill="none" stroke="#000000" d="M382.9409,-97.8322C381.9067,-91.9015 381.0142,-85.7997 380.4531,-80 380.1108,-76.461 380.392,-75.555 380.4531,-72 380.5525,-66.2162 380.7237,-60.0161 380.9168,-54.1236"/>
+<text text-anchor="start" x="381" y="-73.6" font-family="Times,serif" font-size="8.00" fill="#ff0000">clamp_4</text>
+<text text-anchor="start" x="362.6942" y="-55.7236" font-family="Times,serif" font-size="8.00" fill="#000000">1 out </text>
+<text text-anchor="start" x="370.9409" y="-91.4322" font-family="Times,serif" font-size="8.00" fill="#000000">3 b </text>
 </g>
-<!-- 3385324347150864537 -->
-<g id="node7" class="node"><title>3385324347150864537</title>
-<polygon fill="lightgrey" stroke="black" points="303,-387 235,-387 235,-333 303,-333 303,-387"/>
-<text text-anchor="middle" x="269" y="-357.8" font-family="Times New Roman,serif" font-size="9.00">placeholder_y</text>
+<!-- 12517160414056326157 -->
+<g id="node7" class="node">
+<title>12517160414056326157</title>
+<polygon fill="#d3d3d3" stroke="#000000" points="578,-54 524,-54 524,0 578,0 578,-54"/>
+<text text-anchor="middle" x="551" y="-24.3" font-family="Times,serif" font-size="9.00" fill="#000000">clamp_3</text>
 </g>
-<!-- 3385324347150864537&#45;&#45;5992353859098115635 -->
-<g id="edge1" class="edge"><title>3385324347150864537&#45;&#45;5992353859098115635</title>
-<path fill="none" stroke="black" d="M269,-332.798C269,-319.31 269,-302.68 269,-288.099"/>
-<text text-anchor="start" x="269" y="-308.6" font-family="Times New Roman,serif" font-size="8.00" fill="red">y</text>
-<text text-anchor="start" x="248" y="-290.699" font-family="Times New Roman,serif" font-size="8.00">1 out </text>
-<text text-anchor="start" x="248" y="-326.398" font-family="Times New Roman,serif" font-size="8.00">1 out </text>
+<!-- 6651954046927026099&#45;&#45;12517160414056326157 -->
+<g id="edge3" class="edge">
+<title>6651954046927026099&#45;&#45;12517160414056326157</title>
+<path fill="none" stroke="#000000" d="M427.3065,-109.72C456.6263,-90.1124 497.2411,-62.9513 523.81,-45.1833"/>
+<text text-anchor="start" x="480" y="-73.6" font-family="Times,serif" font-size="8.00" fill="#ff0000">clamp_3</text>
+<text text-anchor="start" x="505.5874" y="-46.7833" font-family="Times,serif" font-size="8.00" fill="#000000">1 out </text>
+<text text-anchor="start" x="427.3065" y="-111.32" font-family="Times,serif" font-size="8.00" fill="#000000">2 a </text>
 </g>
-<!-- 10551552155918985078&#45;&#45;2998664122237550971 -->
-<g id="edge2" class="edge"><title>10551552155918985078&#45;&#45;2998664122237550971</title>
-<path fill="none" stroke="black" d="M373.22,-98.9678C371.059,-93.0889 369.188,-86.96 368,-81 366.266,-72.2986 366.535,-62.6701 367.55,-54.0335"/>
-<text text-anchor="start" x="368" y="-74.6" font-family="Times New Roman,serif" font-size="8.00" fill="red">clamp_3</text>
-<text text-anchor="start" x="346.55" y="-56.6335" font-family="Times New Roman,serif" font-size="8.00">1 out </text>
-<text text-anchor="start" x="360.22" y="-92.5678" font-family="Times New Roman,serif" font-size="8.00">2 a </text>
+<!-- 14898065622907106961 -->
+<g id="node8" class="node">
+<title>14898065622907106961</title>
+<polygon fill="#d3d3d3" stroke="#000000" points="322.4766,-384 255.5234,-384 255.5234,-330 322.4766,-330 322.4766,-384"/>
+<text text-anchor="middle" x="289" y="-354.3" font-family="Times,serif" font-size="9.00" fill="#000000">placeholder_y</text>
 </g>
-<!-- 10551552155918985078&#45;&#45;9341619190399396924 -->
-<g id="edge5" class="edge"><title>10551552155918985078&#45;&#45;9341619190399396924</title>
-<path fill="none" stroke="black" d="M426.022,-108.879C453.237,-89.9007 490.013,-64.2542 514.795,-46.9717"/>
-<text text-anchor="start" x="475" y="-74.6" font-family="Times New Roman,serif" font-size="8.00" fill="red">clamp_4</text>
-<text text-anchor="start" x="493.795" y="-49.5717" font-family="Times New Roman,serif" font-size="8.00">1 out </text>
-<text text-anchor="start" x="426.022" y="-111.479" font-family="Times New Roman,serif" font-size="8.00">3 b </text>
+<!-- 14898065622907106961&#45;&#45;8047266541158533139 -->
+<g id="edge4" class="edge">
+<title>14898065622907106961&#45;&#45;8047266541158533139</title>
+<path fill="none" stroke="#000000" d="M289,-329.9994C289,-316.7507 289,-300.6013 289,-286.2906"/>
+<text text-anchor="start" x="289" y="-305.6" font-family="Times,serif" font-size="8.00" fill="#ff0000">y</text>
+<text text-anchor="start" x="270.7773" y="-287.8906" font-family="Times,serif" font-size="8.00" fill="#000000">1 out </text>
+<text text-anchor="start" x="270.7773" y="-323.5994" font-family="Times,serif" font-size="8.00" fill="#000000">1 out </text>
 </g>
 </g>
 </svg>
-</div><p>The construct of the <code>RecognitionFactorization</code> composite type takes the random variables of interest as arguments and one final argument consisting of an array of symbols used to identify each of these random variables. Here is an example of how to use this construct for the previous model where we want to infer <code>m</code> and <code>w</code>.</p><div><pre><code class="language-julia">q = RecognitionFactorization(m, w, ids=[:M, :W])</code></pre></div><p>This recognition factorization constraint that we introduce to guarantee tractability of the approximate distribution has a graphical interpretation. We can view this constraint as a division of the factor graph into a number of different subgraphs, each corresponding to a different factor in the recognition factorization. Minimization of the free energy is performed by iterating over each subgraph in order to update the posterior marginal corresponding to the current factor which depends on messages coming from the other subgraphs. This iteration is repeated until either the free energy converges to a certain value or the posterior marginals of each factor stop changing. We can use the <code>ids</code> passed to the <code>RecognitionFactorization</code> function to visualize their corresponding subgraphs, as shown below.   </p><div><pre><code class="language-julia">ForneyLab.draw(q.recognition_factors[:M])</code></pre><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<p>The construct of the <code>RecognitionFactorization</code> composite type takes the random variables of interest as arguments and one final argument consisting of an array of symbols used to identify each of these random variables. Here is an example of how to use this construct for the previous model where we want to infer <code>m</code> and <code>w</code>.</p><pre><code class="language-julia">q = RecognitionFactorization(m, w, ids=[:M, :W])</code></pre><p>This recognition factorization constraint that we introduce to guarantee tractability of the approximate distribution has a graphical interpretation. We can view this constraint as a division of the factor graph into a number of different subgraphs, each corresponding to a different factor in the recognition factorization. Minimization of the free energy is performed by iterating over each subgraph in order to update the posterior marginal corresponding to the current factor which depends on messages coming from the other subgraphs. This iteration is repeated until either the free energy converges to a certain value or the posterior marginals of each factor stop changing. We can use the <code>ids</code> passed to the <code>RecognitionFactorization</code> function to visualize their corresponding subgraphs, as shown below.   </p><pre><code class="language-julia">ForneyLab.draw(q.recognition_factors[:M])</code></pre><?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<!-- Generated by graphviz version 2.38.0 (20140413.2041)
+<!-- Generated by graphviz version 2.40.1 (20161225.0304)
  -->
 <!-- Title: G Pages: 1 -->
-<svg width="269pt" height="293pt"
- viewBox="0.00 0.00 268.75 293.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 289)">
+<svg width="261pt" height="292pt"
+ viewBox="0.00 0.00 261.15 292.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 288)">
 <title>G</title>
-<polygon fill="white" stroke="none" points="-4,4 -4,-289 264.754,-289 264.754,4 -4,4"/>
-<!-- 5992353859098115635 -->
-<g id="node1" class="node"><title>5992353859098115635</title>
-<polygon fill="none" stroke="black" points="260.754,-237 153.754,-237 153.754,-165 260.754,-165 260.754,-237"/>
-<text text-anchor="middle" x="207.254" y="-203.8" font-family="Times New Roman,serif" font-size="9.00">𝒩</text>
-<text text-anchor="middle" x="207.254" y="-193.8" font-family="Times New Roman,serif" font-size="9.00">gaussianmeanprecision_1</text>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-288 257.1538,-288 257.1538,4 -4,4"/>
+<!-- 8047266541158533139 -->
+<g id="node1" class="node">
+<title>8047266541158533139</title>
+<polygon fill="none" stroke="#000000" points="215.129,-236 106.1787,-236 106.1787,-164 215.129,-164 215.129,-236"/>
+<text text-anchor="middle" x="160.6538" y="-202.43" font-family="Times,serif" font-size="9.00" fill="#000000">𝒩</text>
+<text text-anchor="middle" x="160.6538" y="-192.17" font-family="Times,serif" font-size="9.00" fill="#000000">gaussianmeanprecision_1</text>
 </g>
-<!-- 1539848764779035510 -->
-<g id="node2" class="node"><title>1539848764779035510</title>
-<polygon fill="none" stroke="black" points="130.254,-120 26.2536,-120 26.2536,-48 130.254,-48 130.254,-120"/>
-<text text-anchor="middle" x="78.2536" y="-86.8" font-family="Times New Roman,serif" font-size="9.00">𝒩</text>
-<text text-anchor="middle" x="78.2536" y="-76.8" font-family="Times New Roman,serif" font-size="9.00">gaussianmeanvariance_1</text>
+<!-- 9228962903596832904 -->
+<g id="node2" class="node">
+<title>9228962903596832904</title>
+<polygon fill="none" stroke="#000000" points="127.6143,-120 21.6934,-120 21.6934,-48 127.6143,-48 127.6143,-120"/>
+<text text-anchor="middle" x="74.6538" y="-86.43" font-family="Times,serif" font-size="9.00" fill="#000000">𝒩</text>
+<text text-anchor="middle" x="74.6538" y="-76.17" font-family="Times,serif" font-size="9.00" fill="#000000">gaussianmeanvariance_1</text>
 </g>
-<!-- 5992353859098115635&#45;&#45;1539848764779035510 -->
-<g id="edge1" class="edge"><title>5992353859098115635&#45;&#45;1539848764779035510</title>
-<path fill="none" stroke="black" d="M167.848,-164.871C151.992,-150.736 133.739,-134.463 117.862,-120.31"/>
-<text text-anchor="start" x="147.254" y="-140.6" font-family="Times New Roman,serif" font-size="8.00" fill="red">m</text>
-<text text-anchor="start" x="96.862" y="-122.91" font-family="Times New Roman,serif" font-size="8.00">1 out </text>
-<text text-anchor="start" x="151.848" y="-158.471" font-family="Times New Roman,serif" font-size="8.00">2 m </text>
+<!-- 8047266541158533139&#45;&#45;9228962903596832904 -->
+<g id="edge1" class="edge">
+<title>8047266541158533139&#45;&#45;9228962903596832904</title>
+<path fill="none" stroke="#000000" d="M133.9143,-163.9327C123.5597,-149.9661 111.7298,-134.0095 101.3768,-120.045"/>
+<text text-anchor="start" x="120.6538" y="-139.6" font-family="Times,serif" font-size="8.00" fill="#ff0000">m</text>
+<text text-anchor="start" x="83.1541" y="-121.645" font-family="Times,serif" font-size="8.00" fill="#000000">1 out </text>
+<text text-anchor="start" x="119.6916" y="-157.5327" font-family="Times,serif" font-size="8.00" fill="#000000">2 m </text>
 </g>
-<!-- 10551552155918985078 -->
-<g id="node6" class="node"><title>10551552155918985078</title>
+<!-- 6651954046927026099 -->
+<g id="node4" class="node">
+<title>6651954046927026099</title>
 </g>
-<!-- 5992353859098115635&#45;&#45;10551552155918985078 -->
-<g id="edge4" class="edge"><title>5992353859098115635&#45;&#45;10551552155918985078</title>
-<path fill="none" stroke="black" stroke-dasharray="5,2" d="M220.694,-164.871C231.106,-137.657 244.549,-102.522 249.403,-89.836"/>
-<text text-anchor="middle" x="239.903" y="-92.436" font-family="Times New Roman,serif" font-size="8.00">1 out</text>
-<text text-anchor="middle" x="214.194" y="-158.471" font-family="Times New Roman,serif" font-size="8.00">3 w</text>
+<!-- 8047266541158533139&#45;&#45;6651954046927026099 -->
+<g id="edge2" class="edge">
+<title>8047266541158533139&#45;&#45;6651954046927026099</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M187.7043,-163.9327C207.8562,-137.0635 233.5316,-102.8296 243.4668,-89.5827"/>
+<text text-anchor="middle" x="235.3555" y="-91.1827" font-family="Times,serif" font-size="8.00" fill="#000000">1 out</text>
+<text text-anchor="middle" x="181.8156" y="-157.5327" font-family="Times,serif" font-size="8.00" fill="#000000">3 w</text>
 </g>
-<!-- 3187556981572408731 -->
-<g id="node3" class="node"><title>3187556981572408731</title>
+<!-- 6356855874063074076 -->
+<g id="node3" class="node">
+<title>6356855874063074076</title>
 </g>
-<!-- 1539848764779035510&#45;&#45;3187556981572408731 -->
-<g id="edge5" class="edge"><title>1539848764779035510&#45;&#45;3187556981572408731</title>
-<path fill="none" stroke="black" stroke-dasharray="5,2" d="M49.335,-47.8846C37.4313,-33.4301 25.0326,-18.3746 19,-11.0492"/>
-<text text-anchor="middle" x="9.5" y="-13.6492" font-family="Times New Roman,serif" font-size="8.00">1 out</text>
-<text text-anchor="middle" x="43.335" y="-41.4846" font-family="Times New Roman,serif" font-size="8.00">3 v</text>
+<!-- 9228962903596832904&#45;&#45;6356855874063074076 -->
+<g id="edge5" class="edge">
+<title>9228962903596832904&#45;&#45;6356855874063074076</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M45.7352,-47.9665C34.3491,-33.779 22.5101,-19.0273 16.2227,-11.1929"/>
+<text text-anchor="middle" x="8.1113" y="-12.7929" font-family="Times,serif" font-size="8.00" fill="#000000">1 out</text>
+<text text-anchor="middle" x="40.7352" y="-41.5665" font-family="Times,serif" font-size="8.00" fill="#000000">3 v</text>
 </g>
-<!-- 1487808065477757259 -->
-<g id="node4" class="node"><title>1487808065477757259</title>
+<!-- 4654668829587391618 -->
+<g id="node5" class="node">
+<title>4654668829587391618</title>
 </g>
-<!-- 1539848764779035510&#45;&#45;1487808065477757259 -->
-<g id="edge3" class="edge"><title>1539848764779035510&#45;&#45;1487808065477757259</title>
-<path fill="none" stroke="black" stroke-dasharray="5,2" d="M107.172,-47.8846C119.076,-33.4301 131.474,-18.3746 137.507,-11.0492"/>
-<text text-anchor="middle" x="128.007" y="-13.6492" font-family="Times New Roman,serif" font-size="8.00">1 out</text>
-<text text-anchor="middle" x="100.172" y="-41.4846" font-family="Times New Roman,serif" font-size="8.00">2 m</text>
+<!-- 9228962903596832904&#45;&#45;4654668829587391618 -->
+<g id="edge4" class="edge">
+<title>9228962903596832904&#45;&#45;4654668829587391618</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M103.5724,-47.9665C114.9585,-33.779 126.7975,-19.0273 133.085,-11.1929"/>
+<text text-anchor="middle" x="124.9736" y="-12.7929" font-family="Times,serif" font-size="8.00" fill="#000000">1 out</text>
+<text text-anchor="middle" x="97.4611" y="-41.5665" font-family="Times,serif" font-size="8.00" fill="#000000">2 m</text>
 </g>
-<!-- 3385324347150864537 -->
-<g id="node5" class="node"><title>3385324347150864537</title>
+<!-- 14898065622907106961 -->
+<g id="node6" class="node">
+<title>14898065622907106961</title>
 </g>
-<!-- 3385324347150864537&#45;&#45;5992353859098115635 -->
-<g id="edge2" class="edge"><title>3385324347150864537&#45;&#45;5992353859098115635</title>
-<path fill="none" stroke="black" stroke-dasharray="5,2" d="M207.254,-273.944C207.254,-266.61 207.254,-251.541 207.254,-237.081"/>
-<text text-anchor="middle" x="197.754" y="-239.681" font-family="Times New Roman,serif" font-size="8.00">1 out</text>
-<text text-anchor="middle" x="197.754" y="-267.544" font-family="Times New Roman,serif" font-size="8.00">1 out</text>
+<!-- 14898065622907106961&#45;&#45;8047266541158533139 -->
+<g id="edge3" class="edge">
+<title>14898065622907106961&#45;&#45;8047266541158533139</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M160.6538,-272.8545C160.6538,-265.0501 160.6538,-250.3167 160.6538,-236.1302"/>
+<text text-anchor="middle" x="152.5425" y="-237.7302" font-family="Times,serif" font-size="8.00" fill="#000000">1 out</text>
+<text text-anchor="middle" x="152.5425" y="-266.4545" font-family="Times,serif" font-size="8.00" fill="#000000">1 out</text>
 </g>
 </g>
 </svg>
-</div><div><pre><code class="language-julia">ForneyLab.draw(q.recognition_factors[:W])</code></pre><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<pre><code class="language-julia">ForneyLab.draw(q.recognition_factors[:W])</code></pre><?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<!-- Generated by graphviz version 2.38.0 (20140413.2041)
+<!-- Generated by graphviz version 2.40.1 (20161225.0304)
  -->
 <!-- Title: G Pages: 1 -->
-<svg width="257pt" height="293pt"
- viewBox="0.00 0.00 256.75 293.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 289)">
+<svg width="245pt" height="292pt"
+ viewBox="0.00 0.00 245.15 292.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 288)">
 <title>G</title>
-<polygon fill="white" stroke="none" points="-4,4 -4,-289 252.754,-289 252.754,4 -4,4"/>
-<!-- 5992353859098115635 -->
-<g id="node1" class="node"><title>5992353859098115635</title>
-<polygon fill="none" stroke="black" points="248.754,-237 141.754,-237 141.754,-165 248.754,-165 248.754,-237"/>
-<text text-anchor="middle" x="195.254" y="-203.8" font-family="Times New Roman,serif" font-size="9.00">𝒩</text>
-<text text-anchor="middle" x="195.254" y="-193.8" font-family="Times New Roman,serif" font-size="9.00">gaussianmeanprecision_1</text>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-288 241.1538,-288 241.1538,4 -4,4"/>
+<!-- 8047266541158533139 -->
+<g id="node1" class="node">
+<title>8047266541158533139</title>
+<polygon fill="none" stroke="#000000" points="207.129,-236 98.1787,-236 98.1787,-164 207.129,-164 207.129,-236"/>
+<text text-anchor="middle" x="152.6538" y="-202.43" font-family="Times,serif" font-size="9.00" fill="#000000">𝒩</text>
+<text text-anchor="middle" x="152.6538" y="-192.17" font-family="Times,serif" font-size="9.00" fill="#000000">gaussianmeanprecision_1</text>
 </g>
-<!-- 10551552155918985078 -->
-<g id="node2" class="node"><title>10551552155918985078</title>
-<polygon fill="none" stroke="black" points="114.254,-120 42.2536,-120 42.2536,-48 114.254,-48 114.254,-120"/>
-<text text-anchor="middle" x="78.2536" y="-86.8" font-family="Times New Roman,serif" font-size="9.00">Gam</text>
-<text text-anchor="middle" x="78.2536" y="-76.8" font-family="Times New Roman,serif" font-size="9.00">gamma_1</text>
+<!-- 6651954046927026099 -->
+<g id="node2" class="node">
+<title>6651954046927026099</title>
+<polygon fill="none" stroke="#000000" points="110.6538,-120 38.6538,-120 38.6538,-48 110.6538,-48 110.6538,-120"/>
+<text text-anchor="middle" x="74.6538" y="-85.8" font-family="Times,serif" font-size="9.00" fill="#000000">Gam</text>
+<text text-anchor="middle" x="74.6538" y="-76.8" font-family="Times,serif" font-size="9.00" fill="#000000">gamma_1</text>
 </g>
-<!-- 5992353859098115635&#45;&#45;10551552155918985078 -->
-<g id="edge1" class="edge"><title>5992353859098115635&#45;&#45;10551552155918985078</title>
-<path fill="none" stroke="black" d="M159.514,-164.871C145.133,-150.736 128.577,-134.463 114.177,-120.31"/>
-<text text-anchor="start" x="141.254" y="-140.6" font-family="Times New Roman,serif" font-size="8.00" fill="red">w</text>
-<text text-anchor="start" x="93.1775" y="-122.91" font-family="Times New Roman,serif" font-size="8.00">1 out </text>
-<text text-anchor="start" x="144.514" y="-158.471" font-family="Times New Roman,serif" font-size="8.00">3 w </text>
+<!-- 8047266541158533139&#45;&#45;6651954046927026099 -->
+<g id="edge1" class="edge">
+<title>8047266541158533139&#45;&#45;6651954046927026099</title>
+<path fill="none" stroke="#000000" d="M128.4017,-163.9327C119.0103,-149.9661 108.2809,-134.0095 98.8909,-120.045"/>
+<text text-anchor="start" x="116.6538" y="-139.6" font-family="Times,serif" font-size="8.00" fill="#ff0000">w</text>
+<text text-anchor="start" x="80.6683" y="-121.645" font-family="Times,serif" font-size="8.00" fill="#000000">1 out </text>
+<text text-anchor="start" x="114.6243" y="-157.5327" font-family="Times,serif" font-size="8.00" fill="#000000">3 w </text>
 </g>
-<!-- 1539848764779035510 -->
-<g id="node6" class="node"><title>1539848764779035510</title>
+<!-- 9228962903596832904 -->
+<g id="node4" class="node">
+<title>9228962903596832904</title>
 </g>
-<!-- 5992353859098115635&#45;&#45;1539848764779035510 -->
-<g id="edge5" class="edge"><title>5992353859098115635&#45;&#45;1539848764779035510</title>
-<path fill="none" stroke="black" stroke-dasharray="5,2" d="M207.472,-164.871C216.938,-137.657 229.159,-102.522 233.571,-89.836"/>
-<text text-anchor="middle" x="224.071" y="-92.436" font-family="Times New Roman,serif" font-size="8.00">1 out</text>
-<text text-anchor="middle" x="200.472" y="-158.471" font-family="Times New Roman,serif" font-size="8.00">2 m</text>
+<!-- 8047266541158533139&#45;&#45;9228962903596832904 -->
+<g id="edge2" class="edge">
+<title>8047266541158533139&#45;&#45;9228962903596832904</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M177.2169,-163.9327C195.5157,-137.0635 218.8302,-102.8296 227.8518,-89.5827"/>
+<text text-anchor="middle" x="219.7405" y="-91.1827" font-family="Times,serif" font-size="8.00" fill="#000000">1 out</text>
+<text text-anchor="middle" x="171.1055" y="-157.5327" font-family="Times,serif" font-size="8.00" fill="#000000">2 m</text>
 </g>
-<!-- 2998664122237550971 -->
-<g id="node3" class="node"><title>2998664122237550971</title>
+<!-- 537701254267761750 -->
+<g id="node3" class="node">
+<title>537701254267761750</title>
 </g>
-<!-- 10551552155918985078&#45;&#45;2998664122237550971 -->
-<g id="edge3" class="edge"><title>10551552155918985078&#45;&#45;2998664122237550971</title>
-<path fill="none" stroke="black" stroke-dasharray="5,2" d="M49.335,-47.8846C37.4313,-33.4301 25.0326,-18.3746 19,-11.0492"/>
-<text text-anchor="middle" x="9.5" y="-13.6492" font-family="Times New Roman,serif" font-size="8.00">1 out</text>
-<text text-anchor="middle" x="43.835" y="-41.4846" font-family="Times New Roman,serif" font-size="8.00">2 a</text>
+<!-- 6651954046927026099&#45;&#45;537701254267761750 -->
+<g id="edge5" class="edge">
+<title>6651954046927026099&#45;&#45;537701254267761750</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M45.7352,-47.9665C34.3491,-33.779 22.5101,-19.0273 16.2227,-11.1929"/>
+<text text-anchor="middle" x="8.1113" y="-12.7929" font-family="Times,serif" font-size="8.00" fill="#000000">1 out</text>
+<text text-anchor="middle" x="40.7352" y="-41.5665" font-family="Times,serif" font-size="8.00" fill="#000000">3 b</text>
 </g>
-<!-- 9341619190399396924 -->
-<g id="node4" class="node"><title>9341619190399396924</title>
+<!-- 12517160414056326157 -->
+<g id="node5" class="node">
+<title>12517160414056326157</title>
 </g>
-<!-- 10551552155918985078&#45;&#45;9341619190399396924 -->
-<g id="edge4" class="edge"><title>10551552155918985078&#45;&#45;9341619190399396924</title>
-<path fill="none" stroke="black" stroke-dasharray="5,2" d="M107.172,-47.8846C119.076,-33.4301 131.474,-18.3746 137.507,-11.0492"/>
-<text text-anchor="middle" x="128.007" y="-13.6492" font-family="Times New Roman,serif" font-size="8.00">1 out</text>
-<text text-anchor="middle" x="101.672" y="-41.4846" font-family="Times New Roman,serif" font-size="8.00">3 b</text>
+<!-- 6651954046927026099&#45;&#45;12517160414056326157 -->
+<g id="edge3" class="edge">
+<title>6651954046927026099&#45;&#45;12517160414056326157</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M103.5724,-47.9665C114.9585,-33.779 126.7975,-19.0273 133.085,-11.1929"/>
+<text text-anchor="middle" x="124.9736" y="-12.7929" font-family="Times,serif" font-size="8.00" fill="#000000">1 out</text>
+<text text-anchor="middle" x="98.797" y="-41.5665" font-family="Times,serif" font-size="8.00" fill="#000000">2 a</text>
 </g>
-<!-- 3385324347150864537 -->
-<g id="node5" class="node"><title>3385324347150864537</title>
+<!-- 14898065622907106961 -->
+<g id="node6" class="node">
+<title>14898065622907106961</title>
 </g>
-<!-- 3385324347150864537&#45;&#45;5992353859098115635 -->
-<g id="edge2" class="edge"><title>3385324347150864537&#45;&#45;5992353859098115635</title>
-<path fill="none" stroke="black" stroke-dasharray="5,2" d="M195.254,-273.944C195.254,-266.61 195.254,-251.541 195.254,-237.081"/>
-<text text-anchor="middle" x="185.754" y="-239.681" font-family="Times New Roman,serif" font-size="8.00">1 out</text>
-<text text-anchor="middle" x="185.754" y="-267.544" font-family="Times New Roman,serif" font-size="8.00">1 out</text>
+<!-- 14898065622907106961&#45;&#45;8047266541158533139 -->
+<g id="edge4" class="edge">
+<title>14898065622907106961&#45;&#45;8047266541158533139</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M152.6538,-272.8545C152.6538,-265.0501 152.6538,-250.3167 152.6538,-236.1302"/>
+<text text-anchor="middle" x="144.5425" y="-237.7302" font-family="Times,serif" font-size="8.00" fill="#000000">1 out</text>
+<text text-anchor="middle" x="144.5425" y="-266.4545" font-family="Times,serif" font-size="8.00" fill="#000000">1 out</text>
 </g>
 </g>
 </svg>
-</div><p>Generating the VMP algorithm follows the same procedure that we saw for the belief propagation algorithm. In this case, however, the resulting algorithm will consist of a set of step functions, one for each recognition factor, that need to be executed iteratively until convergence.</p><div><pre><code class="language-julia"># Generate variational update algorithms for each recognition factor
+<p>Generating the VMP algorithm follows the same procedure that we saw for the belief propagation algorithm. In this case, however, the resulting algorithm will consist of a set of step functions, one for each recognition factor, that need to be executed iteratively until convergence.</p><pre><code class="language-julia"># Generate variational update algorithms for each recognition factor
 algo = variationalAlgorithm(q)
-eval(Meta.parse(algo))</code></pre></div><pre><code class="language-julia">Meta.parse(algo) = quote
+eval(Meta.parse(algo))</code></pre><pre><code class="language-julia">Meta.parse(algo) = quote
     #= none:3 =#
     function stepM!(data::Dict, marginals::Dict=Dict(), messages::Vector{Message}=Array{Message}(undef, 2))
         #= none:5 =#
@@ -990,13 +1123,13 @@ eval(Meta.parse(algo))</code></pre></div><pre><code class="language-julia">Meta.
         return marginals
     end
 end</code></pre><h4><a class="nav-anchor" id="Computing-free-energy-1" href="#Computing-free-energy-1">Computing free energy</a></h4><p>VMP inference boils down to finding the member of a family of tractable probability distributions that is closest in KL divergence to an intractable posterior distribution. This is achieved by minimizing a quantity known as <em>free energy</em>. ForneyLab provides the function <code>freeEnergyAlgorithm</code> which generates an algorithm that can be used to evaluate this quantity. This function takes an object of type <code>RecognitionFactorization</code> as argument. Free energy is particularly useful to test for convergence of the VMP iterative procedure. Here is an example that generates, parses and evaluates this algorithm.</p><pre><code class="language-julia">fe_algorithm = freeEnergyAlgorithm(q)
-eval(Meta.parse(fe_algorithm));</code></pre><h2><a class="nav-anchor" id="Executing-an-algorithm-1" href="#Executing-an-algorithm-1">Executing an algorithm</a></h2><p>In section <a href="#Specifying-a-model-1">Specifying a model</a> we introduced two main ways to learn from data, namely in an online and in an offline setting. We saw that the structure of the factor graph is different in each of these settings. In this section we will demonstrate how to feed data to an algorithm in both an online and an offline setting. We will use the same examples from section <a href="#Online-vs.-offline-learning-1">Online vs. offline learning</a>.</p><h3><a class="nav-anchor" id="Online-learning-1" href="#Online-learning-1">Online learning</a></h3><p>For convenience, let&#39;s reproduce the model specification for the problem of estimating the mean <code>x</code> of a Gaussian distributed random variable <code>y</code>, where <code>x</code> is modelled using another Gaussian distribution with hyperparameters <code>m</code> and <code>v</code>. Let&#39;s also generate a belief propagation algorithm for this inference problem like we have seen before.</p><div><pre><code class="language-julia">g = FactorGraph() # create a new factor graph
+eval(Meta.parse(fe_algorithm));</code></pre><h2><a class="nav-anchor" id="Executing-an-algorithm-1" href="#Executing-an-algorithm-1">Executing an algorithm</a></h2><p>In section <a href="#Specifying-a-model-1">Specifying a model</a> we introduced two main ways to learn from data, namely in an online and in an offline setting. We saw that the structure of the factor graph is different in each of these settings. In this section we will demonstrate how to feed data to an algorithm in both an online and an offline setting. We will use the same examples from section <a href="#Online-vs.-offline-learning-1">Online vs. offline learning</a>.</p><h3><a class="nav-anchor" id="Online-learning-1" href="#Online-learning-1">Online learning</a></h3><p>For convenience, let&#39;s reproduce the model specification for the problem of estimating the mean <code>x</code> of a Gaussian distributed random variable <code>y</code>, where <code>x</code> is modelled using another Gaussian distribution with hyperparameters <code>m</code> and <code>v</code>. Let&#39;s also generate a belief propagation algorithm for this inference problem like we have seen before.</p><pre><code class="language-julia">g = FactorGraph() # create a new factor graph
 m = placeholder(:m)
 v = placeholder(:v)
 @RV x ~ GaussianMeanVariance(m, v)
 @RV y ~ GaussianMeanVariance(x, 1.0)
 placeholder(y, :y)
-eval(Meta.parse(sumProductAlgorithm(x))) # generate, parse and evaluate the algorithm</code></pre></div><p>In order to execute this algorithm we first have to specify a prior for <code>x</code>. This is done by choosing some initial values for the hyperparameters <code>m</code> and <code>v</code>. In each processing step, the algorithm expects an observation and the current belief about <code>x</code>, i.e. the prior. We pass this information as elements of a <code>data</code> dictionary where the keys are the <code>id</code>s of their corresponding placeholders. The algorithm performs inference and returns the results inside a different dictionary (which we call <code>marginals</code> in the following script). In the next iteration, we repeat this process by feeding the algorithm with the next observation in the sequence and the posterior distribution of <code>x</code> that we obtained in the previous processing step. In other words, the current posterior becomes the prior for the next processing step. Let&#39;s illustrate this using an example where we will first generate a synthetic dataset by sampling observations from a Gaussian distribution that has a mean of 5.</p><div><pre><code class="language-julia">using Plots, LaTeXStrings; theme(:default) ;
+eval(Meta.parse(sumProductAlgorithm(x))) # generate, parse and evaluate the algorithm</code></pre><p>In order to execute this algorithm we first have to specify a prior for <code>x</code>. This is done by choosing some initial values for the hyperparameters <code>m</code> and <code>v</code>. In each processing step, the algorithm expects an observation and the current belief about <code>x</code>, i.e. the prior. We pass this information as elements of a <code>data</code> dictionary where the keys are the <code>id</code>s of their corresponding placeholders. The algorithm performs inference and returns the results inside a different dictionary (which we call <code>marginals</code> in the following script). In the next iteration, we repeat this process by feeding the algorithm with the next observation in the sequence and the posterior distribution of <code>x</code> that we obtained in the previous processing step. In other words, the current posterior becomes the prior for the next processing step. Let&#39;s illustrate this using an example where we will first generate a synthetic dataset by sampling observations from a Gaussian distribution that has a mean of 5.</p><pre><code class="language-">using Plots, LaTeXStrings; theme(:default) ;
 pyplot(fillalpha=0.3, leg=false, xlabel=L&quot;x&quot;, ylabel=L&quot;p(x|D)&quot;, yticks=nothing)
 
 N = 50                      # number of samples
@@ -1020,7 +1153,8 @@ anim = @animate for i in 1:N
 
     global m_prior = mean(marginals[:x]) # today&#39;s posterior is tomorrow&#39;s prior
     global v_prior = var(marginals[:x])  # today&#39;s posterior is tomorrow&#39;s prior
-end</code></pre></div><p><img src="../assets/belief-propagation-online.gif" alt="Online learning"/></p><p>As we process more samples, our belief about the possible values of <code>m</code> becomes more confident.</p><h3><a class="nav-anchor" id="Offline-learning-1" href="#Offline-learning-1">Offline learning</a></h3><p>Executing an algorithm in an offline fashion is much simpler than in the online case. Let&#39;s reproduce the model specification of the previous example in an offline setting (also shown in <a href="#Online-vs.-offline-learning-1">Online vs. offline learning</a>.)</p><div><pre><code class="language-julia">g = FactorGraph()   # create a new factor graph
+end
+nothing # hide</code></pre><p><img src="../assets/belief-propagation-online.gif" alt="Online learning"/></p><p>As we process more samples, our belief about the possible values of <code>m</code> becomes more confident.</p><h3><a class="nav-anchor" id="Offline-learning-1" href="#Offline-learning-1">Offline learning</a></h3><p>Executing an algorithm in an offline fashion is much simpler than in the online case. Let&#39;s reproduce the model specification of the previous example in an offline setting (also shown in <a href="#Online-vs.-offline-learning-1">Online vs. offline learning</a>.)</p><pre><code class="language-julia">g = FactorGraph()   # create a new factor graph
 N = 30              # number of observations
 y = Vector{Variable}(undef, N)
 @RV x ~ GaussianMeanVariance(0.0, 1.0)
@@ -1028,6 +1162,6 @@ for i = 1:N
     @RV y[i] ~ GaussianMeanVariance(x, 1.0)
     placeholder(y[i], :y, index=i)
 end
-eval(Meta.parse(sumProductAlgorithm(x))) # generate, parse and evaluate the algorithm</code></pre></div><p>Since we have a placeholder linked to each observation in the sequence, we can process the complete dataset in one step. To do so, we first need to create a dictionary having the complete dataset array as its single element. We then need to pass this dictionary to the <code>step!</code> function which, in contrast with the online counterpart, we only need to call once.</p><div><pre><code class="language-julia">data = Dict(:y =&gt; dataset)
+eval(Meta.parse(sumProductAlgorithm(x))) # generate, parse and evaluate the algorithm</code></pre><p>Since we have a placeholder linked to each observation in the sequence, we can process the complete dataset in one step. To do so, we first need to create a dictionary having the complete dataset array as its single element. We then need to pass this dictionary to the <code>step!</code> function which, in contrast with the online counterpart, we only need to call once.</p><pre><code class="language-">data = Dict(:y =&gt; dataset)
 marginals = step!(data) # Run the algorithm
-plot(-10:0.01:10, normal(mean(marginals[:x]), var(marginals[:x])), fill=true)</code></pre><img src="data:image/png;base64,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/1z0axw6dCgiInbu3Blr167NZF2Un+uC2bgumI3rgtlkdV2cddZZsWbNmogosAdr+/bt8du//dtFvBUAQOGO7DMvLGDt2bMn7rrrrti8eXOsXm0MLgBQLX2pYAEArBSa3AEAMiZgAQBkbFkHrI9+9KOxefPmSJIkvv/978/43g9/+MO46KKL4owzzogLLrggHn300T6tkn7bvHlznHXWWbFt27bYtm1b/NM//VO/l0Sf+XxgNj4riJg7W2T+uZEuY/fcc0/67LPPpqeddlq6a9euGd+74oor0i9+8Ytpmqbp7bffnl544YV9WCHLwWyuwVcoAAADZklEQVTXByubzwdm47OCNJ07W2T9ubGsK1iXXnppnHzyyUc9/vLLL8eDDz44NfbhqquuiqeeeiqefvrpglcILDc+H4D5zJYt8vjcWNYBay7PPvtsnHTSSTE42JmTmiRJnHrqqfHMM8/0eWX0y/ve977YunVrXHvttfHKK6/0ezn0kc8H5uOzgtnk8blRyoAV0fkff6TUtIkVa8eOHfHwww/Hgw8+GJs2bYprrrmm30uiz3w+MBufFcwn68+NZRWwvvSlL001H37xi1+c8+dOOeWUeO6552JiYiIiOn8Jzz77bJx66qlFLZU+eu110v3/vV6vx8c+9rH49re/3ecV0k8+H5iLzwrmksfnxrIKWFdffXXs3Lkzdu7cGR/4wAfm/LnXve51ce6558aXv/zliIj42te+Fps3b47NmzcXtFL66cjr5L3vfW/s27dv6nv/+I//GOeee24fV0e/+XxgNiMjIz4rmFMenxvLepL79ddfH1//+tfjxRdfjBNOOCHWrl0bTz75ZEREPP744/H+978/9u7dG+vXr49bbrklzj777D6vmKLt3r07rrrqqmi1WpGmaZx++ulx0003+WW6wvl84LV8VtA1V7bI+nNjWQcsAIAyWlZbhAAAVSBgAQBkTMACAMiYgAUAkDEBCwAgYwIWAEDGBCwAgIwJWAAAGROwAAAyJmABlXHfffdFkiTxla98ZeqxvXv3xpYtW+Ltb3/71EGuAHlzVA5QKe9617ti9+7dsWvXrhgfH48rr7wyDh06FDt27Ih169b1e3nACiFgAZXy0EMPxXnnnRe33XZbfP3rX48dO3bEfffdFyeddFK/lwasIAIWUDlXXXVV3HnnnTE4OBjf+c53YuvWrf1eErDC6MECKmfLli1x+PDh+IM/+APhCugLFSygUrZv3x7XXHNNbNu2LV599dV4/PHHo16v93tZwAqjggVUxj333BO/8zu/E5/97Gfjtttui2eeeSZuvvnmfi8LWIFUsIBKeOyxx+Kiiy6Ka665Jj772c9GRMTVV18d//7v/x5PPvlkDA8P93mFwEoiYAGl9/LLL8eFF14Yb33rW+OOO+6IWq1TnH/iiSfiLW95S9x4443x0Y9+tM+rBFYSAQsAIGN6sAAAMiZgAQBkTMACAMiYgAUAkLH/D86wIe3t6lnJAAAAAElFTkSuQmCC" /></div><div class="admonition note"><div class="admonition-title">Note</div><div class="admonition-text"><p>Batch processing does not perform well with large datasets at the moment. We are working on this issue.</p></div></div><footer><hr/><a class="previous" href="../getting-started/"><span class="direction">Previous</span><span class="title">Getting started</span></a><a class="next" href="../library/public-api/"><span class="direction">Next</span><span class="title">Public API</span></a></footer></article></body></html>
+plot(-10:0.01:10, normal(mean(marginals[:x]), var(marginals[:x])), fill=true)</code></pre><div class="admonition note"><div class="admonition-title">Note</div><div class="admonition-text"><p>Batch processing does not perform well with large datasets at the moment. We are working on this issue.</p></div></div><footer><hr/><a class="previous" href="../getting-started/"><span class="direction">Previous</span><span class="title">Getting started</span></a><a class="next" href="../library/public-api/"><span class="direction">Next</span><span class="title">Public API</span></a></footer></article></body></html>
