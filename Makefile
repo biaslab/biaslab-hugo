@@ -8,3 +8,5 @@ preview-website:
 	hugo server -t academic-group -w
 publish:
 	./publish.sh
+rebuild-docs:
+	./rebuild_docs.sh
