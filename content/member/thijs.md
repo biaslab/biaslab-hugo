@@ -4,9 +4,9 @@ id = "thijs"
 interests = ["Bayesian Machine Learning", "Active Inference"]
 name = "Thijs van de Laar"
 portrait = "portraits/Thijs.png"
-short_bio = "I am a postdoctoral reasearcher at the signal processing systems group, working on personalized hearing aids."
+short_bio = "I am a postdoctoral fellow at the signal processing systems group, working on personalized hearing aids."
 title = "Thijs van de Laar"
-sort_position = 4
+sort_position = 3
 
 [[social]]
     icon = "envelope"
@@ -24,7 +24,7 @@ sort_position = 4
     year = 2019
 
 [[education]]
-    course = "MSc in natural sciences"
+    course = "MSc in Natural Sciences"
     institution = "Radboud University Nijmegen"
     year = 2010
 

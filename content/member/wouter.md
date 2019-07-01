@@ -41,7 +41,7 @@ cv_link = ""
 
 [[organizations]]
     name = "TU Eindhoven"
-    role = "Postdoctoral researcher"
+    role = "Postdoctoral fellow"
 
 +++
 I am interested in robots, brains and robotbrains. I'm fascinated by [intelligent](https://en.wikipedia.org/wiki/Intelligence) behaviour: how animals can efficiently process a flood of sensory signals and learn to take actions that keep them alive. I'm passionate about taking what we know from [how brains process information](https://en.wikipedia.org/wiki/Computational_neuroscience), to making [intelligent machines](https://en.wikipedia.org/wiki/Artificial_intelligence).
