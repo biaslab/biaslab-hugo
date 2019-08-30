@@ -4,9 +4,9 @@ id = "tjalling"
 interests = ["Source Coding Theory", "Machine Learning"]
 name = "Tjalling Tjalkens"
 portrait = "portraits/Tjalling.jpg"
-short_bio = "I am an associate professor at the Electrical Engineering department, Eindhoven University of Technology."
 title = "Tjalling Tjalkens"
 sort_position = 2
+is_former_member = true
 
 [[social]]
     icon = "envelope"
@@ -20,7 +20,7 @@ sort_position = 2
 
 [[organizations]]
     name = "TU Eindhoven"
-    role = "Associate Professor"
+    role = "Associate Professor (retired)"
 
 +++
 Tjalling Tjalkens received the M.S. degree in electrical engineering from the Eindhoven University of Technology, Eindhoven, The Netherlands in 1983 and the Ph.D. degree from the same university in 1987.
