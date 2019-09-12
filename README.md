@@ -7,7 +7,7 @@ This repository contains all the content necessary for proper rendering of BIASl
 ### Prerequisites
 You need to have [Hugo](https://gohugo.io) static site generator installed and working. More information might be found at [Hugo Installation Guide](https://gohugo.io/overview/installing/).
 
-Please install Hugo **v0.16** or newer. Otherwise certain sections of the website won't be generated.
+Please install Hugo **v0.58** or newer. Otherwise certain sections of the website won't be generated.
 
 Working installation of GNU Make is recommended, but not required. You can test if you have it installed by typing `make -v` in the terminal.
 
