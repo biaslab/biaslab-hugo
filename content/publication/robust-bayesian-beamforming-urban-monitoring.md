@@ -13,13 +13,14 @@ title = "Robust Bayesian beamforming for sources at different distances with app
 url_code = ""
 url_dataset = ""
 url_pdf = "https://pure.tue.nl/ws/portalfiles/portal/129758359/08682835.pdf"
-url_poster = ""
+url_poster = "/pdf/icassp2019/poster.pdf"
 url_project = ""
 url_video = ""
 
 [[authors]]
-    name = "Patrick W.A. Wijnings"
-    is_member = false
+    name = "Patrick Wijnings"
+    is_member = true
+    link = "/patrick"
 [[authors]]
     name = "Sander Stuijk"
     is_member = false
