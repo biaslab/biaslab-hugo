@@ -7,7 +7,7 @@ canonifyurls = true
 theme = "academic-group"
 title = "BIASlab"
 math = true
-copyright = "&copy; BIASlab, 2019 "
+copyright = "&copy; BIASlab, 2020 "
 enableRobotsTXT = true
 
 [taxonomies]
