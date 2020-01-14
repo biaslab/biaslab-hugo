@@ -11,7 +11,7 @@ selected = false
 title = "A Factor Graph Approach to Gaussian Process Preference Learning"
 url_code = ""
 url_dataset = ""
-url_pdf = "https://www.dropbox.com/s/dmj4omyr7vvyyae/Schoonderbeek%20-%20Oct2014%20-%20Msc%20Thesis%20-%20A%20Factor%20Graph%20Approach%20to%20GP%20Preference%20Learning.pdf?dl=0"
+url_pdf = "https://pure.tue.nl/ws/portalfiles/portal/46988974/783824-1.pdf"
 url_project = ""
 url_slides = ""
 url_video = ""
