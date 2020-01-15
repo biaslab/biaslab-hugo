@@ -38,7 +38,7 @@ This course covers the fundamentals of a Bayesian (i.e., probabilistic) approach
 
 - Instructors: [prof.dr.ir. Bert de Vries](http://bertdv.nl) (responsible instructor) and [dr.ir. Wouter Kouw](https://biaslab.github.io/member/wouter/).                           
 
-- Teaching asistents: [Ismail Senoz, MSc](https://biaslab.github.io/member/ismail/),  and [Magnus Koudahl, MSc](https://biaslab.github.io/member/magnus/).  
+- Teaching assistants: [Ismail Senoz, MSc](https://biaslab.github.io/member/ismail/),  and [Magnus Koudahl, MSc](https://biaslab.github.io/member/magnus/).  
 
 
 
@@ -55,15 +55,15 @@ Bishop](http://research.microsoft.com/en-us/um/people/cmbishop/index.htm) (2006)
 Machine
 Learning](https://www.microsoft.com/en-us/research/people/cmbishop/prml-book/). You can also buy a [hardcopy, e.g. at bol.com](https://tinyurl.com/thj7euq).
 2. [Ariel Caticha](https://www.albany.edu/physics/acaticha.shtml) (2012), [Entropic Inference and the Foundations of Physics](https://www.albany.edu/physics/ACaticha-EIFP-book.pdf) 
-3. Here is a [PDF bundle of all lecture notes](). The lecture notes may change a bit during the course, e.g., to process comments by students. A final PDF version will be posted after the last lecture.
+<!-- 3. Here is a [PDF bundle of all lecture notes](). The lecture notes may change a bit during the course, e.g., to process comments by students. A final PDF version will be posted after the last lecture. -->
 
 ### Lecture notes
 
 - The [source files for these lecture notes are accessible at github](https://github.com/bertdv/bmlip).
 
-- The [Fundamentals]() and [Advanced Materials]() lectures (see below) are taught by Bert de Vries. The [Probabilistic Programming]() minicourse is taught by Wouter Kouw and the [What is Life?]() lecture is presented by Magnus Koudahl. 
+- The [Fundamentals](#fundamentals) and [Advanced Materials](#advanced-materials) lectures (see below) are taught by Bert de Vries. The [Probabilistic Programming](#minicourse-probabilistic-programming) minicourse is taught by Wouter Kouw and the [What is Life?](#bonus-lecture) lecture is presented by Magnus Koudahl. 
 
-You can view the lecture notes online through the links below:
+<!-- You can view the lecture notes online through the links below: -->
 
 #### Fundamentals 
 
@@ -108,7 +108,7 @@ You can view the lecture notes online through the links below:
 
 - Each year there will be two written exam opportunities. Check the official TUE course site for exam dates.
 
-- In preparation for the exam, we recommend that you work through the following exercises (updates with solutions will be posted, see the [News]() section):
+- In preparation for the exam, we recommend that you work through the following exercises (updates with solutions will be posted, see the [News](#news) section):
 
 - [Exercises (without solutions)](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Exercises.ipynb)
 
