@@ -36,7 +36,7 @@ This course covers the fundamentals of a Bayesian (i.e., probabilistic) approach
 
 ## Instructors
 
-- Instructors: [prof.dr.ir. Bert de Vries](http://bertdv.nl) (responsible instructor) and [dr.ir. Wouter Kouw](https://biaslab.github.io/member/wouter/).                           
+- Instructors: [prof.dr.ir. Bert de Vries](http://bertdv.nl) (responsible instructor) and [dr. Wouter Kouw](https://biaslab.github.io/member/wouter/).                           
 
 - Teaching assistants: [Ismail Senoz, MSc](https://biaslab.github.io/member/ismail/),  and [Magnus Koudahl, MSc](https://biaslab.github.io/member/magnus/).  
 
@@ -86,23 +86,22 @@ Learning](https://www.microsoft.com/en-us/research/people/cmbishop/prml-book/). 
 
 #### Minicourse Probabilistic Programming 
 
-- [13- PP Introduction](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-intro.ipynb)    
-- 14- Linear Regression & Classification    
+- 13- Linear Regression & Classification    
   - [with Monte Carlo Sampling](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-1-sampling.ipynb)  
   - [with Variational Inference](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-1-variational.ipynb)
-- 15- Gaussian Mixture Model    
+- 14- Gaussian Mixture Model    
   - [with Monte Carlo Sampling](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-2-sampling.ipynb)
   - [with Variational Inference](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-2-variational.ipynb)       
-- 16- Hidden Markov Model    
+- 15- Hidden Markov Model    
   - [with Monte Carlo Sampling](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-3-sampling.ipynb)  
   - [with Variational Inference](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-3-variational.ipynb)       
-- 17- Kalman Filtering     
+- 16- Kalman Filtering     
   - [with Monte Carlo sampling](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-4-sampling.ipynb)
   - [with Variational Inference](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-4-variational.ipynb)
 
 #### Bonus lecture
 
-- [18- What is Life?](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/What-is-Life.ipynb)
+- [17- What is Life?](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/What-is-Life.ipynb)
 
 ## Exam Preparation
 
