@@ -33,6 +33,7 @@ This course covers the fundamentals of a Bayesian (i.e., probabilistic) approach
 ## News
 
 - Watch this for news about the course
+- [Exercises (with solutions)](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises-with-Solutions.ipynb) are now available
 
 ## Instructors
 
@@ -107,9 +108,10 @@ Learning](https://www.microsoft.com/en-us/research/people/cmbishop/prml-book/). 
 
 - Each year there will be two written exam opportunities. Check the official TUE course site for exam dates.
 
-- In preparation for the exam, we recommend that you work through the following exercises (updates with solutions will be posted, see the [News](#news) section):
+- In preparation for the exam, we recommend that you work through the following exercises:
+  - [Exercises (without solutions)](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises.ipynb)
+  - [Exercises (with solutions)](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises-with-Solutions.ipynb)
 
-- [Exercises (without solutions)](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Exercises.ipynb)
 
 - Please feel free to consult the following matrix and Gaussian cheat sheets (by Sam Roweis) when making exercises.
   - [Gaussian Identities](https://github.com/bertdv/AIP-5SSB0/raw/master/lessons/notebooks/files/RoweisS-gaussian_formulas.pdf?dl=0)
