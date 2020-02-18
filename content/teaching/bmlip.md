@@ -33,7 +33,7 @@ This course covers the fundamentals of a Bayesian (i.e., probabilistic) approach
 ## News
 
 - Watch this for news about the course
-- [Exercises (with solutions)](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises-with-Solutions.ipynb) are now available
+<!-- - [Exercises (with solutions)](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises-with-Solutions.ipynb) are now available -->
 
 ## Instructors
 
