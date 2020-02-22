@@ -33,7 +33,7 @@ This course covers the fundamentals of a Bayesian (i.e., probabilistic) approach
 ## News
 
 - Watch this for news about the course
-<!-- - [Exercises (with solutions)](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises-with-Solutions.ipynb) are now available -->
+- (Sat 22-Feb). Exercises [without](https://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises.ipynb) and [with solutions](https://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises-with-Solutions.ipynb) for the fundamentals block are up! Next week no classes (carnaval). See you on Monday 2-March!
 
 ## Instructors
 
