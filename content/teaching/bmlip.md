@@ -32,7 +32,7 @@ This course covers the fundamentals of a Bayesian (i.e., probabilistic) approach
 
 ## News
 
-- Watch this for news about the course
+- (Fri 28-Feb). A [PDF booklet of lessons 0 through 12]() is now available for download.
 - (Sat 22-Feb). Exercises [without](https://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises.ipynb) and [with solutions](https://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises-with-Solutions.ipynb) for the fundamentals block are up! Next week no classes (carnaval). See you on Monday 2-March!
 
 ## Instructors
@@ -45,9 +45,9 @@ This course covers the fundamentals of a Bayesian (i.e., probabilistic) approach
 
 ## Materials
 
-In principle, you can download all needed materials from this site. 
+In principle, you can download all needed materials from this site.
 
-### Books 
+### Books
 
 Please download the following books/resources:
 
@@ -55,18 +55,20 @@ Please download the following books/resources:
 Bishop](http://research.microsoft.com/en-us/um/people/cmbishop/index.htm) (2006), [Pattern Recognition and
 Machine
 Learning](https://www.microsoft.com/en-us/research/people/cmbishop/prml-book/). You can also buy a [hardcopy, e.g. at bol.com](https://tinyurl.com/thj7euq).
-2. [Ariel Caticha](https://www.albany.edu/physics/acaticha.shtml) (2012), [Entropic Inference and the Foundations of Physics](https://www.albany.edu/physics/ACaticha-EIFP-book.pdf) 
+2. [Ariel Caticha](https://www.albany.edu/physics/acaticha.shtml) (2012), [Entropic Inference and the Foundations of Physics](https://www.albany.edu/physics/ACaticha-EIFP-book.pdf)
 <!-- 3. Here is a [PDF bundle of all lecture notes](). The lecture notes may change a bit during the course, e.g., to process comments by students. A final PDF version will be posted after the last lecture. -->
 
 ### Lecture notes
 
 - The [source files for these lecture notes are accessible at github](https://github.com/bertdv/bmlip).
 
-- The [Fundamentals](#fundamentals) and [Advanced Materials](#advanced-materials) lectures (see below) are taught by Bert de Vries. The [Probabilistic Programming](#minicourse-probabilistic-programming) minicourse is taught by Wouter Kouw and the [What is Life?](#bonus-lecture) lecture is presented by Magnus Koudahl. 
+- A [PDF booklet of lessons 0 through 12]()
 
-<!-- You can view the lecture notes online through the links below: -->
+- The [Fundamentals](#fundamentals) and [Advanced Materials](#advanced-materials) lectures (see below) are taught by Bert de Vries. The [Probabilistic Programming](#minicourse-probabilistic-programming) minicourse is taught by Wouter Kouw and the [What is Life?](#bonus-lecture) lecture is presented by Magnus Koudahl.
 
-#### Fundamentals 
+You can view the lecture notes online through the links below:
+
+#### Fundamentals
 
 - [0 - Course Outline and Administrative Issues](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/00-Course-Outline-and-Admin-Issues.ipynb)
 - [1 - Machine Learning Overview](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/01-Machine-Learning-Overview.ipynb)
@@ -78,14 +80,14 @@ Learning](https://www.microsoft.com/en-us/research/people/cmbishop/prml-book/). 
 - [7 - Generative Classification](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/07-Generative-Classification.ipynb)
 - [8 - Discriminative Classification](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/08-Discriminative-Classification.ipynb)
 
-#### Advanced Materials 
+#### Advanced Materials
 
 - [9 - Latent Variable Models and Variational Bayes](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/09-Latent-Variable-Models-and-VB.ipynb)
 - [10- Factor Graphs](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/10-Factor-Graphs.ipynb)
 - [11- Dynamic Models](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/11-Dynamic-Models.ipynb)
 - [12- Intelligent Agents and Active Inference](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/12-Intelligent-Agents-and-Active-Inference.ipynb)
 
-#### Minicourse Probabilistic Programming 
+#### Minicourse Probabilistic Programming
 
 - 13- Linear Regression & Classification    
   - [with Monte Carlo Sampling](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-1-sampling.ipynb)  
@@ -125,4 +127,3 @@ Learning](https://www.microsoft.com/en-us/research/people/cmbishop/prml-book/). 
 Scientific programming skills (e.g. in Python, MATLAB or [Julia](https://julialang.org)) are helpful.
 
 - You're advised to bring the lecture notes (either in soft- or hardcopy) with you to class in order to add your personal comments.
-
