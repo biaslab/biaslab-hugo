@@ -68,22 +68,22 @@ Learning](https://www.microsoft.com/en-us/research/people/cmbishop/prml-book/). 
 
 #### Fundamentals 
 
-- [0 - Course Outline and Administrative Issues](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Course-Outline-and-Admin-Issues.ipynb)
-- [1 - Machine Learning Overview](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Machine-Learning-Overview.ipynb)
-- [2 - Probability Theory Review](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Probability-Theory-Review.ipynb)
-- [3 - Bayesian Machine Learning](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Bayesian-Machine-Learning.ipynb)
-- [4 - Continuous Data and the Gaussian Distribution](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/The-Gaussian-Distribution.ipynb)
-- [5 - Discrete Data and the Multinomial Distribution](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/The-Multinomial-Distribution.ipynb)
-- [6 - Regression](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Regression.ipynb)
-- [7 - Generative Classification](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Generative-Classification.ipynb)
-- [8 - Discriminative Classification](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Discriminative-Classification.ipynb)
+- [0 - Course Outline and Administrative Issues](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/00-Course-Outline-and-Admin-Issues.ipynb)
+- [1 - Machine Learning Overview](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/01-Machine-Learning-Overview.ipynb)
+- [2 - Probability Theory Review](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/02-Probability-Theory-Review.ipynb)
+- [3 - Bayesian Machine Learning](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/03-Bayesian-Machine-Learning.ipynb)
+- [4 - Continuous Data and the Gaussian Distribution](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/04-The-Gaussian-Distribution.ipynb)
+- [5 - Discrete Data and the Multinomial Distribution](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/05-The-Multinomial-Distribution.ipynb)
+- [6 - Regression](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/06-Regression.ipynb)
+- [7 - Generative Classification](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/07-Generative-Classification.ipynb)
+- [8 - Discriminative Classification](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/08-Discriminative-Classification.ipynb)
 
 #### Advanced Materials 
 
-- [9 - Latent Variable Models and Variational Bayes](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Latent-Variable-Models-and-VB.ipynb)
-- [10- Factor Graphs](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Factor-Graphs.ipynb)
-- [11- Dynamic Models](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Dynamic-Models.ipynb)
-- [12- Intelligent Agents and Active Inference](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Intelligent-Agents-and-Active-Inference.ipynb)
+- [9 - Latent Variable Models and Variational Bayes](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/09-Latent-Variable-Models-and-VB.ipynb)
+- [10- Factor Graphs](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/10-Factor-Graphs.ipynb)
+- [11- Dynamic Models](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/11-Dynamic-Models.ipynb)
+- [12- Intelligent Agents and Active Inference](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/12-Intelligent-Agents-and-Active-Inference.ipynb)
 
 #### Minicourse Probabilistic Programming 
 
