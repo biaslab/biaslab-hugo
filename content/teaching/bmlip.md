@@ -62,7 +62,7 @@ Learning](https://www.microsoft.com/en-us/research/people/cmbishop/prml-book/). 
 
 - The [Fundamentals](#fundamentals) and [Advanced Materials](#advanced-materials) lectures (see below) are taught by Bert de Vries. The [Probabilistic Programming](#minicourse-probabilistic-programming) minicourse is taught by Wouter Kouw and the [What is Life?](#bonus-lecture) lecture is presented by Magnus Koudahl.
 
-- The [source files for the lecture notes are accessible at github](https://github.com/bertdv/bmlip).
+- The [source files for the lecture notes are accessible at github](https://github.com/bertdv/bmlip). For help with installing Julia and Jupyter, see [this pdf](https://github.com/bertdv/BMLIP/blob/master/INSTALL.pdf).
 
 - Here is a [PDF bundle of the lecture notes of lessons 0 through 12](/pdf/bmlip/BMLIP-5SSD0.pdf). The lecture notes may change a bit during the course, e.g., to process comments by students. A final PDF version will be posted after the last lecture.
 
@@ -127,3 +127,5 @@ Learning](https://www.microsoft.com/en-us/research/people/cmbishop/prml-book/). 
 Scientific programming skills (e.g. in Python, MATLAB or [Julia](https://julialang.org)) are helpful.
 
 - You're advised to bring the lecture notes (either in soft- or hardcopy) with you to class in order to add your personal comments.
+
+- [Here](https://github.com/bertdv/BMLIP/blob/master/INSTALL.pdf) you can find a guide to help you install Julia and Jupyter, so that you can open and run the course notebooks on your own machine.
