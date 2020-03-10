@@ -147,7 +147,7 @@ tag = "tags"
 
   [[menu.main]]
     name = "ForneyLab.jl"
-    url = "/project/forneylab"
+    url = "/forneylab/docs"
     parent = "software"
     weight = 1
 
