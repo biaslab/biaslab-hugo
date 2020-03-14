@@ -24,7 +24,7 @@ type = "teaching"
 
 <img src="/img/teaching/5SSD0-banner.png" width="1200px">
 
-This course covers the fundamentals of a Bayesian (i.e., probabilistic) approach to machine learning and information processing systems. The Bayesian approach allows for a unified and consistent treatment of many model-based machine learning techniques. We focus on Linear Gaussian systems and will discuss many useful models and applications, including common regression and classification methods, Gaussian mixture models, hidden Markov models and Kalman filters. We will discuss important algorithms for parameter estimation in these models including the Expectation-Maximization (EM) algorithm and Variational Bayes (VB). The Bayesian method also provides tools for comparing the performance of different information processing systems by means of estimating the ``Bayesian evidence’’ for each model. We will discuss several methods for approximating the Bayesian evidence. Next, we will discuss intelligent _agents_ that learn purposeful behavior from interactions with their environment. These agents are used for applications such as self-driving cars or interactive design of virtual and augmented realities. Indeed, in this course we relate synthetic Bayesian intelligent agents to natural intelligent agents such as the brain. You will get challenged to code yourself new Bayesian machine learning algorithms and apply them to practical information processing problems.
+This course covers the fundamentals of a Bayesian (i.e., probabilistic) approach to machine learning and information processing systems. The Bayesian approach allows for a unified and consistent treatment of many model-based machine learning techniques. We focus on Linear Gaussian systems and will discuss many useful models and applications, including common regression and classification methods, Gaussian mixture models, hidden Markov models and Kalman filters. We will discuss important algorithms for parameter estimation in these models including the Expectation-Maximization (EM) algorithm and Variational Bayes (VB). The Bayesian method also provides tools for comparing the performance of different information processing systems by means of estimating the ``Bayesian evidence’’ for each model. We will discuss several methods for approximating Bayesian evidence. Next, we will discuss intelligent _agents_ that learn purposeful behavior from interactions with their environment. These agents are used for applications such as self-driving cars or interactive design of virtual and augmented realities. Indeed, in this course we relate synthetic Bayesian intelligent agents to natural intelligent agents such as the brain. You will be challenged to code Bayesian machine learning algorithms yourself and apply them to practical information processing problems.
 
 
 
@@ -32,6 +32,9 @@ This course covers the fundamentals of a Bayesian (i.e., probabilistic) approach
 
 ## News
 
+- (Fri 13-Mar). In response to COVID-19, the TU/e is switching to online education. <br>
+  - ***Go to https://canvas.tue.nl/courses/13638 for digital lectures!***
+- (Wed 4-Mar). We have made an [Installation Guide](/pdf/bmlip/BMLIP-5SSD0.pdf) to help you run the notebooks on your own machine.
 - (Fri 28-Feb). A [PDF booklet of lessons 0 through 12](/pdf/bmlip/BMLIP-5SSD0.pdf) is now available for download.
 - (Sat 22-Feb). Exercises [without](https://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises.ipynb) and [with solutions](https://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises-with-Solutions.ipynb) for the fundamentals block are up! Next week no classes (carnaval). See you on Monday 2-March!
 
