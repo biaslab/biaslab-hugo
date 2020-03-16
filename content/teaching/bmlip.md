@@ -33,7 +33,7 @@ This course covers the fundamentals of a Bayesian (i.e., probabilistic) approach
 ## News
 
 - (Fri 13-Mar). In response to COVID-19, the TU/e is switching to online education. <br>
-  - ***Go to https://canvas.tue.nl/courses/13638 for digital lectures!***
+  - **Go to https://canvas.tue.nl/courses/13638 for digital lectures!**
 - (Wed 4-Mar). We have made an [Installation Guide](/pdf/bmlip/BMLIP-5SSD0.pdf) to help you run the notebooks on your own machine.
 - (Fri 28-Feb). A [PDF booklet of lessons 0 through 12](/pdf/bmlip/BMLIP-5SSD0.pdf) is now available for download.
 - (Sat 22-Feb). Exercises [without](https://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises.ipynb) and [with solutions](https://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises-with-Solutions.ipynb) for the fundamentals block are up! Next week no classes (carnaval). See you on Monday 2-March!
