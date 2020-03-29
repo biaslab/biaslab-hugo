@@ -32,6 +32,7 @@ This course covers the fundamentals of a Bayesian (i.e., probabilistic) approach
 
 ## News
 
+- (Sun 29-Mar). We will have **oral exams** in April. Please follow further announcements at [Canvas](https://canvas.tue.nl/courses/13638).    
 - (Fri 13-Mar). In response to COVID-19, the TU/e is switching to online education. <br>
   - **Go to https://canvas.tue.nl/courses/13638 for digital lectures!**
 - (Wed 4-Mar). We have made an [Installation Guide](/pdf/bmlip/INSTALL.pdf) to help you run the notebooks on your own machine.
