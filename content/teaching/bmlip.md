@@ -32,6 +32,7 @@ This course covers the fundamentals of a Bayesian (i.e., probabilistic) approach
 
 ## News
 
+- (Wed 01-Apr). Solutions to assignments in the Probabilistic Programming notebooks have been made available. They're in the [exercises](https://github.com/bertdv/BMLIP/tree/master/lessons/exercises/probprog_solutions) subfolder.
 - (Sun 29-Mar). We will have **oral exams** in April. Please follow further announcements at [Canvas](https://canvas.tue.nl/courses/13638).    
 - (Fri 13-Mar). In response to COVID-19, the TU/e is switching to online education. <br>
   - **Go to https://canvas.tue.nl/courses/13638 for digital lectures!**
