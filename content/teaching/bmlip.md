@@ -108,7 +108,7 @@ Learning](https://www.microsoft.com/en-us/research/people/cmbishop/prml-book/). 
 
 #### Bonus lecture
 
-- [17- What is Life?](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/What-is-Life.ipynb)
+- [17- What is Life?](/pdf/bmlip/what_is_life.pdf)
 
 ## Exam Preparation
 
