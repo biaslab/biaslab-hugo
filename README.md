@@ -20,20 +20,14 @@ Working installation of GNU Make is recommended, but not required. You can test 
 
         git clone git@github.com:biaslab/biaslab-hugo.git ./biaslab
         cd ./biaslab
-3. Create `config.local.toml` file by copying the contents of the `config.toml` file:
 
-        cp config.toml config.local.toml
-
-    This will allow you to debug and edit the website without touching the main configuration file, `config.toml`.
-    If you want to use the `make preview-website-local` command, don't forget to change the `baseurl` parameter to `http://localhost:8000` in your newly created local config file.
-
-4. Install [hugo-academic-group](https://github.com/biaslab/hugo-academic-group/) theme:
+3. Install [hugo-academic-group](https://github.com/biaslab/hugo-academic-group/) theme:
 
         make install-theme
 
     If you don't have a working installation of GNU Make, follow the installation instructions from [hugo-academic-group](https://github.com/biaslab/hugo-academic-group/) repository.
 
-5. To add new content use `hugo new` command:
+4. To add new content use `hugo new` command:
 
         hugo new post/post-title.md
 
@@ -41,7 +35,7 @@ Working installation of GNU Make is recommended, but not required. You can test 
 
     More information on adding content can be found in the Hugo documentation in [Content](https://gohugo.io/content/organization/) and [Getting Started](https://gohugo.io/overview/quickstart/) sections.
 
-6. All the basic build operations might be carried with the use of `make` command. If you do not have a working installation of GNU Make, study the contents of the `Makefile` and use the corresponding commands to operate the website. Currently following commands are defined in the file:
+5. All the basic build operations might be carried with the use of `make` command. If you do not have a working installation of GNU Make, study the contents of the `Makefile` and use the corresponding commands to operate the website. Currently following commands are defined in the file:
 
     * `install-theme`: Installs [hugo-academic-group](https://github.com/biaslab/hugo-academic-group/) theme.
     * `update-theme`: Updates the theme.

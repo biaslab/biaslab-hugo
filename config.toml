@@ -141,26 +141,20 @@ tag = "tags"
     weight = 5
 
   [[menu.main]]
-    name = "ForneyLab"
+    name = "Software"
     weight = 3
-    identifier = "forneylab"
+    identifier = "software"
 
   [[menu.main]]
-    name = "Project page"
-    url = "/project/forneylab"
-    parent = "forneylab"
+    name = "ForneyLab.jl"
+    url = "/forneylab/docs"
+    parent = "software"
     weight = 1
 
   [[menu.main]]
-    name = "GitHub repository"
-    url = "https://github.com/biaslab/ForneyLab.jl"
-    parent = "forneylab"
-    weight = 3
-
-  [[menu.main]]
-    name = "Documentation"
-    url = "/forneylab/docs"
-    parent = "forneylab"
+    name = "Rocket.jl"
+    url = "/rocket/docs"
+    parent = "software"
     weight = 2
 
   [[menu.main]]

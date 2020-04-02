@@ -30,7 +30,7 @@ In order to scale down a design iteration from years to seconds, we cannot affor
 
 <img class="centered" src="/img/approach/HA-Design-with-IA.png" alt="HA design with IA" width="400">
 
-The task of the automated designer, which in the technical literature is called an **intelligent agent** (IA), is to propose an _interesting_ alternative algorithm each time when the patient is hot happy, under in-situ conditions. This is a monumental task that involves learning from experiences and rational decision making under uncertainty. We take a fully Bayesian (= probabilistic) approach to designing such intelligent agents (see also our [mission](/mission) page).   
+The task of the automated designer, which in the technical literature is called an **intelligent agent** (IA), is to propose an _interesting_ alternative algorithm each time when the patient is not happy, under in-situ conditions. This is a monumental task that involves learning from experiences and rational decision making under uncertainty. We take a fully Bayesian (= probabilistic) approach to designing such intelligent agents (see also our [mission](/mission) page).   
 
 ### The broader picture
 
