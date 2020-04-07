@@ -1,7 +1,7 @@
 +++
 date = "2016-07-12T15:52:22+02:00"
 id = "albert"
-interests = ["Bayesian Machine Learning", "Signal Processing", "Intelligent Systems", "Nature-Inspired Optimization"]
+interests = ["Bayesian Inference", "Signal Processing", "Intelligent Systems", "Nature-Inspired Optimization"]
 name = "Albert Podusenko"
 portrait = "portraits/albert.jpg"
 short_bio = "I am a PhD candidate at the Electrical Engineering department in Eindhoven University of Technology."
