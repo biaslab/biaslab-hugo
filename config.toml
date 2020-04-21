@@ -14,7 +14,11 @@ enableRobotsTXT = true
 category = "categories"
 tag = "tags"
 
-
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+      
 [params]
   description = "Website of research group"
   author = "BIASlab"
