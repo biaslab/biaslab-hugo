@@ -1,16 +1,11 @@
 
 
 <div class="landing-pitch">
-  {{ if .Site.Params.positions_available }}
-    <div class="open-positions-row">
-        <a class="open-positions" href="#vacancies" data-ribbon="Open positions available" title="Open positions available">Open positions available</a>      
-    </div>  
-  {{ end }}
-  
   <div class="container">
     <div class="row">
       {{ with .Site.Params.landing_heading }}<h1 class="landing-heading">{{.}}</h1>{{end}}
       {{ with .Site.Params.landing_description }}<h2 class="landing-description"> {{.}} </h2>{{end}}
+      <a class="btn btn-pitch btn-outline" href="#about">Find out more</a>
     </div>
   </div>
 </div>

@@ -14,7 +14,11 @@ enableRobotsTXT = true
 category = "categories"
 tag = "tags"
 
-
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+      
 [params]
   description = "Website of research group"
   author = "BIASlab"
@@ -85,11 +89,11 @@ tag = "tags"
 
   # Vacancies section
   # Section will only be displayed if there are valid vacancies in `content/vacancy`
-  [params.vacancies]
-    title = "Recruitment"
+  [params.open_projects]
+    title = "Open projects"
     subtitle = ""
     count = 3
-    str_all = "More Vacancies"
+    str_all = "All open projects"
 
   # Contact section.
   [params.contact]
@@ -115,7 +119,7 @@ tag = "tags"
   [[menu.main]]
     name = "Starter's guide"
     url = "/research/starter-guide"
-    parent="research"
+    parent="joinus"
     weight = 3
 
   [[menu.main]]
@@ -136,7 +140,7 @@ tag = "tags"
     weight = 4
 
   [[menu.main]]
-    name = "Members"
+    name = "Team"
     url = "/#members"
     weight = 5
 
@@ -158,25 +162,15 @@ tag = "tags"
     weight = 2
 
   [[menu.main]]
-    name = "Recruitment"
+    name = "Join us"
     url = "#vacancies"
     weight = 6
-    identifier="recruitment"
+    identifier="joinus"
 
   [[menu.main]]
-    name = "PhD vacancies"
-    url = "/#vacancies"
-    parent = "recruitment"
-
-  [[menu.main]]
-    name = "MSc projects"
-    url = "/#vacancies"
-    parent = "recruitment"
-
-  [[menu.main]]
-    name = "BSc projects"
-    url = "/#vacancies"
-    parent = "recruitment"
+    name = "Open projects"
+    url = "/open-projects"
+    parent = "joinus"
 
   [[menu.main]]
     name = "Contact"
