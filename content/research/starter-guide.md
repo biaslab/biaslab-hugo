@@ -7,7 +7,7 @@ date = "2018-07-19T8:50:58+02:00"
     link = "/bert"
 +++
 
-This document is a starter's guide for students who do an internship or graduate level (M.Sc., Ph.D.) project with [me](http://bertdv.nl). For the duration of your project you will become part of our [**BIASlab** team of graduate students](http://biaslab.org). I discuss here our research mission, our way of working, the tools we use and provide some links to key scientific papers that relate to our research. This guide is always a work in progress and each project will have its own goals and dynamics. Still, generally speaking, I would appreciate if you have a look at the links and think about the issues that I raise here. Talk to me when you have questions or ideas to improve this document.
+This document is a starter's guide for students who do an internship or graduate level (MSc, PhD) project with [me](http://bertdv.nl). For the duration of your project you will become part of our [**BIASlab** team of graduate students](http://biaslab.org). I discuss here our research mission, our way of working, the tools we use and provide some links to key scientific papers that relate to our research. This guide is always a work in progress and each project will have its own goals and dynamics. Still, generally speaking, I would appreciate if you have a look at the links and think about the issues that I raise here. Talk to me when you have questions or ideas to improve this document.
 
 ## Research
 
@@ -15,10 +15,9 @@ This document is a starter's guide for students who do an internship or graduate
 
 {{< figure src="/img/starter-guide/design-loop.png" width="450px" class="right-inline" >}}
 
-We are interested in methods that support **in situ design of real-world signal processing systems by
-end users**, in particular in the context of audio processing algorithms. For instance, if I have a problem with (the signal processing of) my hearing aid when I am at a cocktail party, I want to fix it right there so I can stay and enjoy the party. Today, there are no proper tools that support the end user in fine-tuning his hearing aid.  We aim to develop such a support tool, and our methods are inspired by theories about learning and adaptation in the fields of (Bayesian) **machine learning** and **computational neuroscience**. In particular, we derive inspiration from recent work on **probabilistic graphical models** (PGM) and **message passing** (MP) algorithms for machine learning and inference. In our team, we are building a very efficient PGM/MP toolbox ourselves and 'eat our own dogfood' by putting ourselves in complex acoustic situations and use our own tools to tune our audio processing algorithms. This leads to new demands on the toolbox, which drives our next research steps.
+We are interested in modern AI methods that support **automated design of signal processing systems**, in particular in the context of audio processing algorithms. For instance, if I have a problem with (the signal processing of) my hearing aid when I am at a cocktail party, I want to fix it right there so I can stay and enjoy the party. Today, there are no proper tools that support the end user in fine-tuning his hearing aid.  We aim to develop such a support tool, and our methods are inspired by theories about learning and adaptation in the fields of (Bayesian) **machine learning** and **computational neuroscience**. In particular, we derive inspiration from recent work in neuroscience that describes how brains perceive, learn and design their algorithms for speech and object recognition, navigation, etc. In our team, we are building a very efficient Bayesian machine learning toolbox ourselves and 'eat our own dogfood' by putting ourselves in complex acoustic situations and use our own tools to tune our audio processing algorithms. This leads to new demands on the toolbox, which drives our next research steps.
 
-In short, **we work on (Bayesian) machine learning** methods with applications to the design of audio processing algorithms. Our methods are just as easily applicable though to design problems in related fields such as biomedical and communications engineering.
+In short, **we work on (Bayesian) machine learning** methods with applications to automated design of signal processing algorithms. Our methods are just as easily applicable though to design problems in related fields such as control, biomedical and communications engineering.
 
 ### Methodology
 
@@ -28,7 +27,7 @@ I will generally ask you to work on problems that I have not solved myself and y
 
 Your project will likely be embedded as a building block in our research plan. I expect a **professional attitude** which includes that you conduct yourself as a **team player**. Be aware that this is _your_ project so _you_ are responsible for keeping an eye on departmental regulations and deadlines. Stick to deadlines and promises or inform me ahead of time when plans cannot be maintained.
 
-If you are an M.Sc.-EE student at TU/e, then you should be familiar with the graduation project requirements as listed in the [education guide](https://studiegids.tue.nl/opleidingen/graduate-school/masters-programs/electrical-engineering/curriculum/graduation-project/) of the Electrical Engineering department. In particular, take note that your final evaluation will be based on the following criteria:
+If you are an MSc-EE student at TU/e, then you should be familiar with the graduation project requirements as listed in the [education guide](https://studiegids.tue.nl/opleidingen/graduate-school/masters-programs/electrical-engineering/curriculum/graduation-project/) of the Electrical Engineering department. In particular, take note that your final evaluation will be based on the following criteria:
 
 1. Understanding own specialization (25%)
   - You should (strive to) have a deep understanding of the field/topic that you work on. A good way to get feedback on this goal is to explain to others what you work on.
@@ -42,7 +41,7 @@ If you are an M.Sc.-EE student at TU/e, then you should be familiar with the gra
 
 Aside from the aforementioned deliverables that are imposed by the Examination Committee, I place a **high value on the quality of your (software) code**. Consider this as a fifth examination criterion. The software that you produce in your project is the sharpest description of your ideas, so make it readable and understandable for others. If you want to read some more on this, consult [Aruliah](http://arxiv.org/abs/1210.0530 "Aruliah et al, Best Practices for Scientific Computing, 2012") (2012) and/or [Cannam](http://soundsoftware.ac.uk/icassp-2012-paper "Cannam et al., Sound Software: Towards Software Reuse in Audio and Music Research, 2012") (2012). Generally, there are many ways to improve your coding skills, e.g., the [lectures by Sandi Metz](https://www.youtube.com/watch?v=8bZh5LMaSmE) are nearly always interesting.
 
-If you do an internship/traineeship (before your final M.Sc. thesis project), the examination criteria are just the same, but of course the expectations on your output are appropriately reduced.
+If you do an internship/traineeship (before your final MSc thesis project), the examination criteria are just the same, but of course the expectations on your output are appropriately reduced.
 
 If you are from another department, please find out and notify me of which departmental rules and regulations apply to you.
 
@@ -50,7 +49,6 @@ If you are from another department, please find out and notify me of which depar
 
 I like the idea of **working together asynchronously**, see [Zach's Holman talk](http://zachholman.com/talk/how-github-uses-github-to-build-github/) if this idea interests you. This means we use tools like [slack](https://slack.com/) (a chatroom) and [github](https://github.com/) (for source version control) to share ideas and code without a strict need to be in the same meeting room at the same time.
 
-If you want to talk to me, you can always check if I'm available to meet, and if needed we can start a [google+ hangout](http://www.google.com/+/learnmore/hangouts/) video chat. The latter option allows us to share a screen if you want to show something, e.g. to look at code together.
 
 ### Slack
 
@@ -80,7 +78,7 @@ I also recommend that you spend some time on getting familiar with [Test-Driven 
 
 {{< figure src="/img/starter-guide/latex-logo.png" width="120px" class="left-inline" >}}
 
-The project's final report should be written in [LaTeX](http://www.latex-project.org/). You must get familiar with LaTeX early during your project, because we start writing the final report very soon after the start of the project.
+The project's final report should be written in [LaTeX](http://www.latex-project.org/) on [Overleaf](https://www.overleaf.com/). You must get familiar with LaTeX early during your project, because we start writing the final report very soon after the start of the project.
 
 ### Zotero
 
@@ -94,7 +92,7 @@ After you join the BIASlab team you will also get access to our literature colle
 
 Start working on the final report in the first month of the project. In particular, if you follow [Magnusson's advice to write backwards](https://dl.dropboxusercontent.com/u/4512522/Magnusson_1996-How_to_write_backwards.pdf) (*start with the conclusions*!), then you can **turn report writing into a powerful research tool** that reveals your next steps to pursue. I _strongly_ encourage you to have a look at [Simon Peyton Jones](http://research.microsoft.com/en-us/um/people/simonpj/papers/giving-a-talk/giving-a-talk.htm)' lectures on **writing a paper** ([video](http://sms.cam.ac.uk/media/1464870) and [slides](http://research.microsoft.com/en-us/um/people/simonpj/papers/giving-a-talk/writing-a-paper-slides.pdf)) and **giving a talk** ([video](http://research.microsoft.com/apps/video/default.aspx?id=168648) and [slides](http://research.microsoft.com/en-us/um/people/simonpj/papers/giving-a-talk/giving-a-talk-slides.pdf)).
 
-In general, if you work on a M.Sc. thesis project or higher, I'd like you to make a (final) report update at least once a month. The final report should be in the form of a publishable IEEE journal paper. So, working on a project implies a monthly refinement of the paper until it's ready for submission (or project time runs out). Use the process of incremental report refinement as a tool to discover what you need to work on next.
+In general, if you work on a MSc thesis project or higher, I'd like you to make a (final) report update at least once a month. The final report should be in the form of a publishable IEEE journal paper. So, working on a project implies a monthly refinement of the paper until it's ready for submission (or project time runs out). Use the process of incremental report refinement as a tool to discover what you need to work on next.
 
 
 ## Your First Month
@@ -106,7 +104,7 @@ In the first week:
 
 > <---BEGIN EMAIL TEXT--->
 
-> I hereby declare that I will protect the confidential nature of private SPS brats repositories at github. In more general terms, I will not share with third parties any research materials that have been authored by SPS brats members without prior consultation with prof. Bert de Vries.
+> I hereby declare that I will protect the confidential nature of private BIASlab repositories at github. In more general terms, I will not share with third parties any research materials that have been authored by BIASlab members without prior consultation with prof. Bert de Vries.
 
 > -- signed, your name and date
 
@@ -142,7 +140,7 @@ In principle, you are not required to prepare anything before your project start
 
 - For more information on the specific PGM style that we use (Forney-style Factor Graphs), please see [this lecture](https://www.youtube.com/watch?v=Fv2YbVg9Frc&t=31) by Frederico Wadehn or these papers: [Sascha Korl dissertation, 2005](http://e-collection.library.ethz.ch/eserv/eth:28176/eth-28176-02.pdf) and [Loeliger et al., 2007](http://www.isiweb.ee.ethz.ch/papers/docu/aloe-jdau-juhu-skor-2007-1.pdf).
 
-- If you want to see how we have used factor graphs in one of our projects, here is a [recent MSc thesis](https://www.dropbox.com/s/znir6dfzfgnmn3g/Duijkers%20-%202014%20MSc%20Thesis%20-%20A%20Factor%20Graph%20Approach%20to%20Hearing%20Loss%20Compensation.pdf?dl=0) from one of my graduate students. No need to read this in detail, but it is an example of what we do.
+- If you want to see how we have used factor graphs in one of our projects, here is a [recent PhD thesis](https://research.tue.nl/en/publications/automated-design-of-bayesian-signal-processing-algorithms) from one of our team members. No need to read this in detail, but it is an example of what we do.
 
 - You could also get started in Julia if you like. See the ['learning' site at julialang.org](http://julialang.org/learning/) . You can get started to program in julia e.g. at [JuliaBox](https://www.juliabox.com/), or you can [install Julia yourself](http://julialang.org/).
 
