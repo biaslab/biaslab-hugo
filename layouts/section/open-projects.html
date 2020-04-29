@@ -1,0 +1,37 @@
+{{ partial "header.html" . }}
+{{ partial "navbar.html" . }}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Open projects</h1>
+
+            {{"We usually have a number of open research projects for MSc students who want to do an internship or graduation project. Please consult the list below or the [TU/e Master Project Marketplace](https://master.ele.tue.nl/) for a (more elaborate) set of available projects. More generally, if you have your own ideas for a brain-inspired AI Master project, feel free to contact [prof. Bert de Vries](http://bertdv.nl)." | markdownify}}
+            
+            {{ range .Data.Pages.GroupByDate "2006" }}
+            <div class="row" id="pub_list">
+                <div class="col-md-2">
+                    <h3>{{ .Key }}</h3>
+                </div>
+                <div class="col-md-10">
+                        {{ range .Pages.ByDate.Reverse }}
+                            {{ if .Content }}
+                                {{ .Scratch.Set "link" .Permalink }}
+                            {{ else if .Params.external_link }}
+                                {{ .Scratch.Set "link" .Params.external_link }}
+                            {{ end }}
+                    
+                            <h3><a href="{{ .Scratch.Get "link" }}" itemprop="url">{{ .Title }}</a></h3>
+                            {{ with .Params.description }}
+                                {{ . }}
+                            {{ end }}
+                        {{ end }}
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</div>
+
+{{ partial "footer_container.html" . }}
+{{ partial "footer.html" . }}

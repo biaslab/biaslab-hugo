@@ -163,7 +163,7 @@ tag = "tags"
 
   [[menu.main]]
     name = "Join us"
-    url = "#vacancies"
+    url = "#open-projects"
     weight = 6
     identifier="joinus"
 
