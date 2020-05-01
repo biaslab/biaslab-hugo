@@ -47,6 +47,13 @@ header{
     }
 }
 
+@media screen and (min-width: 1000px) {
+    .landing-description {
+         width:1000px;
+         margin:auto;
+    }
+}
+
 .landing-pitch {
     background: #A4BDC0;
     text-align: center;
