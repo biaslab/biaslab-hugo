@@ -28,15 +28,15 @@ tag = "tags"
   slogan_icon = "icon-spsbrats_logo"
   slogan_text = "Bayesian Intelligent Autonomous Systems"
   custom_css = ["biaslab.css"]
-  landing_heading = "Developing autonomous agents that learn from their environment"
-  landing_description = "Using these agents to develop novel signal processing systems"
+  landing_heading = "Natural Artificial Intelligence"
+  landing_description = "Automating the development of novel signal processing and control systems through neuro-inspired free-energy minimizing agents"
   positions_available = true
 
   [params.logo]
     image = "img/tue-logo.png"
     link = "https://tue.nl"
 
-   [[params.navbar_hierarchy]]
+  [[params.navbar_hierarchy]]
     name = "SPS"
     link = "https://www.tue.nl/en/research/research-groups/signal-processing-systems/"
     position = 1
