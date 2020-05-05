@@ -7,6 +7,12 @@ rm -f -r $CHECKOUT
 git clone git@github.com:biaslab/biaslab.github.io.git $CHECKOUT
 
 BUILDPATH=$PWD
+
+cd $BUILDPATH/themes/academic-group
+git checkout master
+git pull
+cd $BUILDPATH
+
 rm -f -r $BUILDPATH/public/*
 
 hugo -t academic-group
