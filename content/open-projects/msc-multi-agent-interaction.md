@@ -1,6 +1,6 @@
 +++
 title = "MSc graduation project: Intelligent behavior through cooperating agents"
-date = "2020-04-10T08:50:58+02:00"
+date = "2020-05-07T08:50:58+02:00"
 
 description = "In this project you will study how two active inference agents can cooperate to solve a task."
 external_link = ""

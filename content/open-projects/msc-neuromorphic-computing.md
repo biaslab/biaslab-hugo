@@ -12,7 +12,7 @@ vacancy_id = "neuromorphic-computing"
 
 Modern intelligent systems are typically deployed on hardware with extensive computational resources, for example GPU stacks in self-driving cars. As machine learning becomes more ingrained into engineering, the need rises for specialized hardware in which learning algorithms can be deployed efficiently. One strategy is to look to the brain for inspiration. Neuromorphic computing architectures are designed to support learning algorithms in a power- and memory-efficient manner. [GrAI Matter Labs](https://www.graimatterlabs.ai/) is a startup located partly at the High Tech Campus Eindhoven, which develops chips with neuromorphic processor architectures [1]. Their main chip, GrAI One, was recently presented at the [Consumer Electronics Show 2020](https://youtu.be/dtOU3QpzEB8).
 
-{{< figure src="/img/proposals/sparse_video_signal.png" title="Example of a sparse video signal.">}}
+{{< figure src="/img/proposals/sparse_video_signal.png" title="Example of a sparse video signal. Only changes between frames are processed.">}}
 
 The Bayesian Intelligent Autonomous Systems lab (BIASlab) works on intelligent agents that employ Bayesian machine learning to sense and act. Our main focus has been audio processing applications, such as noise suppression, acoustic scene classification and hearing loss compensation [2,3]. But we are expanding into mobile robotics; we currently run projects in robot navigation and we are starting projects in drone flight control [4]. We are interested in running our algorithms on neuromorphic chips, as this could allow for lighter "brains" for our agents.
 
@@ -51,10 +51,10 @@ The student will do a pilot project where he/she simulates the application of a 
 For more information go to the project page at [TU/e Master Marketplace](https://master.ele.tue.nl/).
 
 ## References
-[1]: O. Moreira, A. Yousefzadeh, F. Chersi, G. Cinserin, R.-J. Zwartenkot, A. Kapoor, P. Qiao, P. Kievits, M. Khoei, L. Rouillard, A. Ferouge, J. Tapson, and A. Visweswara, NeuronFlow: a neuromorphic processor architecture for Live AI applications, in *Conference on Design, Automation and Test in Europe, 2020*.
+[1]:    O. Moreira, A. Yousefzadeh, F. Chersi, G. Cinserin, R.-J. Zwartenkot, A. Kapoor, P. Qiao, P. Kievits, M. Khoei, L. Rouillard, A. Ferouge, J. Tapson, and A. Visweswara, NeuronFlow: a neuromorphic processor architecture for Live AI applications, in *Conference on Design, Automation and Test in Europe, 2020*.
 
-[2]: I. Bocharov, T. Tjalkens, and B. De Vries, Acoustic scene classification from few examples, in *IEEE European Signal Processing Conference, 2018, pp. 862–866*. 
+[2]:    I. Bocharov, T. Tjalkens, and B. De Vries, Acoustic scene classification from few examples, in *IEEE European Signal Processing Conference, 2018, pp. 862–866*. 
 
-[3]: T. van de Laar and B. de Vries, A probabilistic modeling approach to hearing loss compensation, *IEEE/ACM Transactions on Audio, Speech, and Language Processing, vol. 24, no. 11, pp. 2200–2213, 2016*.
+[3]:    T. W. van de Laar and B. de Vries, A probabilistic modeling approach to hearing loss compensation, *IEEE/ACM Transactions on Audio, Speech, and Language Processing, vol. 24, no. 11, pp. 2200–2213, 2016*.
 
-[4]: T. W. van de Laar and B. de Vries, Simulating active inference processes by message passing, *Frontiers in Robotics and AI, vol. 6, p. 20, 2019*.
+[4]:    T. W. van de Laar and B. de Vries, Simulating active inference processes by message passing, *Frontiers in Robotics and AI, vol. 6, p. 20, 2019*.

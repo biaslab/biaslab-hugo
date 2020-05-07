@@ -1,8 +1,8 @@
 +++
-title = "MSc graduation project: Nonlinear System Identification through Bayesian Machine Learning"
+title = "MSc graduation project: System identification with Bayesian machine learning"
 date = "2019-09-19T08:50:58+02:00"
 
-description = "In this project you will be developing an agent to infer the dynamical parameters of an electro-mechanical positioning system."
+description = "In this project you will develop an agent to infer the dynamical parameters of an electro-mechanical positioning system."
 external_link = ""
 vacancy_id = "nonlinear-system-identification"
 +++
