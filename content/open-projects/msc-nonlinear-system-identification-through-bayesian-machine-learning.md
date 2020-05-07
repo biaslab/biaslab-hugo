@@ -42,7 +42,7 @@ program an agent to infer the dynamical parameters of the system from
 given input-output data, and compare the agent to baseline methods. We
 hope to include an *optimal design / active inference* experiment as
 well, where the agent infers which inputs it should test to infer the
-dynamics as fast as possible.\
+dynamics as fast as possible.
 
 ### Tasks:
 
@@ -82,4 +82,4 @@ dynamics as fast as possible.\
 For more information go to the project page at [TU/e Master Marketplace](https://master.ele.tue.nl/).
 
 ## References
-[1]: Alexandre Janot, Maxime Gautier, and Mathieu Brunot. Data set and reference models of EMPS. In *2019 Workshop on Nonlinear System Identification Benchmarks, Eindhoven, The Netherlands, April 10-12, 2019*.
+[1]: A. Janot, M. Gautier, and M. Brunot. Data set and reference models of EMPS. In *2019 Workshop on Nonlinear System Identification Benchmarks, Eindhoven, The Netherlands, April 10-12, 2019*.
