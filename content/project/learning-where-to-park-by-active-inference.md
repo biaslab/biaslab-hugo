@@ -3,8 +3,8 @@ date = "2020-05-22T14:45:00+02:00"
 external_link = ""
 project_id = "ai-park"
 picture = "projects/park-by-ai/robot-main.jpg"
-description = "The goal of scientific modeling is to find increasingly better models for given datasets. The right choice of probabilistic programming framework may allow for automated derivation of efficient algorithms for model fitting and performance evaluation. ForneyLab is a novel Julia package that allows the user to specify a probabilistic model as an FFG and pose inference problems on this FFG. ForneyLab is especially potent when applied to time-series data, where it attains comparable performance to Stan and Edward in significantly less computation time."
-short_description = "ForneyLab is a novel Julia package that allows the user to specify a probabilistic model as an FFG and pose inference problems on this FFG. ForneyLab is especially potent when applied to time-series data, where it attains comparable performance to Stan and Edward in significantly less computation time."
+description = "In order to assess the feasibility of active inference as a framework for synthetic agents in a real-world setting, we developed a ground-based robot that needs to learn to navigate to an undisclosed parking location. The robot can only learn where to park through situated interactions with a human observed who is aware of the target location."
+short_description = "In order to assess the feasibility of active inference as a framework for synthetic agents in a real-world setting, we developed a ground-based robot that needs to learn to navigate to an undisclosed parking location. The robot can only learn where to park through situated interactions with a human observed who is aware of the target location."
 title = "Learning Where to Park by Active Inference"
 participants_block_position = "down"
 sort_position = 1
@@ -48,14 +48,13 @@ Various generative models were created, iteratively refined and verified in simu
 
 Figure 3 depicts two examples of how the robot navigates on a 2D plane. At each time step, the agent observes the robot's position and orientation and infers the next steering action in terms of motor velocities for both wheels.
 
-{{< figure src="/img/projects/park-by-ai/agent_trajectories.PNG" title="Robot navigation examples with binary performance appraisals by an observer in-the-loop." width="400px" >}}
+{{< figure src="/img/projects/park-by-ai/agent_trajectories.PNG" title="Robot navigation examples with binary performance appraisals by an observer in-the-loop." width="600px" >}}
 
 Figure 4 shows a typical evolution of the agent's belief about the target location.
 
-{{< figure src="/img/projects/park-by-ai/2d_bernoulli_baseline.png" title="Evolution of agent's belief about target position for trial in Figure 3a." width="400px" >}}
+{{< figure src="/img/projects/park-by-ai/2d_bernoulli_baseline.png" title="Evolution of agent's belief about target position for trial in Figure 3a." width="600px" >}}
 
-Active inference agents also seem to be robust when they are subjected to environmental perturbations. The video below demonstrates how the active inference agent immediately corrects a severe manual interruption and continues its path towards the target location. 
-[#test]: #test
+Active inference agents also seem to be robust when they are subjected to environmental perturbations. The video below demonstrates how the active inference agent immediately corrects a severe manual interruption and continues its path towards the target location.
 
 These experiments provide support for the notion that active inference is a viable method for constructing synthetic agents that are capable of learning new goals in a dynamic world. More details about this project are available in a MSc thesis [[2](#references)]. 
 
@@ -63,8 +62,8 @@ These experiments provide support for the notion that active inference is a viab
 
 ## References
 
-1. Marco Cox, Thijs van de Laar, and Bert de Vries.  A factor graph approach to automated design of Bayesian signal processing algorithms.InternationalJournal of Approximate Reasoning, 104:185–204, January 2019.
-2. Burak Ergül.  A Real-World Implementation of Active Inference.  Master’s thesis, Eindhoven University of Technology, April 2020.
+1. Marco Cox, Thijs van de Laar, and Bert de Vries.  A factor graph approach to automated design of Bayesian signal processing algorithms. International Journal of Approximate Reasoning, 104:185–204, January 2019.
+2. Burak Ergül.  [A Real-World Implementation of Active Inference.](/pdf/msc/Ergul-2020-MSc-thesis-A-Real-World-Implementation-of-Active-Inference.pdf)  Master’s thesis, Eindhoven University of Technology, April 2020.
 3.  Karl  Friston.   The  free-energy  principle:  a  unified  brain  theory? Nature Reviews Neuroscience, 11(2):127–138, 2010. 
 4.  Hong Ge, Kai Xu, and Zoubin Ghahramani.  Turing:  a language for flexible probabilistic inference. InInternational Conference on Artificial Intelligence and  Statistics,  AISTATS  2018,  9-11  April  2018,  Playa  Blanca,  Lanzarote,Canary Islands, Spain, pages 1682–1690, 2018.
 5.  Parallax  Inc.   [Robot  shield  with  arduino.](https://www.parallax.com/product/32335), 2020.  Accessed:  2020-04-08.
