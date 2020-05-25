@@ -3,8 +3,8 @@ date = "2020-05-22T14:45:00+02:00"
 external_link = ""
 project_id = "ai-park"
 picture = "projects/park-by-ai/robot-main.jpg"
-description = "In order to assess the feasibility of active inference as a framework for synthetic agents in a real-world setting, we developed a ground-based robot that needs to learn to navigate to an undisclosed parking location. The robot can only learn where to park through situated interactions with a human observed who is aware of the target location."
-short_description = "In order to assess the feasibility of active inference as a framework for synthetic agents in a real-world setting, we developed a ground-based robot that needs to learn to navigate to an undisclosed parking location. The robot can only learn where to park through situated interactions with a human observed who is aware of the target location."
+description = "In order to assess the feasibility of active inference as a framework for synthetic agents in a real-world setting, we developed a ground-based robot that needs to learn to navigate to an undisclosed parking location. The robot can only learn where to park through situated interactions with a human observer who is aware of the target location."
+short_description = "In order to assess the feasibility of active inference as a framework for synthetic agents in a real-world setting, we developed a ground-based robot that needs to learn to navigate to an undisclosed parking location. The robot can only learn where to park through situated interactions with a human observer who is aware of the target location."
 title = "Learning Where to Park by Active Inference"
 participants_block_position = "down"
 sort_position = 1
@@ -27,7 +27,7 @@ In this project we investigated a novel solution approach to the design of auton
 
 There exists a powerful computational theory for how _biological_ agents accomplish the aforementioned task palette. This theory, which is called _Active Inference_, relies on formulating all tasks (perception, learning and control) as (automatable) inference tasks in a (biased) generative model of agent's sensory inputs [[3](#references)].
  
-In order to assess the feasibility and capabilities of active inference as a framework for _synthetic_ agents in a real-world setting, we developed a ground-based robot that needs to learn to navigate to an undisclosed parking location. The robot can only learn where to park through situated interactions with a human observed who is aware of the target location. 
+In order to assess the feasibility and capabilities of active inference as a framework for _synthetic_ agents in a real-world setting, we developed a ground-based robot that needs to learn to navigate to an undisclosed parking location. The robot can only learn where to park through situated interactions with a human observer who is aware of the target location. 
 
 ## Methods and Solution Proposal
 
