@@ -27,18 +27,19 @@ type = "teaching"
 This course covers the fundamentals of a Bayesian (i.e., probabilistic) approach to machine learning and information processing systems. The Bayesian approach allows for a unified and consistent treatment of many model-based machine learning techniques. We focus on Linear Gaussian systems and will discuss many useful models and applications, including common regression and classification methods, Gaussian mixture models, hidden Markov models and Kalman filters. We will discuss important algorithms for parameter estimation in these models including the Expectation-Maximization (EM) algorithm and Variational Bayes (VB). The Bayesian method also provides tools for comparing the performance of different information processing systems by means of estimating the ``Bayesian evidence’’ for each model. We will discuss several methods for approximating Bayesian evidence. Next, we will discuss intelligent _agents_ that learn purposeful behavior from interactions with their environment. These agents are used for applications such as self-driving cars or interactive design of virtual and augmented realities. Indeed, in this course we relate synthetic Bayesian intelligent agents to natural intelligent agents such as the brain. You will be challenged to code Bayesian machine learning algorithms yourself and apply them to practical information processing problems.
 
 
-
-
-
 ## News
 
-- (Wed 01-Apr). Solutions to assignments in the Probabilistic Programming notebooks have been made available. They're in the [exercises](https://github.com/bertdv/BMLIP/tree/master/lessons/exercises/probprog_solutions) subfolder.
-- (Sun 29-Mar). We will have **oral exams** in April. Please follow further announcements at [Canvas](https://canvas.tue.nl/courses/13638).    
-- (Fri 13-Mar). In response to COVID-19, the TU/e is switching to online education. <br>
-  - **Go to https://canvas.tue.nl/courses/13638 for digital lectures!**
-- (Wed 4-Mar). We have made an [Installation Guide](/pdf/bmlip/INSTALL.pdf) to help you run the notebooks on your own machine.
-- (Fri 28-Feb). A [PDF booklet of lessons 0 through 12](/pdf/bmlip/BMLIP-5SSD0.pdf) is now available for download.
-- (Sat 22-Feb). Exercises [without](https://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises.ipynb) and [with solutions](https://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises-with-Solutions.ipynb) for the fundamentals block are up! Next week no classes (carnaval). See you on Monday 2-March!
+### RESIT IN JULY 2020
+
+If you wish to take a resit of this course in July 2020, please note that the resit will be an oral exam.  If you wish to take a resit, please register for the exam and schedule an appointment with me (bert.de.vries@tue.nl).
+
+The format will be the same as in April 2020.  At the beginning of the session, I need to check your identity, preferably by your campus card. The session will last for maximally 30 minutes and will be recorded (and later deleted, following GDPR rules). Please do review the [Oral Exam Example notebook](https://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Oral-Exam-Example.ipynb (Links to an external site.)) to get an idea of what kind of questions will be asked.
+
+The first question of the exam will be an open question: "You get 5 minutes to tell me about what you learned in this class. You can fill in the 5 minutes as you like but try to impress me with your knowledge or insights. E.g., talk about probabilistic modelling, how it works, what are strong aspects or weak aspects of the approach, etc."
+
+After the first question, the rest of the exam will be more focused at selected topics by myself.  As mentioned before, I am mostly looking for conceptual understanding of the materials.
+
+
 
 ## Instructors
 
