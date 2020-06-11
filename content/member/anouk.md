@@ -6,7 +6,7 @@ name = "Anouk van Diepen"
 portrait = "portraits/Anouk.jpg"
 short_bio = "I am a PhD candidate at TU Eindhoven working on Sparse Bayesian Beamforming."
 title = "Anouk van Diepen"
-sort_position = 4
+sort_position = 5
 
 [[social]]
     icon = "envelope"

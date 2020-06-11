@@ -6,7 +6,7 @@ name = "Burak Ergul"
 portrait = "portraits/burak.jpeg"
 short_bio = "I am an MSc student at TU Eindhoven working on my graduation project in BIASlab."
 title = "Burak Ergul"
-sort_position = 5
+sort_position = 6
 
 [[social]]
     icon = "envelope"
