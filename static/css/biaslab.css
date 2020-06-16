@@ -12,23 +12,23 @@ header{
     max-width: 100%;
     width:auto;
     height:auto;
-    background: #A4BDC0;
-    background:
-        linear-gradient(
-            to bottom, 
-            #A4BDC0,
-            #A4BDC0 55%,
-            #729BA6 55%,
-            #729BA6 62%,
-            #5D848C 62%,
-            #5D848C 85%,
-            #729BA6 15%
-    );
+    background: #ffffff;
+    /*background:*/
+    /*    linear-gradient(*/
+    /*        to bottom, */
+    /*        #A4BDC0,*/
+    /*        #A4BDC0 55%,*/
+    /*        #729BA6 55%,*/
+    /*        #729BA6 62%,*/
+    /*        #5D848C 62%,*/
+    /*        #5D848C 85%,*/
+    /*        #729BA6 15%*/
+    /*);*/
     background-repeat: no-repeat;
 }
 
 .header-content {
-     padding: 0; 
+     padding: 0;
 }
 
 .landing-heading, .landing-description {
@@ -54,8 +54,67 @@ header{
     }
 }
 
+@keyframes slideLeft {
+
+    0%{
+        transform: translate(20%, -15%) scale(0.5);
+    }
+    to{
+        transform: translate(-70%, 30%) scale(1.0);
+    }
+}
+
+@keyframes ad_invisible {
+    0% {opacity: 0.0}
+    20% {opacity: 0.0}
+    30% {opacity: 1.0}
+    40% {opacity: 0.0}
+    100% {opacity:0.0}
+
+}
+
+@keyframes blob_invisible {
+    0% {opacity: 0.0}
+    40% {opacity: 0.0}
+    50% {opacity: 1.0}
+    60% {opacity: 1.0}
+    70% {opacity: 0.0}
+    100% {opacity:0.0}
+
+}
+
+@keyframes pred_invisible {
+    0% {opacity: 0.0}
+    65% {opacity: 0.0}
+    75% {opacity: 1.0}
+    90% {opacity: 1.0}
+    100% {opacity:0.0}
+
+}
+
+#drone_ANIMATION {
+    animation: slideLeft 20s linear infinite;
+    transform-origin: 50% 50%;
+    position: absolute;
+}
+
+#admirant__ANIMATION {
+    animation: ad_invisible 20s linear infinite;
+    opacity: 0.0;
+
+}
+
+#blob_ANIMATION {
+    animation: blob_invisible 20s linear infinite;
+    opacity: 0.0;
+}
+#prediction_ANIMATION {
+    animation: pred_invisible 20s linear infinite;
+    opacity: 0.0;
+}
+
 .landing-pitch {
-    background: #A4BDC0;
+    background: rgba(118,214,255,0.35);
     text-align: center;
     color: #fff;
 }
