@@ -68,6 +68,7 @@ header{
     0% {opacity: 0.0}
     20% {opacity: 0.0}
     30% {opacity: 1.0}
+    35% {opacity: 1.0}
     40% {opacity: 0.0}
     100% {opacity:0.0}
 
@@ -116,7 +117,16 @@ header{
 .landing-pitch {
     background: rgba(118,214,255,0.35);
     text-align: center;
-    color: #fff;
+    color: #006199;
+}
+
+.btn-pitch.btn-outline {
+    color: #006199;
+}
+
+.btn-pitch.btn-outline {
+    color: #006199;
+    border-color: #006199;
 }
 
 * {
