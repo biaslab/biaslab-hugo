@@ -1,4 +1,6 @@
 .header-content{
+    z-index: 1;
+    position: relative;
     margin-top: 0;
     margin-bottom: 0;
     font-weight: 100;
@@ -119,6 +121,8 @@ header{
 }
 
 .landing-pitch {
+    z-index: 2;
+    position: relative;
     background: rgba(118,214,255,0.35);
     text-align: center;
     color: #006199;
