@@ -1,5 +1,6 @@
 .header-content{
     z-index: 1;
+    position: relative;
     margin-top: 0;
     margin-bottom: 0;
     font-weight: 100;
@@ -14,17 +15,6 @@ header{
     width:auto;
     height:auto;
     background: #ffffff;
-    /*background:*/
-    /*    linear-gradient(*/
-    /*        to bottom, */
-    /*        #A4BDC0,*/
-    /*        #A4BDC0 55%,*/
-    /*        #729BA6 55%,*/
-    /*        #729BA6 62%,*/
-    /*        #5D848C 62%,*/
-    /*        #5D848C 85%,*/
-    /*        #729BA6 15%*/
-    /*);*/
     background-repeat: no-repeat;
 }
 
@@ -36,31 +26,41 @@ header{
     font-weight: 300;
 }
 
-@media screen and (max-width: 768px) {
-    .landing-heading {
-        font-weight: 300;
-        font-size: 30px;
-    }
+/*@media screen and (max-width: 768px) {*/
+/*    .landing-heading {*/
+/*        font-weight: 300;*/
+/*        font-size: 30px;*/
+/*    }*/
 
-    .landing-description {
-        font-weight: 300;
-        font-size: 24px;
-    }
-}
+/*    .landing-description {*/
+/*        font-weight: 300;*/
+/*        font-size: 24px;*/
+/*    }*/
+/*}*/
 
 @media screen and (min-width: 1000px) {
     .landing-description {
-         width:1000px;
-         margin:auto;
+        width:1000px;
+        margin:auto;
     }
 }
+
+/*@media screen and (min-width: 1025px) {*/
+/*    .landing-description {*/
+/*         width:1000px;*/
+/*         margin:auto;*/
+/*    }*/
+/*}*/
+
 
 @keyframes slideLeft {
 
     0%{
+        /*offset-distance: 0%;*/
         transform: translate(20%, -15%) scale(0.5);
     }
-    to{
+    100% {
+        /*offset-distance: 100%;*/
         transform: translate(-70%, 30%) scale(1.0);
     }
     0% {opacity: 0.0}
@@ -81,10 +81,10 @@ header{
 
 @keyframes blob_invisible {
     0% {opacity: 0.0}
-    40% {opacity: 0.0}
+    35% {opacity: 0.0}
+    40% {opacity: 1.0}
     50% {opacity: 1.0}
-    60% {opacity: 1.0}
-    70% {opacity: 0.0}
+    60% {opacity: 0.0}
     100% {opacity:0.0}
 
 }
@@ -93,12 +93,12 @@ header{
     0% {opacity: 0.0}
     65% {opacity: 0.0}
     75% {opacity: 1.0}
-    90% {opacity: 1.0}
+    95% {opacity: 1.0}
     100% {opacity:0.0}
 
 }
 
-#drone_ANIMATION {
+#drone_ANIMATION {;
     animation: slideLeft 20s linear infinite;
     transform-origin: 50% 50%;
     position: absolute;
@@ -119,11 +119,15 @@ header{
     opacity: 0.0;
 }
 
-.landing-pitch {
+.landing-pitch-md {
     position: absolute;
-    top: 55px;
     z-index: 2;
-    /* background: rgba(118,214,255,0.35); */
+    text-align: center;
+    color: #006199;
+}
+
+.landing-pitch-xs {
+    background: rgba(118,214,255,0.35);
     text-align: center;
     color: #006199;
 }
