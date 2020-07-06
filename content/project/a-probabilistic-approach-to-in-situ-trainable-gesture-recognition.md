@@ -12,7 +12,6 @@ sort_position = 3
 
 [[participants]]
     name = "Anouk van Diepen"
-    is_member = true
     id = "anouk"
 
 [[participants]]

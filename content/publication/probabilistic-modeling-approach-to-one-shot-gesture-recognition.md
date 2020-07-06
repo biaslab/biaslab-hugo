@@ -18,8 +18,8 @@ url_video = ""
 
 [[authors]]
     name = "Anouk van Diepen"
-    is_member = true
-    link = "/anouk"
+    is_former_member = true
+    link = "https://research.tue.nl/en/persons/anouk-van-diepen"
 [[authors]]
     name = "Marco Cox"
     is_member = true
