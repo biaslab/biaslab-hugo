@@ -1,4 +1,6 @@
 .header-content{
+    z-index: 1;
+    position: relative;
     margin-top: 0;
     margin-bottom: 0;
     font-weight: 100;
@@ -12,52 +14,133 @@ header{
     max-width: 100%;
     width:auto;
     height:auto;
-    background: #A4BDC0;
-    background:
-        linear-gradient(
-            to bottom, 
-            #A4BDC0,
-            #A4BDC0 55%,
-            #729BA6 55%,
-            #729BA6 62%,
-            #5D848C 62%,
-            #5D848C 85%,
-            #729BA6 15%
-    );
+    background: #ffffff;
     background-repeat: no-repeat;
 }
 
 .header-content {
-     padding: 0; 
+     padding: 0;
 }
 
 .landing-heading, .landing-description {
     font-weight: 300;
 }
 
-@media screen and (max-width: 768px) {
-    .landing-heading {
-        font-weight: 300;
-        font-size: 30px;
-    }
 
-    .landing-description {
-        font-weight: 300;
-        font-size: 24px;
+@keyframes slideLeft {
+
+    0%{
+        /*offset-distance: 0%;*/
+        transform: translate(20%, -15%) scale(0.5);
     }
+    100% {
+        /*offset-distance: 100%;*/
+        transform: translate(-70%, 30%) scale(1.0);
+    }
+    0% {opacity: 0.0}
+    5% {opacity: 1.0}
+    90% {opacity: 1.0}
+    100% {opacity: 0.0}
 }
 
-@media screen and (min-width: 1000px) {
-    .landing-description {
-         width:1000px;
-         margin:auto;
-    }
+@keyframes ad_invisible {
+    0% {opacity: 0.0}
+    20% {opacity: 0.0}
+    30% {opacity: 1.0}
+    35% {opacity: 1.0}
+    40% {opacity: 0.0}
+    100% {opacity:0.0}
+
 }
 
-.landing-pitch {
-    background: #A4BDC0;
+@keyframes blob_invisible {
+    0% {opacity: 0.0}
+    35% {opacity: 0.0}
+    40% {opacity: 1.0}
+    50% {opacity: 1.0}
+    60% {opacity: 0.0}
+    100% {opacity:0.0}
+
+}
+
+@keyframes pred_invisible {
+    0% {opacity: 0.0}
+    65% {opacity: 0.0}
+    75% {opacity: 1.0}
+    95% {opacity: 1.0}
+    100% {opacity:0.0}
+
+}
+
+#drone_ANIMATION {
+    animation: slideLeft 20s linear infinite;
+    transform-origin: 50% 50%;
+    position: absolute;
+}
+
+#admirant__ANIMATION {
+    animation: ad_invisible 20s linear infinite;
+    opacity: 0.0;
+}
+
+#blob_ANIMATION {
+    animation: blob_invisible 20s linear infinite;
+    opacity: 0.0;
+}
+#prediction_ANIMATION {
+    animation: pred_invisible 20s linear infinite;
+    opacity: 0.0;
+}
+
+.landing-pitch-md {
+    position: absolute;
+    /* display: table; */
+    left:0;
+    right:0;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 2;
     text-align: center;
-    color: #fff;
+    color: #006199;
+}
+
+@media screen and (min-width: 1300px){
+    .pitch-large-screens {
+        display: block;
+    }
+    .pitch-small-screens {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1300px){
+    .pitch-large-screens {
+        display: none;
+    }
+    .pitch-small-screens {
+        background: rgba(118,214,255,0.35);
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .landing-pitch-md  {
+        width:1000px;
+    }
+}
+
+.landing-pitch-xs {
+    text-align: center;
+    color: #006199;
+}
+
+.btn-pitch.btn-outline {
+    color: #006199;
+}
+
+.btn-pitch.btn-outline {
+    color: #006199;
+    border-color: #006199;
 }
 
 * {
@@ -68,35 +151,6 @@ svg:not(:root){
     position: relative;
     left: 0; 
     top: 0;
-}
-
-@media screen and (max-width: 988px) {
-    
-    #About {
-        transform:  translateX(360px)
-                    translateY(840px);
-    }
-   
-    #Mission {
-        transform:  translateX(780px)
-                    translateY(540px);
-    }
-
-    #Approach {
-        transform:  translateX(1200px)
-                    translateY(240px);
-    }
-    
-    #Tekst {
-        transform: translateX(-225px);
-    } 
-    
-    #Agents {
-        transform: translateX(-225px);
-    } 
-    #Crossroad {
-        transform: translateX(-225px);
-    }
 }
 
 .home-section:first-of-type {
