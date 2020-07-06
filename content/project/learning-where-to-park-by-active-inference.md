@@ -11,7 +11,6 @@ sort_position = 1
 
 [[participants]]
     name = "Burak Ergul"
-    is_member = true
     id = "burak"
     position = 1
 +++
