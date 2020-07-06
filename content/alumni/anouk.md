@@ -4,9 +4,10 @@ id = "anouk"
 interests = ["Bayesian machine learning", "Signal processing", "Variational methods", "Gesture Recognition"]
 name = "Anouk van Diepen"
 portrait = "portraits/Anouk.jpg"
-short_bio = "I am a PhD candidate at TU Eindhoven working on Sparse Bayesian Beamforming."
+short_bio = ""
 title = "Anouk van Diepen"
 sort_position = 5
+external_link = "https://research.tue.nl/en/persons/anouk-van-diepen"
 
 [[social]]
     icon = "envelope"
@@ -25,8 +26,8 @@ sort_position = 5
 
 [[organizations]]
     name = "TU Eindhoven"
-    role = "PhD candidate"
+    role = "Former PhD candidate"
 
 +++
 
-Anouk van Diepen received her M.Sc. degree in Electrical Engineering from the TU Eindhoven in 2017. Currently she is a PhD candidate in the the Electrical Engineering department of [TU Eindhoven](http://www.tue.nl), working in the [BIASlab](http://biaslab.org) team. Her research focuses on sparse Bayesian learning for beamforming in hearing aids. She is also interested in in-situ trainable gesture recognition.
+Anouk van Diepen received her M.Sc. degree in Electrical Engineering from the TU Eindhoven in 2017.

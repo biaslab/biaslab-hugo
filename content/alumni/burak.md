@@ -4,14 +4,10 @@ id = "burak"
 interests = ["Bayesian Machine Learning", "Embedded Systems", "Real-time Systems"]
 name = "Burak Ergul"
 portrait = "portraits/burak.jpeg"
-short_bio = "I am an MSc student at TU Eindhoven working on my graduation project in BIASlab."
+short_bio = ""
 title = "Burak Ergul"
 sort_position = 6
-
-[[social]]
-    icon = "envelope"
-    icon_pack = "fa"
-    link = "mailto:b.ergul@student.tue.nl"
+external_link = "https://www.linkedin.com/in/burak-ergul-/"
 
 [[social]]
     icon = "linkedin"
@@ -30,7 +26,7 @@ sort_position = 6
 
 [[organizations]]
     name = "TU Eindhoven"
-    role = "MSc student"
+    role = "Former MSc student"
 
 +++
-Burak Ergul is an MSc student in the SPS group of Electrical Engineering department in Eindhoven University of Technology. His research focuses on real-world applications of Active Inference on embedded devices.
+Burak Ergul was an MSc student in the SPS group of Electrical Engineering department in Eindhoven University of Technology. His research focused on real-world applications of Active Inference on embedded devices.

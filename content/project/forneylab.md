@@ -11,25 +11,21 @@ sort_position = 1
 
 [[participants]]
     name = "Thijs van de Laar"
-    is_member = true
     id = "thijs"
     position = 1
 
 [[participants]]
     name = "Marco Cox"
-    is_member = true
     id = "marco"
     position = 2
 
 [[participants]]
     name = "Ivan Bocharov"
-    is_member = true
     id = "ivan"
     position = 3
 
 [[participants]]
     name = "Bert de Vries"
-    is_member = true
     id = "bert"
     position = 4
 +++

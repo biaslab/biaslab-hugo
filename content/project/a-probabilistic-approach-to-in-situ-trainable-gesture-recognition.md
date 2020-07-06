@@ -12,17 +12,14 @@ sort_position = 3
 
 [[participants]]
     name = "Anouk van Diepen"
-    is_member = true
     id = "anouk"
 
 [[participants]]
     name = "Marco Cox"
-    is_member = true
     id = "marco"
 
 [[participants]]
     name = "Bert de Vries"
-    is_member = true
     id = "bert"
 
 +++

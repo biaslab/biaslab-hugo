@@ -11,13 +11,11 @@ sort_position = 2
 
 [[participants]]
     name = "Marco Cox"
-    is_member = true
     id = "marco"
     position = 1
 
 [[participants]]
     name = "Bert de Vries"
-    is_member = true
     id = "bert"
     position = 2
 +++
