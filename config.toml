@@ -18,7 +18,7 @@ tag = "tags"
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
-      
+
 [params]
   description = "Website of research group"
   author = "BIASlab"
@@ -157,7 +157,7 @@ tag = "tags"
 
   [[menu.main]]
     name = "Rocket.jl"
-    url = "/rocket/docs"
+    url = "https://biaslab.github.io/Rocket.jl/stable"
     parent = "software"
     weight = 2
 
