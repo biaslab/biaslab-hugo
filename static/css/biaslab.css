@@ -26,32 +26,6 @@ header{
     font-weight: 300;
 }
 
-/*@media screen and (max-width: 768px) {*/
-/*    .landing-heading {*/
-/*        font-weight: 300;*/
-/*        font-size: 30px;*/
-/*    }*/
-
-/*    .landing-description {*/
-/*        font-weight: 300;*/
-/*        font-size: 24px;*/
-/*    }*/
-/*}*/
-
-@media screen and (min-width: 1000px) {
-    .landing-description {
-        width:1000px;
-        margin:auto;
-    }
-}
-
-/*@media screen and (min-width: 1025px) {*/
-/*    .landing-description {*/
-/*         width:1000px;*/
-/*         margin:auto;*/
-/*    }*/
-/*}*/
-
 
 @keyframes slideLeft {
 
@@ -98,7 +72,7 @@ header{
 
 }
 
-#drone_ANIMATION {;
+#drone_ANIMATION {
     animation: slideLeft 20s linear infinite;
     transform-origin: 50% 50%;
     position: absolute;
@@ -107,7 +81,6 @@ header{
 #admirant__ANIMATION {
     animation: ad_invisible 20s linear infinite;
     opacity: 0.0;
-
 }
 
 #blob_ANIMATION {
@@ -121,13 +94,42 @@ header{
 
 .landing-pitch-md {
     position: absolute;
+    /* display: table; */
+    left:0;
+    right:0;
+    margin-left: auto;
+    margin-right: auto;
     z-index: 2;
     text-align: center;
     color: #006199;
 }
 
+@media screen and (min-width: 1300px){
+    .pitch-large-screens {
+        display: block;
+    }
+    .pitch-small-screens {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1300px){
+    .pitch-large-screens {
+        display: none;
+    }
+    .pitch-small-screens {
+        background: rgba(118,214,255,0.35);
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .landing-pitch-md  {
+        width:1000px;
+    }
+}
+
 .landing-pitch-xs {
-    background: rgba(118,214,255,0.35);
     text-align: center;
     color: #006199;
 }
@@ -149,35 +151,6 @@ svg:not(:root){
     position: relative;
     left: 0; 
     top: 0;
-}
-
-@media screen and (max-width: 988px) {
-    
-    #About {
-        transform:  translateX(360px)
-                    translateY(840px);
-    }
-   
-    #Mission {
-        transform:  translateX(780px)
-                    translateY(540px);
-    }
-
-    #Approach {
-        transform:  translateX(1200px)
-                    translateY(240px);
-    }
-    
-    #Tekst {
-        transform: translateX(-225px);
-    } 
-    
-    #Agents {
-        transform: translateX(-225px);
-    } 
-    #Crossroad {
-        transform: translateX(-225px);
-    }
 }
 
 .home-section:first-of-type {
