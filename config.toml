@@ -29,7 +29,7 @@ tag = "tags"
   slogan_text = "Bayesian Intelligent Autonomous Systems"
   custom_css = ["biaslab.css"]
   landing_heading = "Natural Artificial Intelligence"
-  landing_description = "Automating the development of novel signal processing and control systems through neuro&#8209;inspired free&#8209;energy minimizing agents"
+  landing_description = "Automating the development of novel signal processing and control systems through <span style=\"white-space: nowrap;\">neuro-inspired</span> <span style=\"white-space: nowrap;\">free-energy</span> minimizing agents"
   positions_available = true
 
   [params.logo]
