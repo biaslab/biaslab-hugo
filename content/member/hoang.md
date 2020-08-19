@@ -4,7 +4,7 @@ id = "hoang"
 interests = ["Differentiable Programming for Speech and Audio Processing"] 
 name = "Hoang Minh Huu Nguyen" 
 portrait = "portraits/Hoang.jpeg" 
-short_bio = "I am an intern at the Signal Processing Systems group in TU Eindhoven working on Differentiable Programming for Speech and Audio Processing." 
+short_bio = "I am a MSc student at the Signal Processing Systems group in TU Eindhoven working on Differentiable Programming for Speech and Audio Processing." 
 title = "Hoang M.H. Nguyen" 
 sort_position = 6
 
@@ -25,7 +25,7 @@ year = 2018
 
 [[organizations]] 
 name = "TU Eindhoven" 
-role = "Intern"
+role = "MSc student"
 
 +++ 
-Hoang Minh Huu Nguyen is an intern in the SPS group of Electrical Engineering department in Eindhoven University of Technology. His research focuses on Differentiable Programming for Speech and Audio Processing.
+Hoang Minh Huu Nguyen is a MSc student in the SPS group of the Electrical Engineering department at Eindhoven University of Technology. His research focuses on Differentiable Programming for Speech and Audio Processing.
