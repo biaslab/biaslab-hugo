@@ -1,5 +1,5 @@
 +++
-abstract = "Factor graphs provide a convenient framework for automatically generating (approximate) Bayesian inference algorithms based on message passing. Examples include the sum-product algorithm (belief propagation), expectation maximization (EM), expectation propagation (EP) and variational message passing (VMP). While these message passing algorithms can be generated automatically, they depend on a library of pre-computed message update rules. As a result, the applicability of the factor graph approach depends on the availability of such rules for all involved nodes. This paper describes the probit factor node for linking continuous and binary random variables in a factor graph. We derive (approximate) sum-product message update rules for this node through constrained moment matching, which leads to a robust version of the EP algorithm in which all messages are guaranteed to be proper. This enables automatic Bayesian inference in probabilistic models that involve both continuous and discrete latent variables, without the need for model-specific derivations. The usefulness of the node as a factor graph building block is demonstrated by applying it to perform Bayesian inference in a linear classification model with corrupted class labels."
+    id = "Factor graphs provide a convenient framework for automatically generating (approximate) Bayesian inference algorithms based on message passing. Examples include the sum-product algorithm (belief propagation), expectation maximization (EM), expectation propagation (EP) and variational message passing (VMP). While these message passing algorithms can be generated automatically, they depend on a library of pre-computed message update rules. As a result, the applicability of the factor graph approach depends on the availability of such rules for all involved nodes. This paper describes the probit factor node for linking continuous and binary random variables in a factor graph. We derive (approximate) sum-product message update rules for this node through constrained moment matching, which leads to a robust version of the EP algorithm in which all messages are guaranteed to be proper. This enables automatic Bayesian inference in probabilistic models that involve both continuous and discrete latent variables, without the need for model-specific derivations. The usefulness of the node as a factor graph building block is demonstrated by applying it to perform Bayesian inference in a linear classification model with corrupted class labels."
 abstract_short = ""
 date = "2018-09-06T14:07:00+02:00"
 image = ""
@@ -18,10 +18,8 @@ url_video = ""
 
 [[authors]]
     name = "Marco Cox"
-    is_member = true
-    link = "/marco"
+    id = "marco"
 [[authors]]
     name = "Bert de Vries"
-    is_member = true
-    link = "/bert"
+    id = "bert"
 +++

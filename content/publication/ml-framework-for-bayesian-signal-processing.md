@@ -18,5 +18,4 @@ url_video = ""
 
 [[authors]]
     name = "Timur Bagautdinov"
-    is_member = false
 +++

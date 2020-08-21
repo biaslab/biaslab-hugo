@@ -18,5 +18,4 @@ url_video = ""
 
 [[authors]]
     name = "Max Schoonderbeek"
-    is_member = false
 +++

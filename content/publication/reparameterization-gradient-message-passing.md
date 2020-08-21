@@ -19,10 +19,8 @@ url_video = ""
 
 [[authors]]
     name = "Semih Akbayrak"
-    is_member = true
-    link = "/semih"
+    id = "semih"
 [[authors]]
     name = "Bert de Vries"
-    is_member = true
-    link = "/bert"
+    id = "bert"
 +++

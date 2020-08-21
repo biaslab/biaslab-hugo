@@ -18,6 +18,5 @@ url_video = ""
 
 [[authors]]
     name = "Burak Ergül"
-    is_former_member = true
-    link= "https://www.linkedin.com/in/burak-ergul-/"
+    id = "burak"
 +++

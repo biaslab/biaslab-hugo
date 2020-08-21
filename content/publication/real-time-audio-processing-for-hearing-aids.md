@@ -17,16 +17,12 @@ url_video = ""
 
 [[authors]]
     name = "Martin Roa Villescas"
-    is_member = true
-    link = "/martin"
+    id = "mroavi"
 [[authors]]
     name = "Bert de Vries"
-    is_member = true
-    link = "/bert"
+    id = "bert"
 [[authors]]
     name = "Sander Stuijk"
-    is_member = false
 [[authors]]
     name = "Henk Corporaal"
-    is_member = false
 +++
