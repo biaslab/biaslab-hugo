@@ -18,16 +18,12 @@ url_video = ""
 
 [[authors]]
     name = " Patrick W.A. Wijnings"
-    is_member = true
-    link = "/patrick"
+    id = "patrick"
 [[authors]]
     name = "Sander Stuijk"
-    is_member = false
 [[authors]]
     name = "Bert de Vries"
-    is_member = true
-    link = "/bert"
+    id = "bert"
 [[authors]]
     name = "Henk Corporaal"
-    is_member = false
 +++

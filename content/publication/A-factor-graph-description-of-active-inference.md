@@ -18,11 +18,8 @@ url_video = ""
 
 [[authors]]
     name = "Bert de Vries"
-    is_member = true
-    link = "/bert"
+    id = "bert"
 [[authors]]
     name = "Karl J Friston"
-    is_member = false
-    link = ""
 
 +++

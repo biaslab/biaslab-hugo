@@ -18,12 +18,9 @@ url_video = ""
 
 [[authors]]
     name = "Thijs van de Laar"
-    is_member = true
-    link = "/thijs"
+    id = "thijs"
 [[authors]]
     name = "Ayça Özçelikkale"
-    is_member = false
 [[authors]]
     name = "Henk Wymeersch"
-    is_member = false
 +++

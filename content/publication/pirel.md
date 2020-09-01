@@ -18,14 +18,11 @@ url_video = ""
 
 [[authors]]
     name = "Quan Nguyen"
-    is_member = true
-    link = "/eric"
+    id = "eric"
 [[authors]]
     name = "Bert de Vries"
-    is_member = true
-    link = "/bert"
+    id = "bert"
 [[authors]]
     name = "Tjalling J. Tjalkens"
-    is_member = true
-    link = "/tjalling"
+    id = "tjalling"
 +++

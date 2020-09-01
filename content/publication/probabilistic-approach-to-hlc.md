@@ -18,9 +18,7 @@ url_video = ""
 
 [[authors]]
     name = "Mojtaba Farmani"
-    is_member = false
 [[authors]]
     name = "Bert de Vries"
-    is_member = true
-    link = "/bert"
+    id = "bert"
 +++

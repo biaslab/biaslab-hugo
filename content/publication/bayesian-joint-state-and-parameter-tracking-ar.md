@@ -17,18 +17,14 @@ url_video = ""
 
 [[authors]]
     name = "Ismail Senoz"
-    is_member = true
-    link = "/ismail"
+    id = "ismail"
 [[authors]]
     name = "Albert Podusenko"
-    is_member = true
-    link = "/albert"
+    id = "albert"
 [[authors]]
     name = "Wouter Kouw"
-    is_member = true
-    link = "/wouter"
+    id = "wouter"
 [[authors]]
     name = "Bert de Vries"
-    is_member = true
-    link = "/bert"
+    id = "bert"
 +++

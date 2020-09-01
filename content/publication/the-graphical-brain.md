@@ -18,14 +18,9 @@ url_video = ""
 
 [[authors]]
     name = "Karl J Friston"
-    is_member = false
-    link = ""
 [[authors]]
-    name = "Thomas Parr"
-    is_member = false
-    link = ""    
+    name = "Thomas Parr" 
 [[authors]]
     name = "Bert de Vries"
-    is_member = true
-    link = "/bert"
+    id = "bert"
 +++

@@ -18,6 +18,5 @@ url_video = "https://www.youtube.com/watch?v=l0DuYblLEGA"
 
 [[authors]]
     name = "Bert de Vries"
-    is_member = true
-    link = "/bert"
+    id = "bert"
 +++

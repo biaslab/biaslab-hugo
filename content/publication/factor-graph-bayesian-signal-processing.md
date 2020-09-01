@@ -18,14 +18,11 @@ url_video = ""
 
 [[authors]]
     name = "Marco Cox"
-    is_member = true
-    link = "/marco"
+    id = "marco"
 [[authors]]
     name = "Thijs van de Laar"
-    is_member = true
-    link = "/thijs"
+    id = "thijs"
 [[authors]]
     name = "Bert de Vries"
-    is_member = true
-    link = "/bert"
+    id = "bert"
 +++

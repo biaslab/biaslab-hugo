@@ -18,5 +18,4 @@ url_video = ""
 
 [[authors]]
     name = "Rene Duijkers"
-    is_member = false
 +++
