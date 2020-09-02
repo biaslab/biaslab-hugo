@@ -37,7 +37,7 @@ This course covers the fundamentals of a Bayesian (i.e., probabilistic) approach
 News
 </h2>
 
-- We will post news items here.
+- [Check the Canvas website regularly](https://canvas.tue.nl/courses/16117) for new announcements. 
 
 
 ## Instructors
@@ -49,7 +49,7 @@ News
 
 ## Materials
 
-In principle, you can download all needed materials from this site.
+In principle, you can download all needed materials from the links below.
 
 ### Books
 
@@ -59,7 +59,7 @@ Please download the following books/resources:
 Bishop](http://research.microsoft.com/en-us/um/people/cmbishop/index.htm) (2006), [Pattern Recognition and
 Machine
 Learning](https://www.microsoft.com/en-us/research/people/cmbishop/prml-book/). You can also buy a [hardcopy, e.g. at bol.com](https://tinyurl.com/thj7euq).
-2. [Ariel Caticha](https://www.albany.edu/physics/acaticha.shtml) (2012), [Entropic Inference and the Foundations of Physics](https://www.albany.edu/physics/ACaticha-EIFP-book.pdf).
+2. [Ariel Caticha](https://www.albany.edu/physics/acaticha.shtml) (2012), [Entropic Inference and the Foundations of Physics](https://github.com/bertdv/BMLIP/blob/master/lessons/notebooks/files/Caticha-2012-Entropic-Inference-and-the-Foundations-of-Physics.pdf).
 3. Bert de Vries et al. (2020), [PDF bundle of lecture notes for lessons B0 through B12](/pdf/bmlip/BMLIP-5SSD0.pdf). 
     - The lecture notes may change a bit during the course, e.g., to process comments by students. A final PDF version will be posted after the last lecture.
 
