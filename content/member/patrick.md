@@ -6,7 +6,7 @@ name = "Patrick Wijnings"
 portrait = "portraits/Patrick.jpg"
 short_bio = "I am a PhD candidate at [Eindhoven University of Technology](http://tue.nl). I am also a system engineer at [Sorama](http://sorama.eu)."
 title = "Patrick Wijnings"
-sort_position = 4
+sort_position = 5
 personal_website = "https://research.tue.nl/en/persons/patrick-wijnings/"
 [[social]]
    icon = "envelope"

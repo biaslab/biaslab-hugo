@@ -6,7 +6,7 @@ name = "Martin Roa Villescas"
 portrait = "portraits/martin.jpg"
 short_bio = "I am a PhD candidate at the Electronic Systems group in Eindhoven University of Technology."
 title = "Martin Roa Villescas"
-sort_position = 4
+sort_position = 5
 
 [[social]]
     icon = "envelope"
