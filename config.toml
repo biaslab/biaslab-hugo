@@ -151,7 +151,7 @@ tag = "tags"
 
   [[menu.main]]
     name = "ForneyLab.jl"
-    url = "https://biaslab.github.io/ForneyLab.jl/dev/"
+    url = "https://biaslab.github.io/ForneyLab.jl/stable/"
     parent = "software"
     weight = 1
 
