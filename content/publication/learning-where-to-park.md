@@ -17,6 +17,5 @@ url_slides = ""
 url_video = ""
 
 [[authors]]
-    name = "Burak Ergül"
     id = "burak"
 +++
