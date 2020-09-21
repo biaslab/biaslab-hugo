@@ -44,10 +44,9 @@ cv_link = ""
     role = "Postdoctoral fellow"
 
 +++
-I am interested in robots, brains and robotbrains. I'm fascinated by [intelligent](https://en.wikipedia.org/wiki/Intelligence) behaviour: how animals can efficiently process a flood of sensory signals and learn to take actions that keep them alive. I'm passionate about taking what we know from [how brains process information](https://en.wikipedia.org/wiki/Computational_neuroscience), to making [intelligent machines](https://en.wikipedia.org/wiki/Artificial_intelligence).
 
-\
+Intelligent behaviour fascinates me: how animals can efficiently process a flood of sensory signals and learn to survive. Nature has produced elegant solutions for information processing that I believe can help us tackle challenges in modern society. I'm passionate about taking what we know from how brains process information, to making intelligent machines.
 
-My work in the lab revolves around improving the efficiency of the inference process. We aim to allow individual nodes in an agent's [factor graph](https://en.wikipedia.org/wiki/Factor_graph) to decide for themselves if they will communicate a signal forward, based on how much the message would reduce [free energy](https://en.wikipedia.org/wiki/Free_energy_principle).
+My work in the lab focuses on deploying our agents to mobile robotics applications. I collaborate with industry to solve practical problems using free energy minimisation and I collaborate with researchers in control systems and robotics to study how neuro-biological processes of action and perception can be used for engineering.
 
-Previous research includes studying the limits of generalizing to data from other distributions ([domain adaptation](https://en.wikipedia.org/wiki/Domain_adaptation)) and model selection under covariate shift ([cross-validation](https://en.wikipedia.org/wiki/Cross-validation_(statistics)#Limitations_and_misuse)). Mainly, I designed and analyzed maximum-likelihood, minimax and minimum-variance estimators, which are applied to problems in [image](https://en.wikipedia.org/wiki/Digital_image_processing), [signal](https://en.wikipedia.org/wiki/Digital_signal_processing) and [natural language processing](https://en.wikipedia.org/wiki/Natural_language_processing).
+Previously, I worked on the theoretical limitations of machine learning: I tried to understand when and why algorithms fail to generalize from a training sample to real-world settings. I designed robust estimators, which have been applied to image, signal, and natural language processing problems.
