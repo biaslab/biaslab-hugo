@@ -81,17 +81,17 @@ The [source files for the lecture notes are accessible at github](https://github
             <td>11-Nov-2020</td>
             <td>B0: Course Outline and Administrative Issues <br/>
             B1: Machine Learning Overview</td>
-            <td><a href="http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/00-Course-Outline-and-Admin-Issues.ipynb">B0</a>, <a href="http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/01-Machine-Learning-Overview.ipynb">B1</a></td>
+            <td><a href="http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Course-Outline-and-Admin-Issues.ipynb">B0</a>, <a href="http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Machine-Learning-Overview.ipynb">B1</a></td>
          </tr>
          <tr>
             <td>13-Nov-2020</td>
             <td>B2: Probability Theory Review</td>
-            <td><a href="http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/02-Probability-Theory-Review.ipynb">B2</a>
+            <td><a href="http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Probability-Theory-Review.ipynb">B2</a>
          </tr>
          <tr>
             <td>18-Nov-2020</td>
             <td>B3: Bayesian Machine Learning</td>
-            <td><a href="http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/03-Bayesian-Machine-Learning.ipynb">B3</a>
+            <td><a href="http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Bayesian-Machine-Learning.ipynb">B3</a>
          </tr>
          <tr>
             <td style="color:gray;">20-Nov-2020</td>
@@ -101,17 +101,17 @@ The [source files for the lecture notes are accessible at github](https://github
          <tr>
             <td >25-Nov-2020</td>
             <td >B4: Factor Graphs and the Sum-Product Algorithm</td>
-            <td><a href="http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/10-Factor-Graphs.ipynb">B4</a>
+            <td><a href="http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Factor-Graphs.ipynb">B4</a>
          </tr>
          <tr>
             <td>27-Nov-2020</td>
             <td>B5: Continuous Data and the Gaussian Distribution</td>
-            <td><a href="http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/04-The-Gaussian-Distribution.ipynb">B5</a>
+            <td><a href="http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/The-Gaussian-Distribution.ipynb">B5</a>
          </tr>
          <tr>
             <td>02-Dec-2020</td>
             <td>B6: Discrete Data and the Multinomial Distribution</td>
-            <td><a href="http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/05-The-Multinomial-Distribution.ipynb">B6</a>
+            <td><a href="http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/The-Multinomial-Distribution.ipynb">B6</a>
          </tr>
          <tr>
             <td style="color:gray;">04-Dec-2020</td>
@@ -121,13 +121,13 @@ The [source files for the lecture notes are accessible at github](https://github
          <tr>
             <td>09-Dec-2020</td>
             <td>B7: Regression</td>
-            <td><a href="http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/06-Regression.ipynb">B7</a>
+            <td><a href="http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Regression.ipynb">B7</a>
          </tr>
          <tr>
             <td>11-Dec-2020</td>
             <td>B8: Generative Classification <br/>B9: Discriminative Classification
             </td>
-            <td><a href="http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/07-Generative-Classification.ipynb">B8</a>, <a href="http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/08-Discriminative-Classification.ipynb">B9</a>
+            <td><a href="http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Generative-Classification.ipynb">B8</a>, <a href="http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Discriminative-Classification.ipynb">B9</a>
          </tr>
          <tr>
             <td style="color:gray;">16-Dec-2020</td>
@@ -137,7 +137,7 @@ The [source files for the lecture notes are accessible at github](https://github
          <tr>
             <td>18-Dec-2020</td>
             <td>B10: Latent Variable Models and Variational Bayes</td>
-            <td><a href="http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/09-Latent-Variable-Models-and-VB.ipynb">B10</a>
+            <td><a href="http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Latent-Variable-Models-and-VB.ipynb">B10</a>
          </tr>
          <tr>
             <td colspan="4">break</td>
@@ -145,12 +145,12 @@ The [source files for the lecture notes are accessible at github](https://github
          <tr>
             <td>06-Jan-2021</td>
             <td>B11: Dynamic Models</td>
-            <td><a href="http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/11-Dynamic-Models.ipynb">B11</a>
+            <td><a href="http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Dynamic-Models.ipynb">B11</a>
          </tr>
          <tr>
             <td>08-Jan-2020</td>
             <td>B12: Intelligent Agents and Active Inference</td>
-            <td><a href="http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/12-Intelligent-Agents-and-Active-Inference.ipynb">B12</a>
+            <td><a href="http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Intelligent-Agents-and-Active-Inference.ipynb">B12</a>
          </tr>
          <tr>
             <td style="color:gray;">13-Jan-2020</td>
@@ -166,61 +166,6 @@ The [source files for the lecture notes are accessible at github](https://github
 
 ##  
 
-<!---
-- B0 - Course Outline and Administrative Issues ([notes](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/00-Course-Outline-and-Admin-Issues.ipynb), [video]())
-##
-
-- B1 - Machine Learning Overview ([notes](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/01-Machine-Learning-Overview.ipynb))     
-- B2 - Probability Theory Review ([notes](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/02-Probability-Theory-Review.ipynb))
-- B3 - Bayesian Machine Learning ([notes](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/03-Bayesian-Machine-Learning.ipynb))
-
-- W1 - _Probabilistic Programming: Introduction Bayesian Machine Learning_ ([notes]())
-##
-
-- B4 - Factor Graphs and the Sum-Product Algorithm ([notes](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/10-Factor-Graphs.ipynb))
-- B5 - Continuous Data and the Gaussian Distribution ([notes](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/04-The-Gaussian-Distribution.ipynb))
-- B6 - Discrete Data and the Multinomial Distribution ([notes](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/05-The-Multinomial-Distribution.ipynb))
-- W2 - _Probabilistic Programming: Message Passing and Analytical Bayesian Solutions_ ([notes]())
-
-##
-
-- B7 - Regression ([notes](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/06-Regression.ipynb))
-- B8 - Generative Classification ([notes](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/07-Generative-Classification.ipynb))
-- B9 - Discriminative Classification ([notes](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/08-Discriminative-Classification.ipynb))
-- W3 - _Probabilistic Programming: Regression and Classification_ ([notes]())
-
-##
-
-- B10 - Latent Variable Models and Variational Bayes ([notes](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/09-Latent-Variable-Models-and-VB.ipynb))
-- B11- Dynamic Models ([notes](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/11-Dynamic-Models.ipynb))
-- B12- Intelligent Agents and Active Inference ([notes](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/12-Intelligent-Agents-and-Active-Inference.ipynb))
-- W4 - _Probabilistic Programming: Latent Variable and Dynamic Models_ ([notes]())
-
-##
-
-- <a name="bonus-lecture">M1- Bonus Lecture: What is Life?</a> ([notes](/pdf/bmlip/what_is_life.pdf))
-
---->
-
-##
-
-
-<!---
-#### Minicourse Probabilistic Programming
-
-- 13- Linear Regression & Classification    
-  - [with Monte Carlo Sampling](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-1-sampling.ipynb)  
-  - [with Variational Inference](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-1-variational.ipynb)
-- 14- Gaussian Mixture Model    
-  - [with Monte Carlo Sampling](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-2-sampling.ipynb)
-  - [with Variational Inference](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-2-variational.ipynb)       
-- 15- Hidden Markov Model    
-  - [with Monte Carlo Sampling](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-3-sampling.ipynb)  
-  - [with Variational Inference](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-3-variational.ipynb)       
-- 16- Kalman Filtering     
-  - [with Monte Carlo sampling](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-4-sampling.ipynb)
-  - [with Variational Inference](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-4-variational.ipynb)
---->
 
 ## Oral Exam Guide
 
