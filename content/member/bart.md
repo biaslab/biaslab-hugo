@@ -41,5 +41,5 @@ sort_position = 4
 
 Bart has obtained his Bachelor and Master degrees in Electrical Engineering at the Eindhoven University of Technology in 2018 and 2020, respectively. 
 Currently he is combining his passion for research and education as a PhD candidate - Teaching Assistant at the Eindhoven University of Technology in the BIASlab research group. 
-His area of researches focusses on the design of new signal processing algorithms for audio and speech. 
+His research focuses on the design of new signal processing algorithms for audio and speech. 
 These algorithms are inspired by conventional approaches and are extended to allow for on-the-spot user customization.
