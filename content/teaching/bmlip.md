@@ -60,7 +60,7 @@ Bishop](http://research.microsoft.com/en-us/um/people/cmbishop/index.htm) (2006)
 Machine
 Learning](https://www.microsoft.com/en-us/research/people/cmbishop/prml-book/). You can also buy a [hardcopy, e.g. at bol.com](https://tinyurl.com/thj7euq).
 2. [Ariel Caticha](https://www.albany.edu/physics/acaticha.shtml) (2012), [Entropic Inference and the Foundations of Physics](https://github.com/bertdv/BMLIP/blob/master/lessons/notebooks/files/Caticha-2012-Entropic-Inference-and-the-Foundations-of-Physics.pdf).
-3. Bert de Vries et al. (2020), [PDF bundle of lecture notes for lessons B0 through B12, Ed. Q3-2019-2020](https://github.com/bertdv/BMLIP/blob/master/lessons/notebooks/files/5SSD0-Mar2020-Lecture-notes.pdf). 
+3. Bert de Vries et al. (2020), [PDF bundle of lecture notes for lessons B0 through B12 (Ed. Q3-2019/20)](https://github.com/bertdv/BMLIP/blob/master/lessons/notebooks/files/5SSD0-Mar2020-Lecture-notes.pdf?dl=0). 
     - The lecture notes may change a bit during the course, e.g., to process comments by students. A final PDF version will be posted after the last lecture.
 
 ### <a name="lectures">Lecture notes and videos</a>
@@ -166,7 +166,7 @@ The [source files for the lecture notes are accessible at github](https://github
          <tr>
             <td>15-Jan-2020</td>
             <td>M1: Bonus Lecture: What is Life?</td>
-            <td><a href="https://github.com/bertdv/AIP-5SSB0/raw/master/lessons/notebooks/MKoudahl-March2020-What-is-life.pdf">M1</a></td>
+            <td><a href="https://github.com/bertdv/AIP-5SSB0/raw/master/lessons/notebooks/MKoudahl-March2020-What-is-life.pdf?dl=0">M1</a></td>
          </tr>
       </table>
 
@@ -207,4 +207,4 @@ Please feel free to consult the following matrix and Gaussian cheat sheets (by S
 - **Prerequisites for this course**: Mathematical maturity equivalent to undergraduate engineering program.
 Scientific programming skills (e.g. in Python, MATLAB or [Julia](https://julialang.org)) are helpful.
 
-- [Here is a guide](https://github.com/bertdv/BMLIP/blob/master/lessons/notebooks/files/WKouw-Mar2020-JuliaJupyterInstallGuide.pdf?dl=1) to help you install Julia and Jupyter, so that you can open and run the course notebooks on your own machine.
+- [Here is a guide](https://github.com/bertdv/BMLIP/blob/master/lessons/notebooks/files/WKouw-Mar2020-JuliaJupyterInstallGuide.pdf?dl=0) to help you install Julia and Jupyter, so that you can open and run the course notebooks on your own machine.
