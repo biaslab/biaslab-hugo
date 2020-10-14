@@ -166,7 +166,7 @@ The [source files for the lecture notes are accessible at github](https://github
          <tr>
             <td>15-Jan-2020</td>
             <td>M1: Bonus Lecture: What is Life?</td>
-            <td><a href="https://github.com/bertdv/AIP-5SSB0/raw/master/lessons/notebooks/MKoudahl-March2020-What-is-life.pdf?dl=0">M1</a></td>
+            <td><a href="https://github.com/bertdv/BMLIP/raw/master/lessons/notebooks/MKoudahl-March2020-What-is-life.pdf?dl=0">M1</a></td>
          </tr>
       </table>
 
@@ -197,8 +197,8 @@ In preparation for the exam, we recommend that you work through the following ex
   - [Exercises (with solutions)](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises-with-Solutions.ipynb)
 
 Please feel free to consult the following matrix and Gaussian cheat sheets (by Sam Roweis) when doing the exercises.
-  - [Gaussian Identities](https://github.com/bertdv/AIP-5SSB0/raw/master/lessons/notebooks/files/RoweisS-gaussian_formulas.pdf?dl=0)
-  - [Matrix Identities](https://github.com/bertdv/AIP-5SSB0/raw/master/lessons/notebooks/files/RoweisS-matrix_identities.pdf?dl=0)
+  - [Gaussian Identities](https://github.com/bertdv/BMLIP/raw/master/lessons/notebooks/files/RoweisS-gaussian_formulas.pdf?dl=0)
+  - [Matrix Identities](https://github.com/bertdv/BMLIP/raw/master/lessons/notebooks/files/RoweisS-matrix_identities.pdf?dl=0)
 
 
 
