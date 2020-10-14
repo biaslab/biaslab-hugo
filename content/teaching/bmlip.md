@@ -60,7 +60,7 @@ Bishop](http://research.microsoft.com/en-us/um/people/cmbishop/index.htm) (2006)
 Machine
 Learning](https://www.microsoft.com/en-us/research/people/cmbishop/prml-book/). You can also buy a [hardcopy, e.g. at bol.com](https://tinyurl.com/thj7euq).
 2. [Ariel Caticha](https://www.albany.edu/physics/acaticha.shtml) (2012), [Entropic Inference and the Foundations of Physics](https://github.com/bertdv/BMLIP/blob/master/lessons/notebooks/files/Caticha-2012-Entropic-Inference-and-the-Foundations-of-Physics.pdf).
-3. Bert de Vries et al. (2020), [PDF bundle of lecture notes for lessons B0 through B12](/pdf/bmlip/BMLIP-5SSD0.pdf). 
+3. Bert de Vries et al. (2020), [PDF bundle of lecture notes for lessons B0 through B12, Ed. Q3-2019-2020](https://github.com/bertdv/BMLIP/blob/master/lessons/notebooks/files/5SSD0-Mar2020-Lecture-notes.pdf). 
     - The lecture notes may change a bit during the course, e.g., to process comments by students. A final PDF version will be posted after the last lecture.
 
 ### <a name="lectures">Lecture notes and videos</a>
@@ -166,27 +166,33 @@ The [source files for the lecture notes are accessible at github](https://github
          <tr>
             <td>15-Jan-2020</td>
             <td>M1: Bonus Lecture: What is Life?</td>
-            <td><a href="/pdf/bmlip/what_is_life.pdf">M1</a></td>
+            <td><a href="https://github.com/bertdv/AIP-5SSB0/raw/master/lessons/notebooks/MKoudahl-March2020-What-is-life.pdf">M1</a></td>
          </tr>
       </table>
 
 ##  
 
 
-## Oral Exam Guide
+## Exam Guide
 
-Each year there will be two exam opportunities. Check the official TUE course site for exam schedules.  In the Q2-2020 course, your performance will be assessed by an <span style="color:red;">ORAL EXAMINATION</span>, which (very likely) will take place in a video call. 
+Each year there will be two exam opportunities. Check the official TUE course site for exam schedules.  In the Q2-2020 course, your performance will be assessed by a <span style="color:red;">WRITTEN EXAMINATION</span>, which (very likely) will be offered both online (with proctoring software) and offline (on campus, if the situation allows it). 
 
-An exam session lasts about 30 minutes and will be recorded (and later deleted, following GDPR rules). At the beginning of the session, the examiner needs to check your identity, preferably by your campus card. 
+**You cannot bring notes or books to the exam. All needed formulas are supplied at the exam sheet**.
+
+<!--- An exam session lasts about 30 minutes and will be recorded (and later deleted, following GDPR rules). At the beginning of the session, the examiner needs to check your identity, preferably by your campus card. 
 
 The style of the examination is conversational. We like to engage in a conversation with you about what you learned in the class. In general, oral exams do not lend themselves well to proofing theorems or other deep mathematical manipulations. Instead, the focus is more on testing if you understand the conceptual ideas in this class. In principle, everything that has been presented in the lecture notes and videos is fair game as an exam question, including programming questions from the probabilistic programming sessions. 
 
 Please review the [Oral Exam Example notebook](https://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Oral-Exam-Example.ipynb (Links to an external site.)) to get an idea of what kind of questions will be asked.
 
 The first question of the exam will be an open question: "You get 5 minutes to tell me about what you learned in this class. You can fill in the 5 minutes as you like but try to impress me with your knowledge or insights. E.g., talk about probabilistic modelling, how it works, what are strong aspects or weak aspects of the approach, etc." After the first question, the rest of the exam will be focused at topics selected by the examiner. 
+--->
 
-### exercises
-Prior to 2020, this course was evaluated by a written exam. In an written exam, the focus is a bit more on computational skills than in an oral exam. Still, we recommend that you work through the following exercises to test your understanding of the materials:
+### Exercises
+
+<!--- Prior to 2020, this course was evaluated by a written exam. In an written exam, the focus is a bit more on computational skills than in an oral exam.--->
+In preparation for the exam, we recommend that you work through the following exercises to test your understanding of the materials:
+
   - [Exercises (without solutions)](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises.ipynb)
   - [Exercises (with solutions)](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises-with-Solutions.ipynb)
 
@@ -194,13 +200,11 @@ Please feel free to consult the following matrix and Gaussian cheat sheets (by S
   - [Gaussian Identities](https://github.com/bertdv/AIP-5SSB0/raw/master/lessons/notebooks/files/RoweisS-gaussian_formulas.pdf?dl=0)
   - [Matrix Identities](https://github.com/bertdv/AIP-5SSB0/raw/master/lessons/notebooks/files/RoweisS-matrix_identities.pdf?dl=0)
 
-<!---
-- Note however that **you cannot bring notes or books to the exam. All needed formulas are supplied at the exam sheet**.
---->
+
 
 ## Miscellany
 
 - **Prerequisites for this course**: Mathematical maturity equivalent to undergraduate engineering program.
 Scientific programming skills (e.g. in Python, MATLAB or [Julia](https://julialang.org)) are helpful.
 
-- [Here is a guide](/pdf/bmlip/INSTALL.pdf) to help you install Julia and Jupyter, so that you can open and run the course notebooks on your own machine.
+- [Here is a guide](https://github.com/bertdv/BMLIP/blob/master/lessons/notebooks/files/WKouw-Mar2020-JuliaJupyterInstallGuide.pdf?dl=1) to help you install Julia and Jupyter, so that you can open and run the course notebooks on your own machine.
