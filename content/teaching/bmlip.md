@@ -197,8 +197,8 @@ In preparation for the exam, we recommend that you work through the following ex
   - [Exercises (with solutions)](http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises-with-Solutions.ipynb)
 
 Please feel free to consult the following matrix and Gaussian cheat sheets (by Sam Roweis) when doing the exercises.
-  - [Gaussian Identities](https://github.com/bertdv/BMLIP/raw/master/lessons/notebooks/files/RoweisS-gaussian_formulas.pdf?dl=0)
-  - [Matrix Identities](https://github.com/bertdv/BMLIP/raw/master/lessons/notebooks/files/RoweisS-matrix_identities.pdf?dl=0)
+  - [Gaussian Identities](https://github.com/bertdv/BMLIP/raw/master/lessons/notebooks/files/Roweis-1999-gaussian-identities.pdf?dl=0)
+  - [Matrix Identities](https://github.com/bertdv/BMLIP/raw/master/lessons/notebooks/files/Roweis-1999-gaussian-identities.pdf?dl=0)
 
 
 
