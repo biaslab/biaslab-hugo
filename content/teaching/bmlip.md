@@ -202,7 +202,7 @@ In preparation for the exam, we recommend that you work through the following ex
 
 Please feel free to consult the following matrix and Gaussian cheat sheets (by Sam Roweis) when doing the exercises.
   - [Gaussian Identities](https://github.com/bertdv/BMLIP/raw/master/lessons/notebooks/files/Roweis-1999-gaussian-identities.pdf?dl=0)
-  - [Matrix Identities](https://github.com/bertdv/BMLIP/raw/master/lessons/notebooks/files/Roweis-1999-gaussian-identities.pdf?dl=0)
+  - [Matrix Identities](https://github.com/bertdv/BMLIP/raw/master/lessons/notebooks/files/Roweis-1999-matrix-identities.pdf?dl=0)
 
 
 
