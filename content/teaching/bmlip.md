@@ -70,11 +70,12 @@ Learning](https://www.microsoft.com/en-us/research/people/cmbishop/prml-book/). 
 3. Bert de Vries et al. (2020), [PDF bundle of lecture notes for lessons B0 through B12 (Ed. Q3-2019/20)](https://github.com/bertdv/BMLIP/blob/master/lessons/notebooks/files/5SSD0-Mar2020-Lecture-notes.pdf?dl=0). 
     - The lecture notes may change a bit during the course, e.g., to process comments by students. A final PDF version will be posted after the last lecture.
 4. Wouter Kouw (2020), [Julia and Jupyter Install Guide](https://github.com/bertdv/BMLIP/blob/master/lessons/notebooks/files/WKouw-Mar2020-JuliaJupyterInstallGuide.pdf?dl=0). 
-    - Use this guide if you need help you install [Julia](https://julialang.org) and [Jupyter](https://jupyter.org/), so that you can open and run the course notebooks on your own machine.
+    - Use this guide if you need help to install [Julia](https://julialang.org) and [Jupyter](https://jupyter.org/), so that you can open and run the course notebooks on your own machine.
+    - You can test your installation by running the notebook called "Probabilistic-Programming-0.ipynb", which can be downloaded from [github](https://github.com/bertdv/bmlip) (under `lessons/notebooks/probprog`).
 
 ### <a name="lectures">Lecture notes and videos</a>
 
-The [source files for the lecture notes are accessible at github](https://github.com/bertdv/bmlip). You can view all lecture notes online through the links below: 
+The [source files for the lecture notes are accessible on github](https://github.com/bertdv/bmlip). If you want to download them, click the green `Code` button and then `Download ZIP`. The theory lectures are under `lessons/notebooks` and the programming notebooks are under `lessons/notebooks/probprog`. Note that you don't have to download them, you can view all lecture notes online through the links below:
 
 <table border = "1">
          <tr>
@@ -108,7 +109,7 @@ The [source files for the lecture notes are accessible at github](https://github
             <td style="color:gray;">20-Nov-2020</td>
             <td style="color:gray;">W1: Probabilistic Programming 1 - Intro Bayesian ML</td>
             <td><a href=""></a></td>
-            <td><a href=""></a></td>
+            <td><a href="http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-1.ipynb">W1</a></td>
          </tr>
          <tr>
             <td >25-Nov-2020</td>
@@ -132,7 +133,7 @@ The [source files for the lecture notes are accessible at github](https://github
             <td style="color:gray;">04-Dec-2020</td>
             <td style="color:gray;">W2: ProbProg 2 - MP & Analytical Bayesian Solutions</td>
             <td><a href=""></a>
-            <td><a href=""></a>
+            <td><a href="http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-2.ipynb">W2</a></td>
          </tr>
          <tr>
             <td>09-Dec-2020</td>
@@ -150,7 +151,7 @@ The [source files for the lecture notes are accessible at github](https://github
             <td style="color:gray;">16-Dec-2020</td>
             <td style="color:gray;">W3: ProbProg 3 - Regression and Classification</td>
             <td><a href=""></a></td>
-            <td><a href=""></a></td>
+            <td><a href="http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-3.ipynb">W3</a></td>
          </tr>
          <tr>
             <td>18-Dec-2020</td>
@@ -177,7 +178,7 @@ The [source files for the lecture notes are accessible at github](https://github
             <td style="color:gray;">13-Jan-2020</td>
             <td style="color:gray;">W4: ProbProg 4: Latent Variable and Dynamic Models</td>
             <td><a href=""></a></td>
-            <td><a href=""></a></td>
+            <td><a href="http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-4.ipynb">W4</a></td>
          </tr>
          <tr>
             <td>15-Jan-2020</td>
