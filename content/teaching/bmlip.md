@@ -80,10 +80,12 @@ The [source files for the lecture notes are accessible at github](https://github
          <tr>
             <th rowspan = "2"; style="text-align:center">Date</th>
             <th rowspan = "2"; style="text-align:center">lesson</th>
-            <th colspan = "2"; style="text-align:center">materials</th>
+            <th colspan = "3"; style="text-align:center">materials</th>
          </tr>
          <tr>
-            <th style="text-align:center">video guides</th><th style="text-align:center">lecture notes</th>
+            <th style="text-align:center">video guides</th>
+            <th style="text-align:center">lecture notes</th>
+            <th style="text-align:center">live class recordings</th>
          </tr>
          <tr>
             <td>11-Nov-2020</td>
@@ -91,6 +93,7 @@ The [source files for the lecture notes are accessible at github](https://github
             B1: Machine Learning Overview</td>
             <td><a href="https://youtu.be/pvDZWAJ9YMM">B1</a></td>
             <td><a href="http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Course-Outline-and-Admin-Issues.ipynb">B0</a>, <a href="http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Machine-Learning-Overview.ipynb">B1</a></td>
+            <td><a href="https://youtu.be/B5Spow5Flrs">B0</a></td>
          </tr>
          <tr>
             <td>13-Nov-2020</td>
