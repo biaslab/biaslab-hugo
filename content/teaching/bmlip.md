@@ -101,6 +101,7 @@ The [source files for the lecture notes are accessible on github](https://github
             <td>B2: Probability Theory Review</td>
             <td><a href="https://youtu.be/uaKD8mZZnO8">B2.1</a>, <a href="https://youtu.be/YqXkSb8updg">B2.2</a></td>
             <td><a href="http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Probability-Theory-Review.ipynb">B2</a></td>
+            <td><a href="https://youtu.be/eYB3yFA2wUs">B2</a></td>
          </tr>
          <tr>
             <td>18-Nov-2020</td>
