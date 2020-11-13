@@ -71,7 +71,7 @@ Learning](https://www.microsoft.com/en-us/research/people/cmbishop/prml-book/). 
     - The lecture notes may change a bit during the course, e.g., to process comments by students. A final PDF version will be posted after the last lecture.
 4. Wouter Kouw (2020), [Julia and Jupyter Install Guide](https://github.com/bertdv/BMLIP/blob/master/lessons/notebooks/files/WKouw-Mar2020-JuliaJupyterInstallGuide.pdf?dl=0). 
     - Use this guide if you need help to install [Julia](https://julialang.org) and [Jupyter](https://jupyter.org/), so that you can open and run the course notebooks on your own machine.
-    - You can test your installation by running the notebook called "Probabilistic-Programming-0.ipynb", which can be downloaded from [github](https://github.com/bertdv/bmlip) (under `lessons/notebooks/probprog`).
+    - You can test your installation by running the notebook called "Probabilistic-Programming-0.ipynb", which can be downloaded from [github](https://github.com/bertdv/bmlip) (under `lessons/notebooks/probprog`). [Here](https://www.youtube.com/watch?v=BWGTudg3xlI) is a video with step-by-step instructions on opening course notebooks.
 
 ### <a name="lectures">Lecture notes and videos</a>
 
@@ -111,7 +111,7 @@ The [source files for the lecture notes are accessible on github](https://github
          <tr>
             <td style="color:gray;">20-Nov-2020</td>
             <td style="color:gray;">W1: Probabilistic Programming 1 - Intro Bayesian ML</td>
-            <td><a href=""></a></td>
+            <td><a href="https://www.youtube.com/watch?v=2F39JxEOM0Q">W1.1</a>, <a href="https://www.youtube.com/watch?v=OoKPEteSEiA">W1.2</a>,  <a href="https://www.youtube.com/watch?v=JIY0FMd9JoE">W1.3</a></td>
             <td><a href="http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-1.ipynb">W1</a></td>
          </tr>
          <tr>
