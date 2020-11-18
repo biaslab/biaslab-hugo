@@ -108,6 +108,7 @@ The [source files for the lecture notes are accessible on github](https://github
             <td>B3: Bayesian Machine Learning</td>
             <td><a href="https://youtu.be/fw1lS0XsHrI">B3.1</a>, <a href="https://youtu.be/W5PlzDADdxE">B3.2</a></td>
             <td><a href="http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Bayesian-Machine-Learning.ipynb">B3</a></td>
+            <td><a href="https://youtu.be/SE6STt-Y8MY">B3</a></td>
          </tr>
          <tr>
             <td style="color:gray;">20-Nov-2020</td>
