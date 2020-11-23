@@ -115,6 +115,7 @@ The [source files for the lecture notes are accessible on github](https://github
             <td style="color:gray;">W1: Probabilistic Programming 1 - Intro Bayesian ML</td>
             <td><a href="https://www.youtube.com/watch?v=2F39JxEOM0Q">W1.1</a>, <a href="https://www.youtube.com/watch?v=OoKPEteSEiA">W1.2</a>,  <a href="https://www.youtube.com/watch?v=JIY0FMd9JoE">W1.3</a></td>
             <td><a href="http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-1.ipynb">W1</a></td>
+            <td><a href="https://www.youtube.com/watch?v=CRsDGLTAS04">W1</a></td>
          </tr>
          <tr>
             <td >25-Nov-2020</td>
