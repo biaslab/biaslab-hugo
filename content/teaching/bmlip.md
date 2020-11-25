@@ -122,6 +122,7 @@ The [source files for the lecture notes are accessible on github](https://github
             <td >B4: Factor Graphs and the Sum-Product Algorithm</td>
             <td><a href="https://youtu.be/YaYJpoi9Iy0">B4</a></td>
             <td><a href="http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Factor-Graphs.ipynb">B4</a></td>
+            <td><a href="https://youtu.be/r3F3pGIzGyE">B4</a></td>
          </tr>
          <tr>
             <td>27-Nov-2020</td>
