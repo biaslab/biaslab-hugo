@@ -140,7 +140,7 @@ The [source files for the lecture notes are accessible on github](https://github
          <tr>
             <td style="color:gray;">04-Dec-2020</td>
             <td style="color:gray;">W2: ProbProg 2 - MP & Analytical Bayesian Solutions</td>
-            <td><a href=""></a>
+            <td><a href="https://www.youtube.com/watch?v=JV09zAZ99dk&t=24s">W2.1</a>, <a href="https://www.youtube.com/watch?v=bKgbNFouEiY&t=344s">W2.2</a>,  <a href="https://www.youtube.com/watch?v=xqWUKsfuUdk">W2.3</a></td>
             <td><a href="http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-2.ipynb">W2</a></td>
          </tr>
          <tr>
