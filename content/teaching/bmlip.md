@@ -129,6 +129,7 @@ The [source files for the lecture notes are accessible on github](https://github
             <td>B5: Continuous Data and the Gaussian Distribution</td>
             <td><a href="https://youtu.be/DwUX1OOZGfM">B5.1</a>, <a href="https://youtu.be/h6y0vZnPI2s">B5.2</a>, <a href="https://youtu.be/yP1_gPso5Xg">B5.3</a></td>
             <td><a href="http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/The-Gaussian-Distribution.ipynb">B5</a></td>
+            <td><a href="https://youtu.be/NDy3z3iVDcw">B5</a></td>
          </tr>
          <tr>
             <td>02-Dec-2020</td>
