@@ -136,6 +136,7 @@ The [source files for the lecture notes are accessible on github](https://github
             <td>B6: Discrete Data and the Multinomial Distribution</td>
             <td><a href="https://youtu.be/70gVEt4AexA">B6</a></td>
             <td><a href="http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/The-Multinomial-Distribution.ipynb">B6</a></td>
+            <td><a href="https://youtu.be/cu9YE_kb420">B6</a>, <a href="https://youtu.be/eYQT8DeUghw">review B1-B6</a></td>
          </tr>
          <tr>
             <td style="color:gray;">04-Dec-2020</td>
