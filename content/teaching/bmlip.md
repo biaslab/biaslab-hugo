@@ -150,6 +150,7 @@ The [source files for the lecture notes are accessible on github](https://github
             <td>B7: Regression</td>
             <td><a href="https://youtu.be/XhZ7tSQS-ng">B7</a></td>
             <td><a href="http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Regression.ipynb">B7</a></td>
+            <td><a href="https://youtu.be/pap9troKaeM">B7</a></td>
          </tr>
          <tr>
             <td>11-Dec-2020</td>
