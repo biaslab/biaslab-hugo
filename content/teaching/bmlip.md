@@ -141,9 +141,9 @@ The [source files for the lecture notes are accessible on github](https://github
          <tr>
             <td style="color:gray;">04-Dec-2020</td>
             <td style="color:gray;">W2: ProbProg 2 - MP & Analytical Bayesian Solutions</td>
-            <td><a href="https://www.youtube.com/watch?v=JV09zAZ99dk&t=24s">W2.1</a>, <a href="https://www.youtube.com/watch?v=bKgbNFouEiY&t=344s">W2.2</a>,  <a href="https://www.youtube.com/watch?v=xqWUKsfuUdk">W2.3</a></td>
+            <td><a href="https://www.youtube.com/watch?v=JV09zAZ99dk">W2.1</a>, <a href="https://www.youtube.com/watch?v=bKgbNFouEiY">W2.2</a>,  <a href="https://www.youtube.com/watch?v=xqWUKsfuUdk">W2.3</a></td>
             <td><a href="http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-2.ipynb">W2</a></td>
-            <td><a href="https://www.youtube.com/watch?v=0-IjsJa-cH8&t=25s">W2</a></td>
+            <td><a href="https://www.youtube.com/watch?v=0-IjsJa-cH8">W2</a></td>
          </tr>
          <tr>
             <td>09-Dec-2020</td>
@@ -156,12 +156,13 @@ The [source files for the lecture notes are accessible on github](https://github
             <td>11-Dec-2020</td>
             <td>B8: Generative Classification <br/>B9: Discriminative Classification
             </td>
-            <td><a href="https://youtu.be/_gSZGWTx1xc">B8</a>, <a href="https://youtu.be/TpfqSf0wbBE">B9</a></td>            <td><a href="http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Generative-Classification.ipynb">B8</a>, <a href="http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Discriminative-Classification.ipynb">B9</a></td>
+            <td><a href="https://youtu.be/_gSZGWTx1xc">B8</a>, <a href="https://youtu.be/TpfqSf0wbBE">B9</a></td>
+            <td><a href="http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Generative-Classification.ipynb">B8</a>, <a href="http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Discriminative-Classification.ipynb">B9</a></td>
          </tr>
          <tr>
             <td style="color:gray;">16-Dec-2020</td>
             <td style="color:gray;">W3: ProbProg 3 - Regression and Classification</td>
-            <td><a href=""></a></td>
+            <td><a href="https://www.youtube.com/watch?v=tVWKgdZ2XHE">W3.1</a>, <a href="https://www.youtube.com/watch?v=Q4f6S503e5I">W3.2</a></td>
             <td><a href="http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-3.ipynb">W3</a></td>
          </tr>
          <tr>
