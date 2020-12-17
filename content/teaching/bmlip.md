@@ -164,6 +164,7 @@ The [source files for the lecture notes are accessible on github](https://github
             <td style="color:gray;">W3: ProbProg 3 - Regression and Classification</td>
             <td><a href="https://www.youtube.com/watch?v=yls2d3HMm28">W3.1</a>, <a href="https://www.youtube.com/watch?v=Q4f6S503e5I">W3.2</a></td>
             <td><a href="http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-3.ipynb">W3</a></td>
+            <td><a href="https://www.youtube.com/watch?v=sAU2zspDQU8">W3</a></td>
          </tr>
          <tr>
             <td>18-Dec-2020</td>
