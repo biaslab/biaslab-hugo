@@ -158,6 +158,7 @@ The [source files for the lecture notes are accessible on github](https://github
             </td>
             <td><a href="https://youtu.be/_gSZGWTx1xc">B8</a>, <a href="https://youtu.be/TpfqSf0wbBE">B9</a></td>
             <td><a href="http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Generative-Classification.ipynb">B8</a>, <a href="http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Discriminative-Classification.ipynb">B9</a></td>
+            <td><a href="https://youtu.be/4wjkUR3NvkU">B8-9</a></td>
          </tr>
          <tr>
             <td style="color:gray;">16-Dec-2020</td>
