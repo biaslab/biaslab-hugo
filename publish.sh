@@ -18,7 +18,7 @@ rm -f -r $BUILDPATH/public/*
 hugo -t academic-group
 
 cd $CHECKOUT
-
+rm -f -r $CHECKOUT/*
 cp -r $BUILDPATH/public/* $CHECKOUT/
 
 git add -A
