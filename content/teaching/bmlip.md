@@ -172,6 +172,7 @@ The [source files for the lecture notes are accessible on github](https://github
             <td>B10: Latent Variable Models and Variational Bayes</td>
             <td><a href="https://youtu.be/o7evWBxSiHo">B10</a></td>
             <td><a href="http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Latent-Variable-Models-and-VB.ipynb">B10</a></td>
+            <td><a href="https://youtu.be/YZ6WoaJFVfg">B10</a></td>
          </tr>
          <tr>
             <td colspan="4">break</td>
