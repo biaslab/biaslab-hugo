@@ -182,6 +182,7 @@ The [source files for the lecture notes are accessible on github](https://github
             <td>B11: Dynamic Models</td>
             <td><a href="https://youtu.be/-jMq9gl59pA">B11</a></td>
             <td><a href="http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Dynamic-Models.ipynb">B11</a></td>
+            <td><a href="https://youtu.be/S3t-LD0prQs">B11</a></td>
          </tr>
          <tr>
             <td>08-Jan-2020</td>
