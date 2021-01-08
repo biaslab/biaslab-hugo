@@ -189,6 +189,7 @@ The [source files for the lecture notes are accessible on github](https://github
             <td>B12: Intelligent Agents and Active Inference</td>
             <td><a href="https://youtu.be/Ln0aq11YBzQ">B12</a></td>
             <td><a href="http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Intelligent-Agents-and-Active-Inference.ipynb">B12</a></td>
+            <td><a href="https://youtu.be/FWYC8msl_yI">B12</a></td>
          </tr>
          <tr>
             <td style="color:gray;">13-Jan-2020</td>
