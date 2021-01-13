@@ -196,6 +196,7 @@ The [source files for the lecture notes are accessible on github](https://github
             <td style="color:gray;">W4: ProbProg 4: Latent Variable and Dynamic Models</td>
             <td><a href="https://youtu.be/UzUvkFMOlhk">W4.1</a>, <a href="https://youtu.be/47wGVzgS7Ys">W4.2</a></td>
             <td><a href="http://nbviewer.ipython.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-4.ipynb">W4</a></td>
+            <td><a href="https://youtu.be/Ik1N38sZCVs">PP4</a></td>
          </tr>
          <tr>
             <td>15-Jan-2021</td>
