@@ -203,6 +203,7 @@ The [source files for the lecture notes are accessible on github](https://github
             <td>M1: Bonus Lecture: What is Life?</td>
             <td><a href=""></a></td>
             <td><a href="https://github.com/bertdv/BMLIP/raw/master/lessons/notebooks/MKoudahl-March2020-What-is-life.pdf?dl=0">M1</a></td>
+            <td><a href="https://youtu.be/6X8ckt0l99o">M1</a></td>
          </tr>
       </table>
 
