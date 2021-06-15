@@ -6,7 +6,8 @@ name = "Mark Legters"
 portrait = "portraits/mark.jpg" 
 short_bio = "I am a MSc student at BIASlab, conducting my graduation project in collaboration with [Sorama](http://sorama.eu)." 
 title = "Mark Legters" 
-sort_position = 6 
+sort_position = 7
+external_link = "https://www.linkedin.com/in/marklegters/" 
 
 [[social]] 
     icon = "linkedin" 
