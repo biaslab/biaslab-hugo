@@ -16,9 +16,11 @@ url_slides = ""
 url_video = ""
 
 [[authors]]
-    name = "Ismail Senoz"
     id = "ismail"
 [[authors]]
-    name = "Bert de Vries"
+    id = "thijs"
+[[authors]]
+    id = "bvdmitri"
+[[authors]]
     id = "bert"
 +++
