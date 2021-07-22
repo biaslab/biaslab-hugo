@@ -2,17 +2,24 @@
 date = "2021-05-22T14:45:00+02:00"
 external_link = ""
 project_id = "football"
-picture = "projects/football/soccer.jpg"
-description = "In order to assess the feasibility of active inference as a framework for synthetic agents in a real-world setting, we developed a ground-based robot that needs to learn to navigate to an undisclosed parking location. The robot can only learn where to park through situated interactions with a human observer who is aware of the target location."
-short_description = "In order to assess the feasibility of active inference as a framework for synthetic agents in a real-world setting, we developed a ground-based robot that needs to learn to navigate to an undisclosed parking location. The robot can only learn where to park through situated interactions with a human observer who is aware of the target location."
+picture = "projects/football/cover_soccer.png"
+description = "The goal of this project was to build an assistive tool that could help Football coaches to simulate the actions of an “optimally behaving” defensive team. We developed a cost function that optimizes both Pitch Control and Pass Interceptions for the defensive team."
 title = "Simulating Football Players’ Decision-Making Process"
 participants_block_position = "down"
 sort_position = 1
 
 [[participants]]
-    name = "Thijn Hermsen"
     id = "thijn"
     position = 1
+[[participants]]
+    id = "wouter"
+    position = 2
+[[participants]]
+    id = "bert"
+    position = 3
+[[participants]]
+    id = "wim"
+    position = 4
 +++
 
 ## Problem Statement
