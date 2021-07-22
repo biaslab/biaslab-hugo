@@ -4,6 +4,8 @@ id = "wim"
 name = "Wim Nuijten"
 title = "Wim Nuijten"
 sort_position = 9
-is_former_member = true
+is_former_member = false
+external_member = true
+hidden_member = true
 external_link = "https://www.tue.nl/en/research/researchers/wim-nuijten/"
 +++
