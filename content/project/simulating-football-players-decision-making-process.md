@@ -2,7 +2,7 @@
 date = "2021-05-22T14:45:00+02:00"
 external_link = ""
 project_id = "football"
-picture = "projects/football/cover_soccer.png"
+picture = "projects/football/cover_soccer_square.jpg"
 description = "The goal of this project was to build an assistive tool that could help Football coaches to simulate the actions of an “optimally behaving” defensive team. We developed a cost function that optimizes both Pitch Control and Pass Interceptions for the defensive team."
 title = "Simulating Football Players’ Decision-Making Process"
 participants_block_position = "down"
@@ -19,6 +19,9 @@ sort_position = 1
     position = 3
 [[participants]]
     id = "wim"
+    name = "Wim Nuijten"
+    external_link = "https://www.tue.nl/en/research/researchers/wim-nuijten/"
+    external_member = true
     position = 4
 +++
 
