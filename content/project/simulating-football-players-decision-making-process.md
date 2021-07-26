@@ -45,7 +45,7 @@ We opted for two main objectives:
 1.	Neutralizing the opponent’s pitch control, i.e., neutralizing the zonal control of attackers on the pitch.
 2.	Decreasing the opponent’s chances for successful passes by limiting the passing options that opponents have.
 
-We uses the Pitch Control [[2](#references)] and Pass Probability [[3](#references)] models from the literature and associated the state of both models with a scalar cost to score the positioning of the defensive team. Visualizations of these costs are shown in Figs. 1 and 2.
+We used the Pitch Control [[2](#references)] and Pass Probability [[3](#references)] models from the literature and associated the state of both models with a scalar cost to score the positioning of the defensive team. Visualizations of these costs are shown in Figs. 1 and 2.
 
 {{< figure src="/img/projects/football/soccer.jpg" title="Visualization of the Pitch Control model. The green color expresses the zonal control of the attacking team, where the orange color expresses the zonal control of the defending team." width="400px" >}}
 {{< figure src="/img/projects/football/pass_prob.png" title="Visualization of the Pass Probability model. Green is most likely a clear pass-line, where red is most likely a blocked pass-line by the defenders." width="400px" >}}
