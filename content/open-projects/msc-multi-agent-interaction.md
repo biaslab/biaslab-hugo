@@ -1,8 +1,8 @@
 +++
-title = "MSc graduation project: Intelligent behavior through cooperating agents"
+title = "MSc graduation project: intelligent behavior through cooperating agents"
 date = "2020-05-07T08:50:58+02:00"
 
-description = "In this project you will study how two active inference agents can cooperate to solve a task."
+description = "In this project you will study how two active inference agents can communicate and cooperate to solve a task."
 external_link = ""
 vacancy_id = "multi-agent-interaction"
 +++

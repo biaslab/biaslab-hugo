@@ -1,5 +1,5 @@
 +++
-title = "MSc graduation project: System identification with Bayesian machine learning"
+title = "MSc graduation project: system identification with Bayesian machine learning"
 date = "2019-09-19T08:50:58+02:00"
 
 description = "In this project you will develop an agent to infer the dynamical parameters of an electro-mechanical positioning system."
