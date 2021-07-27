@@ -11,10 +11,10 @@ selected = false
 title = "Application of the Free Energy Principle to Estimation and Control"
 url_code = ""
 url_dataset = ""
-url_pdf = "https://arxiv.org/abs/1910.09823"
+url_pdf = "https://ieeexplore.ieee.org/document/9478190"
 url_project = ""
 url_slides = ""
-url_video = ""
+url_video = "https://www.youtube.com/watch?v=iLoXS_JgHKA"
 
 [[authors]]
     name = "Thijs van de Laar"
