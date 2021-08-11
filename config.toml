@@ -22,7 +22,7 @@ tag = "tags"
 [params]
   description = "Website of research group"
   author = "BIASlab"
-  email = "info<at>biaslab.org"
+  email = "bert.de.vries@tue.nl"
   youtube = "https://www.youtube.com/channel/UCd1ftkOXIQ8MstIHosEDdaw/"
   address = '<a href="https://www.google.nl/maps/place/Flux/@51.4477301,5.4899384,17z/data=!3m1!4b1!4m13!1m7!3m6!1s0x47c6d8e732a9a3c3:0x5b7b2b4ec811981c!2sFlux!3b1!8m2!3d51.4477268!4d5.4921271!3m4!1s0x47c6d8e732a9a3c3:0x5b7b2b4ec811981c!8m2!3d51.4477268!4d5.4921271">Flux building 7.060, Groene Loper 19, 5612 AP Eindhoven, the Netherlands</a>'
   slogan = "BIAS<b>LAB</b>"

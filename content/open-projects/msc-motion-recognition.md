@@ -12,7 +12,7 @@ vacancy_id = "motion-recognition"
 
 {{< figure src="/img/biaslab-logo.png" title="BIASlab logo" class="right-inline" width="200px" >}}
 
-**BIASlab** (Fig.1, <http://biaslab.org>, FLUX-7.060) is
+**BIASlab** (Fig.1, <http://biaslab.github.io>, FLUX-7.060) is
 a subgroup of the Signal Processing Systems (SPS) that aims to develop
 **Intelligent Autonomous Agents** (IA). These agents interact with their
 environment through their sensors and actuators in order to learn
