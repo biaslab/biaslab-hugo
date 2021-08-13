@@ -59,8 +59,9 @@ To demonstrate the method, we performed simulations in which we try to estimate 
 The grey curve depics the 'true' hearing threshold curve and the grey area covers 2 standard deviations of the user's response noise. The green plusses and red crosses represent test tones that were labelled as either audible (green) or non-audible (red). The blue line is the HT estimate based on the data so far, and the blue area depics 2 standard deviations of the estimate uncertainty. The rate of convergence obviously depends on the amount of noise in the response model. However, the method is robust in the sense that if the response model is sufficiently accurate, it will converge to the true hearing threshold curve in a minimum number of steps.
 
 
-### Reference
+### References
 
-More details on this project are available in the following paper:
+More details on this project are available in the following papers:
 
-Marco Cox and Bert de Vries, _A Bayesian Binary Classification Approach to Pure-tone Audiometry_, http://arxiv.org/abs/1511.08670, 2015
+- Marco Cox and Bert de Vries, _A Bayesian Binary Classification Approach to Pure-tone Audiometry_, http://arxiv.org/abs/1511.08670, 2015
+- Marco Cox and Bert de Vries, [_Bayesian Pure-Tone Audiometry Through Active Learning Under Informed Priors_](https://www.frontiersin.org/articles/10.3389/fdgth.2021.723348/full), Frontiers in Digital Health, 2021
