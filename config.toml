@@ -163,6 +163,12 @@ tag = "tags"
     weight = 2
 
   [[menu.main]]
+    name = "ReactiveMP.jl"
+    url = "https://biaslab.github.io/ReactiveMP.jl/stable"
+    parent = "software"
+    weight = 2
+
+  [[menu.main]]
     name = "Join us"
     url = "#open-projects"
     weight = 6
