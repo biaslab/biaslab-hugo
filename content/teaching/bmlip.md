@@ -262,7 +262,7 @@ Each year there will be two written exam opportunities. **You cannot bring notes
 
 ### Preparation
 In addition to the materials in the above table, we provide two representative practice written exams:
-- <span style="color:red;"> Under Construction:</span> exam 1
+- <span style="color:red;"> Under Construction:</span> 2020-01-18: <a href="https://github.com/bertdv/BMLIP/raw/master/exams/20210128-5SSD0-exam-A.pdf?dl=0">exam A</a>, <a href="https://github.com/bertdv/BMLIP/raw/master/exams/20210128-5SSD0-solutions-A.pdf?dl=0">solutions A</a>
 - <span style="color:red;"> Under Construction:</span> exam 2
 
 ### Grading
