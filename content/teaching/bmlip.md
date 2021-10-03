@@ -262,8 +262,8 @@ Each year there will be two written exam opportunities. **You cannot bring notes
 
 ### Preparation
 In addition to the materials in the above table, we provide two representative practice written exams:
-- <span style="color:red;"> Under Construction:</span> 2020-01-18: <a href="https://github.com/bertdv/BMLIP/raw/master/exams/20210128-5SSD0-exam-A.pdf?dl=0">exam A</a>, <a href="https://github.com/bertdv/BMLIP/raw/master/exams/20210128-5SSD0-solutions-A.pdf?dl=0">solutions A</a>
-- <span style="color:red;"> Under Construction:</span> exam 2
+- 2021-01-18: <a href="https://github.com/bertdv/BMLIP/raw/master/exams/20210128-5SSD0-exam-A.pdf?dl=0">exam A</a>, <a href="https://github.com/bertdv/BMLIP/raw/master/exams/20210128-5SSD0-solutions-A.pdf?dl=0">solutions A</a>; <a href="https://github.com/bertdv/BMLIP/raw/master/exams/20210128-5SSD0-exam-B.pdf?dl=0">exam B</a>, <a href="https://github.com/bertdv/BMLIP/raw/master/exams/20210128-5SSD0-solutions-B.pdf?dl=0">solutions B</a>
+- 2021-04-15: <a href="https://github.com/bertdv/BMLIP/raw/master/exams/20210415-5SSD0-exam.pdf?dl=0">exam</a>, <a href="https://github.com/bertdv/BMLIP/raw/master/exams/20210415-5SSD0-solutions.pdf?dl=0">solutions</a>
 
 ### Grading
 
