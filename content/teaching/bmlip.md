@@ -138,7 +138,7 @@ You can access all lecture notes, videos and exercises online through the links 
             <td><a href="https://youtu.be/YaYJpoi9Iy0">B4</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Factor-Graphs.ipynb">B4</a></td>
             <td><a href="https://youtu.be/r3F3pGIzGyE">B4</a></td>
-            <td></td>
+             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises-Factor-Graphs.ipynb">B4-ex</a><br/> <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Solutions-Factor-Graphs.ipynb">B4-sol</a></td>
          </tr>
          <tr>
             <td>03-Dec-2021</td>
