@@ -70,14 +70,15 @@ In principle, you can download all needed materials from the links below.
 
 Please download the following books/resources:
 
-1. [Christopher M.
+- <span style="color:red;"> Under Construction:</span> Bert de Vries et al. (2020), [PDF bundle of lecture notes for lessons B0 through B12 (Ed. Q3-2019/20)](https://github.com/bertdv/BMLIP/blob/master/lessons/notebooks/files/5SSD0-Mar2020-Lecture-notes.pdf?dl=0). 
+    - The lecture notes may change a bit during the course, e.g., to process comments by students. A final PDF version will be posted after the last lecture.
+- [Christopher M.
 Bishop](http://research.microsoft.com/en-us/um/people/cmbishop/index.htm) (2006), [Pattern Recognition and
 Machine
 Learning](https://www.microsoft.com/en-us/research/people/cmbishop/prml-book/). You can also buy a [hardcopy, e.g. at bol.com](https://tinyurl.com/thj7euq).
-2. [Ariel Caticha](https://www.albany.edu/physics/acaticha.shtml) (2012), [Entropic Inference and the Foundations of Physics](https://github.com/bertdv/BMLIP/blob/master/lessons/notebooks/files/Caticha-2012-Entropic-Inference-and-the-Foundations-of-Physics.pdf).
-3. <span style="color:red;"> Under Construction:</span> Bert de Vries et al. (2020), [PDF bundle of lecture notes for lessons B0 through B12 (Ed. Q3-2019/20)](https://github.com/bertdv/BMLIP/blob/master/lessons/notebooks/files/5SSD0-Mar2020-Lecture-notes.pdf?dl=0). 
-    - The lecture notes may change a bit during the course, e.g., to process comments by students. A final PDF version will be posted after the last lecture.
-4. <span style="color:red;"> Under Construction:</span> Wouter Kouw (2020), [Julia and Jupyter Install Guide](https://github.com/bertdv/BMLIP/blob/master/lessons/notebooks/files/WKouw-Mar2020-JuliaJupyterInstallGuide.pdf?dl=0). 
+- [Ariel Caticha](https://www.albany.edu/physics/acaticha.shtml) (2012), [Entropic Inference and the Foundations of Physics](https://github.com/bertdv/BMLIP/blob/master/lessons/notebooks/files/Caticha-2012-Entropic-Inference-and-the-Foundations-of-Physics.pdf).
+
+- <span style="color:red;"> Under Construction:</span> Wouter Kouw (2020), [Julia and Jupyter Install Guide](https://github.com/bertdv/BMLIP/blob/master/lessons/notebooks/files/WKouw-Mar2020-JuliaJupyterInstallGuide.pdf?dl=0). 
     - Use this guide if you need help to install [Julia](https://julialang.org) and [Jupyter](https://jupyter.org/), so that you can open and run the course notebooks on your own machine.
     - You can test your installation by running the notebook called "Probabilistic-Programming-0.ipynb", which can be downloaded from [github](https://github.com/bertdv/bmlip) (under `lessons/notebooks/probprog`). [Here](https://www.youtube.com/watch?v=BWGTudg3xlI) is a video with step-by-step instructions on opening course notebooks.
 
@@ -101,10 +102,10 @@ You can access all lecture notes, videos and exercises online through the links 
          </tr>
          <tr>
             <td>17-Nov-2021</td>
-            <td>B0: Course Syllabus and Administrative Issues <br/>
+            <td>B0: Course Syllabus<br/>
             B1: Machine Learning Overview</td>
             <td><a href="https://youtu.be/pvDZWAJ9YMM">B1</a></td>
-            <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Course-Outline-and-Admin-Issues.ipynb">B0</a>, <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Machine-Learning-Overview.ipynb">B1</a></td>
+            <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Course-Syllabus.ipynb">B0</a>, <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Machine-Learning-Overview.ipynb">B1</a></td>
             <td><a href="https://youtu.be/B5Spow5Flrs">B0</a></td>
             <td></td>
          </tr>
@@ -243,24 +244,20 @@ You can access all lecture notes, videos and exercises online through the links 
       </table>
 
 
-Furthermore, Q&A for each lesson can  be accessed at the [Piazza course site](https://piazza.com/class/ku2o9c3f71a4px).
+- Furthermore, Q&A for each lesson can  be accessed at the [Piazza course site](https://piazza.com/class/ku2o9c3f71a4px).
+- When you do the exercises, feel free to consult the following matrix and Gaussian cheat sheets (by Sam Roweis) when doing the exercises.
+  - [Gaussian Identities](https://github.com/bertdv/BMLIP/raw/master/lessons/notebooks/files/Roweis-1999-gaussian-identities.pdf?dl=0)
+  - [Matrix Identities](https://github.com/bertdv/BMLIP/raw/master/lessons/notebooks/files/Roweis-1999-matrix-identities.pdf?dl=0)
 
-## Class logistics 
 
-Here's our recommendation on how to study for this class. Before each lecture:
-  - first watch the video guide for that lecture (2nd column in above table)
-  - then study the lecture notes (3rd column)
-  - then (optionally), watch the live class recording from the previous (2020/21) edition (in 4th colum)
-  - then try to make the exercises (5th column) for that class. Feel free to use this <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/cheatsheet.ipynb">cheatsheet</a> to make the exercises.
-  - If you have any remaining issues or questions, please pose your question in piazza. Your questions will be answered at the piazza site by fellow students and accorded (or corrected, amended) by the teaching staff.  
 
-The live classes in this edition of 5SSD0 are (optional) flipped classroom-style Q&A sessions, where we discuss any issues in person. This year the live class sessions are not recorded so you will not be able to view them later. We do not intend to present new materials in the live classes, so in principle, the materials in the above table should suffice as preparation for the written exam.    
+## Study Guide
 
-## Exam Guide
+- Please consult the <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Course-Syllabus.ipynb">Course Syllabus</a> (lecture notes for 1st class) for advice on how to study the materials.
 
-Each year there will be two written exam opportunities. **You cannot bring notes or books to the written exam sessions. All needed formulas are supplied at the exam sheet**.
+- Each year there will be two written exam opportunities. **You cannot bring notes or books to the written exam sessions. All needed formulas are supplied at the exam sheet**.
 
-### Preparation
+### Exam Preparation
 In addition to the materials in the above table, we provide two representative practice written exams:
 - 2021-01-18: <a href="https://github.com/bertdv/BMLIP/raw/master/exams/20210128-5SSD0-exam-A.pdf?dl=0">exam A</a>, <a href="https://github.com/bertdv/BMLIP/raw/master/exams/20210128-5SSD0-solutions-A.pdf?dl=0">solutions A</a>; <a href="https://github.com/bertdv/BMLIP/raw/master/exams/20210128-5SSD0-exam-B.pdf?dl=0">exam B</a>, <a href="https://github.com/bertdv/BMLIP/raw/master/exams/20210128-5SSD0-solutions-B.pdf?dl=0">solutions B</a>
 - 2021-04-15: <a href="https://github.com/bertdv/BMLIP/raw/master/exams/20210415-5SSD0-exam.pdf?dl=0">exam</a>, <a href="https://github.com/bertdv/BMLIP/raw/master/exams/20210415-5SSD0-solutions.pdf?dl=0">solutions</a>
@@ -283,6 +280,16 @@ Please feel free to consult the following matrix and Gaussian cheat sheets (by S
   - [Gaussian Identities](https://github.com/bertdv/BMLIP/raw/master/lessons/notebooks/files/Roweis-1999-gaussian-identities.pdf?dl=0)
   - [Matrix Identities](https://github.com/bertdv/BMLIP/raw/master/lessons/notebooks/files/Roweis-1999-matrix-identities.pdf?dl=0)
 
+## Class logistics 
+
+Here's our recommendation on how to study for this class. Before each lecture:
+  - first watch the video guide for that lecture (2nd column in above table)
+  - then study the lecture notes (3rd column)
+  - then (optionally), watch the live class recording from the previous (2020/21) edition (in 4th colum)
+  - then try to make the exercises (5th column) for that class. Feel free to use this <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/cheatsheet.ipynb">cheatsheet</a> to make the exercises.
+  - If you have any remaining issues or questions, please pose your question in piazza. Your questions will be answered at the piazza site by fellow students and accorded (or corrected, amended) by the teaching staff.  
+
+The live classes in this edition of 5SSD0 are (optional) flipped classroom-style Q&A sessions, where we discuss any issues in person. This year the live class sessions are not recorded so you will not be able to view them later. We do not intend to present new materials in the live classes, so in principle, the materials in the above table should suffice as preparation for the written exam.    
 --->
 
 <!--- An exam session lasts about 30 minutes and will be recorded (and later deleted, following GDPR rules). At the beginning of the session, the examiner needs to check your identity, preferably by your campus card. 
