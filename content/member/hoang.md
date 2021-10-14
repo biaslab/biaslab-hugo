@@ -33,4 +33,4 @@ name = "TU Eindhoven"
 role = "PhD candidate"
 
 +++ 
-Hoang Minh Huu Nguyen is a PhD candidate in the SPS group of the Electrical Engineering department in Eindhoven University of Technology. His research focuses on developing usable synthetic active inference agents through development of scalable real-time Bayesian inference.
+Hoang Minh Huu Nguyen is a PhD candidate in the SPS group of the Electrical Engineering department at the Eindhoven University of Technology. His research focuses on developing usable synthetic active inference agents through the development of scalable real-time Bayesian inference..
