@@ -7,6 +7,7 @@ portrait = "portraits/Thijn.jpg"
 short_bio = "I am a MSc student at the SPS group at Eindhoven University of Technology working on Generative modeling in football player's decisions." 
 title = "Thijn Hermsen" 
 sort_position = 6
+external_link = "https://www.linkedin.com/in/thijn-hermsen-electrical-engineering/"
 
 [[social]] 
     icon = "envelope" 
