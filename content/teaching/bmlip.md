@@ -78,9 +78,10 @@ Machine
 Learning](https://www.microsoft.com/en-us/research/people/cmbishop/prml-book/). You can also buy a [hardcopy, e.g. at bol.com](https://tinyurl.com/thj7euq).
 - [Ariel Caticha](https://www.albany.edu/physics/acaticha.shtml) (2012), [Entropic Inference and the Foundations of Physics](https://github.com/bertdv/BMLIP/blob/master/lessons/notebooks/files/Caticha-2012-Entropic-Inference-and-the-Foundations-of-Physics.pdf).
 
-- <span style="color:red;"> Under Construction:</span> Wouter Kouw (2020), [Julia and Jupyter Install Guide](https://github.com/bertdv/BMLIP/blob/master/lessons/notebooks/files/WKouw-Mar2020-JuliaJupyterInstallGuide.pdf?dl=0). 
-    - Use this guide if you need help to install [Julia](https://julialang.org) and [Jupyter](https://jupyter.org/), so that you can open and run the course notebooks on your own machine.
-    - You can test your installation by running the notebook called "Probabilistic-Programming-0.ipynb", which can be downloaded from [github](https://github.com/bertdv/bmlip) (under `lessons/notebooks/probprog`). [Here](https://www.youtube.com/watch?v=BWGTudg3xlI) is a video with step-by-step instructions on opening course notebooks.
+### Software
+
+- The [software installation guide](https://github.com/bertdv/BMLIP/blob/master/lessons/notebooks/files/BMLIP-installation-guide.pdf) contains step-by-step instructions to setup everything you need to run the course notebooks yourself.  
+- You can test your installation by running the notebook called "Probabilistic-Programming-0.ipynb", which can be found in the course materials repo ([github](https://github.com/bertdv/bmlip)) under `lessons/notebooks/probprog`. 
 
 ### <a name="lectures">Lecture notes, videos and exercises</a>
 
@@ -222,7 +223,7 @@ You can access all lecture notes, videos and exercises online through the links 
             <td style="color:gray;">W4: ProbProg 4: Latent Variable and Dynamic Models</td>
             <td><a href="https://youtu.be/UzUvkFMOlhk">W4.1</a>, <a href="https://youtu.be/47wGVzgS7Ys">W4.2</a>, <a href="https://youtu.be/ArHXwRLvhN8">W4.3</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-4.ipynb">W4</a></td>
-            <td><a href="https://youtu.be/Ik1N38sZCVs">PP4</a></td>
+            <td><a href="https://youtu.be/Ik1N38sZCVs">W4</a></td>
             <td></td>
          </tr>
          <tr>
