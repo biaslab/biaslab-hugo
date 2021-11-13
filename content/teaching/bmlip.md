@@ -29,11 +29,11 @@ type = "teaching"
 
 +++
 
-
+<!---
 <h2 style="color:red;">
 Note: This site is currently under construction.
 </h2>
-
+--->
 
 The 2021/22 course "Bayesian Machine Learning and Information Processing" will start in November 2021 (Q2).  
 
@@ -68,10 +68,9 @@ In principle, you can download all needed materials from the links below.
 
 ### Books
 
-Please download the following books/resources:
+Please consider downloading the following books/resources:
 
-- <span style="color:red;"> Under Construction:</span> Bert de Vries et al. (2020), [PDF bundle of lecture notes for lessons B0 through B12 (Ed. Q3-2019/20)](https://github.com/bertdv/BMLIP/blob/master/lessons/notebooks/files/5SSD0-Mar2020-Lecture-notes.pdf?dl=0). 
-    - The lecture notes may change a bit during the course, e.g., to process comments by students. A final PDF version will be posted after the last lecture.
+- Bert de Vries et al. (2020), [PDF bundle of lecture notes for lessons B0 through B12](https://github.com/bertdv/BMLIP/blob/master/output/BMLIP-5SSD0-lecture-notes.pdf). 
 - [Christopher M.
 Bishop](http://research.microsoft.com/en-us/um/people/cmbishop/index.htm) (2006), [Pattern Recognition and
 Machine
@@ -81,7 +80,7 @@ Learning](https://www.microsoft.com/en-us/research/people/cmbishop/prml-book/). 
 ### Software
 
 - The [software installation guide](https://github.com/bertdv/BMLIP/blob/master/lessons/notebooks/files/BMLIP-installation-guide.pdf) contains step-by-step instructions to setup everything you need to run the course notebooks yourself.  
-- You can test your installation by running the notebook called "Probabilistic-Programming-0.ipynb", which can be found in the course materials repo ([github](https://github.com/bertdv/bmlip)) under `lessons/notebooks/probprog`. 
+- You can test your installation by running the notebook called [Probabilistic-Programming-0.ipynb](https://github.com/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-0.ipynb) which can be found in the ([github](https://github.com/bertdv/bmlip)) repo under `lessons/notebooks/probprog`. 
 
 ### <a name="lectures">Lecture notes, videos and exercises</a>
 
@@ -263,11 +262,13 @@ In addition to the materials in the above table, we provide two representative p
 - 2021-01-18: <a href="https://github.com/bertdv/BMLIP/raw/master/exams/20210128-5SSD0-exam-A.pdf?dl=0">exam A</a>, <a href="https://github.com/bertdv/BMLIP/raw/master/exams/20210128-5SSD0-solutions-A.pdf?dl=0">solutions A</a>; <a href="https://github.com/bertdv/BMLIP/raw/master/exams/20210128-5SSD0-exam-B.pdf?dl=0">exam B</a>, <a href="https://github.com/bertdv/BMLIP/raw/master/exams/20210128-5SSD0-solutions-B.pdf?dl=0">solutions B</a>
 - 2021-04-15: <a href="https://github.com/bertdv/BMLIP/raw/master/exams/20210415-5SSD0-exam.pdf?dl=0">exam</a>, <a href="https://github.com/bertdv/BMLIP/raw/master/exams/20210415-5SSD0-solutions.pdf?dl=0">solutions</a>
 
+
+<!---
 ### Grading
 
 <span style="color:red;"> Under Construction:</span>
 
-<!---
+
 ### Exercises
 
  Prior to 2020, this course was evaluated by a written exam. In an written exam, the focus is a bit more on computational skills than in an oral exam.
