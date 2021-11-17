@@ -110,8 +110,7 @@ You can access all lecture notes, videos and exercises online through the links 
             <td><a href="https://youtu.be/pvDZWAJ9YMM">B1</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Course-Syllabus.ipynb">B0</a>, <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Machine-Learning-Overview.ipynb">B1</a></td>
             <td></td>
-            <!--- <td><a href="https://youtu.be/B5Spow5Flrs">B0</a></td> --->
-            <td></td>
+            <td><a href="https://youtu.be/wSMC2yMDwdE">B0-B1</a></td>
          </tr>
          <tr>
             <td>19-Nov-2021</td>
