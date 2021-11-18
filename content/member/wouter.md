@@ -6,7 +6,7 @@ name = "Wouter Kouw"
 portrait = "portraits/Wouter.jpg"
 short_bio = "I am an assistant professor working on applications of Bayesian filtering and active inference."
 title = "Wouter Kouw"
-sort_position = 3
+sort_position = 2
 personal_website = "https://wmkouw.github.io"
 cv_link = ""
 [[social]]

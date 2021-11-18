@@ -6,7 +6,7 @@ name = "Hoang Minh Huu Nguyen"
 portrait = "portraits/Hoang.jpeg" 
 short_bio = "I am a PhD candidate at the Signal Processing Systems group in TU Eindhoven working on Bayesian Machine Learning." 
 title = "Hoang M.H. Nguyen" 
-sort_position = 6
+sort_position = 4
 
 [[social]] 
 icon = "envelope" 

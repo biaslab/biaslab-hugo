@@ -6,7 +6,7 @@ name = " Alp Sari"
 portrait = "portraits/Alp.jpg"
 short_bio = "Alp Sari is a MSc student in the SPS group of Electrical Engineering department in Eindhoven University of Technology."
 title = "Alp Sari"
-sort_position = 6
+sort_position = 5
 
 [[social]]
     icon = "envelope"
