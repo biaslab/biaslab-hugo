@@ -1,7 +1,7 @@
 +++
 date = "2019-10-18T11:00:00+02:00"
 id = "bvdmitri"
-interests = ["Bayesian Machine Learning", "Software Engineering", "High-Performance Computing"]
+interests = ["Bayesian Machine Learning", "Software Engineering", "Probabilistic Programming"]
 name = "Dmitry V. Bagaev"
 portrait = "portraits/bvdmitri.jpeg"
 short_bio = "I am a PhD candidate at the Electrical Engineering department in Eindhoven University of Technology."
@@ -42,7 +42,7 @@ sort_position = 4
     name = "TU Eindhoven"
     role = "PhD candidate"
 +++
-My research interests lie in the fields of computer science, software developing, numerical modeling, machine learning, computational optimization and high-performant parallelized applications.
+My research interests lie in the fields of computers science, machine learning and probabilistic programming. Currently I am a PhD candidate in the SPS group of Electrical Engineering department in Eindhoven University of Technology. I'm working on a high-performant implementation of message passing-based Bayesian inference package in the Julia programming language. My research project focuses on Signal Processing and Active inference applications, but is also aimed to expand the scope of possible applications for message passing in general.
 
-Currently I am a PhD candidate in the SPS group of Electrical Engineering
-department in Eindhoven University of Technology.
+
+
