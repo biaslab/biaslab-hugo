@@ -134,7 +134,7 @@ You can access all lecture notes, videos and exercises online through the links 
             <td><a href="https://www.youtube.com/watch?v=2F39JxEOM0Q">W1.1</a>, <a href="https://www.youtube.com/watch?v=OoKPEteSEiA">W1.2</a>,  <a href="https://www.youtube.com/watch?v=JIY0FMd9JoE">W1.3</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-1.ipynb">W1</a></td>
             <td></td>
-            <td></td>
+            <td><a href="https://youtu.be/O4rcNBMiJ9Y">W1</a></td>
          </tr>
          <tr>
             <td >01-Dec-2021</td>
