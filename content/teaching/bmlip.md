@@ -52,6 +52,10 @@ This course covers the fundamentals of a Bayesian (i.e., probabilistic) approach
 News and Announcements
 </h2>
 
+- 01-Dec-2021: Last year's Probabilistic Programming assignments have been made available as exercises. Solutions are given as well.
+
+- 26-Nov-2021: As per the TU/e mandate, there will be no assignment given prior to the Christmas break. 
+
 - 13-Nov-2021: This year's live classes will be online!    
 
 - As much as possible we use the [Piazza course site](https://piazza.com/class/ku2o9c3f71a4px) for new announcements. 
@@ -73,7 +77,7 @@ In principle, you can download all needed materials from the links below.
 Please consider downloading the following books/resources:
 
 - Bert de Vries (2021), [PDF bundle of all lecture notes for lessons B0 through B12](https://github.com/bertdv/BMLIP/blob/master/output/BMLIP-5SSD0-lecture-notes.pdf). 
-- Wouter Kouw (2021), [PDF bundle of all probabilistic programming lecture notes for lessons W0 through W4](https://github.com/bertdv/BMLIP/blob/master/output/BMLIP-5SSD0-prob-prog.pdf).
+- Wouter Kouw (2021), [PDF bundle of all probabilistic programming lecture notes for lessons W1 through W4](https://github.com/bertdv/BMLIP/blob/master/output/BMLIP-5SSD0-prob-prog.pdf).
 - [Christopher M.
 Bishop](http://research.microsoft.com/en-us/um/people/cmbishop/index.htm) (2006), [Pattern Recognition and
 Machine
@@ -133,7 +137,8 @@ You can access all lecture notes, videos and exercises online through the links 
             <td style="color:gray;">W1: Probabilistic Programming 1 - Intro Bayesian ML</td>
             <td><a href="https://www.youtube.com/watch?v=2F39JxEOM0Q">W1.1</a>, <a href="https://www.youtube.com/watch?v=OoKPEteSEiA">W1.2</a>,  <a href="https://www.youtube.com/watch?v=JIY0FMd9JoE">W1.3</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-1.ipynb">W1</a></td>
-            <td></td>
+            <td><a href="https://github.com/bertdv/BMLIP/blob/master/lessons/exercises/probprog/pp1-exercises.ipynb">W1-ex</a><br/> 
+                <a href="https://github.com/bertdv/BMLIP/blob/master/lessons/exercises/probprog/solutions-pp1-exercises.ipynb">W1-sol</a></td>
             <td><a href="https://youtu.be/O4rcNBMiJ9Y">W1</a></td>
          </tr>
          <tr>
@@ -165,7 +170,8 @@ You can access all lecture notes, videos and exercises online through the links 
             <td style="color:gray;">W2: ProbProg 2 - MP & Analytical Bayesian Solutions</td>
             <td><a href="https://www.youtube.com/watch?v=JV09zAZ99dk">W2.1</a>, <a href="https://www.youtube.com/watch?v=bKgbNFouEiY">W2.2</a>,  <a href="https://www.youtube.com/watch?v=xqWUKsfuUdk">W2.3</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-2.ipynb">W2</a></td>
-            <td></td>
+            <td><a href="https://github.com/bertdv/BMLIP/blob/master/lessons/exercises/probprog/pp2-exercises.ipynb">W2-ex</a><br/> 
+                <a href="https://github.com/bertdv/BMLIP/blob/master/lessons/exercises/probprog/solutions-pp2-exercises.ipynb">W2-sol</a></td>
             <td></td>
          </tr>
          <tr>
@@ -190,7 +196,8 @@ You can access all lecture notes, videos and exercises online through the links 
             <td style="color:gray;">W3: ProbProg 3 - Regression and Classification</td>
             <td><a href="https://www.youtube.com/watch?v=yls2d3HMm28">W3.1</a>, <a href="https://www.youtube.com/watch?v=Q4f6S503e5I">W3.2</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-3.ipynb">W3</a></td>
-            <td></td>
+            <td><a href="https://github.com/bertdv/BMLIP/blob/master/lessons/exercises/probprog/pp3-exercises.ipynb">W3-ex</a><br/> 
+                <a href="https://github.com/bertdv/BMLIP/blob/master/lessons/exercises/probprog/solutions-pp3-exercises.ipynb">W3-sol</a></td>
             <td></td>
          </tr>
          <tr>
@@ -225,7 +232,8 @@ You can access all lecture notes, videos and exercises online through the links 
             <td style="color:gray;">W4: ProbProg 4: Latent Variable and Dynamic Models</td>
             <td><a href="https://youtu.be/UzUvkFMOlhk">W4.1</a>, <a href="https://youtu.be/47wGVzgS7Ys">W4.2</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-4.ipynb">W4</a></td>
-            <td></td>
+            <td><a href="https://github.com/bertdv/BMLIP/blob/master/lessons/exercises/probprog/pp4-exercises.ipynb">W4-ex</a><br/> 
+                <a href="https://github.com/bertdv/BMLIP/blob/master/lessons/exercises/probprog/solutions-pp4-exercises.ipynb">W4-sol</a></td>
             <td></td>
          </tr>
          <tr>
