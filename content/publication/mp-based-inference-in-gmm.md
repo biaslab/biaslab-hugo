@@ -11,7 +11,7 @@ selected = false
 title = "Message Passing-Based Inference in the Gamma Mixture Model"
 url_code = ""
 url_dataset = ""
-url_pdf = "https://ieeexplore.ieee.org/document/9596329"
+url_pdf = "/pdf/mlsp2021/gamma_mixture.pdf"
 url_project = ""
 url_video = ""
 

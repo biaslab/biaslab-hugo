@@ -11,7 +11,7 @@ selected = false
 title = "The Switching Hierarchical Gaussian Filter"
 url_code = ""
 url_dataset = ""
-url_pdf = "https://ieeexplore.ieee.org/abstract/document/9518229"
+url_pdf = "/pdf/isit2021/shgf.pdf"
 url_project = ""
 url_video = ""
 
