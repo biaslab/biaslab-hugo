@@ -14,7 +14,7 @@ suptitle = ""
 to_be_published = false
 url_code = "https://github.com/biaslab/SSP2021-VariationalLogPowerTracking"
 url_dataset = ""
-url_pdf = "https://ieeexplore.ieee.org/document/9513757"
+url_pdf = "/pdf/ssp2021/bart_variational_lps_tracking.pdf"
 url_slides = ""
 url_video = "https://www.youtube.com/watch?v=gPldkrqMJlU"
 
