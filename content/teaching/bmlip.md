@@ -163,7 +163,7 @@ You can access all lecture notes, videos and exercises online through the links 
             <td><a href="https://youtu.be/70gVEt4AexA">B6</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/The-Multinomial-Distribution.ipynb">B6</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises-The-Multinomial-Distribution.ipynb">B6-ex</a><br/> <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Solutions-The-Multinomial-Distribution.ipynb">B6-sol</a></td>
-            <td></td>
+            <td><a href="https://youtu.be/Nz6iT8vTzV4">B6</a></td>
          </tr>
          <tr>
             <td style="color:gray;">10-Dec-2021</td>
