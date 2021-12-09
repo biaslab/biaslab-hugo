@@ -201,7 +201,7 @@ You can access all lecture notes, videos and exercises online through the links 
             <td></td>
          </tr>
          <tr>
-            <td>24-Dec-2021</td>
+            <td style="color:red;">10-Jan-2022</td>
             <td>B10: Latent Variable Models and Variational Bayes</td>
             <td><a href="https://youtu.be/o7evWBxSiHo">B10</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Latent-Variable-Models-and-VB.ipynb">B10</a></td>
