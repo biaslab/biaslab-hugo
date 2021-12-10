@@ -172,7 +172,7 @@ You can access all lecture notes, videos and exercises online through the links 
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-2.ipynb">W2</a></td>
             <td><a href="https://github.com/bertdv/BMLIP/blob/master/lessons/exercises/probprog/pp2-exercises.ipynb">W2-ex</a><br/> 
                 <a href="https://github.com/bertdv/BMLIP/blob/master/lessons/exercises/probprog/solutions-pp2-exercises.ipynb">W2-sol</a></td>
-            <td></td>
+            <td><a href="https://youtu.be/lkDiz1gR3RA">W2</a></td>
          </tr>
          <tr>
             <td>15-Dec-2021</td>
