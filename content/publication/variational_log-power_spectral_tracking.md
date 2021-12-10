@@ -17,6 +17,7 @@ url_dataset = ""
 url_pdf = "/pdf/ssp2021/bart_variational_lps_tracking.pdf"
 url_slides = ""
 url_video = "https://www.youtube.com/watch?v=gPldkrqMJlU"
+url_custom = [{name="IEEE", url = "https://ieeexplore.ieee.org/document/9513757"}]
 
 [[authors]]
     id = "bart"

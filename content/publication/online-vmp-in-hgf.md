@@ -18,6 +18,7 @@ url_pdf = "/pdf/mlsp2018/senoz_mlsp_2018.pdf"
 url_project = ""
 url_slides = ""
 url_video = ""
+url_custom = [{name="IEEE", url = "https://ieeexplore.ieee.org/document/8517019"}]
 
 [[authors]]
     name = "Ismail Senoz"

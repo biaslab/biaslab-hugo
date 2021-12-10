@@ -16,6 +16,7 @@ url_dataset = ""
 url_project = ""
 url_slides = ""
 url_video = ""
+url_custom = [{name="Springer", url = "https://link.springer.com/chapter/10.1007/978-3-030-64919-7_6"}]
 
 [[authors]]
     name = "Wouter Kouw"

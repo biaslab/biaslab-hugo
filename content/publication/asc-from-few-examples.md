@@ -15,6 +15,8 @@ url_pdf = "/pdf/eusipco2018/bocharov_asc_from_few_examples.pdf"
 url_project = ""
 url_slides = "/pdf/eusipco2018/bocharov_asc_slides.pdf"
 url_video = ""
+url_custom = [{name="IEEE", url = "https://ieeexplore.ieee.org/abstract/document/8553184"}]
+
 
 [[authors]]
     name = "Ivan Bocharov"

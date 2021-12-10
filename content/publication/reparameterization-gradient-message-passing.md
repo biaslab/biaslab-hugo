@@ -16,6 +16,7 @@ url_poster = "/pdf/eusipco2019/rgmp-poster.pdf"
 url_project = ""
 url_slides = ""
 url_video = ""
+url_custom = [{name="IEEE", url = "https://ieeexplore.ieee.org/abstract/document/8902930"}]
 
 [[authors]]
     name = "Semih Akbayrak"

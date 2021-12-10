@@ -15,6 +15,7 @@ url_pdf = "/pdf/slf/main.pdf"
 url_project = ""
 url_slides = ""
 url_video = ""
+url_custom = [{name="IEEE", url = "https://ieeexplore.ieee.org/abstract/document/8081321"}]
 
 [[authors]]
     name = "Thijs van de Laar"

@@ -17,6 +17,7 @@ url_pdf = "/pdf/isit2020/i_senoz_online_hgf.pdf"
 url_project = ""
 url_slides = ""
 url_video = ""
+url_custom = [{name="IEEE", url = "https://ieeexplore.ieee.org/document/9173980"}]
 
 [[authors]]
     name = "Ismail Senoz"

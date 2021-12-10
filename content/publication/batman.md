@@ -15,6 +15,7 @@ url_pdf = "/pdf/icassp2020/batman.pdf"
 url_project = ""
 url_slides = ""
 url_video = ""
+url_custom = [{name="IEEE", url = "https://ieeexplore.ieee.org/document/9053624"}]
 
 [[authors]]
     name = "Magnus T. Koudahl"

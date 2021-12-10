@@ -14,6 +14,7 @@ url_dataset = ""
 url_pdf = "/pdf/mlsp2021/gamma_mixture.pdf"
 url_project = ""
 url_video = ""
+url_custom = [{name="IEEE", url = "https://ieeexplore.ieee.org/document/9596329"}]
 
 [[authors]]
     id = "albert"

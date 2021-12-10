@@ -15,6 +15,7 @@ url_pdf = "/pdf/eusipco2018/cox_robust_expectation_propagation.pdf"
 url_project = ""
 url_slides = ""
 url_video = ""
+url_custom = [{name="IEEE", url = "https://ieeexplore.ieee.org/document/8553490"}]
 
 [[authors]]
     name = "Marco Cox"

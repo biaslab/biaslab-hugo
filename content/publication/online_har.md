@@ -15,6 +15,7 @@ url_dataset = ""
 url_pdf = "/pdf/isit2020/a_podusenko_online_har.pdf"
 url_project = ""
 url_video = ""
+url_custom = [{name="IEEE", url = "https://ieeexplore.ieee.org/document/9174134"}]
 
 [[authors]]
     name = "Albert Podusenko"

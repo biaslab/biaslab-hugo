@@ -14,6 +14,7 @@ url_dataset = ""
 url_pdf = "/pdf/isit2021/shgf.pdf"
 url_project = ""
 url_video = ""
+url_custom = [{name="IEEE", url = "https://ieeexplore.ieee.org/abstract/document/9518229"}]
 
 [[authors]]
     id = "ismail"
