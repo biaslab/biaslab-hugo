@@ -193,15 +193,6 @@ You can access all lecture notes, videos and exercises online through the links 
          </tr>
          <tr>
             <td style="color:gray;">22-Dec-2021</td>
-            <td style="color:gray;">W3: ProbProg 3 - Regression and Classification</td>
-            <td><a href="https://www.youtube.com/watch?v=yls2d3HMm28">W3.1</a>, <a href="https://www.youtube.com/watch?v=Q4f6S503e5I">W3.2</a></td>
-            <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-3.ipynb">W3</a></td>
-            <td><a href="https://github.com/bertdv/BMLIP/blob/master/lessons/exercises/probprog/pp3-exercises.ipynb">W3-ex</a><br/> 
-                <a href="https://github.com/bertdv/BMLIP/blob/master/lessons/exercises/probprog/solutions-pp3-exercises.ipynb">W3-sol</a></td>
-            <td></td>
-         </tr>
-         <tr>
-            <td style="color:red;">10-Jan-2022</td>
             <td>B10: Latent Variable Models and Variational Bayes</td>
             <td><a href="https://youtu.be/o7evWBxSiHo">B10</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Latent-Variable-Models-and-VB.ipynb">B10</a></td>
@@ -210,6 +201,15 @@ You can access all lecture notes, videos and exercises online through the links 
          </tr>
          <tr style="color:blue;">
             <td colspan="6">break</td>
+         </tr>
+         <tr>
+            <td style="color:red;">10-Jan-2022</td>
+            <td style="color:gray;">W3: ProbProg 3 - Regression and Classification</td>
+            <td><a href="https://www.youtube.com/watch?v=yls2d3HMm28">W3.1</a>, <a href="https://www.youtube.com/watch?v=Q4f6S503e5I">W3.2</a></td>
+            <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-3.ipynb">W3</a></td>
+            <td><a href="https://github.com/bertdv/BMLIP/blob/master/lessons/exercises/probprog/pp3-exercises.ipynb">W3-ex</a><br/> 
+                <a href="https://github.com/bertdv/BMLIP/blob/master/lessons/exercises/probprog/solutions-pp3-exercises.ipynb">W3-sol</a></td>
+            <td></td>
          </tr>
          <tr>
             <td>12-Jan-2022</td>
