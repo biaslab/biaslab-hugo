@@ -52,6 +52,8 @@ This course covers the fundamentals of a Bayesian (i.e., probabilistic) approach
 News and Announcements
 </h2>
 
+- 22-Dec-2021: The Probabilistic Programming assignment has been made available (see Assignment section below) ahead of schedule.
+
 - 01-Dec-2021: Last year's Probabilistic Programming assignments have been made available as exercises. Solutions are given as well.
 
 - 26-Nov-2021: As per the TU/e mandate, there will be no assignment given prior to the Christmas break. 
@@ -267,6 +269,10 @@ You can access all lecture notes, videos and exercises online through the links 
 - Please consult the <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Course-Syllabus.ipynb">Course Syllabus</a> (lecture notes for 1st class) for advice on how to study the materials.
 
 - Each year there will be two written exam opportunities. **You cannot bring notes or books to the written exam sessions. All needed formulas are supplied at the exam sheet**.
+
+### Assignment
+- The assignment may be downloaded [here](https://github.com/bertdv/BMLIP/blob/master/lessons/assignment/%5B5SSD0%5D%20Probabilistic%20Programming%20-%20Assignment.zip). The Jupyter notebook explains the problem in detail.
+- Please hand in the completed notebook file on Canvas.
 
 ### Exam Preparation
 In addition to the materials in the above table, we provide two representative practice written exams:
