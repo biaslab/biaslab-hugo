@@ -211,7 +211,7 @@ You can access all lecture notes, videos and exercises online through the links 
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-3.ipynb">W3</a></td>
             <td><a href="https://github.com/bertdv/BMLIP/blob/master/lessons/exercises/probprog/pp3-exercises.ipynb">W3-ex</a><br/> 
                 <a href="https://github.com/bertdv/BMLIP/blob/master/lessons/exercises/probprog/solutions-pp3-exercises.ipynb">W3-sol</a></td>
-            <td></td>
+            <td><a href="https://youtu.be/k749jWiJNzs">W3</a></td>
          </tr>
          <tr>
             <td>12-Jan-2022</td>
