@@ -219,7 +219,7 @@ You can access all lecture notes, videos and exercises online through the links 
             <td><a href="https://youtu.be/-jMq9gl59pA">B11</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Dynamic-Models.ipynb">B11</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises-Dynamic-Models.ipynb">B11-ex</a><br/> <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Solutions-Dynamic-Models.ipynb">B11-sol</a></td>
-            <td></td>
+            <td><a href="https://youtu.be/QkTJiTdki68">B11</a></td>
          </tr>
          <tr>
             <td>14-Jan-2022</td>
