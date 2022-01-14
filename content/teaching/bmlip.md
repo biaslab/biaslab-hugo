@@ -227,7 +227,7 @@ You can access all lecture notes, videos and exercises online through the links 
             <td><a href="https://youtu.be/Ln0aq11YBzQ">B12</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Intelligent-Agents-and-Active-Inference.ipynb">B12</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises-Intelligent-Agents-and-Active-Inference.ipynb">B12-ex</a><br/> <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Solutions-Intelligent-Agents-and-Active-Inference.ipynb">B12-sol</a></td>
-            <td></td>
+            <td><a href="https://youtu.be/LmTUmLuM8vE">B12</a></td>
          </tr>
          <tr>
             <td style="color:gray;">19-Jan-2022</td>
