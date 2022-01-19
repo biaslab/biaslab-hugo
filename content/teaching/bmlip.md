@@ -236,7 +236,7 @@ You can access all lecture notes, videos and exercises online through the links 
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-4.ipynb">W4</a></td>
             <td><a href="https://github.com/bertdv/BMLIP/blob/master/lessons/exercises/probprog/pp4-exercises.ipynb">W4-ex</a><br/> 
                 <a href="https://github.com/bertdv/BMLIP/blob/master/lessons/exercises/probprog/solutions-pp4-exercises.ipynb">W4-sol</a></td>
-            <td></td>
+            <td><a href="https://youtu.be/L15PzPF1Kv4">W4</a></td>
          </tr>
          <tr>
             <td>21-Jan-2022</td>
