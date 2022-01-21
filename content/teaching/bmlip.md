@@ -244,7 +244,7 @@ You can access all lecture notes, videos and exercises online through the links 
             <td><a href=""></a></td>
             <td><a href="https://github.com/bertdv/BMLIP/raw/master/lessons/notebooks/MKoudahl-March2020-What-is-life.pdf?dl=0">M1</a></td>
             <td></td>
-            <td></td>
+            <td><a href="https://youtu.be/MGusn1JzqVs">M1.1</a>, <a href="https://youtu.be/Gk225kuulOE">M1.2</a></td>
          </tr>
          <tr style="color:blue;">
             <td >03-Feb-2022</td>
