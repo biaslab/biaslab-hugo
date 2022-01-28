@@ -52,6 +52,8 @@ This course covers the fundamentals of a Bayesian (i.e., probabilistic) approach
 News and Announcements
 </h2>
 
+- 28-Jan-2022: The Probabilistic Programming assignments have been graded (solution notebook available from Assignment section).
+
 - 22-Dec-2021: The Probabilistic Programming assignment has been made available (see Assignment section below) ahead of schedule.
 
 - 01-Dec-2021: Last year's Probabilistic Programming assignments have been made available as exercises. Solutions are given as well.
@@ -273,6 +275,7 @@ You can access all lecture notes, videos and exercises online through the links 
 ### Assignment
 - The assignment may be downloaded [here](https://github.com/bertdv/BMLIP/blob/master/lessons/assignment/%5B5SSD0%5D%20Probabilistic%20Programming%20-%20Assignment.zip). The Jupyter notebook explains the problem in detail.
 - Please hand in the completed notebook file on Canvas.
+- The solution to this year's assignment can be found [here](https://github.com/bertdv/BMLIP/blob/master/lessons/assignment/Probabilistic%20Programming%20-%20Assignment%20%5BSolution%5D.ipynb).
 
 ### Exam Preparation
 In addition to the materials in the above table, we provide two representative practice written exams:
