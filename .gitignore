@@ -128,3 +128,9 @@ sympy-plots-for-*.tex/
 .DS_Store
 public/
 config.local.toml
+
+# vim
+*.swp
+
+# hugo lock
+.hugo_build.lock
