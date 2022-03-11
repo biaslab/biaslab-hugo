@@ -1,6 +1,7 @@
 +++
 title = "MSc graduation project: system identification with Bayesian machine learning"
 date = "2019-09-19T08:50:58+02:00"
+draft = true
 
 description = "In this project you will develop an agent to infer the dynamical parameters of an electro-mechanical positioning system."
 external_link = ""

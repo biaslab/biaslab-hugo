@@ -6,7 +6,9 @@
         <div class="col-md-12">
             <h1>Open projects</h1>
 
-            {{"We usually have a number of open research projects for MSc students who want to do an internship or graduation project. Please consult the list below or the [TU/e Master Project Marketplace](https://master.ele.tue.nl/) for a (more elaborate) set of available projects. More generally, if you have your own ideas for a brain-inspired AI Master project, feel free to contact [prof. Bert de Vries](http://bertdv.nl)." | markdownify}}
+            {{"We have several open research projects for MSc students who want to do an internship or graduation project. We keep these projects in a portfolio document: [BIASlab MSc Project Portfolio](/pdf/msc-project-portfolio.pdf). These are either in collaboration with a company (good for your professional experience) or are purely for internal academic research (if you prefer to have more freedom). In general, the projects focus on signal processing applications, control systems applications or probabilistic programming software. For examples of these categories, see the list below:" | markdownify}}
+
+            <p style="margin-bottom:.5cm;"></p>
             
             {{ range .Data.Pages.ByDate.Reverse }}
             <div class="row" id="pub_list">
@@ -29,7 +31,13 @@
                         </ul>
                 </div>
             </div>
+
             {{ end }}
+
+            <p style="margin-bottom:0.5cm;"></p>
+
+            {{"If you have your own ideas for a neuro-inspired AI / probabilistic machine learning MSc project, feel free to contact prof. [Bert de Vries](http://bertdv.nl)." | markdownify }}
+            
         </div>
     </div>
 </div>

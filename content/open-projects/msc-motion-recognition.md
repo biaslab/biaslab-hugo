@@ -1,6 +1,7 @@
 +++
 title = "MSc graduation project: Machine Learning for Human Motion Recognition"
 date = "2017-08-24T15:50:58+02:00"
+draft = true
 
 description = "In this project, you are challenged to develop novel machine learning technology for recognizing human motions."
 external_link = ""
