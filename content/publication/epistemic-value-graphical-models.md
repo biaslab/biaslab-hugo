@@ -12,7 +12,7 @@ selected = false
 title = "Active Inference and Epistemic Value in Graphical Models"
 url_code = "/materials/epistemic_search.zip"
 url_dataset = ""
-url_pdf = "https://www.frontiersin.org/articles/10.3389/frobt.2022.794464/full"
+url_custom = [{name="Frontiers", url = "https://www.frontiersin.org/articles/10.3389/frobt.2022.794464/full"}]
 url_project = ""
 url_slides = ""
 url_video = ""
