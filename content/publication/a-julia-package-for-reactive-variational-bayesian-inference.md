@@ -11,10 +11,9 @@ selected = false
 title = "ReactiveMP.jl: A Julia package for reactive variational Bayesian inference"
 url_code = "https://github.com/biaslab/ReactiveMP.jl"
 url_dataset = ""
-url_pdf = "https://doi.org/10.1016/j.simpa.2022.100299"
 url_project = ""
 url_video = ""
-url_custom = [ ]
+url_custom = [{name="Software Impacts", url = "https://doi.org/10.1016/j.simpa.2022.100299"}]
 
 [[authors]]
     id = "bvdmitri"
