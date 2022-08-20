@@ -10,3 +10,6 @@ publish:
 	./publish.sh
 rebuild-docs:
 	./rebuild_docs.sh
+create-publication:
+	test -n "$(TITLE)" || (echo "Usage: $@ TITLE='<title of publication>'" && exit 1)
+	./resources/scripts/create_publication.sh "$(TITLE)"
