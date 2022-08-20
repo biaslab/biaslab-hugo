@@ -10,7 +10,6 @@ publication_short = "SSP 2021"
 publication_date = "2021-07-13T00:00:00+00:00"
 selected = false
 title = "Variational Log-Power Spectral Tracking for Acoustic Signals"
-suptitle = ""
 to_be_published = false
 url_code = "https://github.com/biaslab/SSP2021-VariationalLogPowerTracking"
 url_dataset = ""

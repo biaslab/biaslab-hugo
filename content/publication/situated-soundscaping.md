@@ -10,7 +10,6 @@ publication = "Applied Sciences. Special Issue on AI, Machine Learning and Deep 
 publication_short = "Applied Sciences"
 selected = false
 title = "A Bayesian Modeling Approach to Situated Design of Personalized Soundscaping Algorithms"
-subtitle = ""
 to_be_published = false
 url_pdf = "https://www.mdpi.com/2076-3417/11/20/9535"
 url_code = "https://github.com/biaslab/SituatedSoundscaping"
