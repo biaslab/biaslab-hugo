@@ -14,7 +14,7 @@ url_dataset = ""
 url_pdf = "/pdf/isit2022/adaptive_importance_sampling_message_passing.pdf"
 url_project = ""
 url_video = ""
-url_custom = [{name="Experiments", url="https://github.com/biaslab/AIS-MP"}, {name="DOI", url="https://doi.org/10.1109/ISIT50566.2022.9834628"}]
+url_custom = [{name="Experiments", url="https://github.com/biaslab/AIS-MP"}, {name="IEEE", url="https://ieeexplore.ieee.org/document/9834628"}]
 
 [[authors]]
     id = "semih"

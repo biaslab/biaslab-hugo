@@ -14,7 +14,7 @@ url_dataset = ""
 url_project = ""
 url_video = ""
 url_pdf = "/pdf/ijar2022/probabilistic_programming_with_stochastic_variational_message_passing.pdf"
-url_custom = [{name="Experiments", url="https://github.com/biaslab/StochasticVMP"}, {name="DOI", url="https://doi.org/10.1016/j.ijar.2022.06.006"}]
+url_custom = [{name="Experiments", url="https://github.com/biaslab/StochasticVMP"}, {name="Elsevier", url="https://doi.org/10.1016/j.ijar.2022.06.006"}]
 
 [[authors]]
     id = "semih"
