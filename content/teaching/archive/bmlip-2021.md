@@ -1,8 +1,8 @@
 +++
 date = "2018-08-23T14:45:00+02:00"
 external_link = ""
-title = "Bayesian Machine Learning and Information Processing (5SSD0)"
-subtitle = "academic year 2022/23"
+title = "Bayesian Machine Learning and Information Processing (5SSD0)"    
+subtitle = "academic year 2021/22"    
 participants_block_position = "down"
 type = "teaching"
 
