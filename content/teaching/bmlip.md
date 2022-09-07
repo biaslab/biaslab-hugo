@@ -2,7 +2,7 @@
 date = "2018-08-23T14:45:00+02:00"
 external_link = ""
 title = "Bayesian Machine Learning and Information Processing (5SSD0)"    
-subtitle = "academic year 2021/22"    
+subtitle = "academic year 2022/23"    
 participants_block_position = "down"
 type = "teaching"
 
@@ -29,13 +29,11 @@ type = "teaching"
 
 +++
 
-<!---
 <h2 style="color:red;">
 Note: This site is currently under construction.
 </h2>
---->
 
-The 2021/22 course "Bayesian Machine Learning and Information Processing" will start in November 2021 (Q2).  
+The 2022/23 course "Bayesian Machine Learning and Information Processing" will start in November 2022 (Q2).  
 
 
 <img src="/img/teaching/5SSD0-banner.png" width="1200px">
@@ -51,16 +49,6 @@ This course covers the fundamentals of a Bayesian (i.e., probabilistic) approach
 <h2 style="color:red;">
 News and Announcements
 </h2>
-
-- 28-Jan-2022: The Probabilistic Programming assignments have been graded (solution notebook available from Assignment section).
-
-- 22-Dec-2021: The Probabilistic Programming assignment has been made available (see Assignment section below) ahead of schedule.
-
-- 01-Dec-2021: Last year's Probabilistic Programming assignments have been made available as exercises. Solutions are given as well.
-
-- 26-Nov-2021: As per the TU/e mandate, there will be no assignment given prior to the Christmas break. 
-
-- 13-Nov-2021: This year's live classes will be online!    
 
 - As much as possible we use the [Piazza course site](https://piazza.com/class/ku2o9c3f71a4px) for new announcements. 
 
@@ -112,7 +100,7 @@ You can access all lecture notes, videos and exercises online through the links 
             <th style="text-align:center">live class</th>
          </tr>
          <tr>
-            <td>17-Nov-2021</td>
+            <td>16-Nov-2022</td>
             <td>B0: Course Syllabus<br/>
             B1: Machine Learning Overview</td>
             <td><a href="https://youtu.be/pvDZWAJ9YMM">B1</a></td>
@@ -121,7 +109,7 @@ You can access all lecture notes, videos and exercises online through the links 
             <td><a href="https://youtu.be/wSMC2yMDwdE">B0-B1</a></td>
          </tr>
          <tr>
-            <td>19-Nov-2021</td>
+            <td>18-Nov-2022</td>
             <td>B2: Probability Theory Review</td>
             <td><a href="https://youtu.be/uaKD8mZZnO8">B2.1</a>, <a href="https://youtu.be/YqXkSb8updg">B2.2</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Probability-Theory-Review.ipynb">B2</a></td>
@@ -129,7 +117,7 @@ You can access all lecture notes, videos and exercises online through the links 
             <td><a href="https://youtu.be/6_hUdetF8MU">B2</a></td>
          </tr>
          <tr>
-            <td>24-Nov-2021</td>
+            <td>23-Nov-2022</td>
             <td>B3: Bayesian Machine Learning</td>
             <td><a href="https://youtu.be/fw1lS0XsHrI">B3.1</a>, <a href="https://youtu.be/W5PlzDADdxE">B3.2</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Bayesian-Machine-Learning.ipynb">B3</a></td>
@@ -137,7 +125,7 @@ You can access all lecture notes, videos and exercises online through the links 
             <td><a href="https://youtu.be/9STkQoflFYs">B3</a></td>
          </tr>
          <tr>
-            <td style="color:gray;">26-Nov-2021</td>
+            <td style="color:gray;">25-Nov-2022</td>
             <td style="color:gray;">W1: Probabilistic Programming 1 - Intro Bayesian ML</td>
             <td><a href="https://www.youtube.com/watch?v=2F39JxEOM0Q">W1.1</a>, <a href="https://www.youtube.com/watch?v=OoKPEteSEiA">W1.2</a>,  <a href="https://www.youtube.com/watch?v=JIY0FMd9JoE">W1.3</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-1.ipynb">W1</a></td>
@@ -146,7 +134,7 @@ You can access all lecture notes, videos and exercises online through the links 
             <td><a href="https://youtu.be/O4rcNBMiJ9Y">W1</a></td>
          </tr>
          <tr>
-            <td >01-Dec-2021</td>
+            <td >30-Nov-2022</td>
             <td >B4: Factor Graphs and the Sum-Product Algorithm</td>
             <td><a href="https://youtu.be/YaYJpoi9Iy0">B4</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Factor-Graphs.ipynb">B4</a></td>
@@ -154,7 +142,7 @@ You can access all lecture notes, videos and exercises online through the links 
             <td><a href="https://youtu.be/YYxL9nDRhAk">B4</a></td>
          </tr>
          <tr>
-            <td>03-Dec-2021</td>
+            <td>02-Dec-2022</td>
             <td>B5: Continuous Data and the Gaussian Distribution</td>
             <td><a href="https://youtu.be/DwUX1OOZGfM">B5.1</a>, <a href="https://youtu.be/h6y0vZnPI2s">B5.2</a>, <a href="https://youtu.be/yP1_gPso5Xg">B5.3</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/The-Gaussian-Distribution.ipynb">B5</a></td>
@@ -162,7 +150,7 @@ You can access all lecture notes, videos and exercises online through the links 
             <td><a href="https://youtu.be/98P3FR7eIc0">B5</a></td>
          </tr>
          <tr>
-            <td>08-Dec-2021</td>
+            <td>07-Dec-2022</td>
             <td>B6: Discrete Data and the Multinomial Distribution</td>
             <td><a href="https://youtu.be/70gVEt4AexA">B6</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/The-Multinomial-Distribution.ipynb">B6</a></td>
@@ -170,7 +158,7 @@ You can access all lecture notes, videos and exercises online through the links 
             <td><a href="https://youtu.be/Nz6iT8vTzV4">B6</a></td>
          </tr>
          <tr>
-            <td style="color:gray;">10-Dec-2021</td>
+            <td style="color:gray;">09-Dec-2022</td>
             <td style="color:gray;">W2: ProbProg 2 - MP & Analytical Bayesian Solutions</td>
             <td><a href="https://www.youtube.com/watch?v=JV09zAZ99dk">W2.1</a>, <a href="https://www.youtube.com/watch?v=bKgbNFouEiY">W2.2</a>,  <a href="https://www.youtube.com/watch?v=xqWUKsfuUdk">W2.3</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-2.ipynb">W2</a></td>
@@ -179,7 +167,7 @@ You can access all lecture notes, videos and exercises online through the links 
             <td><a href="https://youtu.be/lkDiz1gR3RA">W2</a></td>
          </tr>
          <tr>
-            <td>15-Dec-2021</td>
+            <td>14-Dec-2022</td>
             <td>B7: Regression</td>
             <td><a href="https://youtu.be/XhZ7tSQS-ng">B7</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Regression.ipynb">B7</a></td>
@@ -187,7 +175,7 @@ You can access all lecture notes, videos and exercises online through the links 
             <td><a href="https://youtu.be/sbar-2Dd8lo">B7</a><br/><a href="https://youtu.be/ukR2GvyOiuQ">catch-up</a></td>
          </tr>
          <tr>
-            <td>17-Dec-2021</td>
+            <td>16-Dec-2022</td>
             <td>B8: Generative Classification <br/>B9: Discriminative Classification
             </td>
             <td><a href="https://youtu.be/_gSZGWTx1xc">B8</a>, <a href="https://youtu.be/TpfqSf0wbBE">B9</a></td>
@@ -196,7 +184,7 @@ You can access all lecture notes, videos and exercises online through the links 
             <td><a href="https://youtu.be/TLBSFZSMHrM">B8-9</a></td>
          </tr>
          <tr>
-            <td style="color:gray;">22-Dec-2021</td>
+            <td style="color:gray;">21-Dec-2022</td>
             <td>B10: Latent Variable Models and Variational Bayes</td>
             <td><a href="https://youtu.be/o7evWBxSiHo">B10</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Latent-Variable-Models-and-VB.ipynb">B10</a></td>
@@ -207,7 +195,7 @@ You can access all lecture notes, videos and exercises online through the links 
             <td colspan="6">break</td>
          </tr>
          <tr>
-            <td style="color:red;">10-Jan-2022</td>
+            <td>11-Jan-2023</td>
             <td style="color:gray;">W3: ProbProg 3 - Regression and Classification</td>
             <td><a href="https://www.youtube.com/watch?v=yls2d3HMm28">W3.1</a>, <a href="https://www.youtube.com/watch?v=Q4f6S503e5I">W3.2</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-3.ipynb">W3</a></td>
@@ -216,7 +204,7 @@ You can access all lecture notes, videos and exercises online through the links 
             <td><a href="https://youtu.be/k749jWiJNzs">W3</a></td>
          </tr>
          <tr>
-            <td>12-Jan-2022</td>
+            <td>13-Jan-2023</td>
             <td>B11: Dynamic Models</td>
             <td><a href="https://youtu.be/-jMq9gl59pA">B11</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Dynamic-Models.ipynb">B11</a></td>
@@ -224,7 +212,7 @@ You can access all lecture notes, videos and exercises online through the links 
             <td><a href="https://youtu.be/QkTJiTdki68">B11</a></td>
          </tr>
          <tr>
-            <td>14-Jan-2022</td>
+            <td>18-Jan-2023</td>
             <td>B12: Intelligent Agents and Active Inference</td>
             <td><a href="https://youtu.be/Ln0aq11YBzQ">B12</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Intelligent-Agents-and-Active-Inference.ipynb">B12</a></td>
@@ -232,7 +220,7 @@ You can access all lecture notes, videos and exercises online through the links 
             <td><a href="https://youtu.be/LmTUmLuM8vE">B12</a></td>
          </tr>
          <tr>
-            <td style="color:gray;">19-Jan-2022</td>
+            <td style="color:gray;">20-Jan-2023</td>
             <td style="color:gray;">W4: ProbProg 4: Latent Variable and Dynamic Models</td>
             <td><a href="https://youtu.be/UzUvkFMOlhk">W4.1</a>, <a href="https://youtu.be/47wGVzgS7Ys">W4.2</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-4.ipynb">W4</a></td>
@@ -241,7 +229,7 @@ You can access all lecture notes, videos and exercises online through the links 
             <td><a href="https://youtu.be/L15PzPF1Kv4">W4</a></td>
          </tr>
          <tr>
-            <td>21-Jan-2022</td>
+            <td></td>
             <td>M1: Bonus Lecture: What is Life?</td>
             <td><a href=""></a></td>
             <td><a href="https://github.com/bertdv/BMLIP/raw/master/lessons/notebooks/MKoudahl-March2020-What-is-life.pdf?dl=0">M1</a></td>
@@ -249,11 +237,11 @@ You can access all lecture notes, videos and exercises online through the links 
             <td><a href="https://youtu.be/MGusn1JzqVs">M1.1</a>, <a href="https://youtu.be/Gk225kuulOE">M1.2</a></td>
          </tr>
          <tr style="color:blue;">
-            <td >03-Feb-2022</td>
+            <td >02-Feb-2023</td>
             <td colspan="5">written examination (13:30-16:30)</td>
          </tr>
          <tr style="color:blue;">
-            <td >22-Apr-2022</td>
+            <td >20-Apr-2023</td>
             <td colspan="5">resit written examination (18:00-21:00)</td>
          </tr>
       </table>
