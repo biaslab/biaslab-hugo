@@ -6,7 +6,7 @@ name = "Thijs van de Laar"
 portrait = "portraits/Thijs.png"
 short_bio = "I am an assisant professor at BIASlab, where I work on artificial agents that learn to control themselves in uncertain environments. I take inspiration from physics and neuroscience, and develop theory and (software) tools that allow for efficient, real-time interaction."
 title = "Thijs van de Laar"
-sort_position = 3
+sort_position = 2
 
 [[social]]
     icon = "envelope"
