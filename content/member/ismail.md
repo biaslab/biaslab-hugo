@@ -4,7 +4,7 @@ id = "ismail"
 interests = ["Hierarchical Dynamical Systems", "Approximate Inference Methods"]
 name = "Ismail Senoz"
 portrait = "portraits/ismail.jpg"
-short_bio = "I am a PhD candidate at the Electrical Engineering department in Eindhoven University of Technology "
+short_bio = "I am a postdoctoral researcher at the Electrical Engineering department in Eindhoven University of Technology "
 title = "Ismail Senoz"
 sort_position = 3
 
@@ -30,7 +30,7 @@ sort_position = 3
 
 [[organizations]]
     name = "TU Eindhoven"
-    role = "PhD candidate"
+    role = "Postdoctoral fellow"
 
 +++
 Ismail Senoz received his M.Sc. degree in electrical engineering from the Eindhoven University of Technology in 2017 and his Ph.D. in machine learning from the Eindhoven University of Technology in 2022. Currently, he works as a postdoctoral fellow at BIASlab at the Eindhoven University of Technology. His research focuses on approximate message passing algorithms. 
