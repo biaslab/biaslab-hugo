@@ -19,14 +19,21 @@ sort_position = 3
     link = "//github.com/ismailsenoz/"
 
 [[education]]
-    course = "BSc in Electrical Engineering"
-    institution = 'Koc University'
-    year = 2015
+    course = "PhD in Machine Learning"
+    institution = 'Eindhoven University of Technology'
+    year = 2022
 
 [[education]]
     course = "MSc in Electrical Engineering"
     institution = 'Eindhoven University of Technology'
     year = 2017
+
+[[education]]
+    course = "BSc in Electrical Engineering"
+    institution = 'Koc University'
+    year = 2015
+
+
 
 [[organizations]]
     name = "TU Eindhoven"

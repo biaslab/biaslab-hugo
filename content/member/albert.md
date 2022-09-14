@@ -24,14 +24,14 @@ sort_position = 4
     link = "https://www.linkedin.com/in/albertpod/"
 
 [[education]]
-    course = "BSc in Applied Mathematics"
-    institution = 'Saint Petersburg State University'
-    year = 2016
-
-[[education]]
     course = "MSc in Computer Science"
     institution = 'Doshisha University'
     year = 2018
+
+[[education]]
+    course = "BSc in Applied Mathematics"
+    institution = 'Saint Petersburg State University'
+    year = 2016
 
 [[organizations]]
     name = "TU Eindhoven"
