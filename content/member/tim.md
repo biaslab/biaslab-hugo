@@ -29,14 +29,14 @@ sort_position = 4
     link = "https://twitter.com/polym_tim"
 
 [[education]]
-    course = "BSc in Computer Science"
-    institution = 'Friedrich-Alexander University Erlangen-Nuremberg'
-    year = 2016
-
-[[education]]
     course = "MSc in Computer Science"
     institution = "Friedrich-Alexander University Erlangen-Nuremberg"
     year = 2018
+
+[[education]]
+    course = "BSc in Computer Science"
+    institution = 'Friedrich-Alexander University Erlangen-Nuremberg'
+    year = 2016
 
 [[organizations]]
     name = "TU Eindhoven"

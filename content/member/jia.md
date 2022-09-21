@@ -19,14 +19,15 @@ sort_position = 4
     link = "//github.com/Chengfeng-Jia/"
 
 [[education]]
+    course = "MSc in Mathematics and applied mathematics"
+    institution = 'Central South University for Nationalities'
+    year = 2016
+    
+[[education]]
     course = "BSc in Mathematics"
     institution = 'Wuhan University of Technology'
     year = 2019
 
-[[education]]
-    course = "MSc in Mathematics and applied mathematics"
-    institution = 'Central South University for Nationalities'
-    year = 2016
 
 [[organizations]]
     name = "TU Eindhoven, WHUT"

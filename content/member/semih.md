@@ -24,14 +24,14 @@ sort_position = 4
     link = "//github.com/semihakbayrak/"
 
 [[education]]
-    course = "BSc in Electrical and Electronics Engineering"
-    institution = 'Bogazici University'
-    year = 2015
-
-[[education]]
     course = "MSc in Computational Science"
     institution = 'Bogazici University'
     year = 2018
+
+[[education]]
+    course = "BSc in Electrical and Electronics Engineering"
+    institution = 'Bogazici University'
+    year = 2015
 
 [[organizations]]
     name = "TU Eindhoven"

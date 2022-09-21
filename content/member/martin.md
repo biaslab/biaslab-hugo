@@ -24,14 +24,14 @@ sort_position = 5
     link = "https://github.com/mroavi"
 
 [[education]]
-    course = "BSc in Electronic Engineering"
-    institution = "Universidad Nacional de Colombia"
-    year = 2010
-
-[[education]]
     course = "MSc in Embedded Systems"
     institution = "Eindhoven University of Technology"
     year = 2013
+
+[[education]]
+    course = "BSc in Electronic Engineering"
+    institution = "Universidad Nacional de Colombia"
+    year = 2010
 
 [[organizations]]
     name = "TU Eindhoven"

@@ -7,6 +7,8 @@ portrait = "portraits/Jim.jpg"
 short_bio = "I am a MSc student at the SPS group at Eindhoven University of Technology." 
 title = "Jim Beckers" 
 sort_position = 6
+external_link = "https://www.linkedin.com/in/jim-beckers/"
+
 
 [[social]] 
     icon = "envelope" 

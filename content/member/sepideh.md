@@ -19,14 +19,14 @@ sort_position = 4
     link = "https://github.com/Sepideh-Adamiat/"
 
 [[education]]
-    course = "BSc in Computer Science"
-    institution = 'University of Isfahan'
-    year = 2017
-
-[[education]]
     course = "MSc in Artificial Intelligence"
     institution = "Isfahan University of Technology"
     year = 2020
+
+[[education]]
+    course = "BSc in Computer Science"
+    institution = 'University of Isfahan'
+    year = 2017
     
 [[organizations]]
     name = "TU Eindhoven"

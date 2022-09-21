@@ -24,14 +24,14 @@ sort_position = 4
     link = "//github.com/bartvanerp/"
 
 [[education]]
-    course = "BSc in Electrical Engineering"
-    institution = 'Eindhoven University of Technology'
-    year = 2018
-
-[[education]]
     course = "MSc in Electrical Engineering"
     institution = 'Eindhoven University of Technology'
     year = 2020
+
+[[education]]
+    course = "BSc in Electrical Engineering"
+    institution = 'Eindhoven University of Technology'
+    year = 2018
 
 [[organizations]]
     name = "TU Eindhoven"

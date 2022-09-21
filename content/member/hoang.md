@@ -19,14 +19,15 @@ icon_pack = "fa"
 link = "//github.com/HoangMHNguyen/" 
 
 [[education]] 
+course = "MSc in Electrical Engineering" 
+institution = 'Eindhoven University of Technology' 
+year = 2021
+
+[[education]] 
 course = "BSc in Electrical Engineering" 
 institution = 'Vietnam National University HCMC-International University' 
 year = 2018
 
-[[education]] 
-course = "MSc in Electrical Engineering" 
-institution = 'Eindhoven University of Technology' 
-year = 2021
 
 [[organizations]] 
 name = "TU Eindhoven" 

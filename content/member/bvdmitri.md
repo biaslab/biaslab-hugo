@@ -28,15 +28,17 @@ sort_position = 4
     icon_pack = "fa"
     link = "https://github.com/bvdmitri"
 
-[[education]]
-    course = "BSc in Mathematics and System Programming"
-    institution = 'Lomonosov Moscow State University'
-    year = 2017
 
 [[education]]
     course = "MSc in Mathematics and System Programming"
     institution = 'Lomonosov Moscow State University'
     year = 2019
+
+[[education]]
+    course = "BSc in Mathematics and System Programming"
+    institution = 'Lomonosov Moscow State University'
+    year = 2017
+
 
 [[organizations]]
     name = "TU Eindhoven"

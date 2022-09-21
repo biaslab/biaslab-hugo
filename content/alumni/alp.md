@@ -7,6 +7,7 @@ portrait = "portraits/Alp.jpg"
 short_bio = "Alp Sari is a MSc student in the SPS group of Electrical Engineering department in Eindhoven University of Technology."
 title = "Alp Sari"
 sort_position = 5
+external_link = "https://www.linkedin.com/in/alp-sari/"
 
 [[social]]
     icon = "envelope"
