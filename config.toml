@@ -106,85 +106,90 @@ tag = "tags"
   # Navigation Links
   #   The weight parameter defines the order that the links will appear in.
 
-  [[menu.main]]
+  # Menu tabs
+  [[menu.main]] # Home
     name = "Home"
     url = "/#home"
     weight = 1
 
-  [[menu.main]]
-    name = "Publications"
-    url = "/#publications"
-    parent="research"
-    weight = 3
-
-  [[menu.main]]
-    name = "Starter's guide"
-    url = "/research/starter-guide"
-    parent="joinus"
-    weight = 3
-
-  [[menu.main]]
+  [[menu.main]] # Research = [Projects, Publications, Blog]
     name = "Research"
     weight = 2
     identifier = "research"
+    [[menu.main]]
+      name = "Projects"
+      url = "/#projects"
+      parent = "research"
+      weight = 1
+    [[menu.main]]
+      name = "Publications"
+      url = "/#publications"
+      parent="research"
+      weight = 2
+    [[menu.main]]
+      name = "Blog"
+      url = "/#posts"
+      parent = "research"
+      weight = 3
 
-  [[menu.main]]
-    name = "Projects"
-    url = "/#projects"
-    parent = "research"
-    weight = 2
+  [[menu.main]] # Teaching
+    name = "Teaching"
+    weight = 3
+    identifier="teaching"
+    [[menu.main]]
+      name = "2022/23"
+      url = "/teaching/bmlip"
+      parent = "teaching"
+      weight = 1
+    [[menu.main]]
+      name = "2021/22"
+      url = "/teaching/archive/bmlip-2021"
+      parent = "teaching"
+      weight = 2
 
-  [[menu.main]]
-    name = "Blog"
-    url = "/#posts"
-    parent = "research"
+  [[menu.main]] # Software = [ForneyLab.jl, ReactiveMP.jl, Rocket.jl]
+    name = "Software"
     weight = 4
+    identifier = "software"
+    [[menu.main]]
+      name = "ForneyLab.jl"
+      url = "https://biaslab.github.io/ForneyLab.jl/stable/"
+      parent = "software"
+      weight = 1
+    [[menu.main]]
+      name = "ReactiveMP.jl"
+      url = "https://biaslab.github.io/ReactiveMP.jl/stable"
+      parent = "software"
+      weight = 2
+    [[menu.main]]
+      name = "Rocket.jl"
+      url = "https://biaslab.github.io/Rocket.jl/stable"
+      parent = "software"
+      weight = 3
 
-  [[menu.main]]
+  [[menu.main]] # Team
     name = "Team"
     url = "/#members"
     weight = 5
+    identifier="team"
 
-  [[menu.main]]
-    name = "Software"
-    weight = 3
-    identifier = "software"
-
-  [[menu.main]]
-    name = "ForneyLab.jl"
-    url = "https://biaslab.github.io/ForneyLab.jl/stable/"
-    parent = "software"
-    weight = 1
-
-  [[menu.main]]
-    name = "Rocket.jl"
-    url = "https://biaslab.github.io/Rocket.jl/stable"
-    parent = "software"
-    weight = 2
-
-  [[menu.main]]
-    name = "ReactiveMP.jl"
-    url = "https://biaslab.github.io/ReactiveMP.jl/stable"
-    parent = "software"
-    weight = 2
-
-  [[menu.main]]
+  [[menu.main]] # Join us = [Open Projects, Starter's guide]
     name = "Join us"
     url = "#open-projects"
     weight = 6
     identifier="joinus"
+    [[menu.main]]
+      name = "Starter's guide"
+      url = "/research/starter-guide"
+      parent="joinus"
+      weight = 1
+    [[menu.main]]
+      name = "Open projects"
+      url = "/open-projects"
+      parent = "joinus"
+      weight = 2
 
-  [[menu.main]]
-    name = "Open projects"
-    url = "/open-projects"
-    parent = "joinus"
-
-  [[menu.main]]
+  [[menu.main]] # Contact
     name = "Contact"
     url = "/#contact"
     weight = 7
-
-  [[menu.main]]
-    name = "Teaching"
-    url = "/teaching/bmlip"
-    weight = 2
