@@ -11,7 +11,7 @@ selected = false
 title = "Message Passing-based Inference in Switching Autoregressive Models"
 url_code = "https://github.com/biaslab/SWAR"
 url_dataset = ""
-url_pdf = ""
+url_pdf = "/pdf/eusipco2022/swar.pdf"
 url_project = ""
 url_video = ""
 url_custom = [{name="EURASIP", url = "https://eurasip.org/Proceedings/Eusipco/Eusipco2022/pdfs/0001497.pdf"}]
