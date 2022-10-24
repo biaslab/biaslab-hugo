@@ -14,7 +14,10 @@ url_dataset = ""
 url_pdf = "/pdf/eusipco2022/swar.pdf"
 url_project = ""
 url_video = ""
-url_custom = [{name="EURASIP", url = "https://eurasip.org/Proceedings/Eusipco/Eusipco2022/pdfs/0001497.pdf"}]
+url_custom = [
+    {name="IEEE", url = "https://ieeexplore.ieee.org/document/9909828"},
+    {name="EURASIP", url = "https://eurasip.org/Proceedings/Eusipco/Eusipco2022/pdfs/0001497.pdf"}
+]
 
 [[authors]]
     id = "albert"
