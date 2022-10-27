@@ -21,17 +21,13 @@ type = "teaching"
     id = "wouter"
     position = 2
 
-[[participants]]
-    name = "Magnus Koudahl"
-    is_member = true
-    id = "magnus"
-    position = 3
-
 +++
 
+<!---
 <h2 style="color:red;">
 Note: This site is currently under construction.
 </h2>
+--->
 
 The 2022/23 course "Bayesian Machine Learning and Information Processing" will start in November 2022 (Q2).  
 
@@ -50,15 +46,14 @@ This course covers the fundamentals of a Bayesian (i.e., probabilistic) approach
 News and Announcements
 </h2>
 
-- As much as possible we use the [Piazza course site](https://piazza.com/class/ku2o9c3f71a4px) for new announcements. 
+- As much as possible we use the [Piazza course site](https://piazza.com/class/l9n5gnieu4k6tl) for new announcements. 
 
 
 ## Instructors
 
 - [Prof.dr.ir. Bert de Vries](http://bertdv.nl) (email: bert.de.vries@tue.nl) is the responsible instructor for this course and teaches all [lectures with label B](#lectures).
 - [Dr. Wouter Kouw](https://biaslab.github.io/member/wouter/) (w.m.kouw@tue.nl) teaches all [practical sessions on probabilistic programming with label W](#lectures).                           
-- [Magnus Koudahl, MSc](https://biaslab.github.io/member/magnus/) (m.t.koudahl@tue.nl) is the teaching assistant. Mr. Koudahl presents the ["What is Life?"](#bonus-lecture) bonus lecture. 
-
+- [Magnus Koudahl](https://biaslab.github.io/member/magnus/), [Tim Nisslbeck](https://biaslab.github.io/member/tim), [Sepideh Adamiat](https://biaslab.github.io/member/sepideh) and [Wouter Nuijten](https://biaslab.github.io/member/woutern) are the teaching assistants. Mr. Koudahl presents the ["What is Life?"](#bonus-lecture) bonus lecture. 
 
 ## Materials
 
@@ -68,8 +63,8 @@ In principle, you can download all needed materials from the links below.
 
 Please consider downloading the following books/resources:
 
-- Bert de Vries (2021), [PDF bundle of all lecture notes for lessons B0 through B12](https://github.com/bertdv/BMLIP/blob/master/output/BMLIP-5SSD0-lecture-notes.pdf). 
-- Wouter Kouw (2021), [PDF bundle of all probabilistic programming lecture notes for lessons W1 through W4](https://github.com/bertdv/BMLIP/blob/master/output/BMLIP-5SSD0-prob-prog.pdf).
+- Bert de Vries (2022), [PDF bundle of all lecture notes for lessons B0 through B12](https://github.com/bertdv/BMLIP/blob/master/output/BMLIP-5SSD0-lecture-notes.pdf). 
+- Wouter Kouw (2022), [PDF bundle of all probabilistic programming lecture notes for lessons W1 through W4](https://github.com/bertdv/BMLIP/blob/master/output/BMLIP-5SSD0-prob-prog.pdf).
 - [Christopher M.
 Bishop](http://research.microsoft.com/en-us/um/people/cmbishop/index.htm) (2006), [Pattern Recognition and
 Machine
@@ -91,13 +86,12 @@ You can access all lecture notes, videos and exercises online through the links 
          <tr>
             <th rowspan = "2"; style="text-align:center">Date</th>
             <th rowspan = "2"; style="text-align:center">lesson</th>
-            <th colspan = "4"; style="text-align:center">materials</th>
+            <th colspan = "3"; style="text-align:center">materials</th>
          </tr>
          <tr>
             <th style="text-align:center">video guides</th>
             <th style="text-align:center">lecture notes</th>
             <th style="text-align:center">exercises</th>
-            <th style="text-align:center">live class</th>
          </tr>
          <tr>
             <td>16-Nov-2022</td>
@@ -106,7 +100,6 @@ You can access all lecture notes, videos and exercises online through the links 
             <td><a href="https://youtu.be/pvDZWAJ9YMM">B1</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Course-Syllabus.ipynb">B0</a>, <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Machine-Learning-Overview.ipynb">B1</a></td>
             <td></td>
-            <td><a href="https://youtu.be/wSMC2yMDwdE">B0-B1</a></td>
          </tr>
          <tr>
             <td>18-Nov-2022</td>
@@ -114,7 +107,6 @@ You can access all lecture notes, videos and exercises online through the links 
             <td><a href="https://youtu.be/uaKD8mZZnO8">B2.1</a>, <a href="https://youtu.be/YqXkSb8updg">B2.2</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Probability-Theory-Review.ipynb">B2</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises-Probability-Theory-Review.ipynb">B2-ex</a><br/> <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Solutions-Probability-Theory-Review.ipynb">B2-sol</a></td>
-            <td><a href="https://youtu.be/6_hUdetF8MU">B2</a></td>
          </tr>
          <tr>
             <td>23-Nov-2022</td>
@@ -122,7 +114,6 @@ You can access all lecture notes, videos and exercises online through the links 
             <td><a href="https://youtu.be/fw1lS0XsHrI">B3.1</a>, <a href="https://youtu.be/W5PlzDADdxE">B3.2</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Bayesian-Machine-Learning.ipynb">B3</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises-Bayesian-Machine-Learning.ipynb">B3-ex</a><br/> <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Solutions-Bayesian-Machine-Learning.ipynb">B3-sol</a></td>
-            <td><a href="https://youtu.be/9STkQoflFYs">B3</a></td>
          </tr>
          <tr>
             <td style="color:gray;">25-Nov-2022</td>
@@ -131,7 +122,6 @@ You can access all lecture notes, videos and exercises online through the links 
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-1.ipynb">W1</a></td>
             <td><a href="https://github.com/bertdv/BMLIP/blob/master/lessons/exercises/probprog/pp1-exercises.ipynb">W1-ex</a><br/> 
                 <a href="https://github.com/bertdv/BMLIP/blob/master/lessons/exercises/probprog/solutions-pp1-exercises.ipynb">W1-sol</a></td>
-            <td><a href="https://youtu.be/O4rcNBMiJ9Y">W1</a></td>
          </tr>
          <tr>
             <td >30-Nov-2022</td>
@@ -139,7 +129,6 @@ You can access all lecture notes, videos and exercises online through the links 
             <td><a href="https://youtu.be/YaYJpoi9Iy0">B4</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Factor-Graphs.ipynb">B4</a></td>
              <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises-Factor-Graphs.ipynb">B4-ex</a><br/> <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Solutions-Factor-Graphs.ipynb">B4-sol</a></td>
-            <td><a href="https://youtu.be/YYxL9nDRhAk">B4</a></td>
          </tr>
          <tr>
             <td>02-Dec-2022</td>
@@ -147,7 +136,6 @@ You can access all lecture notes, videos and exercises online through the links 
             <td><a href="https://youtu.be/DwUX1OOZGfM">B5.1</a>, <a href="https://youtu.be/h6y0vZnPI2s">B5.2</a>, <a href="https://youtu.be/yP1_gPso5Xg">B5.3</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/The-Gaussian-Distribution.ipynb">B5</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises-The-Gaussian-Distribution.ipynb">B5-ex</a><br/> <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Solutions-The-Gaussian-Distribution.ipynb">B5-sol</a></td>
-            <td><a href="https://youtu.be/98P3FR7eIc0">B5</a></td>
          </tr>
          <tr>
             <td>07-Dec-2022</td>
@@ -155,7 +143,6 @@ You can access all lecture notes, videos and exercises online through the links 
             <td><a href="https://youtu.be/70gVEt4AexA">B6</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/The-Multinomial-Distribution.ipynb">B6</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises-The-Multinomial-Distribution.ipynb">B6-ex</a><br/> <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Solutions-The-Multinomial-Distribution.ipynb">B6-sol</a></td>
-            <td><a href="https://youtu.be/Nz6iT8vTzV4">B6</a></td>
          </tr>
          <tr>
             <td style="color:gray;">09-Dec-2022</td>
@@ -164,7 +151,6 @@ You can access all lecture notes, videos and exercises online through the links 
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-2.ipynb">W2</a></td>
             <td><a href="https://github.com/bertdv/BMLIP/blob/master/lessons/exercises/probprog/pp2-exercises.ipynb">W2-ex</a><br/> 
                 <a href="https://github.com/bertdv/BMLIP/blob/master/lessons/exercises/probprog/solutions-pp2-exercises.ipynb">W2-sol</a></td>
-            <td><a href="https://youtu.be/lkDiz1gR3RA">W2</a></td>
          </tr>
          <tr>
             <td>14-Dec-2022</td>
@@ -172,7 +158,6 @@ You can access all lecture notes, videos and exercises online through the links 
             <td><a href="https://youtu.be/XhZ7tSQS-ng">B7</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Regression.ipynb">B7</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises-Regression.ipynb">B7-ex</a><br/> <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Solutions-Regression.ipynb">B7-sol</a></td>
-            <td><a href="https://youtu.be/sbar-2Dd8lo">B7</a><br/><a href="https://youtu.be/ukR2GvyOiuQ">catch-up</a></td>
          </tr>
          <tr>
             <td>16-Dec-2022</td>
@@ -181,7 +166,6 @@ You can access all lecture notes, videos and exercises online through the links 
             <td><a href="https://youtu.be/_gSZGWTx1xc">B8</a>, <a href="https://youtu.be/TpfqSf0wbBE">B9</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Generative-Classification.ipynb">B8</a>, <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Discriminative-Classification.ipynb">B9</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises-Classification.ipynb">B8-9-ex</a><br/> <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Solutions-Classification.ipynb">B8-9-sol</a></td>
-            <td><a href="https://youtu.be/TLBSFZSMHrM">B8-9</a></td>
          </tr>
          <tr>
             <td style="color:gray;">21-Dec-2022</td>
@@ -189,10 +173,9 @@ You can access all lecture notes, videos and exercises online through the links 
             <td><a href="https://youtu.be/o7evWBxSiHo">B10</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Latent-Variable-Models-and-VB.ipynb">B10</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises-Latent-Variable-Models-and-VB.ipynb">B10-ex</a><br/> <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Solutions-Latent-Variable-Models-and-VB.ipynb">B10-sol</a></td>
-            <td><a href="https://youtu.be/IWezW2TkdEA">B10</a></td>
          </tr>
          <tr style="color:blue;">
-            <td colspan="6">break</td>
+            <td colspan="5">break</td>
          </tr>
          <tr>
             <td>11-Jan-2023</td>
@@ -201,7 +184,6 @@ You can access all lecture notes, videos and exercises online through the links 
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-3.ipynb">W3</a></td>
             <td><a href="https://github.com/bertdv/BMLIP/blob/master/lessons/exercises/probprog/pp3-exercises.ipynb">W3-ex</a><br/> 
                 <a href="https://github.com/bertdv/BMLIP/blob/master/lessons/exercises/probprog/solutions-pp3-exercises.ipynb">W3-sol</a></td>
-            <td><a href="https://youtu.be/k749jWiJNzs">W3</a></td>
          </tr>
          <tr>
             <td>13-Jan-2023</td>
@@ -209,7 +191,6 @@ You can access all lecture notes, videos and exercises online through the links 
             <td><a href="https://youtu.be/-jMq9gl59pA">B11</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Dynamic-Models.ipynb">B11</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises-Dynamic-Models.ipynb">B11-ex</a><br/> <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Solutions-Dynamic-Models.ipynb">B11-sol</a></td>
-            <td><a href="https://youtu.be/QkTJiTdki68">B11</a></td>
          </tr>
          <tr>
             <td>18-Jan-2023</td>
@@ -217,7 +198,6 @@ You can access all lecture notes, videos and exercises online through the links 
             <td><a href="https://youtu.be/Ln0aq11YBzQ">B12</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Intelligent-Agents-and-Active-Inference.ipynb">B12</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises-Intelligent-Agents-and-Active-Inference.ipynb">B12-ex</a><br/> <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Solutions-Intelligent-Agents-and-Active-Inference.ipynb">B12-sol</a></td>
-            <td><a href="https://youtu.be/LmTUmLuM8vE">B12</a></td>
          </tr>
          <tr>
             <td style="color:gray;">20-Jan-2023</td>
@@ -226,83 +206,51 @@ You can access all lecture notes, videos and exercises online through the links 
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-4.ipynb">W4</a></td>
             <td><a href="https://github.com/bertdv/BMLIP/blob/master/lessons/exercises/probprog/pp4-exercises.ipynb">W4-ex</a><br/> 
                 <a href="https://github.com/bertdv/BMLIP/blob/master/lessons/exercises/probprog/solutions-pp4-exercises.ipynb">W4-sol</a></td>
-            <td><a href="https://youtu.be/L15PzPF1Kv4">W4</a></td>
          </tr>
          <tr>
             <td></td>
             <td>M1: Bonus Lecture: What is Life?</td>
-            <td><a href=""></a></td>
+            <td><a href="https://youtu.be/MGusn1JzqVs">M1.1</a>, <a href="https://youtu.be/Gk225kuulOE">M1.2</a></td>
             <td><a href="https://github.com/bertdv/BMLIP/raw/master/lessons/notebooks/MKoudahl-March2020-What-is-life.pdf?dl=0">M1</a></td>
             <td></td>
-            <td><a href="https://youtu.be/MGusn1JzqVs">M1.1</a>, <a href="https://youtu.be/Gk225kuulOE">M1.2</a></td>
          </tr>
          <tr style="color:blue;">
             <td >02-Feb-2023</td>
-            <td colspan="5">written examination (13:30-16:30)</td>
+            <td colspan="4">written examination (13:30-16:30)</td>
          </tr>
          <tr style="color:blue;">
             <td >20-Apr-2023</td>
-            <td colspan="5">resit written examination (18:00-21:00)</td>
+            <td colspan="4">resit written examination (18:00-21:00)</td>
          </tr>
       </table>
 
 
-- Furthermore, Q&A for each lesson can  be accessed at the [Piazza course site](https://piazza.com/class/ku2o9c3f71a4px).
-- When you do the exercises, feel free to consult the following matrix and Gaussian cheat sheets (by Sam Roweis) when doing the exercises.
-  - [Gaussian Identities](https://github.com/bertdv/BMLIP/raw/master/lessons/notebooks/files/Roweis-1999-gaussian-identities.pdf?dl=0)
-  - [Matrix Identities](https://github.com/bertdv/BMLIP/raw/master/lessons/notebooks/files/Roweis-1999-matrix-identities.pdf?dl=0)
+- Furthermore, Q&A for each lesson can  be accessed at the [Piazza course site](https://piazza.com/class/l9n5gnieu4k6tl).
 
 
-
-## Study Guide
-
-- Please consult the <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Course-Syllabus.ipynb">Course Syllabus</a> (lecture notes for 1st class) for advice on how to study the materials.
+## Exam Preparation
 
 - Each year there will be two written exam opportunities. **You cannot bring notes or books to the written exam sessions. All needed formulas are supplied at the exam sheet**.
 
+- Please consult the <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Course-Syllabus.ipynb">Course Syllabus</a> (lecture notes for 1st class) for advice on how to study the materials.
+
+- In addition to the materials in the above table, we provide two representative practice written exams:
+  - 2021-01-18: <a href="https://github.com/bertdv/BMLIP/blob/master/exams/20210128-5SSD0-exam-A.pdf?dl=0">exam A</a>, <a href="https://github.com/bertdv/BMLIP/blob/master/exams/20210128-5SSD0-solutions-A.pdf?dl=0">solutions A</a>; <a href="https://github.com/bertdv/BMLIP/blob/master/exams/20210128-5SSD0-exam-B.pdf?dl=0">exam B</a>, <a href="https://github.com/bertdv/BMLIP/blob/master/exams/20210128-5SSD0-solutions-B.pdf?dl=0">solutions B</a>
+  - 2021-04-15: <a href="https://github.com/bertdv/BMLIP/blob/master/exams/20210415-5SSD0-exam.pdf?dl=0">exam</a>, <a href="https://github.com/bertdv/BMLIP/blob/master/exams/20210415-5SSD0-solutions.pdf?dl=0">solutions</a>
+
+<!---
 ### Assignment
+
 - The assignment may be downloaded [here](https://github.com/bertdv/BMLIP/blob/master/lessons/assignment/%5B5SSD0%5D%20Probabilistic%20Programming%20-%20Assignment.zip). The Jupyter notebook explains the problem in detail.
 - Please hand in the completed notebook file on Canvas.
 - The solution to this year's assignment can be found [here](https://github.com/bertdv/BMLIP/blob/master/lessons/assignment/Probabilistic%20Programming%20-%20Assignment%20%5BSolution%5D.ipynb).
-
-### Exam Preparation
-In addition to the materials in the above table, we provide two representative practice written exams:
-- 2021-01-18: <a href="https://github.com/bertdv/BMLIP/raw/master/exams/20210128-5SSD0-exam-A.pdf?dl=0">exam A</a>, <a href="https://github.com/bertdv/BMLIP/raw/master/exams/20210128-5SSD0-solutions-A.pdf?dl=0">solutions A</a>; <a href="https://github.com/bertdv/BMLIP/raw/master/exams/20210128-5SSD0-exam-B.pdf?dl=0">exam B</a>, <a href="https://github.com/bertdv/BMLIP/raw/master/exams/20210128-5SSD0-solutions-B.pdf?dl=0">solutions B</a>
-- 2021-04-15: <a href="https://github.com/bertdv/BMLIP/raw/master/exams/20210415-5SSD0-exam.pdf?dl=0">exam</a>, <a href="https://github.com/bertdv/BMLIP/raw/master/exams/20210415-5SSD0-solutions.pdf?dl=0">solutions</a>
-
-
-<!---
-### Grading
-
-<span style="color:red;"> Under Construction:</span>
-
-
-### Exercises
-
- Prior to 2020, this course was evaluated by a written exam. In an written exam, the focus is a bit more on computational skills than in an oral exam.
-
-In preparation for the exam, we recommend that you work through the following exercises to test your understanding of the materials:
-
-  - [Exercises (without solutions)](http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises.ipynb)
-  - [Exercises (with solutions)](http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises-with-Solutions.ipynb)
-
-Please feel free to consult the following matrix and Gaussian cheat sheets (by Sam Roweis) when doing the exercises.
-  - [Gaussian Identities](https://github.com/bertdv/BMLIP/raw/master/lessons/notebooks/files/Roweis-1999-gaussian-identities.pdf?dl=0)
-  - [Matrix Identities](https://github.com/bertdv/BMLIP/raw/master/lessons/notebooks/files/Roweis-1999-matrix-identities.pdf?dl=0)
-
-## Class logistics 
-
-Here's our recommendation on how to study for this class. Before each lecture:
-  - first watch the video guide for that lecture (2nd column in above table)
-  - then study the lecture notes (3rd column)
-  - then (optionally), watch the live class recording from the previous (2020/21) edition (in 4th colum)
-  - then try to make the exercises (5th column) for that class. Feel free to use this <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/cheatsheet.ipynb">cheatsheet</a> to make the exercises.
-  - If you have any remaining issues or questions, please pose your question in piazza. Your questions will be answered at the piazza site by fellow students and accorded (or corrected, amended) by the teaching staff.  
-
-The live classes in this edition of 5SSD0 are (optional) flipped classroom-style Q&A sessions, where we discuss any issues in person. This year the live class sessions are not recorded so you will not be able to view them later. We do not intend to present new materials in the live classes, so in principle, the materials in the above table should suffice as preparation for the written exam.    
 --->
 
-<!--- An exam session lasts about 30 minutes and will be recorded (and later deleted, following GDPR rules). At the beginning of the session, the examiner needs to check your identity, preferably by your campus card. 
+
+<!--- 
+### Oral Exam Guide
+
+An exam session lasts about 30 minutes and will be recorded (and later deleted, following GDPR rules). At the beginning of the session, the examiner needs to check your identity, preferably by your campus card. 
 
 The style of the examination is conversational. We like to engage in a conversation with you about what you learned in the class. In general, oral exams do not lend themselves well to proofing theorems or other deep mathematical manipulations. Instead, the focus is more on testing if you understand the conceptual ideas in this class. In principle, everything that has been presented in the lecture notes and videos is fair game as an exam question, including programming questions from the probabilistic programming sessions. 
 
