@@ -73,8 +73,8 @@ Learning](https://www.microsoft.com/en-us/research/people/cmbishop/prml-book/). 
 
 ### Software
 
-- The [software installation guide](https://github.com/bertdv/BMLIP/blob/master/lessons/notebooks/files/BMLIP-installation-guide.pdf) contains step-by-step instructions to setup everything you need to run the course notebooks yourself.  
-- You can test your installation by running the notebook called [Probabilistic-Programming-0.ipynb](https://github.com/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-0.ipynb) which can be found in the ([github](https://github.com/bertdv/bmlip)) repo under `lessons/notebooks/probprog`. 
+- We will provide a web-based environment with all necessary software pre-installed and tested, which will allow you to execute code in the lesson notebooks and work on your probabilistic programming assignment. The invitation link will be posted on Piazza.
+- If you prefer working on your own machine, we recommend installing Microsoft's VS Code editor ([download](https://code.visualstudio.com/Download)) and adding the Jupyter ([tutorial](https://code.visualstudio.com/learn/educators/notebooks)) and Julia ([tutorial](https://code.visualstudio.com/docs/languages/julia)) extensions. Note that we will not support you in installing these tools on your own machine.
 
 ### <a name="lectures">Lecture notes, videos and exercises</a>
 
@@ -168,7 +168,7 @@ You can access all lecture notes, videos and exercises online through the links 
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises-Classification.ipynb">B8-9-ex</a><br/> <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Solutions-Classification.ipynb">B8-9-sol</a></td>
          </tr>
          <tr>
-            <td style="color:gray;">21-Dec-2022</td>
+            <td>21-Dec-2022</td>
             <td>B10: Latent Variable Models and Variational Bayes</td>
             <td><a href="https://youtu.be/o7evWBxSiHo">B10</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Latent-Variable-Models-and-VB.ipynb">B10</a></td>
@@ -178,7 +178,7 @@ You can access all lecture notes, videos and exercises online through the links 
             <td colspan="5">break</td>
          </tr>
          <tr>
-            <td>11-Jan-2023</td>
+            <td style="color:gray;">11-Jan-2023</td>
             <td style="color:gray;">W3: ProbProg 3 - Regression and Classification</td>
             <td><a href="https://www.youtube.com/watch?v=yls2d3HMm28">W3.1</a>, <a href="https://www.youtube.com/watch?v=Q4f6S503e5I">W3.2</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-3.ipynb">W3</a></td>
