@@ -117,11 +117,10 @@ You can access all lecture notes, videos and exercises online through the links 
          </tr>
          <tr>
             <td style="color:gray;">25-Nov-2022</td>
-            <td style="color:gray;">W1: Probabilistic Programming 1 - Intro Bayesian ML</td>
-            <td><a href="https://www.youtube.com/watch?v=2F39JxEOM0Q">W1.1</a>, <a href="https://www.youtube.com/watch?v=OoKPEteSEiA">W1.2</a>,  <a href="https://www.youtube.com/watch?v=JIY0FMd9JoE">W1.3</a></td>
+            <td style="color:gray;">W1: ProbProg 1 - Introduction to Bayesian inference</td>
+            <td></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-1.ipynb">W1</a></td>
-            <td><a href="https://github.com/bertdv/BMLIP/blob/master/lessons/exercises/probprog/pp1-exercises.ipynb">W1-ex</a><br/> 
-                <a href="https://github.com/bertdv/BMLIP/blob/master/lessons/exercises/probprog/solutions-pp1-exercises.ipynb">W1-sol</a></td>
+            <td></td>
          </tr>
          <tr>
             <td >30-Nov-2022</td>
@@ -146,11 +145,10 @@ You can access all lecture notes, videos and exercises online through the links 
          </tr>
          <tr>
             <td style="color:gray;">09-Dec-2022</td>
-            <td style="color:gray;">W2: ProbProg 2 - MP & Analytical Bayesian Solutions</td>
-            <td><a href="https://www.youtube.com/watch?v=JV09zAZ99dk">W2.1</a>, <a href="https://www.youtube.com/watch?v=bKgbNFouEiY">W2.2</a>,  <a href="https://www.youtube.com/watch?v=xqWUKsfuUdk">W2.3</a></td>
+            <td style="color:gray;">W2: ProbProg 2 - Message passing on factor graphs</td>
+            <td></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-2.ipynb">W2</a></td>
-            <td><a href="https://github.com/bertdv/BMLIP/blob/master/lessons/exercises/probprog/pp2-exercises.ipynb">W2-ex</a><br/> 
-                <a href="https://github.com/bertdv/BMLIP/blob/master/lessons/exercises/probprog/solutions-pp2-exercises.ipynb">W2-sol</a></td>
+            <td></td>
          </tr>
          <tr>
             <td>14-Dec-2022</td>
@@ -179,11 +177,10 @@ You can access all lecture notes, videos and exercises online through the links 
          </tr>
          <tr>
             <td style="color:gray;">11-Jan-2023</td>
-            <td style="color:gray;">W3: ProbProg 3 - Regression and Classification</td>
-            <td><a href="https://www.youtube.com/watch?v=yls2d3HMm28">W3.1</a>, <a href="https://www.youtube.com/watch?v=Q4f6S503e5I">W3.2</a></td>
+            <td style="color:gray;">W3: ProbProg 3 - Regression and classification</td>
+            <td></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-3.ipynb">W3</a></td>
-            <td><a href="https://github.com/bertdv/BMLIP/blob/master/lessons/exercises/probprog/pp3-exercises.ipynb">W3-ex</a><br/> 
-                <a href="https://github.com/bertdv/BMLIP/blob/master/lessons/exercises/probprog/solutions-pp3-exercises.ipynb">W3-sol</a></td>
+            <td></td>
          </tr>
          <tr>
             <td>13-Jan-2023</td>
@@ -201,11 +198,10 @@ You can access all lecture notes, videos and exercises online through the links 
          </tr>
          <tr>
             <td style="color:gray;">20-Jan-2023</td>
-            <td style="color:gray;">W4: ProbProg 4: Latent Variable and Dynamic Models</td>
-            <td><a href="https://youtu.be/UzUvkFMOlhk">W4.1</a>, <a href="https://youtu.be/47wGVzgS7Ys">W4.2</a></td>
+            <td style="color:gray;">W4 : ProbProg 4 - Mixture and dynamic models</td>
+            <td></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-4.ipynb">W4</a></td>
-            <td><a href="https://github.com/bertdv/BMLIP/blob/master/lessons/exercises/probprog/pp4-exercises.ipynb">W4-ex</a><br/> 
-                <a href="https://github.com/bertdv/BMLIP/blob/master/lessons/exercises/probprog/solutions-pp4-exercises.ipynb">W4-sol</a></td>
+            <td></td>
          </tr>
          <tr>
             <td></td>
