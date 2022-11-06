@@ -152,20 +152,25 @@ tag = "tags"
     weight = 4
     identifier = "software"
     [[menu.main]]
+      name = "RxInfer.jl"
+      url = "https://biaslab.github.io/rxinfer-website/"
+      parent = "software"
+      weight = 1
+    [[menu.main]]
       name = "ForneyLab.jl"
       url = "https://biaslab.github.io/ForneyLab.jl/stable/"
       parent = "software"
-      weight = 1
+      weight = 2
     [[menu.main]]
       name = "ReactiveMP.jl"
       url = "https://biaslab.github.io/ReactiveMP.jl/stable"
       parent = "software"
-      weight = 2
+      weight = 3
     [[menu.main]]
       name = "Rocket.jl"
       url = "https://biaslab.github.io/Rocket.jl/stable"
       parent = "software"
-      weight = 3
+      weight = 4
 
   [[menu.main]] # Team
     name = "Team"
