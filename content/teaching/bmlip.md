@@ -46,6 +46,8 @@ This course covers the fundamentals of a Bayesian (i.e., probabilistic) approach
 News and Announcements
 </h2>
 
+- <span style="color:red;"> Please note that the classroom lectures will not be recorded this year. First class on Wednesday 16-Nov 2022 in Auditorium rm.8. </span> 
+
 - As much as possible we use the [Piazza course site](https://piazza.com/class/l9n5gnieu4k6tl) for new announcements. 
 
 
@@ -226,11 +228,12 @@ You can access all lecture notes, videos and exercises online through the links 
 
 ## Exam Preparation
 
-- Each year there will be two written exam opportunities. **You cannot bring notes or books to the written exam sessions. All needed formulas are supplied at the exam sheet**.
-
 - Please consult the <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Course-Syllabus.ipynb">Course Syllabus</a> (lecture notes for 1st class) for advice on how to study the materials.
 
+- Each year there will be two written exam opportunities. The exams will be in multiple-choice format. Grading rules will be posted in Piazza. **You cannot bring notes or books to the written exam sessions. All needed formulas are supplied at the exam sheet**.
+
 - In addition to the materials in the above table, we provide two representative practice written exams:
+
   - 2021-01-18: <a href="https://github.com/bertdv/BMLIP/blob/master/exams/20210128-5SSD0-exam-A.pdf?dl=0">exam A</a>, <a href="https://github.com/bertdv/BMLIP/blob/master/exams/20210128-5SSD0-solutions-A.pdf?dl=0">solutions A</a>; <a href="https://github.com/bertdv/BMLIP/blob/master/exams/20210128-5SSD0-exam-B.pdf?dl=0">exam B</a>, <a href="https://github.com/bertdv/BMLIP/blob/master/exams/20210128-5SSD0-solutions-B.pdf?dl=0">solutions B</a>
   - 2021-04-15: <a href="https://github.com/bertdv/BMLIP/blob/master/exams/20210415-5SSD0-exam.pdf?dl=0">exam</a>, <a href="https://github.com/bertdv/BMLIP/blob/master/exams/20210415-5SSD0-solutions.pdf?dl=0">solutions</a>
 
