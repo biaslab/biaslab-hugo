@@ -46,7 +46,7 @@ This course covers the fundamentals of a Bayesian (i.e., probabilistic) approach
 News and Announcements
 </h2>
 
-- <span style="color:red;"> Please note that the classroom lectures will not be recorded this year. First class on Wednesday 16-Nov 2022 in Auditorium rm.8. </span> 
+- <span style="color:red;"> Exam rules have been [posted at piazza](https://piazza.com/class/l9n5gnieu4k6tl/post/23) </span> 
 
 - As much as possible we use the [Piazza course site](https://piazza.com/class/l9n5gnieu4k6tl) for new announcements. 
 
@@ -230,7 +230,7 @@ You can access all lecture notes, videos and exercises online through the links 
 
 - Please consult the <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Course-Syllabus.ipynb">Course Syllabus</a> (lecture notes for 1st class) for advice on how to study the materials.
 
-- Each year there will be two written exam opportunities. The exams will be in multiple-choice format. Grading rules will be posted in Piazza. **You cannot bring notes or books to the written exam sessions. All needed formulas are supplied at the exam sheet**.
+- Each year there will be two written exam opportunities. The exams will be in multiple-choice format. Grading rules have been [posted at Piazza](https://piazza.com/class/l9n5gnieu4k6tl/post/23). **You cannot bring notes or books to the written exam sessions. All needed formulas are supplied at the exam sheet**.
 
 - In addition to the materials in the above table, we provide two representative practice written exams:
 
