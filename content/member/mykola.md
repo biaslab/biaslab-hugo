@@ -39,9 +39,9 @@ sort_position = 4
 
 +++
 
-We all know about this situation: a team of researchers developed a new, pretty algorithm... But, OUCH!... before this algorithm can be employed, some production constraints still need to be fulfilled: it needs to be faster, use less RAM, etc. To resolve this issue, a separate team of engineers starts to shape the shiny algorithm into a form that fits into the production environment, e.g., by adding strategies for execution, memory allocation, and much more. But this two-separate-team problem stopped us from iterating the research process fast: something new and unexpected happened, and we needed to restart the whole cycle again. So if it is magically possible, at least test the new algorithm inside the production environment...
+We all know about this situation: a team of researchers developed a new, pretty algorithm... But, OUCH!... before this algorithm can be employed, some production constraints still need to be fulfilled: it needs to be faster, use less RAM, etc. To resolve this issue, a separate team of engineers starts to shape the shiny algorithm into a form that fits into the production environment, e.g., by adding strategies for execution, memory allocation, and much more. But this two-separate-team problem stopped us from iterating the research process fast: something new and unexpected happened, and we needed to restart the whole cycle again. I am dreaming about the perfect world where the cycle does not exist.
 
-My general long-term research goal is to resolve this two-separate-team problem (at least partially). Specifically, I aim to develop a flexible computational engine that can trade efficiency for precision.
+My general long-term research goal is to resolve this two-separate-team problem (at least partially). Specifically, I aim to develop a flexible computational engine that can trade precision for efficiency.
 
 The message-passing inference is the perfect place to implement it. All our computations are local, and if one needs to be less precise, so be it. It should keep the result (at least approximately). To achieve this inside the message passing inference, I want to treat message computation as a bayesian procedure.
 
