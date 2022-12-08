@@ -39,7 +39,7 @@ sort_position = 4
 
 +++
 
-A team of researchers at a hearing aid company has developed a new algorithm for improving sound quality in noisy environments. However, before the algorithm can produce hearing aids, it needs to be optimized to run faster and use less power. To address this issue, a separate team of engineers begins working on adapting the algorithm to the production environment: by implementing strategies for efficient execution and power management. A lot of time spend, and finally, teams deliver the product.
+A team of researchers at a hearing aid company has developed a new algorithm for improving sound quality in noisy environments. However, before the algorithm can be used in hearing aids, it needs to be optimized to run faster and use less power. To address this issue, a separate team of engineers begins working on adapting the algorithm to the production environment: by implementing strategies for efficient execution and power management. A lot of time spend, and finally, teams deliver the product.
 
 Unfortunately, a strange thing happened: the barking was considered noise in the initial algorithm, but it is an essential sound for dog handlers. They want to hear their dogs!
 
