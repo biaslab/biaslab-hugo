@@ -45,6 +45,6 @@ My general long-term research goal is to resolve this two-separate-team problem 
 
 The message-passing inference is the perfect place to implement it. All our computations are local, and if one needs to be less precise, so be it. It should keep the result (at least approximately). To achieve this inside the message passing inference, I want to threat message computation as a bayesian procedure.
 
-To demonstrate the capabilities of this approximate inference method, it will methods will be implemented in our [RxInfer ecosystem](https://biaslab.github.io/rxinfer-website/).
+To demonstrate the capabilities of this approximate inference method, it will be implemeted inside our [RxInfer ecosystem](https://biaslab.github.io/rxinfer-website/).
 
 Previously, I worked as a DevOps, machine learning engineer, and natural language processing engineer.
