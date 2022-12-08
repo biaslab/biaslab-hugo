@@ -39,18 +39,17 @@ sort_position = 4
 
 +++
 
-A team of researchers at a hearing aid company has developed a new algorithm for improving sound quality in noisy environments. However, before the algorithm can be used in hearing aids, it needs to be optimized to run faster and use less power. To address this issue, a separate team of engineers begins working on adapting the algorithm to the production environment: by implementing strategies for efficient execution and power management. A lot of time spend, and finally, teams deliver the product.
+A team of researchers at a hearing aid company has developed a new algorithm for improving sound quality in noisy environments. However, before the algorithm can be used in hearing aids, it needs to be optimized to run faster and use less power. To address this issue, a separate team of engineers begins to work on adapting the algorithm to the production environment: they implement strategies for efficient execution and power management. In a typical iterative development cycle procedure, they then pass the updated algorithm to the researcher team, adding another iteration in the cycle. Finally, after a lot of time spent in this cycle and many iterations, both teams deliver the product.
 
-Unfortunately, a strange thing happened: the barking was considered noise in the initial algorithm, but it is an essential sound for dog handlers. They want to hear their dogs!
+Unfortunately, some customers testing the product - dog handlers - are complaining: they cannot hear their dogs! Why? The current algorithm considered barking, an essential sound for dog handlers, as noise!
 
-And the team needs to restart this cycle again. This development cycle converges to a good algorithm very slowly: the need for two separate teams slows down the research process, and the entire cycle has to be restarted when something unexpected happens.
+To build a better algorithm that can deal with this unexpected scenario, both teams need to spend even more time in the development cycle. Evidently, convergence to a good algorithm is very slow in this development cycle: the need for two separate teams slows down the research process, and another iteration in the cycle is required whenever something unexpected happens.
 
-My general long-term research goal is to resolve this two-separate-team problem (at least partially). Specifically, I aim to develop a flexible computational engine that can trade precision for efficiency.
+My general long-term research goal is to resolve this two-separate-team problem (at least partially). Specifically, I aim to develop a flexible computational engine that can trade precision for efficiency, and which will consequently generate new versions of an algorithm that are less precise but still usable for testing. In the aforementioned example, this can help the teams make progress more quickly and avoid having to restart the entire development cycle when unexpected issues arise, such as the barking being classified as noise in the initial algorithm.
 
-The flexible computational engine will allow the team to generate new versions of the algorithm that are less precise but still usable for testing. This can help the team to make progress more quickly and avoid having to restart the entire development cycle when unexpected issues arise, such as the barking being classified as noise in the initial algorithm. 
-
-The message-passing inference is the perfect place to implement it. All our computations are local, and if one needs to be less precise, so be it. It should keep the result (at least approximately). I want to treat message computation as a bayesian procedure to achieve this inside the message-passing inference.
-
-By treating message computation as a bayesian procedure inside the message-passing inference, the approximate inference method can be implemented and demonstrated within the [RxInfer ecosystem](https://biaslab.github.io/rxinfer-website/).
+To implement this engine, I want to treat message computation as a Bayesian procedure inside message-passing inference.
+In message-passing inference, all our computations are local and can be kept for faster inference.
+If one needs to be less precise, then approximations of the exact result can be computed via approximate inference methods.
+Implementations of all inference methods within this engine will be demonstrated within the [RxInfer ecosystem](https://biaslab.github.io/rxinfer-website/).
 
 Previously, I worked as a DevOps \& machine learning engineer and natural language processing engineer.
