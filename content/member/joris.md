@@ -4,7 +4,7 @@ id = "joris"
 interests = [ "Software Engineering", "Web Development", "Distributed Systems" ]
 name = "Joris Kraak"
 portrait = "portraits/joris.jpg"
-short_bio = "I am a senior software engineer at [GN Hearing](http://www.gn.com)."
+short_bio = "I am a Technical Team Lead at [JuliaHub](https://juliahub.com/)."
 title = "Joris Kraak"
 sort_position = 7
 
@@ -34,8 +34,8 @@ sort_position = 7
     year = 2012
 
 [[organizations]]
-    name = "GN Hearing"
-    role = "Senior Software Engineer"
+    name = "JuliaHub"
+    role = "Technical Team Lead"
 
 +++
 Joris Kraak received his M.Sc. in Electrical Engineering from the [Eindhoven
@@ -45,4 +45,4 @@ maintenance of a number of MATLAB toolboxes for the creation and distribution
 of signal processing solutions. More recently, his work has been focused on the
 development of a fast prototyping framework for the BIASlab team based on
 [Julia](http://julialang.org) and a diverse suite of web and mobile
-technologies.
+technologies. He currently works as a Technical Team Lead at [JuliaHub](https://juliahub.com/).
