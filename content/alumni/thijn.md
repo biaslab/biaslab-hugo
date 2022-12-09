@@ -34,4 +34,4 @@ external_link = "https://www.linkedin.com/in/thijn-hermsen-electrical-engineerin
     role = "MSc student"
 +++
 
-My name is Thijn Hermsen and I am a MSc student in the Signal Processing Systems group of the Electrical Engineering department at Eindhoven University of Technology. My research focuses on Generative modeling on football player's decisions and further interests extend towards statistics and market strategies.
+My name is Thijn Hermsen and I was a MSc student in the Signal Processing Systems group of the Electrical Engineering department at Eindhoven University of Technology. My research focused on Generative modeling on football player's decisions and further interests extend towards statistics and market strategies.

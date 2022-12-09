@@ -4,7 +4,7 @@ id = "alp"
 interests = ["Signal Processing", "Bayesian Machine Learning", "Variational Inference"]
 name = " Alp Sari"
 portrait = "portraits/Alp.jpg"
-short_bio = "Alp Sari is a MSc student in the SPS group of Electrical Engineering department in Eindhoven University of Technology."
+short_bio = "Alp Sari was a MSc student in the SPS group of Electrical Engineering department in Eindhoven University of Technology."
 title = "Alp Sari"
 sort_position = 5
 external_link = "https://www.linkedin.com/in/alp-sari/"
@@ -34,4 +34,4 @@ external_link = "https://www.linkedin.com/in/alp-sari/"
     role = "MSc student"
 +++
 
-Alp Sari is a MSc student in the SPS group of Electrical Engineering department in Eindhoven University of Technology. His research focuses on natural gradient methods in constrained Bayesian inference.
+Alp Sari was a MSc student in the SPS group of Electrical Engineering department in Eindhoven University of Technology. His research focused on natural gradient methods in constrained Bayesian inference.

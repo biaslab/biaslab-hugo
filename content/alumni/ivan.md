@@ -34,4 +34,4 @@ external_link = "https://www.linkedin.com/in/ivan-bocharov-4a789a98/"
     role = "PhD candidate"
 
 +++
-Ivan Bocharov is a PhD candidate in the SPS group of Electrical Engineering department in Eindhoven University of Technology. His research focuses on variational methods for machine learning and hierarchical dynamical systems. Aside from that he's interested in natural language processing and compiler design.
+Ivan Bocharov was a PhD candidate in the SPS group of Electrical Engineering department in Eindhoven University of Technology. His research focused on variational methods for machine learning and hierarchical dynamical systems. Aside from that he's interested in natural language processing and compiler design.

@@ -30,5 +30,5 @@ external_link = "https://www.linkedin.com/in/marco-cox-a455a01b/"
     role = "PhD candidate"
 
 +++
-Marco Cox is a PhD candidate in the Electrical Engineering department of [TU Eindhoven](http://www.tue.nl), working in the [BIASlab](http://biaslab.github.io) team. His research focusses on Bayesian machine learning techniques for optimization and signal processing. He is also interested in information theory, computer architecture, and combinatorics. Marco received the M.Sc. degree in electrical engineering from TU Eindhoven in 2014.
+Marco Cox was a PhD candidate in the Electrical Engineering department of [TU Eindhoven](http://www.tue.nl), working in the [BIASlab](http://biaslab.github.io) team. His research focused on Bayesian machine learning techniques for optimization and signal processing. He is also interested in information theory, computer architecture, and combinatorics. Marco received the M.Sc. degree in electrical engineering from TU Eindhoven in 2014.
 

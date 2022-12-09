@@ -35,4 +35,4 @@ external_link = "https://www.linkedin.com/in/jim-beckers/"
     role = "MSc student"
 +++
 
-Jim Beckers is a MSc student in the SPS group of the Electrical Engineering department at Eindhoven University of Technology. His research focuses on implementing the Active Listening paper by Karl Friston.
+Jim Beckers was a MSc student in the SPS group of the Electrical Engineering department at Eindhoven University of Technology. His research focused on implementing the Active Listening paper by Karl Friston.
