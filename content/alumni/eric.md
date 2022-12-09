@@ -21,7 +21,7 @@ is_former_member = true
 
 [[organizations]]
     name = "TU Eindhoven"
-    role = "Former PhD Candidate"
+    role = "Former PhD candidate"
 
 +++
 Quan (Eric) Nguyen received a M.Sc. in Computer Science (with a specialization in Algorithms, Data Analytics and Machine Learning; and a minor in Statistics, both with distinction) from the University of Helsinki in 2015. He left the group in 2018.

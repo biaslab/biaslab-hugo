@@ -31,7 +31,7 @@ title = "Magnus Koudahl"
 
 [[organizations]]
     name = "TU Eindhoven"
-    role = "PhD Candidate"
+    role = "PhD candidate"
 
 +++
 Magnus holds a M.Sc in IT & Cognition from the University of Copenhagen and has previously worked in Computational Neuroeconomics. He is currently a Ph.D candidate at TU/e where his research centers on fusing Active Inference and Bayesian Machine learning to create novel solutions for Reinforcement Learning problems.

@@ -32,7 +32,7 @@ cv_link = ""
 
 [[organizations]]
     name = "TU Eindhoven"
-    role = "PhD Candidate"
+    role = "PhD candidate"
 
 +++
 
