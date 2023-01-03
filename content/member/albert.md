@@ -1,12 +1,12 @@
 +++
 date = "2016-07-12T15:52:22+02:00"
 id = "albert"
-interests = ["Bayesian Inference", "Signal Processing", "Intelligent Systems", "Nature-Inspired Optimization"]
+interests = ["Bayesian Inference", "Signal Processing", "Intelligent Systems"]
 name = "Albert Podusenko"
 portrait = "portraits/albert.jpeg"
-short_bio = "I am a PhD candidate at the Electrical Engineering department in Eindhoven University of Technology."
+short_bio = "I am a postdoctoral researcher at the Electrical Engineering department in Eindhoven University of Technology"
 title = "Albert Podusenko"
-sort_position = 4
+sort_position = 3
 
 [[social]]
     icon = "envelope"
@@ -24,6 +24,11 @@ sort_position = 4
     link = "https://www.linkedin.com/in/albertpod/"
 
 [[education]]
+    course = "PhD in Machine Learning"
+    institution = 'Eindhoven University of Technology'
+    year = 2022
+
+[[education]]
     course = "MSc in Computer Science"
     institution = 'Doshisha University'
     year = 2018
@@ -35,9 +40,9 @@ sort_position = 4
 
 [[organizations]]
     name = "TU Eindhoven"
-    role = "PhD candidate"
+    role = "Postdoctoral fellow"
 
 +++
-Albert Podusenko is a PhD candidate in the SPS group of Electrical Engineering
+Albert Podusenko is a postdoc in the SPS group of Electrical Engineering
 department in Eindhoven University of Technology. His research focuses on
-Bayesian intelligent agents.
+Bayesian Inference and Probabilistic Graphical Models.
