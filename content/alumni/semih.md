@@ -10,6 +10,11 @@ sort_position = 4
 external_link = "https://nl.linkedin.com/in/semih-akbayrak-90aab295"
 
 [[social]]
+    icon = "linkedin"
+    icon_pack = "fa"
+    link = "//linkedin.com/in/semih-akbayrak-90aab295"
+
+[[social]]
     icon = "envelope"
     icon_pack = "fa"
     link = "mailto:s.akbayrak@tue.nl"
@@ -40,8 +45,8 @@ external_link = "https://nl.linkedin.com/in/semih-akbayrak-90aab295"
     year = 2015
 
 [[organizations]]
-    name = "TU Eindhoven"
-    role = "PhD candidate"
+    name = "Mendix"
+    role = "Senior Statistician"
 
 +++
 Semih Akbayrak defended his [PhD thesis](https://pure.tue.nl/ws/portalfiles/portal/247714822/20230120_Akbayrak_hf.pdf) in 2023.
