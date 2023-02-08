@@ -46,6 +46,8 @@ This course covers the fundamentals of a Bayesian (i.e., probabilistic) approach
 News and Announcements
 </h2>
 
+- The solution notebook for the Probabilistic Programming assignment can be downloaded [here](https://github.com/bertdv/BMLIP/blob/master/lessons/assignment/Probabilistic%20Programming%20-%20Assignment%20%5BSolution%5D.ipynb).
+
 - <span style="color:red;"> [MSc projects overview at BIASlab for download](https://github.com/bertdv/BMLIP/blob/master/lessons/notebooks/files/MScprojects-2023.pdf) </span> 
 
 - <span style="color:red;"> Exam rules have been [posted at piazza](https://piazza.com/class/l9n5gnieu4k6tl/post/23) </span> 
