@@ -132,5 +132,8 @@ config.local.toml
 # vim
 *.swp
 
+# visual studio
+.vscode
+
 # hugo lock
 .hugo_build.lock
