@@ -26,7 +26,7 @@ This project does not involve a company. You will be working in the Bayesian Int
 - Developed software will be open source, accessible through [BIASlab's github](https://github.com/biaslab/) organization. It should be legible / usable for future students.
 
 ## Student task description
-You will initially be spending time familiarizing yourself with the tools and techniques that BIASlab develops ([RxInfer](https://github.com/biaslab/RxInfer.jl). Once familiar, you will write your own active inference agent based off of existing AIF agent implementations within BIASlab. Note that you'll be supported by BIASlab researchers that are working on other robot locomotion projects. 
+You will initially be spending time familiarizing yourself with the tools and techniques that BIASlab develops ([RxInfer.jl](https://github.com/biaslab/RxInfer.jl)). Once familiar, you will write your own active inference agent based off of existing AIF agent implementations within BIASlab. Note that you'll be supported by BIASlab researchers that are working on other robot locomotion projects. 
 
 ### Concrete tasks
 - Review literature on AIF agents for robotics.
