@@ -1,12 +1,12 @@
 +++
-date = "2022-11-09T13:33:37+00:00"
+date = "2023-06-29T13:33:37+00:00"
 id = "raaja"
 interests = ["Bayesian Inference", "Control Theory"]
-name = ""
+name = "Raaja Ganapathy Subramanian"
 portrait = "portraits/Raaja.png"
 short_bio = "I am a PhD student at the Electrical Engineering department, [Eindhoven University of Technology](https://www.tue.nl/en/)."
 title = "Raaja Ganapathy Subramanian"
-sort_position = 5
+sort_position = 4
 
 [[social]]
     icon = "envelope"
