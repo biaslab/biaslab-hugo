@@ -1,7 +1,7 @@
 +++
 date = "2022-11-09T13:33:37+00:00"
 id = "xianbo"
-interests = ["Machine learning", "Deep learning", "Probabilistic modeling", "Modeling of time series"]
+interests = ["Machine Learning", "Deep Learning", "Probabilistic Modeling", "Time Series Modeling"]
 name = "Xianbo Xu"
 portrait = "portraits/xianbo.jpg"
 short_bio = "I am a MsC student at the Electrical Engineering department, [Eindhoven University of Technology](https://www.tue.nl/en/)."
