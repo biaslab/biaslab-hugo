@@ -6,7 +6,7 @@ name = "Tim Nisslbeck"
 portrait = "portraits/tim.png"
 short_bio = "I am a PhD candidate at the Electrical Engineering department, [Eindhoven University of Technology](https://www.tue.nl/en/)."
 title = "Tim Nisslbeck"
-sort_position = 4
+sort_position = 4.4
 
 [[social]]
     icon = "envelope"

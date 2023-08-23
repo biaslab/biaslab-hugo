@@ -6,7 +6,7 @@ name = "Raaja Ganapathy Subramanian"
 portrait = "portraits/Raaja.png"
 short_bio = "I am a PhD student at the Electrical Engineering department, [Eindhoven University of Technology](https://www.tue.nl/en/)."
 title = "Raaja Ganapathy Subramanian"
-sort_position = 4
+sort_position = 5.0
 
 [[social]]
     icon = "envelope"

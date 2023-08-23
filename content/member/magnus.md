@@ -5,7 +5,7 @@ interests = ["Computational Neuroscience" ,"Bayesian Machine Learning", "Reinfor
 name = "Magnus Tønder Koudahl"
 portrait = "portraits/magnus.png"
 short_bio = "I am a PhD candidate at the Signal Processing Systems group in TU Eindhoven" 
-sort_position = 4
+sort_position = 4.0
 title = "Magnus Koudahl"
 
 [[social]]

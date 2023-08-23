@@ -6,7 +6,7 @@ name = "Mykola Lukashchuk"
 portrait = "portraits/mykola.jpg"
 short_bio = "I am a PhD candidate at the Electrical Engineering department, [Eindhoven University of Technology](https://www.tue.nl/en/)."
 title = "Mykola Lukashchuk"
-sort_position = 4
+sort_position = 4.5
 
 [[social]]
     icon = "envelope"

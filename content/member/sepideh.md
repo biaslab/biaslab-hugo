@@ -6,7 +6,7 @@ name = "Sepideh Adamiat"
 portrait = "portraits/sepideh.jpeg"
 short_bio = "I am a PhD candidate at the Electrical Engineering department, [Eindhoven University of Technology](https://www.tue.nl/en/)."
 title = "Sepideh Adamiat"
-sort_position = 4
+sort_position = 4.6
 
 [[social]]
     icon = "envelope"

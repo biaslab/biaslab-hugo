@@ -6,7 +6,7 @@ name = "Bert de Vries"
 portrait = "portraits/Bert.jpg"
 short_bio = "I am a professor at TU Eindhoven and team leader of BIASlab."
 title = "Bert de Vries"
-sort_position = 1
+sort_position = 1.0
 personal_website = "http://bertdv.nl"
 cv_link = "http://bertdv.github.io/cv/bdevries_cv.pdf"
 [[social]]

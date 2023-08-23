@@ -6,7 +6,7 @@ name = "Ismail Senoz"
 portrait = "portraits/ismail.jpg"
 short_bio = "I am a postdoctoral researcher at the Electrical Engineering department in Eindhoven University of Technology "
 title = "Ismail Senoz"
-sort_position = 3
+sort_position = 3.0
 
 [[social]]
     icon = "envelope"

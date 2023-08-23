@@ -6,7 +6,7 @@ name = "Wouter Nuijten"
 portrait = "portraits/wouter_n.jpeg"
 short_bio = "I am a PhD candidate at the Signal Processing Systems group in TU Eindhoven working on Bayesian Machine Learning."
 title = "Wouter Nuijten"
-sort_position = 4
+sort_position = 4.7
 personal_website = "https://wouterwln.github.io"
 cv_link = ""
 [[social]]

@@ -60,3 +60,16 @@ Working installation of GNU Make is recommended, but not required. You can test 
         hugo new post/notebook.md
 
     and copy content from your original `notebook.md` file to the newly created post. This way Hugo will automatically populate some fields in the header of the file.
+
+# Ranking of team members
+Ranking team members is done in [this code snippet](layouts/partials/index/members.html) given the `sort_position` parameter.
+Currently, this parameter is structured as a float (`X.Y`) where `X` is a number representing a team member belonging to the following group
+```
+1 Professor
+2 Assistant Professor
+3 Postdoc
+4 full-time PhD student (BIASlab)
+5 part-time PhD student (BIASlab)
+6 guest PhD student (external)
+```
+Each group is sorted by seniority, determined by `Y`.

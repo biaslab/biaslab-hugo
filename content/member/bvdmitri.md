@@ -6,7 +6,7 @@ name = "Dmitry V. Bagaev"
 portrait = "portraits/bvdmitri.jpeg"
 short_bio = "I am a PhD candidate at the Electrical Engineering department in Eindhoven University of Technology."
 title = "Dmitry V. Bagaev"
-sort_position = 4
+sort_position = 4.1
 
 [[social]]
     icon = "envelope"

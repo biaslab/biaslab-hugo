@@ -6,7 +6,7 @@ name = "Chengfeng Jia"
 portrait = "portraits/Chengfeng-Jia.jpg"
 short_bio = "I am a guest PhD candidate at the Electrical Engineering department in Eindhoven University of Technology "
 title = "Chengfeng Jia"
-sort_position = 4
+sort_position = 6.0
 
 [[social]]
     icon = "envelope"

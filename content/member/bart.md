@@ -6,7 +6,7 @@ name = "Bart van Erp"
 portrait = "portraits/bart.png"
 short_bio = "I am a PhD candidate - Teaching Assistant at the Electrical Engineering department in Eindhoven University of Technology "
 title = "Bart van Erp"
-sort_position = 4
+sort_position = 4.2
 
 [[social]]
     icon = "envelope"

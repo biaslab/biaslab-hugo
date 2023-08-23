@@ -7,6 +7,7 @@ portrait = "portraits/xianbo.jpg"
 short_bio = "I am a MsC student at the Electrical Engineering department, [Eindhoven University of Technology](https://www.tue.nl/en/)."
 title = "Xianbo Xu"
 sort_position = 5
+external_link = "https://www.linkedin.com/in/xianbo-xu/"
 
 [[social]]
     icon = "envelope"

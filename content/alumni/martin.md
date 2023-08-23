@@ -7,6 +7,7 @@ portrait = "portraits/martin.jpg"
 short_bio = "I am a PhD candidate at the Electronic Systems group in Eindhoven University of Technology."
 title = "Martin Roa Villescas"
 sort_position = 5
+external_link = "https://nl.linkedin.com/in/martin-roa-villescas-02ab3417"
 
 [[social]]
     icon = "envelope"

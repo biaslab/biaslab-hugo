@@ -6,7 +6,7 @@ name = "Albert Podusenko"
 portrait = "portraits/albert.jpeg"
 short_bio = "I am a postdoctoral researcher at the Electrical Engineering department in Eindhoven University of Technology"
 title = "Albert Podusenko"
-sort_position = 3
+sort_position = 3.1
 
 [[social]]
     icon = "envelope"
