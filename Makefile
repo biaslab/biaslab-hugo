@@ -7,9 +7,8 @@ set-theme: ## Set theme
 	cd ./themes/academic-group && git checkout $(THEME_VERSION)
 update-theme: ## Update theme to the latest version
 	cd ./themes/academic-group && git pull origin master
-	git checkout master
-	@echo $(git rev-parse --short HEAD)
-	git rev-parse --short HEAD > ../../.theme_version 
+	cd ./themes/academic-group && git checkout master
+	cd ./themes/academic-group && git rev-parse --short HEAD > ../../.theme_version 
 show-theme-version: ## Show theme version
 	@echo $(THEME_VERSION)
 build-website: ## Build website
