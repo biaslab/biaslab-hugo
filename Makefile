@@ -1,10 +1,20 @@
+THEME_VERSION=$(shell cat .theme_version)
+
 install-theme: ## Install theme
 	git clone git@github.com:biaslab/hugo-academic-group.git ./themes/academic-group;
-update-theme: ## update theme
-	cd ./themes/academic-group; git pull
+	cd ./themes/academic-group && git checkout $(THEME_VERSION)
+set-theme: ## Set theme
+	cd ./themes/academic-group && git checkout $(THEME_VERSION)
+	@echo "You are using" $(THEME_VERSION)
+update-theme: ## Update theme to the latest version
+	cd ./themes/academic-group && git pull origin master
+	cd ./themes/academic-group && git checkout master
+	cd ./themes/academic-group && git rev-parse --short HEAD > ../../.theme_version
+show-theme-version: ## Show theme version
+	@echo $(THEME_VERSION)
 build-website: ## Build website
 	hugo -t academic-group
-preview-website: ## Preview website
+preview-website: set-theme ## Preview website
 	hugo server -t academic-group -w
 publish: ## Publish website
 	./publish.sh
