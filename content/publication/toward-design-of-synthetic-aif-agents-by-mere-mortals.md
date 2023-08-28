@@ -12,7 +12,7 @@ selected = false
 title = "Toward Design of Synthetic Active Inference Agents by Mere Mortals"
 url_code = ""
 url_dataset = ""
-url_pdf = "https://arxiv.org/pdf/2307.14145.pdf"
+url_pdf = "/pdf/iwai2023/2307.14145.pdf"
 url_project = ""
 url_video = ""
 url_custom = [{name="IWAI", url = "https://iwaiworkshop.github.io/#programme"}, {name="arXiv", url = "https://arxiv.org/abs/2307.14145"}]
