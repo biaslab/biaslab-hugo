@@ -16,7 +16,7 @@ build-website: ## Build website
 	hugo -t academic-group
 preview-website: set-theme ## Preview website
 	hugo server -t academic-group -w
-publish: ## Publish website
+publish: set-theme ## Publish website
 	./publish.sh
 rebuild-docs: ## Build docs
 	./rebuild_docs.sh
