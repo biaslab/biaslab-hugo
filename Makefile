@@ -1,4 +1,5 @@
-THEME_VERSION=$(shell cat .theme_version)
+cat := $(if $(filter $(OS),Windows_NT),type,cat)
+THEME_VERSION=$(shell $(cat) .theme_version)
 
 install-theme: ## Install theme
 	git clone git@github.com:biaslab/hugo-academic-group.git ./themes/academic-group;
