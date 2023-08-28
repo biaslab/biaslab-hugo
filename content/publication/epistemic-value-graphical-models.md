@@ -16,6 +16,7 @@ url_custom = [{name="Frontiers", url = "https://www.frontiersin.org/articles/10.
 url_project = ""
 url_slides = ""
 url_video = ""
+url_pdf = "/pdf/frontiers-RAI/frobt-09-794464.pdf"
 
 [[authors]]
     name = "Thijs van de Laar"

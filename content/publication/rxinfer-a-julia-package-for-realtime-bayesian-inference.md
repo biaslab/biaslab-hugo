@@ -6,15 +6,16 @@ image = ""
 image_preview = ""
 math = false
 publication = "The Journal of Open Source Software"
+publication_short = "JOSS"
 to_be_published = false
 selected = false
 title = "RxInfer: A Julia package for reactive real-time Bayesian inference"
 url_code = "https://github.com/biaslab/RxInfer.jl"
 url_dataset = ""
-url_pdf = "https://www.theoj.org/joss-papers/joss.05161/10.21105.joss.05161.pdf"
+url_pdf = "/pdf/joss/10.21105.joss.05161.pdf"
 url_project = ""
 url_video = ""
-url_custom = []
+url_custom = [{name="JOSS", url="https://www.theoj.org/joss-papers/joss.05161/10.21105.joss.05161.pdf"}]
 
 [[authors]]
     id = "bvdmitri"

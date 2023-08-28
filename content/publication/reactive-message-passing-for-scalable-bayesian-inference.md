@@ -10,10 +10,10 @@ selected = false
 title = "Reactive Message Passing for Scalable Bayesian Inference"
 url_code = "https://github.com/biaslab/ReactiveMP.jl"
 url_dataset = ""
-url_pdf = "https://downloads.hindawi.com/journals/sp/2023/6601690.pdf"
+url_pdf = "/pdf/scientific-programming/6601690.pdf"
 url_project = ""
 url_video = ""
-url_custom = [ { name="ArXiv", url = "https://arxiv.org/abs/2112.13251" } ]
+url_custom = [ { name="arXiv", url = "https://arxiv.org/abs/2112.13251" } ]
 
 [[authors]]
     id = "bvdmitri"

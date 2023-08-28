@@ -11,7 +11,7 @@ selected = false
 title = "Automating Model Comparison in Factor Graphs"
 url_code = "https://github.com/biaslab/AutomatingModelComparison"
 url_dataset = ""
-url_pdf = "https://arxiv.org/pdf/2306.05965.pdf"
+url_pdf = "/pdf/entropy/entropy-25-01138-v2.pdf"
 url_project = ""
 url_video = ""
 url_custom = [{name="Entropy", url="https://www.mdpi.com/1099-4300/25/8/1138"}, {name="arXiv", url = "https://arxiv.org/abs/2306.05965"}]
