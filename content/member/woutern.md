@@ -1,10 +1,10 @@
 +++
 date = "2022-10-06T11:21:22+02:00"
 id = "woutern"
-interests = ["Machine Learning", "Statistical Inference", "Bayesian Inference"]
+interests = ["Machine Learning", "Nested Active Inference", "Bayesian Inference"]
 name = "Wouter Nuijten"
 portrait = "portraits/wouter_n.jpeg"
-short_bio = "I am a PhD candidate at the Signal Processing Systems group in TU Eindhoven working on Bayesian Machine Learning."
+short_bio = "I am a PhD candidate at the Signal Processing Systems group in TU Eindhoven working on Nested Active Inference."
 title = "Wouter Nuijten"
 sort_position = 4.7
 personal_website = "https://wouterwln.github.io"
@@ -13,6 +13,11 @@ cv_link = ""
     icon = "envelope"
     icon_pack = "fa"
     link = "mailto:w.w.l.nuijten@tue.nl"
+
+[[social]]
+    icon = "twitter"
+    icon_pack = "fa"
+    link = "https://x.com/wouter_nuijten"
 
 [[social]]
     icon = "google-scholar"
@@ -37,4 +42,4 @@ cv_link = ""
 +++
 
 
-Wouter Nuijten is a PhD candidate in the SPS group of the Electrical Engineering department at the Eindhoven University of Technology. His research focuses on developing usable synthetic active inference agents through the development of scalable real-time Bayesian inference.
+Wouter Nuijten is a PhD candidate in the SPS group at Eindhoven University of Technology's Electrical Engineering department. His research focuses on the study of nested Active Inference and the emergence of intelligence within complex hierarchical systems. The goal of this research is to design intelligent agents that minimize variational free energy in a control setting.
