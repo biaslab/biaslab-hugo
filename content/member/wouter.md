@@ -30,7 +30,7 @@ cv_link = ""
     link = "//github.com/wmkouw/"
 
 [[education]]
-    course = "PhD in Intelligent Systems"
+    course = "PhD in Computer Science"
     institution = 'Delft University of Technology'
     year = 2018
 
@@ -45,8 +45,5 @@ cv_link = ""
 
 +++
 
-Intelligent behaviour fascinates me: how animals can efficiently process a flood of sensory signals and learn to survive. Nature has produced elegant solutions for information processing that I believe can help us tackle challenges in modern society. I'm passionate about taking what we know from how brains process information, to making intelligent machines.
+Wouter Kouw has a dual background in neuroscience and computer science, which he utilizes to analyze, design and develop probabilistic machine learning systems based on models of information processing in the brain. His research focuses on variational Bayesian inference algorithms for learning dynamics in mobile robots. Formerly, he was a visiting scholar at Cornell University (USA) and a Niels Stensen Fellow at Copenhagen University (Denmark).
 
-My work focuses on designing agents to control walking robots. I collaborate with other researchers to study how neuro-biological processes of action and perception can be used for engineering and I collaborate with industry to solve practical problems using Bayesian inference and probabilistic programming.
-
-Previously, I worked on the theoretical limitations of machine learning: I tried to understand when and why algorithms fail to generalize from a training sample to real-world settings. I designed robust estimators, which I have applied to image, signal, and natural language processing problems.
