@@ -137,15 +137,20 @@ tag = "tags"
     weight = 3
     identifier="teaching"
     [[menu.main]]
-      name = "2022/23"
+      name = "2023/24"
       url = "/teaching/bmlip"
       parent = "teaching"
       weight = 1
     [[menu.main]]
+      name = "2022/23"
+      url = "/teaching/archive/bmlip-2022"
+      parent = "teaching"
+      weight = 2
+    [[menu.main]]
       name = "2021/22"
       url = "/teaching/archive/bmlip-2021"
       parent = "teaching"
-      weight = 2
+      weight = 3
 
   [[menu.main]] # Software = [ForneyLab.jl, ReactiveMP.jl, Rocket.jl]
     name = "Software"

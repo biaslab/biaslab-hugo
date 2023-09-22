@@ -2,7 +2,7 @@
 date = "2018-08-23T14:45:00+02:00"
 external_link = ""
 title = "Bayesian Machine Learning and Information Processing (5SSD0)"
-subtitle = "academic year 2023/24"
+subtitle = "academic year 2022/23"
 participants_block_position = "down"
 type = "teaching"
 
@@ -29,7 +29,7 @@ Note: This site is currently under construction.
 </h2>
 --->
 
-The 2023/24 course "Bayesian Machine Learning and Information Processing" will start in November 2023 (Q2).  
+The 2022/23 course "Bayesian Machine Learning and Information Processing" will start in November 2022 (Q2).  
 
 
 <img src="/img/teaching/5SSD0-banner.png" width="1200px">
@@ -46,14 +46,20 @@ This course covers the fundamentals of a Bayesian (i.e., probabilistic) approach
 News and Announcements
 </h2>
 
+- The solution notebook for the Probabilistic Programming assignment can be downloaded [here](https://github.com/bertdv/BMLIP/blob/master/lessons/assignment/Probabilistic%20Programming%20-%20Assignment%20%5BSolution%5D.ipynb).
+
+- <span style="color:red;"> [MSc projects overview at BIASlab for download](https://github.com/bertdv/BMLIP/blob/master/lessons/notebooks/files/MScprojects-2023.pdf) </span> 
+
+- <span style="color:red;"> Exam rules have been [posted at piazza](https://piazza.com/class/l9n5gnieu4k6tl/post/23) </span> 
+
 - As much as possible we use the [Piazza course site](https://piazza.com/class/l9n5gnieu4k6tl) for new announcements. 
 
 
 ## Instructors
 
-- [Prof.dr.ir. Bert de Vries](http://bertdv.nl) (email: bert.de.vries@tue.nl) is the responsible instructor for this course and teaches the [lectures with label B](#lectures).
-- [Dr. Wouter Kouw](https://biaslab.github.io/member/wouter/) (w.m.kouw@tue.nl) teaches the probabilistic programming [lectures with label W](#lectures).                           
-- [Tim Nisslbeck](https://biaslab.github.io/member/tim), [Sepideh Adamiat](https://biaslab.github.io/member/sepideh) and [Wouter Nuijten](https://biaslab.github.io/member/woutern) are the teaching assistants.  
+- [Prof.dr.ir. Bert de Vries](http://bertdv.nl) (email: bert.de.vries@tue.nl) is the responsible instructor for this course and teaches all [lectures with label B](#lectures).
+- [Dr. Wouter Kouw](https://biaslab.github.io/member/wouter/) (w.m.kouw@tue.nl) teaches all [practical sessions on probabilistic programming with label W](#lectures).                           
+- [Magnus Koudahl](https://biaslab.github.io/member/magnus/), [Tim Nisslbeck](https://biaslab.github.io/member/tim), [Sepideh Adamiat](https://biaslab.github.io/member/sepideh) and [Wouter Nuijten](https://biaslab.github.io/member/woutern) are the teaching assistants. Mr. Koudahl presents the ["What is Life?"](#bonus-lecture) bonus lecture. 
 
 ## Materials
 
@@ -73,8 +79,8 @@ Learning](https://www.microsoft.com/en-us/research/people/cmbishop/prml-book/). 
 
 ### Software
 
-- Please install Microsoft's VS Code editor ([download](https://code.visualstudio.com/Download)) and add the Jupyter notebook extension ([tutorial](https://code.visualstudio.com/learn/educators/notebooks)).
-- Please install Julia <b>version 1.9</b> ([download](https://julialang.org/downloads/)) on your machine and then add the Julia extension in VS Code ([tutorial](https://code.visualstudio.com/docs/languages/julia)). 
+- We will provide a web-based environment with all necessary software pre-installed and tested, which will allow you to execute code in the lesson notebooks and work on your probabilistic programming assignment. The invitation link will be posted on Piazza.
+- If you prefer working on your own machine, we recommend installing Microsoft's VS Code editor ([download](https://code.visualstudio.com/Download)) and adding the Jupyter ([tutorial](https://code.visualstudio.com/learn/educators/notebooks)) and Julia ([tutorial](https://code.visualstudio.com/docs/languages/julia)) extensions. Note that we will not support you in installing these tools on your own machine.
 
 ### <a name="lectures">Lecture notes, videos and exercises</a>
 
@@ -94,7 +100,7 @@ You can access all lecture notes, videos and exercises online through the links 
             <th style="text-align:center">exercises</th>
          </tr>
          <tr>
-            <td>15-Nov-2023</td>
+            <td>16-Nov-2022</td>
             <td>B0: Course Syllabus<br/>
             B1: Machine Learning Overview</td>
             <td><a href="https://youtu.be/pvDZWAJ9YMM">B1</a></td>
@@ -102,60 +108,63 @@ You can access all lecture notes, videos and exercises online through the links 
             <td></td>
          </tr>
          <tr>
-            <td>17-Nov-2023</td>
+            <td>18-Nov-2022</td>
             <td>B2: Probability Theory Review</td>
             <td><a href="https://youtu.be/uaKD8mZZnO8">B2.1</a>, <a href="https://youtu.be/YqXkSb8updg">B2.2</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Probability-Theory-Review.ipynb">B2</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises-Probability-Theory-Review.ipynb">B2-ex</a><br/> <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Solutions-Probability-Theory-Review.ipynb">B2-sol</a></td>
          </tr>
          <tr>
-            <td>22-Nov-2023</td>
+            <td>23-Nov-2022</td>
             <td>B3: Bayesian Machine Learning</td>
             <td><a href="https://youtu.be/fw1lS0XsHrI">B3.1</a>, <a href="https://youtu.be/W5PlzDADdxE">B3.2</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Bayesian-Machine-Learning.ipynb">B3</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises-Bayesian-Machine-Learning.ipynb">B3-ex</a><br/> <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Solutions-Bayesian-Machine-Learning.ipynb">B3-sol</a></td>
          </tr>
          <tr>
-            <td >24-Nov-2023</td>
+            <td style="color:gray;">25-Nov-2022</td>
+            <td style="color:gray;">W1: ProbProg 1 - Introduction to Bayesian inference</td>
+            <td></td>
+            <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-1.ipynb">W1</a></td>
+            <td></td>
+         </tr>
+         <tr>
+            <td >30-Nov-2022</td>
             <td >B4: Factor Graphs and the Sum-Product Algorithm</td>
             <td><a href="https://youtu.be/YaYJpoi9Iy0">B4</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Factor-Graphs.ipynb">B4</a></td>
              <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises-Factor-Graphs.ipynb">B4-ex</a><br/> <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Solutions-Factor-Graphs.ipynb">B4-sol</a></td>
          </tr>
          <tr>
-            <td>27-Nov-2023</td>
-            <td style="color:red;">Deadline julia programming assignment</td>
-         </tr>
-         <tr>
-            <td>29-Nov-2023</td>
+            <td>02-Dec-2022</td>
             <td>B5: Continuous Data and the Gaussian Distribution</td>
             <td><a href="https://youtu.be/DwUX1OOZGfM">B5.1</a>, <a href="https://youtu.be/h6y0vZnPI2s">B5.2</a>, <a href="https://youtu.be/yP1_gPso5Xg">B5.3</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/The-Gaussian-Distribution.ipynb">B5</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises-The-Gaussian-Distribution.ipynb">B5-ex</a><br/> <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Solutions-The-Gaussian-Distribution.ipynb">B5-sol</a></td>
          </tr>
          <tr>
-            <td>01-Dec-2023</td>
+            <td>07-Dec-2022</td>
             <td>B6: Discrete Data and the Multinomial Distribution</td>
             <td><a href="https://youtu.be/70gVEt4AexA">B6</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/The-Multinomial-Distribution.ipynb">B6</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises-The-Multinomial-Distribution.ipynb">B6-ex</a><br/> <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Solutions-The-Multinomial-Distribution.ipynb">B6-sol</a></td>
          </tr>
          <tr>
-            <td style="color:green;">06-Dec-2023</td>
-            <td style="color:green;">Probabilistic Programming 1 - Bayesian inference with conjugate models</td>
+            <td style="color:gray;">09-Dec-2022</td>
+            <td style="color:gray;">W2: ProbProg 2 - Message passing on factor graphs</td>
             <td></td>
-            <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-1.ipynb">W1</a></td>
+            <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-2.ipynb">W2</a></td>
             <td></td>
          </tr>
          <tr>
-            <td>08-Dec-2023</td>
+            <td>14-Dec-2022</td>
             <td>B7: Regression</td>
             <td><a href="https://youtu.be/XhZ7tSQS-ng">B7</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Regression.ipynb">B7</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises-Regression.ipynb">B7-ex</a><br/> <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Solutions-Regression.ipynb">B7-sol</a></td>
          </tr>
          <tr>
-            <td>13-Dec-2023</td>
+            <td>16-Dec-2022</td>
             <td>B8: Generative Classification <br/>B9: Discriminative Classification
             </td>
             <td><a href="https://youtu.be/_gSZGWTx1xc">B8</a>, <a href="https://youtu.be/TpfqSf0wbBE">B9</a></td>
@@ -163,71 +172,56 @@ You can access all lecture notes, videos and exercises online through the links 
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises-Classification.ipynb">B8-9-ex</a><br/> <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Solutions-Classification.ipynb">B8-9-sol</a></td>
          </tr>
          <tr>
-            <td style="color:green;">15-Dec-2023</td>
-            <td style="color:green;">Probabilistic Programming 2 - Bayesian regression & classification</td>
-            <td></td>
-            <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-2.ipynb">W2</a></td>
-            <td></td>
-         </tr>
-         <tr>
-            <td>20-Dec-2023</td>
+            <td>21-Dec-2022</td>
             <td>B10: Latent Variable Models and Variational Bayes</td>
             <td><a href="https://youtu.be/o7evWBxSiHo">B10</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Latent-Variable-Models-and-VB.ipynb">B10</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises-Latent-Variable-Models-and-VB.ipynb">B10-ex</a><br/> <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Solutions-Latent-Variable-Models-and-VB.ipynb">B10-sol</a></td>
          </tr>
-         <tr>
-            <td>20-Dec-2023</td>
-            <td style="color:red;">Deadline probabilistic programming assignment 1</td>
-         </tr>
          <tr style="color:blue;">
             <td colspan="5">break</td>
          </tr>
          <tr>
-            <td style="color:green;">10-Jan-2024</td>
-            <td style="color:green;">Probabilistic Programming 3 - Variational Bayesian inference</td>
+            <td style="color:gray;">11-Jan-2023</td>
+            <td style="color:gray;">W3: ProbProg 3 - Regression and classification</td>
             <td></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-3.ipynb">W3</a></td>
             <td></td>
          </tr>
          <tr>
-            <td>12-Jan-2024</td>
+            <td>13-Jan-2023</td>
             <td>B11: Dynamic Models</td>
             <td><a href="https://youtu.be/-jMq9gl59pA">B11</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Dynamic-Models.ipynb">B11</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises-Dynamic-Models.ipynb">B11-ex</a><br/> <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Solutions-Dynamic-Models.ipynb">B11-sol</a></td>
          </tr>
          <tr>
-            <td style="color:green;">17-Jan-2024</td>
-            <td style="color:green;">Probabilistic Programming 4 - Bayesian filters & smoothers</td>
-            <td></td>
-            <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-4.ipynb">W4</a></td>
-            <td></td>
-         </tr>
-         <tr>
-            <td>19-Jan-2024</td>
+            <td>18-Jan-2023</td>
             <td>B12: Intelligent Agents and Active Inference</td>
             <td><a href="https://youtu.be/Ln0aq11YBzQ">B12</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Intelligent-Agents-and-Active-Inference.ipynb">B12</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises-Intelligent-Agents-and-Active-Inference.ipynb">B12-ex</a><br/> <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Solutions-Intelligent-Agents-and-Active-Inference.ipynb">B12-sol</a></td>
          </tr>
-         <!-- <tr>
+         <tr>
+            <td style="color:gray;">20-Jan-2023</td>
+            <td style="color:gray;">W4 : ProbProg 4 - Mixture and dynamic models</td>
+            <td></td>
+            <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-4.ipynb">W4</a></td>
+            <td></td>
+         </tr>
+         <tr>
             <td></td>
             <td>M1: Bonus Lecture: What is Life?</td>
             <td><a href="https://youtu.be/MGusn1JzqVs">M1.1</a>, <a href="https://youtu.be/Gk225kuulOE">M1.2</a></td>
             <td><a href="https://github.com/bertdv/BMLIP/raw/master/lessons/notebooks/MKoudahl-March2020-What-is-life.pdf?dl=0">M1</a></td>
             <td></td>
-         </tr> -->
-         <tr>
-            <td>26-Jan-2024</td>
-            <td style="color:red;">Deadline probabilistic programming assignment 2</td>
          </tr>
          <tr style="color:blue;">
-            <td >01-Feb-2024</td>
+            <td >02-Feb-2023</td>
             <td colspan="4">written examination (13:30-16:30)</td>
          </tr>
          <tr style="color:blue;">
-            <td >19-Apr-2024</td>
+            <td >20-Apr-2023</td>
             <td colspan="4">resit written examination (18:00-21:00)</td>
          </tr>
       </table>
@@ -240,7 +234,7 @@ You can access all lecture notes, videos and exercises online through the links 
 
 - Please consult the <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Course-Syllabus.ipynb">Course Syllabus</a> (lecture notes for 1st class) for advice on how to study the materials.
 
-<!-- - Each year there will be two written exam opportunities. The exams will be in multiple-choice format. Grading rules have been [posted at Piazza](https://piazza.com/class/l9n5gnieu4k6tl/post/23). **You cannot bring notes or books to the written exam sessions. All needed formulas are supplied at the exam sheet**. -->
+- Each year there will be two written exam opportunities. The exams will be in multiple-choice format. Grading rules have been [posted at Piazza](https://piazza.com/class/l9n5gnieu4k6tl/post/23). **You cannot bring notes or books to the written exam sessions. All needed formulas are supplied at the exam sheet**.
 
 - In addition to the materials in the above table, we provide two representative practice written exams:
 
