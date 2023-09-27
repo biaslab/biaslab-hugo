@@ -23,14 +23,12 @@ type = "teaching"
 
 +++
 
-<!---
+
 <h2 style="color:red;">
 Note: This site is currently under construction.
 </h2>
---->
 
 The 2023/24 course "Bayesian Machine Learning and Information Processing" will start in November 2023 (Q2).  
-
 
 <img src="/img/teaching/5SSD0-banner.png" width="1200px">
 
@@ -38,7 +36,7 @@ The 2023/24 course "Bayesian Machine Learning and Information Processing" will s
 This course provides an introduction to Bayesian machine learning and information processing systems. The Bayesian approach affords a unified and consistent treatment of many useful information processing systems.
 
 ### Course summary
-This course covers the fundamentals of a Bayesian (i.e., probabilistic) approach to machine learning and information processing systems. The Bayesian approach allows for a unified and consistent treatment of many model-based machine learning techniques. Initially, we focus on Linear Gaussian systems and will discuss many useful models and applications, including common regression and classification methods, Gaussian mixture models, hidden Markov models and Kalman filters. We will discuss important algorithms for parameter estimation in these models including the Expectation-Maximization (EM) algorithm and Variational Bayes (VB). The Bayesian method also provides tools for comparing the _performance_ of different information processing systems by means of estimating the _Bayesian evidence_ for each model. We will discuss several methods for approximating Bayesian evidence. Next, we will discuss intelligent _agents_ that learn purposeful behavior from interactions with their environment. These agents are used for applications such as self-driving cars or interactive design of virtual and augmented realities. Indeed, in this course we relate synthetic Bayesian intelligent agents to natural intelligent agents such as the brain. You will be challenged to code Bayesian machine learning algorithms yourself and apply them to practical information processing problems.
+This course covers the fundamentals of a Bayesian (i.e., probabilistic) approach to machine learning and information processing systems. The Bayesian approach allows for a unified and consistent treatment of many model-based machine learning techniques. Initially, we focus on Linear Gaussian systems and will discuss many useful models and applications, including common regression and classification methods, Gaussian mixture models, hidden Markov models and Kalman filters. We will discuss important algorithms for parameter estimation in these models including the _Variational Bayes_ method. The Bayesian method also provides tools for comparing the _performance_ of different information processing systems by means of estimating the _Bayesian evidence_ for each model. We will discuss several methods for approximating Bayesian evidence. Next, we will discuss intelligent _agents_ that learn purposeful behavior from interactions with their environment. These agents are used for applications such as self-driving cars or interactive design of virtual and augmented realities. Indeed, in this course we relate synthetic Bayesian intelligent agents to natural intelligent agents such as the brain. You will be challenged to code Bayesian machine learning algorithms yourself and apply them to practical information processing problems.
 
 
 
@@ -46,7 +44,7 @@ This course covers the fundamentals of a Bayesian (i.e., probabilistic) approach
 News and Announcements
 </h2>
 
-- As much as possible we use the [Piazza course site](https://piazza.com/class/l9n5gnieu4k6tl) for new announcements. 
+- (15-Nov-2023) Please sign up for Piazza (Q&A platform) at [signup link](https://piazza.com/tue.nl/winter2024/5ssd0). As much as possible we will use the Piazza site for new announcements as well. 
 
 
 ## Instructors
@@ -59,12 +57,18 @@ News and Announcements
 
 In principle, you can download all needed materials from the links below.
 
-### Books
+### Lecture Notes
 
-Please consider downloading the following books/resources:
+The lecture notes are mandatory material for the exam:  
 
 - Bert de Vries (2022), [PDF bundle of all lecture notes for lessons B0 through B12](https://github.com/bertdv/BMLIP/blob/master/output/BMLIP-5SSD0-lecture-notes.pdf). 
 - Wouter Kouw (2022), [PDF bundle of all probabilistic programming lecture notes for lessons W1 through W4](https://github.com/bertdv/BMLIP/blob/master/output/BMLIP-5SSD0-prob-prog.pdf).
+
+
+### Books
+
+The following books are optional but very useful for additional reading:
+
 - [Christopher M.
 Bishop](http://research.microsoft.com/en-us/um/people/cmbishop/index.htm) (2006), [Pattern Recognition and
 Machine
@@ -75,6 +79,7 @@ Learning](https://www.microsoft.com/en-us/research/people/cmbishop/prml-book/). 
 
 - Please install Microsoft's VS Code editor ([download](https://code.visualstudio.com/Download)) and add the Jupyter notebook extension ([tutorial](https://code.visualstudio.com/learn/educators/notebooks)).
 - Please install Julia <b>version 1.9</b> ([download](https://julialang.org/downloads/)) on your machine and then add the Julia extension in VS Code ([tutorial](https://code.visualstudio.com/docs/languages/julia)). 
+
 
 ### <a name="lectures">Lecture notes, videos and exercises</a>
 
@@ -233,7 +238,7 @@ You can access all lecture notes, videos and exercises online through the links 
       </table>
 
 
-- Furthermore, Q&A for each lesson can  be accessed at the [Piazza course site](https://piazza.com/class/l9n5gnieu4k6tl).
+- Furthermore, Q&A for each lesson can  be accessed at the [Piazza course site](https://piazza.com/tue.nl/winter2024/5ssd0/home).
 
 
 ## Exam Preparation
