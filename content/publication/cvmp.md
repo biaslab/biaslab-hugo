@@ -8,7 +8,6 @@ to_be_published = false
 selected = false
 title = "Efficient Bayesian Inference by Conjugate-computation Variational Message Passing"
 url_pdf = "pdf/mlsp2023/mlsp_2023_mykola.pdf"
-url_custom = [{name="IEEE", url = "https://ieeexplore.ieee.org/document/8517019"}]
 
 [[authors]]
     name = "Mykola Lukashchuk"
