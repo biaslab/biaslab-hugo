@@ -149,8 +149,8 @@ You can access all lecture notes, videos and exercises online through the links 
          <tr style="color:green;">
             <td>06-Dec-2023</td>
             <td>Probabilistic Programming 1 - Bayesian inference with conjugate models</td>
-            <td></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-1.ipynb">W1</a></td>
+            <td></td>
             <td></td>
          </tr>
          <tr>
@@ -168,11 +168,11 @@ You can access all lecture notes, videos and exercises online through the links 
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises-Classification.ipynb">B8-9-ex</a><br/> <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Solutions-Classification.ipynb">B8-9-sol</a></td>
             <td><!--- <a href="https://youtu.be/_gSZGWTx1xc">B8</a>, <a href="https://youtu.be/TpfqSf0wbBE">B9</a> ---></td>
          </tr>
-         <tr style="color:green;>
+         <tr style="color:green;">
             <td>15-Dec-2023</td>
             <td>Probabilistic Programming 2 - Bayesian regression & classification</td>
-            <td></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-2.ipynb">W2</a></td>
+            <td></td>
             <td></td>
          </tr>
          <tr>
@@ -192,8 +192,8 @@ You can access all lecture notes, videos and exercises online through the links 
          <tr style="color:green;">
             <td>10-Jan-2024</td>
             <td>Probabilistic Programming 3 - Variational Bayesian inference</td>
-            <td></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-3.ipynb">W3</a></td>
+            <td></td>
             <td></td>
          </tr>
          <tr>
@@ -206,8 +206,8 @@ You can access all lecture notes, videos and exercises online through the links 
          <tr style="color:green;">
             <td>17-Jan-2024</td>
             <td>Probabilistic Programming 4 - Bayesian filters & smoothers</td>
-            <td></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-4.ipynb">W4</a></td>
+            <td></td>
             <td></td>
          </tr>
          <tr>
