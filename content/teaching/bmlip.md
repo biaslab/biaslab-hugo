@@ -130,7 +130,10 @@ You can access all lecture notes, videos and exercises online through the links 
          </tr>
          <tr style="color:red;">
             <td>27-Nov-2023</td>
-            <td colspan="4">Deadline julia programming assignment</td>
+            <td>Deadline julia programming assignment</td>
+            <td></td>
+            <td><a href="https://github.com/bertdv/BMLIP/blob/master/lessons/assignments/%5B5SSD0%5D%20Julia%20assignment.zip">A0</a></td>
+            <td></td>
          </tr>
          <tr>
             <td>29-Nov-2023</td>
@@ -184,7 +187,10 @@ You can access all lecture notes, videos and exercises online through the links 
          </tr>
          <tr style="color:red;">
             <td>20-Dec-2023</td>
-            <td colspan="4">Deadline probabilistic programming assignment 1</td>
+            <td>Deadline probabilistic programming assignment 1</td>
+            <td></td>
+            <td><a href="https://github.com/bertdv/BMLIP/blob/master/lessons/assignments/%5B5SSD0%5D%20Probabilistic%20Programming%201.zip">A1</a></td>
+            <td></td>
          </tr>
          <tr style="color:blue;">
             <td colspan="5">break</td>
@@ -226,7 +232,10 @@ You can access all lecture notes, videos and exercises online through the links 
          </tr> -->
          <tr style="color:red;">
             <td>26-Jan-2024</td>
-            <td colspan="4">Deadline probabilistic programming assignment 2</td>
+            <td>Deadline probabilistic programming assignment 2</td>
+            <td></td>
+            <td><a href="https://github.com/bertdv/BMLIP/blob/master/lessons/assignments/%5B5SSD0%5D%20Probabilistic%20Programming%202.zip">A2</a></td>
+            <td></td>
          </tr>
          <tr style="color:blue;">
             <td >01-Feb-2024</td>
