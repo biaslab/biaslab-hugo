@@ -82,7 +82,7 @@ Learning](https://www.microsoft.com/en-us/research/people/cmbishop/prml-book/). 
 - Please install Julia <b>version 1.9</b> ([download](https://julialang.org/downloads/)) on your machine and then add the Julia extension in VS Code ([tutorial](https://code.visualstudio.com/docs/languages/julia)). 
 
 
-### <a name="lectures">Lecture notes, videos and exercises</a>
+### <a name="lectures">Lecture notes, exercises, assignment and video recordings</a>
 
 <!--- The [source files for the lecture notes are accessible on github](https://github.com/bertdv/bmlip). If you want to download them, click the green `Code` button and then `Download ZIP`. The theory lectures are under `lessons/notebooks` and the programming notebooks are under `lessons/notebooks/probprog`. Note that you don't have to download them, --->
 
@@ -92,18 +92,20 @@ You can access all lecture notes, videos and exercises online through the links 
          <tr>
             <th rowspan = "2"; style="text-align:center">Date</th>
             <th rowspan = "2"; style="text-align:center">lesson</th>
-            <th colspan = "3"; style="text-align:center">materials</th>
+            <th colspan = "4"; style="text-align:center">materials</th>
          </tr>
          <tr>
             <th style="text-align:center">lecture notes</th>
             <th style="text-align:center">exercises</th>
-            <th style="text-align:center">video recording</th>
+            <th style="text-align:center">assignments</th>
+            <th style="text-align:center">video recordings</th>
          </tr>
          <tr>
             <td>15-Nov-2023</td>
             <td>B0: Course Syllabus<br/>
             B1: Machine Learning Overview</td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Course-Syllabus.ipynb">B0</a>, <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Machine-Learning-Overview.ipynb">B1</a></td>
+            <td></td>
             <td></td>
             <td> <!--- <a href="https://youtu.be/pvDZWAJ9YMM">B1</a> ---> </td>
          </tr>
@@ -112,6 +114,7 @@ You can access all lecture notes, videos and exercises online through the links 
             <td>B2: Probability Theory Review</td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Probability-Theory-Review.ipynb">B2</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises-Probability-Theory-Review.ipynb">B2-ex</a><br/> <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Solutions-Probability-Theory-Review.ipynb">B2-sol</a></td>
+            <td></td>
             <td><!--- <a href="https://youtu.be/uaKD8mZZnO8">B2.1</a>, <a href="https://youtu.be/YqXkSb8updg">B2.2</a> ---></td>
          </tr>
          <tr>
@@ -119,6 +122,7 @@ You can access all lecture notes, videos and exercises online through the links 
             <td>B3: Bayesian Machine Learning</td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Bayesian-Machine-Learning.ipynb">B3</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises-Bayesian-Machine-Learning.ipynb">B3-ex</a><br/> <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Solutions-Bayesian-Machine-Learning.ipynb">B3-sol</a></td>
+            <td></td>
             <td><!--- <a href="https://youtu.be/fw1lS0XsHrI">B3.1</a>, <a href="https://youtu.be/W5PlzDADdxE">B3.2</a> ---></td>
          </tr>
          <tr>
@@ -126,11 +130,13 @@ You can access all lecture notes, videos and exercises online through the links 
             <td >B4: Factor Graphs and the Sum-Product Algorithm</td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Factor-Graphs.ipynb">B4</a></td>
              <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises-Factor-Graphs.ipynb">B4-ex</a><br/> <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Solutions-Factor-Graphs.ipynb">B4-sol</a></td>
+             <td></td>
              <td><!--- <a href="https://youtu.be/YaYJpoi9Iy0">B4</a> ---></td>
          </tr>
          <tr style="color:red;">
             <td>27-Nov-2023</td>
             <td>Deadline julia programming assignment</td>
+            <td></td>
             <td></td>
             <td><a href="https://github.com/bertdv/BMLIP/blob/master/lessons/assignments/%5B5SSD0%5D%20Julia%20assignment.zip">A0</a></td>
             <td></td>
@@ -140,6 +146,7 @@ You can access all lecture notes, videos and exercises online through the links 
             <td>B5: Continuous Data and the Gaussian Distribution</td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/The-Gaussian-Distribution.ipynb">B5</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises-The-Gaussian-Distribution.ipynb">B5-ex</a><br/> <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Solutions-The-Gaussian-Distribution.ipynb">B5-sol</a></td>
+            <td></td>
             <td><!--- <a href="https://youtu.be/DwUX1OOZGfM">B5.1</a>, <a href="https://youtu.be/h6y0vZnPI2s">B5.2</a>, <a href="https://youtu.be/yP1_gPso5Xg">B5.3</a> ---></td>
          </tr>
          <tr>
@@ -147,6 +154,7 @@ You can access all lecture notes, videos and exercises online through the links 
             <td>B6: Discrete Data and the Multinomial Distribution</td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/The-Multinomial-Distribution.ipynb">B6</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises-The-Multinomial-Distribution.ipynb">B6-ex</a><br/> <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Solutions-The-Multinomial-Distribution.ipynb">B6-sol</a></td>
+            <td></td>
             <td><!--- <a href="https://youtu.be/70gVEt4AexA">B6</a> ---></td>
          </tr>
          <tr style="color:green;">
@@ -155,12 +163,14 @@ You can access all lecture notes, videos and exercises online through the links 
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-1.ipynb">W1</a></td>
             <td></td>
             <td></td>
+            <td></td>
          </tr>
          <tr>
             <td>08-Dec-2023</td>
             <td>B7: Regression</td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Regression.ipynb">B7</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises-Regression.ipynb">B7-ex</a><br/> <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Solutions-Regression.ipynb">B7-sol</a></td>
+            <td></td>
             <td><!--- <a href="https://youtu.be/XhZ7tSQS-ng">B7</a> ---></td>
          </tr>
          <tr>
@@ -169,6 +179,7 @@ You can access all lecture notes, videos and exercises online through the links 
             </td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Generative-Classification.ipynb">B8</a>, <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Discriminative-Classification.ipynb">B9</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises-Classification.ipynb">B8-9-ex</a><br/> <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Solutions-Classification.ipynb">B8-9-sol</a></td>
+            <td></td>
             <td><!--- <a href="https://youtu.be/_gSZGWTx1xc">B8</a>, <a href="https://youtu.be/TpfqSf0wbBE">B9</a> ---></td>
          </tr>
          <tr style="color:green;">
@@ -177,28 +188,32 @@ You can access all lecture notes, videos and exercises online through the links 
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-2.ipynb">W2</a></td>
             <td></td>
             <td></td>
+            <td></td>
          </tr>
          <tr>
             <td>20-Dec-2023</td>
             <td>B10: Latent Variable Models and Variational Bayes</td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Latent-Variable-Models-and-VB.ipynb">B10</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises-Latent-Variable-Models-and-VB.ipynb">B10-ex</a><br/> <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Solutions-Latent-Variable-Models-and-VB.ipynb">B10-sol</a></td>
+            <td></td>
             <td><!--- <a href="https://youtu.be/o7evWBxSiHo">B10</a> ---></td>
          </tr>
          <tr style="color:red;">
             <td>20-Dec-2023</td>
             <td>Deadline probabilistic programming assignment 1</td>
             <td></td>
+            <td></td>
             <td><a href="https://github.com/bertdv/BMLIP/blob/master/lessons/assignments/%5B5SSD0%5D%20Probabilistic%20Programming%201.zip">A1</a></td>
             <td></td>
          </tr>
          <tr style="color:blue;">
-            <td colspan="5">break</td>
+            <td colspan="6">break</td>
          </tr>
          <tr style="color:green;">
             <td>10-Jan-2024</td>
             <td>Probabilistic Programming 3 - Variational Bayesian inference</td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-3.ipynb">W3</a></td>
+            <td></td>
             <td></td>
             <td></td>
          </tr>
@@ -207,6 +222,7 @@ You can access all lecture notes, videos and exercises online through the links 
             <td>B11: Dynamic Models</td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Dynamic-Models.ipynb">B11</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises-Dynamic-Models.ipynb">B11-ex</a><br/> <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Solutions-Dynamic-Models.ipynb">B11-sol</a></td>
+            <td></td>
             <td><!--- <a href="https://youtu.be/-jMq9gl59pA">B11</a> ---></td>
          </tr>
          <tr style="color:green;">
@@ -215,12 +231,14 @@ You can access all lecture notes, videos and exercises online through the links 
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-4.ipynb">W4</a></td>
             <td></td>
             <td></td>
+            <td></td>
          </tr>
          <tr>
             <td>19-Jan-2024</td>
             <td>B12: Intelligent Agents and Active Inference</td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Intelligent-Agents-and-Active-Inference.ipynb">B12</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises-Intelligent-Agents-and-Active-Inference.ipynb">B12-ex</a><br/> <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Solutions-Intelligent-Agents-and-Active-Inference.ipynb">B12-sol</a></td>
+            <td></td>
             <td><!--- <a href="https://youtu.be/Ln0aq11YBzQ">B12</a> ---></td>
          </tr>
          <!-- <tr>
@@ -234,21 +252,19 @@ You can access all lecture notes, videos and exercises online through the links 
             <td>26-Jan-2024</td>
             <td>Deadline probabilistic programming assignment 2</td>
             <td></td>
+            <td></td>
             <td><a href="https://github.com/bertdv/BMLIP/blob/master/lessons/assignments/%5B5SSD0%5D%20Probabilistic%20Programming%202.zip">A2</a></td>
             <td></td>
          </tr>
          <tr style="color:blue;">
             <td >01-Feb-2024</td>
-            <td colspan="4">written examination (13:30-16:30)</td>
+            <td colspan="5">written examination (13:30-16:30)</td>
          </tr>
          <tr style="color:blue;">
             <td >19-Apr-2024</td>
-            <td colspan="4">resit written examination (18:00-21:00)</td>
+            <td colspan="5">resit written examination (18:00-21:00)</td>
          </tr>
       </table>
-
-
-- Furthermore, Q&A for each lesson can  be accessed at the [Piazza course site](https://piazza.com/tue.nl/winter2024/5ssd0/home).
 
 
 ## Exam Preparation
