@@ -107,7 +107,7 @@ You can access all lecture notes, videos and exercises online through the links 
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Course-Syllabus.ipynb">B0</a>, <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Machine-Learning-Overview.ipynb">B1</a></td>
             <td></td>
             <td></td>
-            <td> <!--- <a href="https://youtu.be/pvDZWAJ9YMM">B1</a> ---> </td>
+            <td> <a href="http://t.ly/_DfSS">B0</a>,  <a href="http://t.ly/OzItp">B1</a></td>
          </tr>
          <tr>
             <td>17-Nov-2023</td>
@@ -267,9 +267,11 @@ You can access all lecture notes, videos and exercises online through the links 
       </table>
 
 
-## Exam Preparation
+## Exams 
 
-- Please consult the <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Course-Syllabus.ipynb">Course Syllabus</a> (lecture notes for 1st class) for advice on how to study the materials.
+### Preparation
+
+- Consult the <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Course-Syllabus.ipynb">Course Syllabus</a> (lecture notes for 1st class) for advice on how to study the materials.
 
 <!-- - Each year there will be two written exam opportunities. The exams will be in multiple-choice format. Grading rules have been [posted at Piazza](https://piazza.com/class/l9n5gnieu4k6tl/post/23). **You cannot bring notes or books to the written exam sessions. All needed formulas are supplied at the exam sheet**. -->
 
@@ -277,6 +279,11 @@ You can access all lecture notes, videos and exercises online through the links 
 
   - 2021-01-18: <a href="https://github.com/bertdv/BMLIP/blob/master/exams/20210128-5SSD0-exam-A.pdf?dl=0">exam A</a>, <a href="https://github.com/bertdv/BMLIP/blob/master/exams/20210128-5SSD0-solutions-A.pdf?dl=0">solutions A</a>; <a href="https://github.com/bertdv/BMLIP/blob/master/exams/20210128-5SSD0-exam-B.pdf?dl=0">exam B</a>, <a href="https://github.com/bertdv/BMLIP/blob/master/exams/20210128-5SSD0-solutions-B.pdf?dl=0">solutions B</a>
   - 2021-04-15: <a href="https://github.com/bertdv/BMLIP/blob/master/exams/20210415-5SSD0-exam.pdf?dl=0">exam</a>, <a href="https://github.com/bertdv/BMLIP/blob/master/exams/20210415-5SSD0-solutions.pdf?dl=0">solutions</a>
+
+### grading
+
+- See [this Piazza note on how the final grade is computed](https://piazza.com/class/ln1m8n333g5aa/post/6). 
+
 
 <!---
 ### Assignment
