@@ -138,7 +138,7 @@ You can access all lecture notes, videos and exercises online through the links 
             <td>Deadline julia programming assignment</td>
             <td></td>
             <td></td>
-            <td><a href="https://github.com/bertdv/BMLIP/blob/master/lessons/assignments/%5B5SSD0%5D%20Julia%20assignment.zip">A0</a></td>
+            <td><a href="https://github.com/bertdv/BMLIP/blob/master/lessons/assignments/%5B5SSD0%5D%20Julia%20assignment.zip">A0</a><br><a href="https://github.com/bertdv/BMLIP/blob/master/lessons/assignments/%5B5SSD0%5D%20Julia%20assignment%20-%20solutions.ipynb">A0-sol</a></td>
             <td></td>
          </tr>
          <tr>
