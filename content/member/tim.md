@@ -23,11 +23,6 @@ sort_position = 4.4
     icon_pack = "fa"
     link = "https://github.com/abpolym/"
 
-[[social]]
-    icon = "twitter"
-    icon_pack = "fa"
-    link = "https://twitter.com/polym_tim"
-
 [[education]]
     course = "MSc in Computer Science"
     institution = "Friedrich-Alexander University Erlangen-Nuremberg"
