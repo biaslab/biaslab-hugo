@@ -163,7 +163,7 @@ You can access all lecture notes, videos and exercises online through the links 
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-1.ipynb">W1</a></td>
             <td></td>
             <td></td>
-            <td></td>
+            <td> <a href="http://t.ly/kmnSM">W1.1</a>, <a href="http://t.ly/twD5k">W1.2 </a> </td>
          </tr>
          <tr>
             <td>08-Dec-2023</td>
