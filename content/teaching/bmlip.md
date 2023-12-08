@@ -171,7 +171,7 @@ You can access all lecture notes, videos and exercises online through the links 
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Regression.ipynb">B7</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises-Regression.ipynb">B7-ex</a><br/> <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Solutions-Regression.ipynb">B7-sol</a></td>
             <td></td>
-            <td><!--- <a href="https://youtu.be/XhZ7tSQS-ng">B7</a> ---></td>
+            <td> <a href="https://t.ly/cVUPU">B7.1</a>, <a href="http://t.ly/PHLLl">B7.2 </a></td>
          </tr>
          <tr>
             <td>13-Dec-2023</td>
