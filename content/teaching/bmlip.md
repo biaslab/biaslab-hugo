@@ -193,15 +193,15 @@ You can access all lecture notes, videos and exercises online through the links 
             <td><a href="http://t.ly/Q7nwu">W2.1</a>, <a href="http://t.ly/qrlke">W2.2</a></td>
          </tr>
          <tr>
-            <td><strike>20-Dec-2023</strike><br/>22-Dec-2023</td>
+            <td>20-Dec-2023</td>
             <td>B10: Latent Variable Models and Variational Bayes</td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Latent-Variable-Models-and-VB.ipynb">B10</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises-Latent-Variable-Models-and-VB.ipynb">B10-ex</a><br/> <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Solutions-Latent-Variable-Models-and-VB.ipynb">B10-sol</a></td>
             <td></td>
-            <td><!--- <a href="https://youtu.be/o7evWBxSiHo">B10</a> ---></td>
+            <td><a href="https://t.ly/33EsD">B10.1</a>, <a href="https://t.ly/bgIaG">B10.2</a></td>
          </tr>
          <tr style="color:red;">
-            <td>20-Dec-2023</td>
+            <td><strike>20-Dec-2023</strike><br/>22-Dec-2023</td>
             <td>Deadline probabilistic programming assignment 1</td>
             <td></td>
             <td></td>
