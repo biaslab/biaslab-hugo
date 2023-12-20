@@ -44,7 +44,8 @@ This course covers the fundamentals of a Bayesian (i.e., probabilistic) approach
 <h2 style="color:red;">
 News and Announcements
 </h2>
-- (20-Dec-2023) There is an issue with viewing the lecture notes. Please see the [instructors' answer in this Piazza issue](https://piazza.com/class/ln1m8n333g5aa/post/75) for a temporary solution. 
+
+- (20-Dec-2023) There is an issue with viewing the lecture notes. Please see [this Piazza note](https://piazza.com/class/ln1m8n333g5aa/post/79) for a temporary solution. 
 
 - (15-Nov-2023) Please sign up for Piazza (Q&A platform) at [signup link](https://piazza.com/tue.nl/winter2024/5ssd0). As much as possible we will use the Piazza site for new announcements as well. 
 
@@ -190,7 +191,6 @@ You can access all lecture notes, videos and exercises online through the links 
             <td></td>
             <td></td>
             <td><a href="http://t.ly/Q7nwu">W2.1</a>, <a href="http://t.ly/qrlke">W2.2</a></td>
-            
          </tr>
          <tr>
             <td>20-Dec-2023</td>
