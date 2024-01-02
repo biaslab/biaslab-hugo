@@ -14,7 +14,7 @@ You are challenged to design an agent that learns to solve
 the cocktail party problem through on-the-spot interactions with a (human)
 listener. The cocktail party problem refers to the
 issue of not being able to understand your conversation partner in the presence
-of many simultaneously competing voices (Fig.1). 
+of many simultaneously competing voices (Fig.1).
 
 {{< figure src="/img/proposals/cocktail-party.jpeg" title="Sound signals from multiple conversations mix at a cocktail party." class="center" height="100px" >}}
 

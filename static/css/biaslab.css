@@ -149,7 +149,7 @@ header{
 
 svg:not(:root){
     position: relative;
-    left: 0; 
+    left: 0;
     top: 0;
 }
 

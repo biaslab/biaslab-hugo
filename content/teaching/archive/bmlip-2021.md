@@ -1,8 +1,8 @@
 +++
 date = "2018-08-23T14:45:00+02:00"
 external_link = ""
-title = "Bayesian Machine Learning and Information Processing (5SSD0)"    
-subtitle = "academic year 2021/22"    
+title = "Bayesian Machine Learning and Information Processing (5SSD0)"
+subtitle = "academic year 2021/22"
 participants_block_position = "down"
 type = "teaching"
 
@@ -35,7 +35,7 @@ Note: This site is currently under construction.
 </h2>
 --->
 
-The 2021/22 course "Bayesian Machine Learning and Information Processing" will start in November 2021 (Q2).  
+The 2021/22 course "Bayesian Machine Learning and Information Processing" will start in November 2021 (Q2).
 
 
 <img src="/img/teaching/5SSD0-banner.png" width="1200px">
@@ -58,18 +58,18 @@ News and Announcements
 
 - 01-Dec-2021: Last year's Probabilistic Programming assignments have been made available as exercises. Solutions are given as well.
 
-- 26-Nov-2021: As per the TU/e mandate, there will be no assignment given prior to the Christmas break. 
+- 26-Nov-2021: As per the TU/e mandate, there will be no assignment given prior to the Christmas break.
 
-- 13-Nov-2021: This year's live classes will be online!    
+- 13-Nov-2021: This year's live classes will be online!
 
-- As much as possible we use the [Piazza course site](https://piazza.com/class/ku2o9c3f71a4px) for new announcements. 
+- As much as possible we use the [Piazza course site](https://piazza.com/class/ku2o9c3f71a4px) for new announcements.
 
 
 ## Instructors
 
 - [Prof.dr.ir. Bert de Vries](http://bertdv.nl) (email: bert.de.vries@tue.nl) is the responsible instructor for this course and teaches all [lectures with label B](#lectures).
-- [Dr. Wouter Kouw](https://biaslab.github.io/member/wouter/) (w.m.kouw@tue.nl) teaches all [practical sessions on probabilistic programming with label W](#lectures).                           
-- [Magnus Koudahl, MSc](https://biaslab.github.io/member/magnus/) (m.t.koudahl@tue.nl) is the teaching assistant. Mr. Koudahl presents the ["What is Life?"](#bonus-lecture) bonus lecture. 
+- [Dr. Wouter Kouw](https://biaslab.github.io/member/wouter/) (w.m.kouw@tue.nl) teaches all [practical sessions on probabilistic programming with label W](#lectures).
+- [Magnus Koudahl, MSc](https://biaslab.github.io/member/magnus/) (m.t.koudahl@tue.nl) is the teaching assistant. Mr. Koudahl presents the ["What is Life?"](#bonus-lecture) bonus lecture.
 
 
 ## Materials
@@ -80,7 +80,7 @@ In principle, you can download all needed materials from the links below.
 
 Please consider downloading the following books/resources:
 
-- Bert de Vries (2021), [PDF bundle of all lecture notes for lessons B0 through B12](https://github.com/bertdv/BMLIP/blob/a75b6f0f12fa393cfdd61526052ee42559f01f4e/output/BMLIP-5SSD0-lecture-notes.pdf). 
+- Bert de Vries (2021), [PDF bundle of all lecture notes for lessons B0 through B12](https://github.com/bertdv/BMLIP/blob/a75b6f0f12fa393cfdd61526052ee42559f01f4e/output/BMLIP-5SSD0-lecture-notes.pdf).
 - Wouter Kouw (2021), [PDF bundle of all probabilistic programming lecture notes for lessons W1 through W4](https://github.com/bertdv/BMLIP/blob/a75b6f0f12fa393cfdd61526052ee42559f01f4e/output/BMLIP-5SSD0-prob-prog.pdf).
 - [Christopher M.
 Bishop](http://research.microsoft.com/en-us/um/people/cmbishop/index.htm) (2006), [Pattern Recognition and
@@ -90,8 +90,8 @@ Learning](https://www.microsoft.com/en-us/research/people/cmbishop/prml-book/). 
 
 ### Software
 
-- The [software installation guide](https://github.com/bertdv/BMLIP/blob/a75b6f0f12fa393cfdd61526052ee42559f01f4e/lessons/notebooks/files/BMLIP-installation-guide.pdf) contains step-by-step instructions to setup everything you need to run the course notebooks yourself.  
-- You can test your installation by running the notebook called [Probabilistic-Programming-0.ipynb](https://github.com/bertdv/BMLIP/blob/a75b6f0f12fa393cfdd61526052ee42559f01f4e/lessons/notebooks/probprog/Probabilistic-Programming-0.ipynb) which can be found in the ([github](https://github.com/bertdv/bmlip)) repo under `lessons/notebooks/probprog`. 
+- The [software installation guide](https://github.com/bertdv/BMLIP/blob/a75b6f0f12fa393cfdd61526052ee42559f01f4e/lessons/notebooks/files/BMLIP-installation-guide.pdf) contains step-by-step instructions to setup everything you need to run the course notebooks yourself.
+- You can test your installation by running the notebook called [Probabilistic-Programming-0.ipynb](https://github.com/bertdv/BMLIP/blob/a75b6f0f12fa393cfdd61526052ee42559f01f4e/lessons/notebooks/probprog/Probabilistic-Programming-0.ipynb) which can be found in the ([github](https://github.com/bertdv/bmlip)) repo under `lessons/notebooks/probprog`.
 
 ### <a name="lectures">Lecture notes, videos and exercises</a>
 
@@ -141,7 +141,7 @@ You can access all lecture notes, videos and exercises online through the links 
             <td style="color:gray;">W1: Probabilistic Programming 1 - Intro Bayesian ML</td>
             <td><a href="https://www.youtube.com/watch?v=2F39JxEOM0Q">W1.1</a>, <a href="https://www.youtube.com/watch?v=OoKPEteSEiA">W1.2</a>,  <a href="https://www.youtube.com/watch?v=JIY0FMd9JoE">W1.3</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/a75b6f0f12fa393cfdd61526052ee42559f01f4e/lessons/notebooks/probprog/Probabilistic-Programming-1.ipynb">W1</a></td>
-            <td><a href="https://github.com/bertdv/BMLIP/blob/a75b6f0f12fa393cfdd61526052ee42559f01f4e/lessons/exercises/probprog/pp1-exercises.ipynb">W1-ex</a><br/> 
+            <td><a href="https://github.com/bertdv/BMLIP/blob/a75b6f0f12fa393cfdd61526052ee42559f01f4e/lessons/exercises/probprog/pp1-exercises.ipynb">W1-ex</a><br/>
                 <a href="https://github.com/bertdv/BMLIP/blob/a75b6f0f12fa393cfdd61526052ee42559f01f4e/lessons/exercises/probprog/solutions-pp1-exercises.ipynb">W1-sol</a></td>
             <td><a href="https://youtu.be/O4rcNBMiJ9Y">W1</a></td>
          </tr>
@@ -174,7 +174,7 @@ You can access all lecture notes, videos and exercises online through the links 
             <td style="color:gray;">W2: ProbProg 2 - MP & Analytical Bayesian Solutions</td>
             <td><a href="https://www.youtube.com/watch?v=JV09zAZ99dk">W2.1</a>, <a href="https://www.youtube.com/watch?v=bKgbNFouEiY">W2.2</a>,  <a href="https://www.youtube.com/watch?v=xqWUKsfuUdk">W2.3</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/a75b6f0f12fa393cfdd61526052ee42559f01f4e/lessons/notebooks/probprog/Probabilistic-Programming-2.ipynb">W2</a></td>
-            <td><a href="https://github.com/bertdv/BMLIP/blob/a75b6f0f12fa393cfdd61526052ee42559f01f4e/lessons/exercises/probprog/pp2-exercises.ipynb">W2-ex</a><br/> 
+            <td><a href="https://github.com/bertdv/BMLIP/blob/a75b6f0f12fa393cfdd61526052ee42559f01f4e/lessons/exercises/probprog/pp2-exercises.ipynb">W2-ex</a><br/>
                 <a href="https://github.com/bertdv/BMLIP/blob/a75b6f0f12fa393cfdd61526052ee42559f01f4e/lessons/exercises/probprog/solutions-pp2-exercises.ipynb">W2-sol</a></td>
             <td><a href="https://youtu.be/lkDiz1gR3RA">W2</a></td>
          </tr>
@@ -211,7 +211,7 @@ You can access all lecture notes, videos and exercises online through the links 
             <td style="color:gray;">W3: ProbProg 3 - Regression and Classification</td>
             <td><a href="https://www.youtube.com/watch?v=yls2d3HMm28">W3.1</a>, <a href="https://www.youtube.com/watch?v=Q4f6S503e5I">W3.2</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/a75b6f0f12fa393cfdd61526052ee42559f01f4e/lessons/notebooks/probprog/Probabilistic-Programming-3.ipynb">W3</a></td>
-            <td><a href="https://github.com/bertdv/BMLIP/blob/a75b6f0f12fa393cfdd61526052ee42559f01f4e/lessons/exercises/probprog/pp3-exercises.ipynb">W3-ex</a><br/> 
+            <td><a href="https://github.com/bertdv/BMLIP/blob/a75b6f0f12fa393cfdd61526052ee42559f01f4e/lessons/exercises/probprog/pp3-exercises.ipynb">W3-ex</a><br/>
                 <a href="https://github.com/bertdv/BMLIP/blob/a75b6f0f12fa393cfdd61526052ee42559f01f4e/lessons/exercises/probprog/solutions-pp3-exercises.ipynb">W3-sol</a></td>
             <td><a href="https://youtu.be/k749jWiJNzs">W3</a></td>
          </tr>
@@ -236,7 +236,7 @@ You can access all lecture notes, videos and exercises online through the links 
             <td style="color:gray;">W4: ProbProg 4: Latent Variable and Dynamic Models</td>
             <td><a href="https://youtu.be/UzUvkFMOlhk">W4.1</a>, <a href="https://youtu.be/47wGVzgS7Ys">W4.2</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/a75b6f0f12fa393cfdd61526052ee42559f01f4e/lessons/notebooks/probprog/Probabilistic-Programming-4.ipynb">W4</a></td>
-            <td><a href="https://github.com/bertdv/BMLIP/blob/a75b6f0f12fa393cfdd61526052ee42559f01f4e/lessons/exercises/probprog/pp4-exercises.ipynb">W4-ex</a><br/> 
+            <td><a href="https://github.com/bertdv/BMLIP/blob/a75b6f0f12fa393cfdd61526052ee42559f01f4e/lessons/exercises/probprog/pp4-exercises.ipynb">W4-ex</a><br/>
                 <a href="https://github.com/bertdv/BMLIP/blob/a75b6f0f12fa393cfdd61526052ee42559f01f4e/lessons/exercises/probprog/solutions-pp4-exercises.ipynb">W4-sol</a></td>
             <td><a href="https://youtu.be/L15PzPF1Kv4">W4</a></td>
          </tr>
@@ -302,26 +302,23 @@ Please feel free to consult the following matrix and Gaussian cheat sheets (by S
   - [Gaussian Identities](https://github.com/bertdv/BMLIP/raw/a75b6f0f12fa393cfdd61526052ee42559f01f4e/lessons/notebooks/files/Roweis-1999-gaussian-identities.pdf?dl=0)
   - [Matrix Identities](https://github.com/bertdv/BMLIP/raw/a75b6f0f12fa393cfdd61526052ee42559f01f4e/lessons/notebooks/files/Roweis-1999-matrix-identities.pdf?dl=0)
 
-## Class logistics 
+## Class logistics
 
 Here's our recommendation on how to study for this class. Before each lecture:
   - first watch the video guide for that lecture (2nd column in above table)
   - then study the lecture notes (3rd column)
   - then (optionally), watch the live class recording from the previous (2020/21) edition (in 4th colum)
   - then try to make the exercises (5th column) for that class. Feel free to use this <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/a75b6f0f12fa393cfdd61526052ee42559f01f4e/lessons/exercises/cheatsheet.ipynb">cheatsheet</a> to make the exercises.
-  - If you have any remaining issues or questions, please pose your question in piazza. Your questions will be answered at the piazza site by fellow students and accorded (or corrected, amended) by the teaching staff.  
+  - If you have any remaining issues or questions, please pose your question in piazza. Your questions will be answered at the piazza site by fellow students and accorded (or corrected, amended) by the teaching staff.
 
-The live classes in this edition of 5SSD0 are (optional) flipped classroom-style Q&A sessions, where we discuss any issues in person. This year the live class sessions are not recorded so you will not be able to view them later. We do not intend to present new materials in the live classes, so in principle, the materials in the above table should suffice as preparation for the written exam.    
+The live classes in this edition of 5SSD0 are (optional) flipped classroom-style Q&A sessions, where we discuss any issues in person. This year the live class sessions are not recorded so you will not be able to view them later. We do not intend to present new materials in the live classes, so in principle, the materials in the above table should suffice as preparation for the written exam.
 --->
 
-<!--- An exam session lasts about 30 minutes and will be recorded (and later deleted, following GDPR rules). At the beginning of the session, the examiner needs to check your identity, preferably by your campus card. 
+<!--- An exam session lasts about 30 minutes and will be recorded (and later deleted, following GDPR rules). At the beginning of the session, the examiner needs to check your identity, preferably by your campus card.
 
-The style of the examination is conversational. We like to engage in a conversation with you about what you learned in the class. In general, oral exams do not lend themselves well to proofing theorems or other deep mathematical manipulations. Instead, the focus is more on testing if you understand the conceptual ideas in this class. In principle, everything that has been presented in the lecture notes and videos is fair game as an exam question, including programming questions from the probabilistic programming sessions. 
+The style of the examination is conversational. We like to engage in a conversation with you about what you learned in the class. In general, oral exams do not lend themselves well to proofing theorems or other deep mathematical manipulations. Instead, the focus is more on testing if you understand the conceptual ideas in this class. In principle, everything that has been presented in the lecture notes and videos is fair game as an exam question, including programming questions from the probabilistic programming sessions.
 
 Please review the [Oral Exam Example notebook](https://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/a75b6f0f12fa393cfdd61526052ee42559f01f4e/lessons/exercises/Oral-Exam-Example.ipynb (Links to an external site.)) to get an idea of what kind of questions will be asked.
 
-The first question of the exam will be an open question: "You get 5 minutes to tell me about what you learned in this class. You can fill in the 5 minutes as you like but try to impress me with your knowledge or insights. E.g., talk about probabilistic modelling, how it works, what are strong aspects or weak aspects of the approach, etc." After the first question, the rest of the exam will be focused at topics selected by the examiner. 
+The first question of the exam will be an open question: "You get 5 minutes to tell me about what you learned in this class. You can fill in the 5 minutes as you like but try to impress me with your knowledge or insights. E.g., talk about probabilistic modelling, how it works, what are strong aspects or weak aspects of the approach, etc." After the first question, the rest of the exam will be focused at topics selected by the examiner.
 --->
-
-
-

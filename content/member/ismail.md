@@ -40,4 +40,4 @@ sort_position = 3.0
     role = "Postdoctoral fellow"
 
 +++
-Ismail Senoz received his M.Sc. degree in electrical engineering from the Eindhoven University of Technology in 2017 and his Ph.D. in machine learning from the Eindhoven University of Technology in 2022. Currently, he works as a postdoctoral fellow at BIASlab at the Eindhoven University of Technology. His research focuses on approximate message passing algorithms. 
+Ismail Senoz received his M.Sc. degree in electrical engineering from the Eindhoven University of Technology in 2017 and his Ph.D. in machine learning from the Eindhoven University of Technology in 2022. Currently, he works as a postdoctoral fellow at BIASlab at the Eindhoven University of Technology. His research focuses on approximate message passing algorithms.

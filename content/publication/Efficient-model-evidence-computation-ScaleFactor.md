@@ -15,7 +15,7 @@ url_dataset = ""
 url_project = ""
 url_slides = ""
 url_video = ""
-url_custom = [  
+url_custom = [
     {name="IEEE", url = "https://ieeexplore.ieee.org/abstract/document/9919250"}
 ]
 date = "2022-11-04"

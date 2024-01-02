@@ -1,5 +1,5 @@
 +++
-abstract = "The Free Energy Principle (FEP) and its corollary active inference describe a complex theoretical framework with a substantial statistical mechanics foundation that is often expressed in terms of the Fokker-Planck equation. Easy-to-follow examples of this formalism are scarce, leaving a high barrier of entry to the field. In this paper we provide a worked example of an active inference agent as a hierarchical Gaussian generative model. We proceed to write its equations of motion explicitly as a Fokker-Planck equation, providing a clear mapping between theoretical accounts of FEP and practical implementation." 
+abstract = "The Free Energy Principle (FEP) and its corollary active inference describe a complex theoretical framework with a substantial statistical mechanics foundation that is often expressed in terms of the Fokker-Planck equation. Easy-to-follow examples of this formalism are scarce, leaving a high barrier of entry to the field. In this paper we provide a worked example of an active inference agent as a hierarchical Gaussian generative model. We proceed to write its equations of motion explicitly as a Fokker-Planck equation, providing a clear mapping between theoretical accounts of FEP and practical implementation."
 abstract_short = ""
 date = "2020-09-14T10:40:00+02:00"
 image = ""

@@ -46,4 +46,3 @@ cv_link = ""
 +++
 
 Wouter Kouw has a dual background in neuroscience and computer science, which he utilizes to analyze, design and develop probabilistic machine learning systems based on models of information processing in the brain. His research focuses on variational Bayesian inference algorithms for learning dynamics in mobile robots. Formerly, he was a visiting scholar at Cornell University (USA) and a Niels Stensen Fellow at Copenhagen University (Denmark).
-

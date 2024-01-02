@@ -27,7 +27,7 @@ sort_position = 4.6
     course = "BSc in Computer Science"
     institution = 'University of Isfahan'
     year = 2017
-    
+
 [[organizations]]
     name = "TU Eindhoven"
     role = "PhD candidate"

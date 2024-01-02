@@ -4,7 +4,7 @@ id = "magnus"
 interests = ["Computational Neuroscience" ,"Bayesian Machine Learning", "Reinforcement Learning"]
 name = "Magnus Tønder Koudahl"
 portrait = "portraits/magnus.png"
-short_bio = "I am a PhD candidate at the Signal Processing Systems group in TU Eindhoven" 
+short_bio = "I am a PhD candidate at the Signal Processing Systems group in TU Eindhoven"
 sort_position = 4.0
 title = "Magnus Koudahl"
 
@@ -21,13 +21,13 @@ title = "Magnus Koudahl"
 [[education]]
     course = "M.Sc in IT & Cognition"
     institution = 'University of Copenhagen'
-    year = 2017 
+    year = 2017
 
 
 [[education]]
     course = "B.Sc in Psychology"
     institution = 'University of Copenhagen'
-    year = 2015 
+    year = 2015
 
 [[organizations]]
     name = "TU Eindhoven"

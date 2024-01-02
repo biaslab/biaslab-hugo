@@ -29,7 +29,7 @@ Note: This site is currently under construction.
 </h2>
 --->
 
-The 2022/23 course "Bayesian Machine Learning and Information Processing" will start in November 2022 (Q2).  
+The 2022/23 course "Bayesian Machine Learning and Information Processing" will start in November 2022 (Q2).
 
 
 <img src="/img/teaching/5SSD0-banner.png" width="1200px">
@@ -48,18 +48,18 @@ News and Announcements
 
 - The solution notebook for the Probabilistic Programming assignment can be downloaded [here](https://github.com/bertdv/BMLIP/blob/master/lessons/assignment/Probabilistic%20Programming%20-%20Assignment%20%5BSolution%5D.ipynb).
 
-- <span style="color:red;"> [MSc projects overview at BIASlab for download](https://github.com/bertdv/BMLIP/blob/master/lessons/notebooks/files/MScprojects-2023.pdf) </span> 
+- <span style="color:red;"> [MSc projects overview at BIASlab for download](https://github.com/bertdv/BMLIP/blob/master/lessons/notebooks/files/MScprojects-2023.pdf) </span>
 
-- <span style="color:red;"> Exam rules have been [posted at piazza](https://piazza.com/class/l9n5gnieu4k6tl/post/23) </span> 
+- <span style="color:red;"> Exam rules have been [posted at piazza](https://piazza.com/class/l9n5gnieu4k6tl/post/23) </span>
 
-- As much as possible we use the [Piazza course site](https://piazza.com/class/l9n5gnieu4k6tl) for new announcements. 
+- As much as possible we use the [Piazza course site](https://piazza.com/class/l9n5gnieu4k6tl) for new announcements.
 
 
 ## Instructors
 
 - [Prof.dr.ir. Bert de Vries](http://bertdv.nl) (email: bert.de.vries@tue.nl) is the responsible instructor for this course and teaches all [lectures with label B](#lectures).
-- [Dr. Wouter Kouw](https://biaslab.github.io/member/wouter/) (w.m.kouw@tue.nl) teaches all [practical sessions on probabilistic programming with label W](#lectures).                           
-- [Magnus Koudahl](https://biaslab.github.io/member/magnus/), [Tim Nisslbeck](https://biaslab.github.io/member/tim), [Sepideh Adamiat](https://biaslab.github.io/member/sepideh) and [Wouter Nuijten](https://biaslab.github.io/member/woutern) are the teaching assistants. Mr. Koudahl presents the ["What is Life?"](#bonus-lecture) bonus lecture. 
+- [Dr. Wouter Kouw](https://biaslab.github.io/member/wouter/) (w.m.kouw@tue.nl) teaches all [practical sessions on probabilistic programming with label W](#lectures).
+- [Magnus Koudahl](https://biaslab.github.io/member/magnus/), [Tim Nisslbeck](https://biaslab.github.io/member/tim), [Sepideh Adamiat](https://biaslab.github.io/member/sepideh) and [Wouter Nuijten](https://biaslab.github.io/member/woutern) are the teaching assistants. Mr. Koudahl presents the ["What is Life?"](#bonus-lecture) bonus lecture.
 
 ## Materials
 
@@ -69,7 +69,7 @@ In principle, you can download all needed materials from the links below.
 
 Please consider downloading the following books/resources:
 
-- Bert de Vries (2022), [PDF bundle of all lecture notes for lessons B0 through B12](https://github.com/bertdv/BMLIP/blob/master/output/BMLIP-5SSD0-lecture-notes.pdf). 
+- Bert de Vries (2022), [PDF bundle of all lecture notes for lessons B0 through B12](https://github.com/bertdv/BMLIP/blob/master/output/BMLIP-5SSD0-lecture-notes.pdf).
 - Wouter Kouw (2022), [PDF bundle of all probabilistic programming lecture notes for lessons W1 through W4](https://github.com/bertdv/BMLIP/blob/master/output/BMLIP-5SSD0-prob-prog.pdf).
 - [Christopher M.
 Bishop](http://research.microsoft.com/en-us/um/people/cmbishop/index.htm) (2006), [Pattern Recognition and
@@ -250,17 +250,14 @@ You can access all lecture notes, videos and exercises online through the links 
 --->
 
 
-<!--- 
+<!---
 ### Oral Exam Guide
 
-An exam session lasts about 30 minutes and will be recorded (and later deleted, following GDPR rules). At the beginning of the session, the examiner needs to check your identity, preferably by your campus card. 
+An exam session lasts about 30 minutes and will be recorded (and later deleted, following GDPR rules). At the beginning of the session, the examiner needs to check your identity, preferably by your campus card.
 
-The style of the examination is conversational. We like to engage in a conversation with you about what you learned in the class. In general, oral exams do not lend themselves well to proofing theorems or other deep mathematical manipulations. Instead, the focus is more on testing if you understand the conceptual ideas in this class. In principle, everything that has been presented in the lecture notes and videos is fair game as an exam question, including programming questions from the probabilistic programming sessions. 
+The style of the examination is conversational. We like to engage in a conversation with you about what you learned in the class. In general, oral exams do not lend themselves well to proofing theorems or other deep mathematical manipulations. Instead, the focus is more on testing if you understand the conceptual ideas in this class. In principle, everything that has been presented in the lecture notes and videos is fair game as an exam question, including programming questions from the probabilistic programming sessions.
 
 Please review the [Oral Exam Example notebook](https://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Oral-Exam-Example.ipynb (Links to an external site.)) to get an idea of what kind of questions will be asked.
 
-The first question of the exam will be an open question: "You get 5 minutes to tell me about what you learned in this class. You can fill in the 5 minutes as you like but try to impress me with your knowledge or insights. E.g., talk about probabilistic modelling, how it works, what are strong aspects or weak aspects of the approach, etc." After the first question, the rest of the exam will be focused at topics selected by the examiner. 
+The first question of the exam will be an open question: "You get 5 minutes to tell me about what you learned in this class. You can fill in the 5 minutes as you like but try to impress me with your knowledge or insights. E.g., talk about probabilistic modelling, how it works, what are strong aspects or weak aspects of the approach, etc." After the first question, the rest of the exam will be focused at topics selected by the examiner.
 --->
-
-
-
