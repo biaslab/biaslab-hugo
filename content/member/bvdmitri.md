@@ -45,6 +45,3 @@ sort_position = 4.1
     role = "PhD candidate"
 +++
 My research interests lie in the fields of computers science, machine learning and probabilistic programming. Currently I am a PhD candidate in the SPS group of Electrical Engineering department in Eindhoven University of Technology. I'm working on a high-performant implementation of message passing-based Bayesian inference package in the Julia programming language. My research project focuses on Signal Processing and Active inference applications, but is also aimed to expand the scope of possible applications for message passing in general.
-
-
-

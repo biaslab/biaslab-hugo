@@ -1,0 +1,15 @@
+name: Check
+
+on:
+  pull_request:
+    branches: [master]
+
+jobs:
+  check:
+      runs-on: ubuntu-22.04
+      name: Pre-Commit
+      steps:
+        - name: Checkout
+          uses: actions/checkout@v3
+        - name: Run Pre-Commit
+          uses: pre-commit/action@v3.0.0

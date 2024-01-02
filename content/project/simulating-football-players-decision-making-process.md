@@ -27,7 +27,7 @@ sort_position = 1
 
 ## Problem Statement
 Football has been the world's most popular sport for decades, and over time the game has evolved significantly. In order to search for an edge, Football clubs have started to adopt promising data analytics techniques. Consequently, the evolution of the game is pushed even further [[1](#references)].
-The goal of this project was to build an assistive tool that could help coaches to simulate the actions of an “optimally behaving” defending team in response to attackers. We defined defensive objectives and expressed those in a cost function for the defending team. 
+The goal of this project was to build an assistive tool that could help coaches to simulate the actions of an “optimally behaving” defending team in response to attackers. We defined defensive objectives and expressed those in a cost function for the defending team.
 
 During this work we made the following contributions:
 1.	We formulate two defense objectives from spatiotemporal football models based on the literature.
@@ -63,6 +63,3 @@ To illustrate the working of our model, we simulated a line-breaking pass situat
 1.	D. Memmert and R. Rein, “Match analysis, Big Data and tactics: current trends in elite soccer,” Dtsch. Z. Für Sportmed., vol. 2018, no. 03, pp. 65–72, Mar. 2018
 2.	J. Fernandez, F. C. Barcelona, and L. Bornn, “Wide Open Spaces: A statistical technique for measuring space creation in professional soccer,” p. 19, 2018.
 3.	W. Spearman, A. Basye, G. Dick, R. Hotovy, and P. Pop, “Physics-Based Modeling of Pass Probabilities in Soccer,” p. 15, 2017.
-
-
-

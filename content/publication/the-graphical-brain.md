@@ -19,7 +19,7 @@ url_video = ""
 [[authors]]
     name = "Karl J Friston"
 [[authors]]
-    name = "Thomas Parr" 
+    name = "Thomas Parr"
 [[authors]]
     name = "Bert de Vries"
     id = "bert"

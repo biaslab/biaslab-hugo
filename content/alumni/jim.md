@@ -1,37 +1,37 @@
-+++ 
-date = "2021-09-01T15:52:22+02:00" 
-id = "jim" 
++++
+date = "2021-09-01T15:52:22+02:00"
+id = "jim"
 interests = ["Signal Processing", "Bayesian Machine Learning", "Speech Recognition"]
-name = " Jim Beckers" 
-portrait = "portraits/Jim.jpg" 
-short_bio = "I am a MSc student at the SPS group at Eindhoven University of Technology." 
-title = "Jim Beckers" 
+name = " Jim Beckers"
+portrait = "portraits/Jim.jpg"
+short_bio = "I am a MSc student at the SPS group at Eindhoven University of Technology."
+title = "Jim Beckers"
 sort_position = 6
 external_link = "https://www.linkedin.com/in/jim-beckers/"
 
 
-[[social]] 
-    icon = "envelope" 
-    icon_pack = "fa" 
+[[social]]
+    icon = "envelope"
+    icon_pack = "fa"
     link = "mailto:j.j.p.beckers@student.tue.nl"
 
-[[social]] 
-    icon = "github" 
-    icon_pack = "fa" 
+[[social]]
+    icon = "github"
+    icon_pack = "fa"
     link = "//github.com/JimBeckers/"
 
-[[social]] 
-    icon = "linkedin" 
-    icon_pack = "fa" 
+[[social]]
+    icon = "linkedin"
+    icon_pack = "fa"
     link = "https://www.linkedin.com/in/jim-beckers/"
 
-[[education]] 
-    course = "BSc. in Electrical Engineering" 
-    institution = 'Eindhoven University of Technology' 
+[[education]]
+    course = "BSc. in Electrical Engineering"
+    institution = 'Eindhoven University of Technology'
     year = 2019
 
-[[organizations]] 
-    name = "TU Eindhoven" 
+[[organizations]]
+    name = "TU Eindhoven"
     role = "MSc student"
 +++
 

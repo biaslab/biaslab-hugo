@@ -29,7 +29,7 @@ Note: This site is currently under construction.
 </h2>
 --->
 
-The 2023/24 course "Bayesian Machine Learning and Information Processing" starts in November 2023 (Q2).  
+The 2023/24 course "Bayesian Machine Learning and Information Processing" starts in November 2023 (Q2).
 
 <img src="/img/teaching/5SSD0-banner.png" width="1200px">
 
@@ -45,16 +45,16 @@ This course covers the fundamentals of a Bayesian (i.e., probabilistic) approach
 News and Announcements
 </h2>
 
-- (20-Dec-2023) There is an issue with viewing the lecture notes. Please see [this Piazza note](https://piazza.com/class/ln1m8n333g5aa/post/79) for a temporary solution. 
+- (20-Dec-2023) There is an issue with viewing the lecture notes. Please see [this Piazza note](https://piazza.com/class/ln1m8n333g5aa/post/79) for a temporary solution.
 
-- (15-Nov-2023) Please sign up for Piazza (Q&A platform) at [signup link](https://piazza.com/tue.nl/winter2024/5ssd0). As much as possible we will use the Piazza site for new announcements as well. 
+- (15-Nov-2023) Please sign up for Piazza (Q&A platform) at [signup link](https://piazza.com/tue.nl/winter2024/5ssd0). As much as possible we will use the Piazza site for new announcements as well.
 
 
 ## Instructors
 
 - [Prof.dr.ir. Bert de Vries](http://bertdv.nl) (email: bert.de.vries@tue.nl) is the responsible instructor for this course and teaches the [lectures with label B](#lectures).
-- [Dr. Wouter Kouw](https://biaslab.github.io/member/wouter/) (w.m.kouw@tue.nl) teaches the probabilistic programming [lectures with label W](#lectures).                           
-- [Tim Nisslbeck](https://biaslab.github.io/member/tim), [Sepideh Adamiat](https://biaslab.github.io/member/sepideh) and [Wouter Nuijten](https://biaslab.github.io/member/woutern) are the teaching assistants.  
+- [Dr. Wouter Kouw](https://biaslab.github.io/member/wouter/) (w.m.kouw@tue.nl) teaches the probabilistic programming [lectures with label W](#lectures).
+- [Tim Nisslbeck](https://biaslab.github.io/member/tim), [Sepideh Adamiat](https://biaslab.github.io/member/sepideh) and [Wouter Nuijten](https://biaslab.github.io/member/woutern) are the teaching assistants.
 
 ## Materials
 
@@ -62,9 +62,9 @@ In principle, you can download all needed materials from the links below.
 
 ### Lecture Notes
 
-The lecture notes are mandatory material for the exam:  
+The lecture notes are mandatory material for the exam:
 
-- Bert de Vries (2023), [PDF bundle of all lecture notes for lessons B0 through B12](https://github.com/bertdv/BMLIP/blob/master/output/BMLIP-5SSD0-lecture-notes.pdf). 
+- Bert de Vries (2023), [PDF bundle of all lecture notes for lessons B0 through B12](https://github.com/bertdv/BMLIP/blob/master/output/BMLIP-5SSD0-lecture-notes.pdf).
 - Wouter Kouw (2023), [PDF bundle of all probabilistic programming lecture notes for lessons W1 through W4](https://github.com/bertdv/BMLIP/blob/master/output/BMLIP-5SSD0-prob-prog.pdf).
 
 
@@ -81,7 +81,7 @@ Learning](https://www.microsoft.com/en-us/research/people/cmbishop/prml-book/). 
 ### Software
 
 - Please install Microsoft's VS Code editor ([download](https://code.visualstudio.com/Download)) and add the Jupyter notebook extension ([tutorial](https://code.visualstudio.com/learn/educators/notebooks)).
-- Please install Julia <b>version 1.9</b> ([download](https://julialang.org/downloads/)) on your machine and then add the Julia extension in VS Code ([tutorial](https://code.visualstudio.com/docs/languages/julia)). 
+- Please install Julia <b>version 1.9</b> ([download](https://julialang.org/downloads/)) on your machine and then add the Julia extension in VS Code ([tutorial](https://code.visualstudio.com/docs/languages/julia)).
 
 
 ### <a name="lectures">Lecture notes, exercises, assignment and video recordings</a>
@@ -285,11 +285,11 @@ You can access all lecture notes, videos and exercises online through the links 
 ### programming assignments
 
 - Programming assignments can be downloaded from the table above.
-- Programming assignments should be submitted before the indicated deadlines at the [Canvas Assignments tab](https://canvas.tue.nl/courses/26086/assignments).  
+- Programming assignments should be submitted before the indicated deadlines at the [Canvas Assignments tab](https://canvas.tue.nl/courses/26086/assignments).
 
 ### grading
 
-- See [this Piazza note on how the final grade is computed](https://piazza.com/class/ln1m8n333g5aa/post/6). 
+- See [this Piazza note on how the final grade is computed](https://piazza.com/class/ln1m8n333g5aa/post/6).
 
 
 <!---
@@ -301,17 +301,14 @@ You can access all lecture notes, videos and exercises online through the links 
 --->
 
 
-<!--- 
+<!---
 ### Oral Exam Guide
 
-An exam session lasts about 30 minutes and will be recorded (and later deleted, following GDPR rules). At the beginning of the session, the examiner needs to check your identity, preferably by your campus card. 
+An exam session lasts about 30 minutes and will be recorded (and later deleted, following GDPR rules). At the beginning of the session, the examiner needs to check your identity, preferably by your campus card.
 
-The style of the examination is conversational. We like to engage in a conversation with you about what you learned in the class. In general, oral exams do not lend themselves well to proofing theorems or other deep mathematical manipulations. Instead, the focus is more on testing if you understand the conceptual ideas in this class. In principle, everything that has been presented in the lecture notes and videos is fair game as an exam question, including programming questions from the probabilistic programming sessions. 
+The style of the examination is conversational. We like to engage in a conversation with you about what you learned in the class. In general, oral exams do not lend themselves well to proofing theorems or other deep mathematical manipulations. Instead, the focus is more on testing if you understand the conceptual ideas in this class. In principle, everything that has been presented in the lecture notes and videos is fair game as an exam question, including programming questions from the probabilistic programming sessions.
 
 Please review the [Oral Exam Example notebook](https://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Oral-Exam-Example.ipynb (Links to an external site.)) to get an idea of what kind of questions will be asked.
 
-The first question of the exam will be an open question: "You get 5 minutes to tell me about what you learned in this class. You can fill in the 5 minutes as you like but try to impress me with your knowledge or insights. E.g., talk about probabilistic modelling, how it works, what are strong aspects or weak aspects of the approach, etc." After the first question, the rest of the exam will be focused at topics selected by the examiner. 
+The first question of the exam will be an open question: "You get 5 minutes to tell me about what you learned in this class. You can fill in the 5 minutes as you like but try to impress me with your knowledge or insights. E.g., talk about probabilistic modelling, how it works, what are strong aspects or weak aspects of the approach, etc." After the first question, the rest of the exam will be focused at topics selected by the examiner.
 --->
-
-
-

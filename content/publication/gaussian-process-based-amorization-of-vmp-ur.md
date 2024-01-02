@@ -15,7 +15,7 @@ url_dataset = ""
 url_project = ""
 url_slides = ""
 url_video = ""
-url_custom = [  
+url_custom = [
     {name="IEEE", url = "https://ieeexplore.ieee.org/abstract/document/9909688"},
     {name="EURASIP", url = "https://eurasip.org/Proceedings/Eusipco/Eusipco2022/pdfs/0001517.pdf"}
 ]

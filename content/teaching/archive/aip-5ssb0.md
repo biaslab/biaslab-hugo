@@ -36,7 +36,7 @@ and **starts on 4-Feb-2019**.
 
 ## News
 
-- **26-Mar-2019** We added an extra old exam (from April 2017, [with solutions](https://github.com/bertdv/AIP-5SSB0/raw/master/lessons/exercises/170410-5SSB0-exam-with-solutions.pdf)) to aid your exam preparation.   
+- **26-Mar-2019** We added an extra old exam (from April 2017, [with solutions](https://github.com/bertdv/AIP-5SSB0/raw/master/lessons/exercises/170410-5SSB0-exam-with-solutions.pdf)) to aid your exam preparation.
 - **12-Mar-2019** The [pdf handout for part-2](https://github.com/bertdv/AIP-5SSB0/raw/master/lessons/Tjalling/AIP-part2-handout.pdf) has been updated.
 - **5-Feb-2019** The [pdf bundle for part-1](https://github.com/bertdv/AIP-5SSB0/raw/master/output/AIP-5SSB0.pdf) has been updated.
 
@@ -85,8 +85,8 @@ Markov models and various latent component analysis models. Furthermore, we deri
 - [8 - Discriminative Classification](http://nbviewer.ipython.org/github/bertdv/AIP-5SSB0/blob/master/lessons/notebooks/08_Discriminative-Classification.ipynb)
 - [9 - Clustering with Gaussian Mixture Models](http://nbviewer.ipython.org/github/bertdv/AIP-5SSB0/blob/master/lessons/notebooks/09_Clustering-with-Gaussian-Mixture-Models.ipynb)
 - [10- The EM Algorithm](http://nbviewer.ipython.org/github/bertdv/AIP-5SSB0/blob/master/lessons/notebooks/10_The-General-EM-Algorithm.ipynb)
-- [11- Continuous Latent Variable Models - PCA and FA](http://nbviewer.ipython.org/github/bertdv/AIP-5SSB0/blob/master/lessons/notebooks/11_Continuous-Latent-Variable-Models-PCA-and-FA.ipynb)     
-- [12- Dynamic Latent Variable Models](http://nbviewer.ipython.org/github/bertdv/AIP-5SSB0/blob/master/lessons/notebooks/12_Dynamic-Latent-Variable-Models.ipynb)     
+- [11- Continuous Latent Variable Models - PCA and FA](http://nbviewer.ipython.org/github/bertdv/AIP-5SSB0/blob/master/lessons/notebooks/11_Continuous-Latent-Variable-Models-PCA-and-FA.ipynb)
+- [12- Dynamic Latent Variable Models](http://nbviewer.ipython.org/github/bertdv/AIP-5SSB0/blob/master/lessons/notebooks/12_Dynamic-Latent-Variable-Models.ipynb)
 - [13- Factor Graphs and Message Passing Algorithms](http://nbviewer.ipython.org/github/bertdv/AIP-5SSB0/blob/master/lessons/notebooks/13_Factor-Graphs-and-Message-Passing-Algorithms.ipynb)
 
 
