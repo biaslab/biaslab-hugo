@@ -4,7 +4,7 @@ id = "semih"
 interests = ["Bayesian Machine Learning", "Approximate Inference Methods", "Matrix and Tensor Decomposition Models"]
 name = "Semih Akbayrak"
 portrait = "portraits/semih.jpg"
-short_bio = "I am a Senior Statistician at [Mendix](https://www.mendix.com/)"
+short_bio = "I am an Applied Scientist at Amazon"
 title = "Semih Akbayrak"
 sort_position = 4
 external_link = "https://nl.linkedin.com/in/semih-akbayrak-90aab295"
@@ -45,11 +45,11 @@ external_link = "https://nl.linkedin.com/in/semih-akbayrak-90aab295"
     year = 2015
 
 [[organizations]]
-    name = "Mendix"
-    role = "Senior Statistician"
+    name = "Amazon"
+    role = "Applied Scientist"
 
 +++
 Semih Akbayrak defended his [PhD thesis](https://pure.tue.nl/ws/portalfiles/portal/247714822/20230120_Akbayrak_hf.pdf) in 2023.
-He now works at [Mendix](https://www.mendix.com/) as a Senior Statistician.
+He now works at Amazon as an Applied Scientist.
 His research focused on automating approximate inference in probabilistic models.
 Previously, he studied statistical interpretation of matrix and tensor factorizations.
