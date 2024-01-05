@@ -4,9 +4,9 @@ id = "bvdmitri"
 interests = ["Bayesian Machine Learning", "Software Engineering", "Probabilistic Programming"]
 name = "Dmitry V. Bagaev"
 portrait = "portraits/bvdmitri.jpeg"
-short_bio = "I am a PhD candidate at the Electrical Engineering department in Eindhoven University of Technology."
+short_bio = "I am a postdoctoral researcher at the Electrical Engineering department in Eindhoven University of Technology."
 title = "Dmitry V. Bagaev"
-sort_position = 4.1
+sort_position = 3.2
 
 [[social]]
     icon = "envelope"
@@ -28,6 +28,10 @@ sort_position = 4.1
     icon_pack = "fa"
     link = "https://github.com/bvdmitri"
 
+[[education]]
+    course = "PhD in Machine Learning"
+    institution = 'Eindhoven University of Technology'
+    year = 2023
 
 [[education]]
     course = "MSc in Mathematics and System Programming"
@@ -42,6 +46,6 @@ sort_position = 4.1
 
 [[organizations]]
     name = "TU Eindhoven"
-    role = "PhD candidate"
+    role = "Postdoctoral fellow"
 +++
-My research interests lie in the fields of computers science, machine learning and probabilistic programming. Currently I am a PhD candidate in the SPS group of Electrical Engineering department in Eindhoven University of Technology. I'm working on a high-performant implementation of message passing-based Bayesian inference package in the Julia programming language. My research project focuses on Signal Processing and Active inference applications, but is also aimed to expand the scope of possible applications for message passing in general.
+My research interests lie in the fields of computers science, machine learning and probabilistic programming. Currently I am a postdoc in the SPS group of Electrical Engineering department in Eindhoven University of Technology. I'm working on a high-performant implementation of message passing-based Bayesian inference package in the Julia programming language. My research project focuses on Signal Processing and Active inference applications, but is also aimed to expand the scope of possible applications for message passing in general.
