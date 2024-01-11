@@ -158,7 +158,7 @@ tag = "tags"
     identifier = "software"
     [[menu.main]]
       name = "RxInfer.jl"
-      url = "https://biaslab.github.io/rxinfer-website/"
+      url = "https://rxinfer.ml"
       parent = "software"
       weight = 1
     [[menu.main]]
@@ -168,12 +168,12 @@ tag = "tags"
       weight = 2
     [[menu.main]]
       name = "ReactiveMP.jl"
-      url = "https://biaslab.github.io/ReactiveMP.jl/stable"
+      url = "https://reactivebayes.github.io/ReactiveMP.jl/stable"
       parent = "software"
       weight = 3
     [[menu.main]]
       name = "Rocket.jl"
-      url = "https://biaslab.github.io/Rocket.jl/stable"
+      url = "https://reactivebayes.github.io/Rocket.jl/stable"
       parent = "software"
       weight = 4
 
