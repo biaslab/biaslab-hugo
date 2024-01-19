@@ -233,7 +233,7 @@ You can access all lecture notes, videos and exercises online through the links 
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-4.ipynb">W4</a></td>
             <td></td>
             <td></td>
-            <td></td>
+            <td><a href="http://t.ly/PSU8l">W4.1</a>, <a href="http://t.ly/1lIex">W4.2</a></td>
          </tr>
          <tr>
             <td>19-Jan-2024</td>
@@ -241,7 +241,7 @@ You can access all lecture notes, videos and exercises online through the links 
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Intelligent-Agents-and-Active-Inference.ipynb">B12</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises-Intelligent-Agents-and-Active-Inference.ipynb">B12-ex</a><br/> <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Solutions-Intelligent-Agents-and-Active-Inference.ipynb">B12-sol</a></td>
             <td></td>
-            <td><!--- <a href="https://youtu.be/Ln0aq11YBzQ">B12</a> ---></td>
+            <td><a href="https://t.ly/8bz3x">B12.1</a>,  <a href="https://t.ly/T_PGM">B12.2</a> <br/> <a href="https://github.com/bertdv/BMLIP/blob/master/lessons/notebooks/files/BdV-Jan2024-Natural-Artificial-Intelligence.ppsx">slides</a> </td>
          </tr>
          <!-- <tr>
             <td></td>
