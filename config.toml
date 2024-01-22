@@ -9,6 +9,7 @@ title = "BIASlab"
 math = true
 copyright = "&copy; BIASlab, 2023 "
 enableRobotsTXT = true
+disablePathToLower = true
 
 [taxonomies]
 category = "categories"
