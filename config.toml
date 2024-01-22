@@ -172,6 +172,11 @@ tag = "tags"
       parent = "software"
       weight = 3
     [[menu.main]]
+      name = "GraphPPL.jl"
+      url = "https://reactivebayes.github.io/GraphPPL.jl/stable/"
+      parent = "software"
+      weight = 3
+    [[menu.main]]
       name = "Rocket.jl"
       url = "https://reactivebayes.github.io/Rocket.jl/stable"
       parent = "software"
