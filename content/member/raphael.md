@@ -13,11 +13,6 @@ sort_position = 5.1
     icon_pack = "fa"
     link = "mailto:r.v.tresor@tue.nl"
 
-[[social]]
-    icon = "linkedin"
-    icon_pack = "fa"
-    link = "https://linkedin.com/in/raphaël-trésor-b104b91a7/"
-
 [[education]]
     course = "MSc in Energy Physics/Engineering"
     institution = 'Paris-Saclay University'
@@ -34,4 +29,4 @@ sort_position = 5.1
 
 +++
 
-Raaja joined as a guest researcher in April 2023 at the Bayesian Intelligent Autonomous Systems Lab (BIASlab) at Eindhoven University of Technology.
+ Rapha&euml;l Tr&eacute;sor is currently pursuing his PhD within the Bayesian Intelligent Autonomous Systems Lab (BIASlab) at Eindhoven University of Technology’s Department of Electrical Engineering. His research is primarily centered on the design and development of real-time Bayesian agents for personalized audio processing applications. Before he worked for 2 years on the devolpment of a software of data analytics for financial institutions at Opensee.
