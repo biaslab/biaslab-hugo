@@ -16,7 +16,7 @@ sort_position = 2.0
 [[social]]
     icon = "github"
     icon_pack = "fa"
-    link = "//github.com/tvdlaar/"
+    link = "//github.com/thijsvdlaar/"
 
 [[education]]
     course = "PhD in Machine Learning"
