@@ -6,7 +6,7 @@ name = "Raphaël Trésor"
 portrait = "portraits/raphael.jpg"
 short_bio = "Raphaël Trésor is a PhD candidate in the SPS group at [Eindhoven University of Technology](https://www.tue.nl/en/)’s Electrical Engineering department. "
 title = "Raphael Tresor"
-sort_position = 5.1
+sort_position = 5.2
 
 [[social]]
     icon = "envelope"
@@ -29,4 +29,4 @@ sort_position = 5.1
 
 +++
 
- Rapha&euml;l Tr&eacute;sor is currently pursuing his PhD within the Bayesian Intelligent Autonomous Systems Lab (BIASlab) at Eindhoven University of Technology’s Department of Electrical Engineering. His research is primarily centered on the design and development of real-time Bayesian agents for personalized audio processing applications. Before he worked for 2 years on the devolpment of a software of data analytics for financial institutions at Opensee.
+ Rapha&euml;l Tr&eacute;sor is currently pursuing his PhD within the Bayesian Intelligent Autonomous Systems Lab (BIASlab) at Eindhoven University of Technology’s Department of Electrical Engineering. His research is primarily centered on the design and development of real-time Bayesian agents for personalized audio processing applications. Before, he worked for two years on the development of data analytics software for financial institutions at Opensee.
