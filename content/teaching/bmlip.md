@@ -205,7 +205,7 @@ You can access all lecture notes, videos and exercises online through the links 
             <td>Deadline probabilistic programming assignment 1</td>
             <td></td>
             <td></td>
-            <td><a href="https://github.com/bertdv/BMLIP/blob/master/lessons/assignments/%5B5SSD0%5D%20Probabilistic%20Programming%201.zip">A1</a></td>
+            <td><a href="https://github.com/bertdv/BMLIP/blob/master/lessons/assignments/%5B5SSD0%5D%20Probabilistic%20Programming%201.zip">A1</a><br><a href="https://github.com/bertdv/BMLIP/blob/master/lessons/assignments/%5B5SSD0%5D%20Probabilistic%20Programming%201%20-%20solutions.ipynb">A1-sol</a></td>
             <td></td>
          </tr>
          <tr style="color:blue;">
@@ -217,7 +217,7 @@ You can access all lecture notes, videos and exercises online through the links 
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-3.ipynb">W3</a></td>
             <td></td>
             <td></td>
-            <td></td>
+            <td><a href="http://t.ly/qeGVc">W3.1</a>, <a href="http://t.ly/ZH6Zj">W3.2</a></td>
          </tr>
          <tr>
             <td>12-Jan-2024</td>
@@ -225,7 +225,7 @@ You can access all lecture notes, videos and exercises online through the links 
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Dynamic-Models.ipynb">B11</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises-Dynamic-Models.ipynb">B11-ex</a><br/> <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Solutions-Dynamic-Models.ipynb">B11-sol</a></td>
             <td></td>
-            <td><!--- <a href="https://youtu.be/-jMq9gl59pA">B11</a> ---></td>
+            <td><a href="https://t.ly/dD2YB">B11</a></td>
          </tr>
          <tr style="color:green;">
             <td>17-Jan-2024</td>
@@ -233,7 +233,7 @@ You can access all lecture notes, videos and exercises online through the links 
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-4.ipynb">W4</a></td>
             <td></td>
             <td></td>
-            <td></td>
+            <td><a href="http://t.ly/PSU8l">W4.1</a>, <a href="http://t.ly/1lIex">W4.2</a></td>
          </tr>
          <tr>
             <td>19-Jan-2024</td>
@@ -241,7 +241,7 @@ You can access all lecture notes, videos and exercises online through the links 
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Intelligent-Agents-and-Active-Inference.ipynb">B12</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises-Intelligent-Agents-and-Active-Inference.ipynb">B12-ex</a><br/> <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Solutions-Intelligent-Agents-and-Active-Inference.ipynb">B12-sol</a></td>
             <td></td>
-            <td><!--- <a href="https://youtu.be/Ln0aq11YBzQ">B12</a> ---></td>
+            <td><a href="https://t.ly/8bz3x">B12.1</a>,  <a href="https://t.ly/T_PGM">B12.2</a> <br/> <a href="https://github.com/bertdv/BMLIP/blob/master/lessons/notebooks/files/BdV-Jan2024-Natural-Artificial-Intelligence.ppsx">slides</a> </td>
          </tr>
          <!-- <tr>
             <td></td>
@@ -290,6 +290,10 @@ You can access all lecture notes, videos and exercises online through the links 
 ### grading
 
 - See [this Piazza note on how the final grade is computed](https://piazza.com/class/ln1m8n333g5aa/post/6).
+
+## Projects
+
+- If you liked this class, [here is a short oversight](https://t.ly/lfIoh) (~10 minutes) of internship and graduation projects that you may consider applying for.
 
 
 <!---

@@ -16,7 +16,7 @@ In the second part of the project, you will evaluate the performance of parallel
 
 ## Student task description
 - Literature search: he student needs to be able to obtain a working understanding of Bayesian Inference, probabilistic methods, probabilistic graphical models, Forney-style factor graphs and message passing.
-- Learning programming: this project is best suited for a student with a strong computer science background. The student should get familiar with relevant software tools ([julia](https://julialang.org/), [RxInfer.jl](https://github.com/biaslab/RxInfer.jl), [ReactiveMP.jl](https://github.com/biaslab/ReactiveMP.jl)) and understand how to setup parallel computation infrastructures.
+- Learning programming: this project is best suited for a student with a strong computer science background. The student should get familiar with relevant software tools ([julia](https://julialang.org/), [RxInfer.jl](https://github.com/ReactiveBayes/RxInfer.jl), [ReactiveMP.jl](https://github.com/ReactiveBayes/ReactiveMP.jl)) and understand how to setup parallel computation infrastructures.
 - Develop an efficient _parallel implementation_ of message passing-based inference in factor graph models.
 - Depending on progress, the student may extend the system to more complex benchmark tasks.
 - Iterate steps 3 and 4 until satisfaction and/or time runs out.
@@ -25,7 +25,7 @@ In the second part of the project, you will evaluate the performance of parallel
 ## Project positioning
 [BIASlab](https://biaslab.github.io/) (FLUX-7.060) is a subgroup of the Signal Processing Systems (SPS) group that aims to develop \textbf{Intelligent Autonomous Agents}. These agents interact with their environment through their sensors and actuators in order to learn purposeful behavior without any supervision ("autonomously"), e.g., to navigate, play soccer or they may learn to decode speech signals under bad acoustic conditions. Our research projects are inspired by the latest insights from machine learning, computational neuroscience and signal processing.
 
-Intelligent agents process information through Bayesian inference. In our lab, we realize these agents as (Forney-style) \textbf{Factor Graphs} that execute Bayesian inference in complex models through message passing in a graph. In our team, we are developing a toolbox that supports message passing-based inference in factor graphs, see [RxInfer.jl](https://biaslab.github.io/rxinfer-website/).
+Intelligent agents process information through Bayesian inference. In our lab, we realize these agents as (Forney-style) \textbf{Factor Graphs} that execute Bayesian inference in complex models through message passing in a graph. In our team, we are developing a toolbox that supports message passing-based inference in factor graphs, see [RxInfer.jl](https://rxinfer.ml).
 
 ### Supervision:
 - Weekly progress meetings with Dmitry Bagaev.
