@@ -255,7 +255,7 @@ You can access all lecture notes, videos and exercises online through the links 
             <td>Deadline probabilistic programming assignment 2</td>
             <td></td>
             <td></td>
-            <td><a href="https://github.com/bertdv/BMLIP/blob/master/lessons/assignments/%5B5SSD0%5D%20Probabilistic%20Programming%202.zip">A2</a></td>
+            <td><a href="https://github.com/bertdv/BMLIP/blob/master/lessons/assignments/%5B5SSD0%5D%20Probabilistic%20Programming%202.zip">A2</a><br><a href="https://github.com/bertdv/BMLIP/blob/master/lessons/assignments/%5B5SSD0%5D%20Probabilistic%20Programming%201%20-%20solutions.ipynb">A2-sol</a></td>
             <td></td>
          </tr>
          <tr style="color:blue;">
