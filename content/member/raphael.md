@@ -30,3 +30,4 @@ sort_position = 5.2
 +++
 
  Rapha&euml;l Tr&eacute;sor is currently pursuing his PhD within the Bayesian Intelligent Autonomous Systems Lab (BIASlab) at Eindhoven University of Technology’s Department of Electrical Engineering. His research is primarily centered on the design and development of real-time Bayesian agents for personalized audio processing applications. Before, he worked for two years on the development of data analytics software for financial institutions at Opensee.
+ 
