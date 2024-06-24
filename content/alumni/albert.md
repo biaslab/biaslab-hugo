@@ -7,6 +7,7 @@ portrait = "portraits/albert.jpeg"
 short_bio = "I am a postdoctoral researcher at the Electrical Engineering department in Eindhoven University of Technology"
 title = "Albert Podusenko"
 sort_position = 3.1
+external_link = "https://www.linkedin.com/in/albertpod/"
 
 [[social]]
     icon = "envelope"
@@ -43,6 +44,4 @@ sort_position = 3.1
     role = "Postdoctoral fellow"
 
 +++
-Albert Podusenko is a postdoc in the SPS group of Electrical Engineering
-department in Eindhoven University of Technology. His research focuses on
-Bayesian Inference and Probabilistic Graphical Models.
+Albert Podusenko is a Founder & the CEO of Lazy Dynamics.
