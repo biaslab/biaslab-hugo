@@ -4,7 +4,7 @@ id = "albert"
 interests = ["Bayesian Inference", "Signal Processing", "Intelligent Systems"]
 name = "Albert Podusenko"
 portrait = "portraits/albert.jpeg"
-short_bio = "I am a postdoctoral researcher at the Electrical Engineering department in Eindhoven University of Technology"
+short_bio = "Albert Podusenko is a founder & CEO of [Lazy Dynamics](https://lazydynamics.com/)"
 title = "Albert Podusenko"
 sort_position = 3.1
 external_link = "https://www.linkedin.com/in/albertpod/"
@@ -44,4 +44,4 @@ external_link = "https://www.linkedin.com/in/albertpod/"
     role = "Postdoctoral fellow"
 
 +++
-Albert Podusenko is a Founder & the CEO of Lazy Dynamics.
+Albert Podusenko is a founder & CEO of [Lazy Dynamics](https://lazydynamics.com/).

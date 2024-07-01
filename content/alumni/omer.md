@@ -1,12 +1,13 @@
 +++
 date = "2021-01-10T13:33:37+00:00"
-id = "tim"
+id = "omer"
 interests = ["Information Theory", "Bayesian Inference", "Wireless Communications"]
 name = "Ömer Pepeoğlu"
 portrait = "portraits/omer.jpg"
 short_bio = "I am a PhD candidate at the Electrical Engineering department, [Eindhoven University of Technology](https://www.tue.nl/en/)."
 title = "Ömer Pepeoğlu"
 sort_position = 5.1
+external_link = "https://www.linkedin.com/in/omerpepeoglu"
 
 [[social]]
     icon = "envelope"
@@ -33,7 +34,7 @@ sort_position = 5.1
     role = "PhD candidate"
 
 +++
-Ömer Pepeoğlu is a Doctoral Candidate in the Signal Processing Systems (SPS) group at the Department of Electrical Engineering, Eindhoven University of Technology (TU/e).
+Ömer Pepeoğlu was a Doctoral Candidate at the Signal Processing Systems (SPS) group at the Department of Electrical Engineering, Eindhoven University of Technology (TU/e).
 His research interests include information theory, Bayesian inference, and wireless communications.
 Ömer holds a master’s degree in communications engineering, which he earned in 2023 from the Technical University of Munich (TUM), Germany.
 Prior to that, he completed his bachelor’s degree in electronics and communication engineering at Istanbul Technical University (İTÜ), Türkiye, in 2020.
