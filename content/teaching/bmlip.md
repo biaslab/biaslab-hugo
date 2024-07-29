@@ -100,7 +100,7 @@ You can access all lecture notes, videos and exercises online through the links 
             <th style="text-align:center">video recordings</th>
          </tr>
          <tr>
-            <td>15-Nov-2023</td>
+            <td>13-Nov-2024 (Wednesday)</td>
             <td>B0: Course Syllabus<br/>
             B1: Machine Learning Overview</td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Course-Syllabus.ipynb">B0</a>, <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Machine-Learning-Overview.ipynb">B1</a></td>
@@ -108,8 +108,16 @@ You can access all lecture notes, videos and exercises online through the links 
             <td></td>
             <td> <a href="http://t.ly/_DfSS">B0</a>,  <a href="http://t.ly/OzItp">B1</a></td>
          </tr>
+         <tr style="color:green;">
+            <td>15-Nov-2024</td>
+            <td>Introduction to Julia</td>
+            <td><a href="">W1</a></td>
+            <td></td>
+            <td></td>
+            <td></td>
+         </tr>
          <tr>
-            <td>17-Nov-2023</td>
+            <td>20-Nov-2024 (Friday)</td>
             <td>B2: Probability Theory Review</td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Probability-Theory-Review.ipynb">B2</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises-Probability-Theory-Review.ipynb">B2-ex</a><br/> <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Solutions-Probability-Theory-Review.ipynb">B2-sol</a></td>
@@ -117,7 +125,7 @@ You can access all lecture notes, videos and exercises online through the links 
             <td><a href="http://t.ly/EpHnP">B2.1</a>, <a href="http://t.ly/NekHN">B2.2</a></td>
          </tr>
          <tr>
-            <td>22-Nov-2023</td>
+            <td>22-Nov-2024</td>
             <td>B3: Bayesian Machine Learning</td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Bayesian-Machine-Learning.ipynb">B3</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises-Bayesian-Machine-Learning.ipynb">B3-ex</a><br/> <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Solutions-Bayesian-Machine-Learning.ipynb">B3-sol</a></td>
@@ -125,7 +133,7 @@ You can access all lecture notes, videos and exercises online through the links 
             <td> <a href="http://t.ly/eyru8">B3.1</a>, <a href="http://t.ly/vm_L-">B3.2</a> </td>
          </tr>
          <tr>
-            <td >24-Nov-2023</td>
+            <td >27-Nov-2024</td>
             <td >B4: Factor Graphs and the Sum-Product Algorithm</td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Factor-Graphs.ipynb">B4</a></td>
              <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises-Factor-Graphs.ipynb">B4-ex</a><br/> <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Solutions-Factor-Graphs.ipynb">B4-sol</a></td>
@@ -133,15 +141,19 @@ You can access all lecture notes, videos and exercises online through the links 
              <td><a href="http://t.ly/n9qA0">B4.1</a>, <a href="http://t.ly/3H4Hh">B4.2</a></td>
          </tr>
          <tr style="color:red;">
-            <td>27-Nov-2023</td>
+            <td>27-Nov-2024</td>
             <td>Deadline julia programming assignment</td>
             <td></td>
             <td></td>
-            <td><a href="https://github.com/bertdv/BMLIP/blob/master/lessons/assignments/%5B5SSD0%5D%20Julia%20assignment.zip">A0</a><br><a href="https://github.com/bertdv/BMLIP/blob/master/lessons/assignments/%5B5SSD0%5D%20Julia%20assignment%20-%20solutions.ipynb">A0-sol</a></td>
+            <td><a href="https://github.com/bertdv/BMLIP/blob/master/lessons/assignments/%5B5SSD0%5D%20Julia%20assignment.zip">A0</a>
+            <!---
+            <br><a href="https://github.com/bertdv/BMLIP/blob/master/lessons/assignments/%5B5SSD0%5D%20Julia%20assignment%20-%20solutions.ipynb">A0-sol</a>
+            --->
+            </td>
             <td></td>
          </tr>
          <tr>
-            <td>29-Nov-2023</td>
+            <td>29-Nov-2024</td>
             <td>B5: Continuous Data and the Gaussian Distribution</td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/The-Gaussian-Distribution.ipynb">B5</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises-The-Gaussian-Distribution.ipynb">B5-ex</a><br/> <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Solutions-The-Gaussian-Distribution.ipynb">B5-sol</a></td>
@@ -149,7 +161,7 @@ You can access all lecture notes, videos and exercises online through the links 
             <td> <a href="http://t.ly/jsHmu">B5.1</a>, <a href="http://t.ly/hRrNP">B5.2 </a> </td>
          </tr>
          <tr>
-            <td>01-Dec-2023</td>
+            <td>04-Dec-2024</td>
             <td>B6: Discrete Data and the Multinomial Distribution</td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/The-Multinomial-Distribution.ipynb">B6</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises-The-Multinomial-Distribution.ipynb">B6-ex</a><br/> <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Solutions-The-Multinomial-Distribution.ipynb">B6-sol</a></td>
@@ -157,15 +169,15 @@ You can access all lecture notes, videos and exercises online through the links 
             <td><a href="http://t.ly/ZdlgG">B6</a> </td>
          </tr>
          <tr style="color:green;">
-            <td>06-Dec-2023</td>
+            <td>06-Dec-2024</td>
             <td>Probabilistic Programming 1 - Bayesian inference with conjugate models</td>
-            <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-1.ipynb">W1</a></td>
+            <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-1.ipynb">W2</a></td>
             <td></td>
             <td></td>
             <td> <a href="http://t.ly/kmnSM">W1.1</a>, <a href="http://t.ly/twD5k">W1.2 </a> </td>
          </tr>
          <tr>
-            <td>08-Dec-2023</td>
+            <td>11-Dec-2024</td>
             <td>B7: Regression</td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Regression.ipynb">B7</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises-Regression.ipynb">B7-ex</a><br/> <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Solutions-Regression.ipynb">B7-sol</a></td>
@@ -173,7 +185,7 @@ You can access all lecture notes, videos and exercises online through the links 
             <td> <a href="https://t.ly/cVUPU">B7.1</a>, <a href="http://t.ly/PHLLl">B7.2 </a></td>
          </tr>
          <tr>
-            <td>13-Dec-2023</td>
+            <td>13-Dec-2024</td>
             <td>B8: Generative Classification <br/>B9: Discriminative Classification
             </td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Generative-Classification.ipynb">B8</a>, <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Discriminative-Classification.ipynb">B9</a></td>
@@ -182,15 +194,15 @@ You can access all lecture notes, videos and exercises online through the links 
             <td><a href="http://t.ly/eS5U3">B8</a>, <a href="http://t.ly/0BEY3">B9</a></td>
          </tr>
          <tr style="color:green;">
-            <td>15-Dec-2023</td>
+            <td>18-Dec-2024</td>
             <td>Probabilistic Programming 2 - Bayesian regression & classification</td>
-            <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-2.ipynb">W2</a></td>
+            <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-2.ipynb">W3</a></td>
             <td></td>
             <td></td>
             <td><a href="http://t.ly/Q7nwu">W2.1</a>, <a href="http://t.ly/qrlke">W2.2</a></td>
          </tr>
          <tr>
-            <td>20-Dec-2023</td>
+            <td>20-Dec-2024</td>
             <td>B10: Latent Variable Models and Variational Bayes</td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Latent-Variable-Models-and-VB.ipynb">B10</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises-Latent-Variable-Models-and-VB.ipynb">B10-ex</a><br/> <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Solutions-Latent-Variable-Models-and-VB.ipynb">B10-sol</a></td>
@@ -198,26 +210,31 @@ You can access all lecture notes, videos and exercises online through the links 
             <td><a href="https://t.ly/33EsD">B10.1</a>, <a href="https://t.ly/bgIaG">B10.2</a></td>
          </tr>
          <tr style="color:red;">
-            <td><strike>20-Dec-2023</strike><br/>22-Dec-2023</td>
+            <td>20-Dec-2024</td>
             <td>Deadline probabilistic programming assignment 1</td>
             <td></td>
             <td></td>
-            <td><a href="https://github.com/bertdv/BMLIP/blob/master/lessons/assignments/%5B5SSD0%5D%20Probabilistic%20Programming%201.zip">A1</a><br><a href="https://github.com/bertdv/BMLIP/blob/master/lessons/assignments/%5B5SSD0%5D%20Probabilistic%20Programming%201%20-%20solutions.ipynb">A1-sol</a></td>
+            <td><a href="https://github.com/bertdv/BMLIP/blob/master/lessons/assignments/%5B5SSD0%5D%20Probabilistic%20Programming%201.zip">A1</a>
+            <!---
+            <br><a href="https://github.com/bertdv/BMLIP/blob/master/lessons/assignments/%5B5SSD0%5D%20Probabilistic%20Programming%201%20-%20solutions.ipynb">A1-sol</a>
+            --->
+            </td>
             <td></td>
-         </tr>
+         </tr>    
          <tr style="color:blue;">
             <td colspan="6">break</td>
          </tr>
          <tr style="color:green;">
-            <td>10-Jan-2024</td>
+            <td>08-Jan-2025</td>
             <td>Probabilistic Programming 3 - Variational Bayesian inference</td>
-            <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-3.ipynb">W3</a></td>
+            <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-3.ipynb">W4</a></td>
             <td></td>
             <td></td>
             <td><a href="http://t.ly/qeGVc">W3.1</a>, <a href="http://t.ly/ZH6Zj">W3.2</a></td>
          </tr>
          <tr>
-            <td>12-Jan-2024</td>
+         <tr>
+            <td>10-Jan-2025</td>
             <td>B11: Dynamic Models</td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Dynamic-Models.ipynb">B11</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises-Dynamic-Models.ipynb">B11-ex</a><br/> <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Solutions-Dynamic-Models.ipynb">B11-sol</a></td>
@@ -225,20 +242,40 @@ You can access all lecture notes, videos and exercises online through the links 
             <td><a href="https://t.ly/dD2YB">B11</a></td>
          </tr>
          <tr style="color:green;">
-            <td>17-Jan-2024</td>
+            <td>15-Jan-2025</td>
             <td>Probabilistic Programming 4 - Bayesian filters & smoothers</td>
-            <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-4.ipynb">W4</a></td>
+            <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-4.ipynb">W5</a></td>
             <td></td>
             <td></td>
             <td><a href="http://t.ly/PSU8l">W4.1</a>, <a href="http://t.ly/1lIex">W4.2</a></td>
          </tr>
          <tr>
-            <td>19-Jan-2024</td>
+            <td>17-Jan-2025</td>
             <td>B12: Intelligent Agents and Active Inference</td>
-            <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Intelligent-Agents-and-Active-Inference.ipynb">B12</a></td>
+            <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Intelligent-Agents-and-Active-Inference.ipynb">B12,</a><br/> <a href="https://github.com/bertdv/BMLIP/blob/master/lessons/notebooks/files/BdV-Jan2024-Natural-Artificial-Intelligence.ppsx">slides</a> </td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises-Intelligent-Agents-and-Active-Inference.ipynb">B12-ex</a><br/> <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Solutions-Intelligent-Agents-and-Active-Inference.ipynb">B12-sol</a></td>
             <td></td>
-            <td><a href="https://t.ly/8bz3x">B12.1</a>,  <a href="https://t.ly/T_PGM">B12.2</a> <br/> <a href="https://github.com/bertdv/BMLIP/blob/master/lessons/notebooks/files/BdV-Jan2024-Natural-Artificial-Intelligence.ppsx">slides</a> </td>
+            <td><a href="https://t.ly/8bz3x">B12.1</a>,  <a href="https://t.ly/T_PGM">B12.2</a> </td>
+         </tr>
+         <tr style="color:red;">
+            <td>24-Jan-2025</td>
+            <td>Deadline probabilistic programming assignment 2</td>
+            <td></td>
+            <td></td>
+            <td><a href="https://github.com/bertdv/BMLIP/blob/master/lessons/assignments/%5B5SSD0%5D%20Probabilistic%20Programming%202.zip">A2</a>
+            <!---
+            <br><a href="https://github.com/bertdv/BMLIP/blob/master/lessons/assignments/%5B5SSD0%5D%20Probabilistic%20Programming%201%20-%20solutions.ipynb">A2-sol</a>
+            --->
+            </td>
+            <td></td>
+         </tr>
+         <tr style="color:blue;">
+            <td >30-Jan-2025</td>
+            <td colspan="5">written examination (13:30-16:30)</td>
+         </tr>
+         <tr style="color:blue;">
+            <td >??-Apr-2025</td>
+            <td colspan="5">resit written examination (??:??-??:??)</td>
          </tr>
          <!-- <tr>
             <td></td>
@@ -247,22 +284,6 @@ You can access all lecture notes, videos and exercises online through the links 
             <td><a href="https://github.com/bertdv/BMLIP/raw/master/lessons/notebooks/MKoudahl-March2020-What-is-life.pdf?dl=0">M1</a></td>
             <td></td>
          </tr> -->
-         <tr style="color:red;">
-            <td>26-Jan-2024</td>
-            <td>Deadline probabilistic programming assignment 2</td>
-            <td></td>
-            <td></td>
-            <td><a href="https://github.com/bertdv/BMLIP/blob/master/lessons/assignments/%5B5SSD0%5D%20Probabilistic%20Programming%202.zip">A2</a><br><a href="https://github.com/bertdv/BMLIP/blob/master/lessons/assignments/%5B5SSD0%5D%20Probabilistic%20Programming%201%20-%20solutions.ipynb">A2-sol</a></td>
-            <td></td>
-         </tr>
-         <tr style="color:blue;">
-            <td >01-Feb-2024</td>
-            <td colspan="5">written examination (13:30-16:30)</td>
-         </tr>
-         <tr style="color:blue;">
-            <td >19-Apr-2024</td>
-            <td colspan="5">resit written examination (18:00-21:00)</td>
-         </tr>
       </table>
 
 
