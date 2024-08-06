@@ -297,15 +297,15 @@ You can access all lecture notes, videos and exercises online through the links 
 
 - In addition to the materials in the above table, we provide two representative practice written exams:
 
-  - 2021-01-18: <a href="https://github.com/bertdv/BMLIP/blob/master/exams/20210128-5SSD0-exam-A.pdf?dl=0">exam A</a>, <a href="https://github.com/bertdv/BMLIP/blob/master/exams/20210128-5SSD0-solutions-A.pdf?dl=0">solutions A</a>; <a href="https://github.com/bertdv/BMLIP/blob/master/exams/20210128-5SSD0-exam-B.pdf?dl=0">exam B</a>, <a href="https://github.com/bertdv/BMLIP/blob/master/exams/20210128-5SSD0-solutions-B.pdf?dl=0">solutions B</a>
-  - 2021-04-15: <a href="https://github.com/bertdv/BMLIP/blob/master/exams/20210415-5SSD0-exam.pdf?dl=0">exam</a>, <a href="https://github.com/bertdv/BMLIP/blob/master/exams/20210415-5SSD0-solutions.pdf?dl=0">solutions</a>
+  - 3-Feb-2022: <a href="https://github.com/bertdv/BMLIP/blob/master/exams/20220203-5SSD0-exam.pdf?dl=0">exam </a>; <a href="https://github.com/bertdv/BMLIP/blob/master/exams/20220203-5SSD0-exam-answers.pdf?dl=0">answers </a>; <a href="https://github.com/bertdv/BMLIP/blob/master/exams/20220203-5SSD0-exam-calculations.ipynb?dl=0">calculations</a>
+  - 2-Feb-2023: <a href="https://github.com/bertdv/BMLIP/blob/master/exams/20230202-5SSD0-exam.pdf?dl=0">exam </a>; <a href="https://github.com/bertdv/BMLIP/blob/master/exams/20230202-5SSD0-exam-answers.pdf?dl=0">answers </a>; <a href="https://github.com/bertdv/BMLIP/blob/master/exams/20230202-5SSD0-exam-calculations.ipynb?dl=0">calculations</a>
 
-### programming assignments
+### Programming Assignments
 
 - Programming assignments can be downloaded from the table above.
 - Programming assignments should be submitted before the indicated deadlines at the [Canvas Assignments tab](https://canvas.tue.nl/courses/26086/assignments).
 
-### grading
+### Grading
 
 - See [this Piazza note on how the final grade is computed](https://piazza.com/class/ln1m8n333g5aa/post/6).
 
