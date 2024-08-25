@@ -239,7 +239,7 @@ You can access all lecture notes, videos and exercises online through the links 
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Dynamic-Models.ipynb">B11</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises-Dynamic-Models.ipynb">B11-ex</a><br/> <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Solutions-Dynamic-Models.ipynb">B11-sol</a></td>
             <td></td>
-            <td><a href="https://youtu.be/W1AkZJAjvqI">B11.1</a>, <a href="https://youtu.be/G7EJqWY4aq0">B11.2</a></td>
+            <td><a href="https://youtu.be/W1AkZJAjvqI">B11</a></td>
          </tr>
          <tr style="color:green;">
             <td>15-Jan-2025</td>
@@ -309,10 +309,11 @@ You can access all lecture notes, videos and exercises online through the links 
 
 - See [this Piazza note on how the final grade is computed](https://piazza.com/class/ln1m8n333g5aa/post/6).
 
+<!---
 ## Projects
 
-- If you liked this class, [here is a short oversight](https://t.ly/lfIoh) (~10 minutes) of internship and graduation projects that you may consider applying for.
-
+- If you liked this class, [here is a short oversight](https://youtu.be/G7EJqWY4aq0) (~10 minutes) of internship and graduation projects that you may consider applying for.
+--->
 
 <!---
 ### Assignment
