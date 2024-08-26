@@ -1,10 +1,10 @@
 +++
 date = "2018-03-01T15:52:22+02:00"
 id = "wouter"
-interests = ["Machine Learning", "Statistical Inference", "Neural Computation", "Intelligent Systems"]
+interests = ["Machine Learning", "Statistical Inference", "Intelligent Systems", "Neural Computation"]
 name = "Wouter Kouw"
 portrait = "portraits/Wouter.jpg"
-short_bio = "I am an assistant professor working on applications of Bayesian filtering and active inference."
+short_bio = "I am an assistant professor working on active inference for mobile robots."
 title = "Wouter Kouw"
 sort_position = 2.1
 personal_website = "https://wmkouw.github.io"
@@ -13,11 +13,6 @@ cv_link = ""
     icon = "envelope"
     icon_pack = "fa"
     link = "mailto:w.m.kouw@tue.nl"
-
-[[social]]
-    icon = "twitter"
-    icon_pack = "fa"
-    link = "https://twitter.com/wmkouw"
 
 [[social]]
     icon = "google-scholar"
