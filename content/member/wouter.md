@@ -1,7 +1,7 @@
 +++
 date = "2018-03-01T15:52:22+02:00"
 id = "wouter"
-interests = ["Machine Learning", "Statistical Inference", "Intelligent Systems", "Neural Computation"]
+interests = ["Machine Learning", "Bayesian Inference", "Intelligent Systems", "Neural Computation"]
 name = "Wouter Kouw"
 portrait = "portraits/Wouter.jpg"
 short_bio = "I am an assistant professor working on active inference for mobile robots."
