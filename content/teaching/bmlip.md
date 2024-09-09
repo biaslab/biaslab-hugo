@@ -220,7 +220,7 @@ You can access all lecture notes, videos and exercises online through the links 
             --->
             </td>
             <td></td>
-         </tr>    
+         </tr>
          <tr style="color:blue;">
             <td colspan="6">break</td>
          </tr>
