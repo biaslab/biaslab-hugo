@@ -19,7 +19,7 @@ url_custom = [{name = "IEEE", url = "https://ieeexplore.ieee.org/document/106450
 [[authors]]
     id = "bart"
 [[authors]]
-    id = "dmitry"
+    id = "bvdmitri"
 [[authors]]
     id = "albert"
 [[authors]]
