@@ -17,7 +17,7 @@ cv_link = ""
 [[social]]
     icon = "twitter"
     icon_pack = "fa"
-    link = "https://x.com/wouter_nuijten"
+    link = "https://x.com/wouterwln"
 
 [[social]]
     icon = "google-scholar"
