@@ -108,16 +108,8 @@ You can access all lecture notes, videos and exercises online through the links 
             <td></td>
             <td> <a href="https://youtu.be/GtukVrtcXe8">B0</a>,  <a href="https://youtu.be/mPc3j7XgZHM">B1</a></td>
          </tr>
-         <tr style="color:green;">
-            <td>15-Nov-2024</td>
-            <td>Introduction to Julia</td>
-            <td><a href="">W0</a></td>
-            <td></td>
-            <td></td>
-            <td></td>
-         </tr>
          <tr>
-            <td>20-Nov-2024</td>
+            <td>15-Nov-2024</td>
             <td>B2: Probability Theory Review</td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Probability-Theory-Review.ipynb">B2</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises-Probability-Theory-Review.ipynb">B2-ex</a><br/> <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Solutions-Probability-Theory-Review.ipynb">B2-sol</a></td>
@@ -125,7 +117,7 @@ You can access all lecture notes, videos and exercises online through the links 
             <td><a href="https://youtu.be/PGbN5rv6HL4">B2.1</a>, <a href="https://youtu.be/LKh2ypFVGwY">B2.2</a></td>
          </tr>
          <tr>
-            <td>22-Nov-2024</td>
+            <td>20-Nov-2024</td>
             <td>B3: Bayesian Machine Learning</td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Bayesian-Machine-Learning.ipynb">B3</a></td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises-Bayesian-Machine-Learning.ipynb">B3-ex</a><br/> <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Solutions-Bayesian-Machine-Learning.ipynb">B3-sol</a></td>
@@ -133,23 +125,19 @@ You can access all lecture notes, videos and exercises online through the links 
             <td> <a href="https://youtu.be/OPGrqnnEfU0">B3.1</a>, <a href="https://youtu.be/BOUmzY1Nx5g">B3.2</a> </td>
          </tr>
          <tr>
-            <td >27-Nov-2024</td>
+            <td >22-Nov-2024</td>
             <td >B4: Factor Graphs and the Sum-Product Algorithm</td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Factor-Graphs.ipynb">B4</a></td>
              <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises-Factor-Graphs.ipynb">B4-ex</a><br/> <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Solutions-Factor-Graphs.ipynb">B4-sol</a></td>
              <td></td>
              <td><a href="https://youtu.be/C2vvsf_Ts2g">B4.1</a>, <a href="https://youtu.be/HbUuYBMZOKw">B4.2</a></td>
          </tr>
-         <tr style="color:red;">
+         <tr>
             <td>27-Nov-2024</td>
-            <td>Deadline julia programming assignment</td>
+            <td style="color:green;">Introduction to Julia</td>
+            <td><a href="">W0</a></td>
             <td></td>
             <td></td>
-            <td><a href="https://github.com/bertdv/BMLIP/blob/master/lessons/assignments/%5B5SSD0%5D%20Julia%20assignment.zip">A0</a>
-            <!---
-            <br><a href="https://github.com/bertdv/BMLIP/blob/master/lessons/assignments/%5B5SSD0%5D%20Julia%20assignment%20-%20solutions.ipynb">A0-sol</a>
-            --->
-            </td>
             <td></td>
          </tr>
          <tr>
@@ -168,9 +156,21 @@ You can access all lecture notes, videos and exercises online through the links 
             <td></td>
             <td><a href="https://youtu.be/vyh8RvXxnT8">B6</a> </td>
          </tr>
-         <tr style="color:green;">
+          <tr>
             <td>06-Dec-2024</td>
-            <td>Probabilistic Programming 1 - Bayesian inference with conjugate models</td>
+            <td style="color:red;">Deadline julia programming assignment</td>
+            <td></td>
+            <td></td>
+            <td><a href="https://github.com/bertdv/BMLIP/blob/master/lessons/assignments/%5B5SSD0%5D%20Julia%20assignment.zip">A0</a>
+            <!---
+            <br><a href="https://github.com/bertdv/BMLIP/blob/master/lessons/assignments/%5B5SSD0%5D%20Julia%20assignment%20-%20solutions.ipynb">A0-sol</a>
+            --->
+            </td>
+            <td></td>
+         </tr>
+         <tr >
+            <td>06-Dec-2024</td>
+            <td style="color:green;">Probabilistic Programming 1 - Bayesian inference with conjugate models</td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-1.ipynb">W1</a></td>
             <td></td>
             <td></td>
