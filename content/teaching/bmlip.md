@@ -45,13 +45,13 @@ This course covers the fundamentals of a Bayesian (i.e., probabilistic) approach
 News and Announcements
 </h2>
 
-- (15-Nov-2023) Please sign up for Piazza (Q&A platform) at [signup link](https://piazza.com/tue.nl/winter2024/5ssd0). As much as possible we will use the Piazza site for new announcements as well.
+- (13-Nov-2024) Please sign up for Piazza (Q&A platform) at [signup link](https://piazza.com/tue.nl/winter2025/5ssd0). As much as possible we will use the Piazza site for new announcements as well.
 
 ## Instructors
 
 - [Prof.dr.ir. Bert de Vries](http://bertdv.nl) (email: bert.de.vries@tue.nl) is the responsible instructor for this course and teaches the [lectures with label B](#lectures).
 - [Dr. Wouter Kouw](https://biaslab.github.io/member/wouter/) (w.m.kouw@tue.nl) teaches the probabilistic programming [lectures with label W](#lectures).
-- [Tim Nisslbeck](https://biaslab.github.io/member/tim), [Sepideh Adamiat](https://biaslab.github.io/member/sepideh) and [Wouter Nuijten](https://biaslab.github.io/member/woutern) are the teaching assistants.
+- [Tim Nisslbeck](https://biaslab.github.io/member/tim), [Sepideh Adamiat](https://biaslab.github.io/member/sepideh), [Wouter Nuijten](https://biaslab.github.io/member/woutern) and Fons van der Plas are the teaching assistants.
 
 ## Materials
 
@@ -67,13 +67,17 @@ The lecture notes are mandatory material for the exam:
 
 ### Books
 
-The following books are optional but very useful for additional reading:
+The following book is optional but very useful for additional reading:
 
 - [Christopher M.
 Bishop](http://research.microsoft.com/en-us/um/people/cmbishop/index.htm) (2006), [Pattern Recognition and
 Machine
 Learning](https://www.microsoft.com/en-us/research/people/cmbishop/prml-book/). You can also buy a [hardcopy, e.g. at bol.com](https://tinyurl.com/thj7euq).
+
+<!---
 - [Ariel Caticha](https://www.albany.edu/physics/acaticha.shtml) (2012), [Entropic Inference and the Foundations of Physics](https://github.com/bertdv/BMLIP/blob/master/lessons/notebooks/files/Caticha-2012-Entropic-Inference-and-the-Foundations-of-Physics.pdf).
+--->
+
 
 ### Software
 
@@ -305,11 +309,13 @@ You can access all lecture notes, videos and exercises online through the links 
 - Programming assignments can be downloaded from the table above.
 - Programming assignments should be submitted before the indicated deadlines at the [Canvas Assignments tab](https://canvas.tue.nl/courses/26086/assignments).
 
+
+<!---
 ### Grading
 
 - See [this Piazza note on how the final grade is computed](https://piazza.com/class/ln1m8n333g5aa/post/6).
 
-<!---
+
 ## Projects
 
 - If you liked this class, [here is a short oversight](https://youtu.be/G7EJqWY4aq0) (~10 minutes) of internship and graduation projects that you may consider applying for.
