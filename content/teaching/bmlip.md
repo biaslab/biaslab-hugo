@@ -145,6 +145,16 @@ You can access all lecture notes, videos and exercises online through the links 
             <td></td>
          </tr>
          <tr>
+            <td>27-Nov-2024</td>
+            <td style="color:red;">Pick-up Julia programming assignment A0</td>
+            <td></td>
+            <td></td>
+            <td>
+            <a href="">A0</a>
+            </td>
+            <td></td>
+         </tr>
+         <tr>
             <td>29-Nov-2024</td>
             <td>B5: Continuous Data and the Gaussian Distribution</td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/The-Gaussian-Distribution.ipynb">B5</a></td>
@@ -159,19 +169,6 @@ You can access all lecture notes, videos and exercises online through the links 
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises-The-Multinomial-Distribution.ipynb">B6-ex</a><br/> <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Solutions-The-Multinomial-Distribution.ipynb">B6-sol</a></td>
             <td></td>
             <td><a href="https://youtu.be/vyh8RvXxnT8">B6</a> </td>
-         </tr>
-          <tr>
-            <td>06-Dec-2024</td>
-            <td style="color:red;">Deadline julia programming assignment</td>
-            <td></td>
-            <td></td>
-            <td><a href="https://github.com/bertdv/BMLIP/blob/master/lessons/assignments/%5B5SSD0%5D%20Julia%20assignment.zip">A0</a>
-            <!---
-            <br><a href="https://github.com/bertdv/BMLIP/blob/master/lessons/assignments/%5B5SSD0%5D%20Julia%20assignment%20-%20solutions.ipynb">A0-sol</a>
-            --->
-            </td>
-            <td></td>
-         </tr>
          <tr >
             <td>06-Dec-2024</td>
             <td style="color:green;">Probabilistic Programming 1 - Bayesian inference with conjugate models</td>
@@ -179,6 +176,29 @@ You can access all lecture notes, videos and exercises online through the links 
             <td></td>
             <td></td>
             <td> <a href="https://youtu.be/ynfvgtjOnqo">W1.1</a>, <a href="https://youtu.be/h9nODl50m_M">W1.2 </a> </td>
+                     </tr>
+          <tr>
+            <td>06-Dec-2024</td>
+            <td style="color:red;">Submission deadline assignment A0</td>
+            <td></td>
+            <td></td>
+            <td><a href="">link</a>
+            <!---
+            <br><a href="https://github.com/bertdv/BMLIP/blob/master/lessons/assignments/%5B5SSD0%5D%20Julia%20assignment%20-%20solutions.ipynb">A0-sol</a>
+            --->
+            </td>
+            <td></td>
+         </tr>
+         </tr>
+         <tr>
+            <td>06-Dec-2024</td>
+            <td style="color:red;">Pick-up probabilistic programming assignment A1</td>
+            <td></td>
+            <td></td>
+            <td>
+            <a href="">A1</a>
+            </td>
+            <td></td>
          </tr>
          <tr>
             <td>11-Dec-2024</td>
@@ -215,10 +235,10 @@ You can access all lecture notes, videos and exercises online through the links 
          </tr>
          <tr style="color:red;">
             <td>20-Dec-2024</td>
-            <td>Deadline probabilistic programming assignment 1</td>
+            <td>Submission deadline assignment A1</td>
             <td></td>
             <td></td>
-            <td><a href="https://github.com/bertdv/BMLIP/blob/master/lessons/assignments/%5B5SSD0%5D%20Probabilistic%20Programming%201.zip">A1</a>
+            <td><a href="">link</a>
             <!---
             <br><a href="https://github.com/bertdv/BMLIP/blob/master/lessons/assignments/%5B5SSD0%5D%20Probabilistic%20Programming%201%20-%20solutions.ipynb">A1-sol</a>
             --->
@@ -245,6 +265,16 @@ You can access all lecture notes, videos and exercises online through the links 
             <td></td>
             <td><a href="https://youtu.be/W1AkZJAjvqI">B11</a></td>
          </tr>
+         <tr>
+            <td>10-Jan-2025</td>
+            <td style="color:red;">Pick-up probabilistic programming assignment A2</td>
+            <td></td>
+            <td></td>
+            <td>
+            <a href="">A2</a>
+            </td>
+            <td></td>
+         </tr>
          <tr style="color:green;">
             <td>15-Jan-2025</td>
             <td>Probabilistic Programming 4 - Bayesian filters & smoothers</td>
@@ -263,10 +293,10 @@ You can access all lecture notes, videos and exercises online through the links 
          </tr>
          <tr style="color:red;">
             <td>24-Jan-2025</td>
-            <td>Deadline probabilistic programming assignment 2</td>
+            <td>Submission deadline assignment A2</td>
             <td></td>
             <td></td>
-            <td><a href="https://github.com/bertdv/BMLIP/blob/master/lessons/assignments/%5B5SSD0%5D%20Probabilistic%20Programming%202.zip">A2</a>
+            <td><a href="">link</a>
             <!---
             <br><a href="https://github.com/bertdv/BMLIP/blob/master/lessons/assignments/%5B5SSD0%5D%20Probabilistic%20Programming%201%20-%20solutions.ipynb">A2-sol</a>
             --->
