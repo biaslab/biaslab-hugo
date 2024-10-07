@@ -308,8 +308,8 @@ You can access all lecture notes, videos and exercises online through the links 
             <td colspan="5">written examination (13:30-16:30)</td>
          </tr>
          <tr style="color:blue;">
-            <td >??-Apr-2025</td>
-            <td colspan="5">resit written examination (??:??-??:??)</td>
+            <td >17-Apr-2025</td>
+            <td colspan="5">resit written examination (18:00-21:00)</td>
          </tr>
          <!-- <tr>
             <td></td>
@@ -336,15 +336,18 @@ You can access all lecture notes, videos and exercises online through the links 
 
 ### Programming Assignments
 
-- Programming assignments can be downloaded from the table above.
-- Programming assignments should be submitted before the indicated deadlines at the [Canvas Assignments tab](https://canvas.tue.nl/courses/26086/assignments).
-
-
+- Programming assignments can be downloaded and submitted through the links in the above table.
 <!---
+- Programming assignments should be submitted before the indicated deadlines at the [Canvas Assignments tab](https://canvas.tue.nl/courses/26086/assignments).
+--->
+
 ### Grading
 
-- See [this Piazza note on how the final grade is computed](https://piazza.com/class/ln1m8n333g5aa/post/6).
+- The final grade is composed of the results of assignments A1 (10%),  A2 (10%), and a final written exam (80%). The grade will be rounded to nearest integer. 
 
+<!---
+See [this Piazza note on how the final grade is computed](https://piazza.com/class/ln1m8n333g5aa/post/6).
+--->
 
 ## Projects
 
