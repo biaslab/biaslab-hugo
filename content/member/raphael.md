@@ -6,7 +6,7 @@ name = "Raphaël Trésor"
 portrait = "portraits/raphael.jpg"
 short_bio = "Raphaël Trésor is a PhD candidate in the SPS group at [Eindhoven University of Technology](https://www.tue.nl/en/)’s Electrical Engineering department. "
 title = "Raphael Tresor"
-sort_position = 5.2
+sort_position = 5.1
 
 [[social]]
     icon = "envelope"
