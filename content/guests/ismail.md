@@ -4,9 +4,10 @@ id = "ismail"
 interests = ["Hierarchical Dynamical Systems", "Approximate Inference Methods"]
 name = "Ismail Senoz"
 portrait = "portraits/ismail.jpg"
-short_bio = "I am a postdoctoral researcher at the Electrical Engineering department in Eindhoven University of Technology "
+short_bio = "Ismail Senoz is a co-founder & CTO at [Lazy Dynamics](https://lazydynamics.com/)"
 title = "Ismail Senoz"
 sort_position = 3.0
+external_link = "https://www.linkedin.com/in/ismail-senoz/"
 
 [[social]]
     icon = "envelope"
