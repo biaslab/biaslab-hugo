@@ -4,7 +4,7 @@ id = "fons"
 interests = ["Accessible Scientific Computing", "Interactive Education"]
 name = "Fons van der Plas"
 portrait = "portraits/fons.jpg"
-short_bio = "Fons van der Plas is a Teaching Assistant within the SPS group at [Eindhoven University of Technology](https://www.tue.nl/en/)’s Electrical Engineering department."
+short_bio = "Fons van der Plas is an Educational Developer within the SPS group at [Eindhoven University of Technology](https://www.tue.nl/en/)’s Electrical Engineering department."
 title = "Fons van der Plas"
 sort_position = 5.2
 
@@ -25,7 +25,7 @@ sort_position = 5.2
 
 [[organizations]]
     name = "TU Eindhoven"
-    role = "Teaching Assistant"
+    role = "Educational Developer"
 
 +++
 
