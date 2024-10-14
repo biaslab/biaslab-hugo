@@ -11,7 +11,7 @@ selected = false
 title = "Improved Depth Estimation of Bayesian Neural Networks"
 url_code = "https://github.com/biaslab/DepthEstimationBNN"
 url_dataset = ""
-# url_pdf = "https://openreview.net/pdf?id=6TLRVdWGzI"
+url_pdf = "https://openreview.net/pdf?id=6TLRVdWGzI"
 url_project = ""
 url_video = ""
 url_custom = [{name = "OpenReview", url = "https://openreview.net/forum?id=6TLRVdWGzI"}]
