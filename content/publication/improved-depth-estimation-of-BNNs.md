@@ -14,7 +14,10 @@ url_dataset = ""
 url_pdf = "https://openreview.net/pdf?id=6TLRVdWGzI"
 url_project = ""
 url_video = ""
-url_custom = [{name = "OpenReview", url = "https://openreview.net/forum?id=6TLRVdWGzI"}]
+url_custom = [
+    {name = "OpenReview", url = "https://openreview.net/forum?id=6TLRVdWGzI"},
+    {name = "arXiv", url = "https://arxiv.org/abs/2410.10395"}
+]
 
 [[authors]]
     id = "bart"
