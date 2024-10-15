@@ -1,5 +1,5 @@
 +++
-abstract = "This paper proposes improvements over earlier work by Nazareth and Blei (2022) for estimating the depth of Bayesian neural networks. Here, we propose a discrete truncated normal distribution over the network depth to independently learn its mean and variance. Posterior distributions are inferred by minimizing the variational free energy, which balances the model complexity and accuracy. Our method improves test accuracy in the spiral data set and reduces the variance in posterior depth estimates."
+abstract = "This paper proposes improvements over earlier work by Nazareth and Blei (2022) for estimating the depth of Bayesian neural networks. Here, we propose a discrete truncated normal distribution over the network depth to independently learn its mean and variance. Posterior distributions are inferred by minimizing the variational free energy, which balances the model complexity and accuracy. Our method improves test accuracy on the spiral data set and reduces the variance in posterior depth estimates."
 date = "2024-10-14"
 image = ""
 image_preview = ""
@@ -14,7 +14,10 @@ url_dataset = ""
 url_pdf = "https://openreview.net/pdf?id=6TLRVdWGzI"
 url_project = ""
 url_video = ""
-url_custom = [{name = "OpenReview", url = "https://openreview.net/forum?id=6TLRVdWGzI"}]
+url_custom = [
+    {name = "OpenReview", url = "https://openreview.net/forum?id=6TLRVdWGzI"},
+    {name = "arXiv", url = "https://arxiv.org/abs/2410.10395"}
+]
 
 [[authors]]
     id = "bart"
