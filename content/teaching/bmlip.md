@@ -343,7 +343,7 @@ You can access all lecture notes, videos and exercises online through the links 
 
 ### Grading
 
-- The final grade is composed of the results of assignments A1 (10%),  A2 (10%), and a final written exam (80%). The grade will be rounded to the nearest integer. 
+- The final grade is composed of the results of assignments A1 (10%),  A2 (10%), and a final written exam (80%). The grade will be rounded to the nearest integer.
 
 <!---
 See [this Piazza note on how the final grade is computed](https://piazza.com/class/ln1m8n333g5aa/post/6).
