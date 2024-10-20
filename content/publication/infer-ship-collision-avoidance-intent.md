@@ -19,13 +19,11 @@ url_video = ""
 url_pdf = "/pdf/ieee-tase/2024/JiaMaDeVriesKouw2024.pdf"
 
 [[authors]]
-    name = "Chengfeng Jia"
+    id = "jcf"
 [[authors]]
     name = "Jie Ma"
 [[authors]]
-    name = "Bert de Vries"
     id = "bert"
 [[authors]]
-    name = "Wouter M. Kouw"
     id = "wouter"
 +++
