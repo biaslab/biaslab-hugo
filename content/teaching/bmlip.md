@@ -81,9 +81,36 @@ Learning](https://www.microsoft.com/en-us/research/people/cmbishop/prml-book/). 
 
 ### Software
 
-- Please install Microsoft's VS Code editor ([download](https://code.visualstudio.com/Download)) and add the Jupyter notebook extension ([tutorial](https://code.visualstudio.com/learn/educators/notebooks)).
-- Please install Julia <b>version 1.9</b> ([download](https://julialang.org/downloads/)) on your machine and then add the Julia extension in VS Code ([tutorial](https://code.visualstudio.com/docs/languages/julia)).
+Please download the course material from [Github](https://github.com/bertdv/BMLIP) by pressing the green `Code` button and selecting `Download ZIP`. If you're familiar with git, we recommend cloning the repository.
 
+You will need certain pieces of software (VS Code, Julia, and Jupyter) to execute the lesson notebooks and work on the programming assignments. The following instructions will help you install them.
+
+#### Windows
+
+- We shall use `juliaup`, a program that manages versions of the Julia kernel. [This link](https://apps.microsoft.com/detail/9njnww8pvkmn?rtc=1&hl=en-us&gl=NL) will take you the Windows store. After installation, go to your Start menu, type `cmd` and open the Command Prompt. Now run `juliaup add lts` and `juliaup default lts`. This adds the long-term stable version of the Julia kernel and sets it as the default. If you open Julia now (see Start menu), it should report `Version 1.10.5`.
+- Download VS Code ([link](https://code.visualstudio.com/Download)) and follow the installation procedure.
+- Open VS Code, press the Extensions button in the left toolbar (`Ctrl+Shift+X`), search for `Jupyter` and press `install`.
+- In VS Code, go to `File` (top toolbar), and press `Open Folder` (`Ctrl+K+O`). Navigate to and select the `BMLIP` folder that you downloaded from Github. This will be your development environment for the course.
+- To test for succesful software installation, open one of the lesson notebooks (in the folder `lessons/notebooks/`) and select kernel on the top right. It should display the option `Julia` and then `julia lts channel`. You can then press the `run all` button on the top toolbar.
+
+#### Mac/Linux
+
+- For Julia, we shall use `juliaup`, a program that manages versions of the Julia kernel. Open a terminal and execute
+   ```sh
+   curl -fsSL https://install.julialang.org | sh
+   ```
+   After installing `juliaup`, enter the following commands in the terminal to add the `lts` (long-term stable) version of the Julia kernel.
+   ```sh
+   juliaup add lts
+   juliaup default lts
+   ```
+   To check which version of Julia you're running, use `juliaup status`. It should have an asterisk in front of the `lts` version.
+- Go to the VS Code website ([link](https://code.visualstudio.com/Download)), download the installer for your Linux distro / Apple CPU and follow the installation procedure.
+- Open VS Code, press the Extensions button in the left toolbar (or use `Ctrl/Cmd+Shift+X`), and add the Jupyter notebook extension ([tutorial link](https://code.visualstudio.com/learn/educators/notebooks)). If you do not have Python installed on your system, please follow [these instructions](https://code.visualstudio.com/docs/python/python-tutorial) first.
+- In VS Code, go to `File` (top toolbar), and press `Open Folder` (`Ctrl/Cmd+K+O`). Navigate to and select the `BMLIP` folder that you downloaded from Github. This will be your development environment for the course.
+- To test for succesful software installation, open one of the lesson notebooks (in the folder `lessons/notebooks/`) and then press `Select kernel` on the top right. It should display the option `Julia`, and then `julia lts channel`. Finalize the test with `run all` (top toolbar).
+
+If you encounter any problems, please contact us in class or on Piazza.
 
 ### <a name="lectures">Lecture notes, exercises, assignment and video recordings</a>
 
