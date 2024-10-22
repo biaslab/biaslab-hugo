@@ -51,7 +51,7 @@ News and Announcements
 
 - [Prof.dr.ir. Bert de Vries](http://bertdv.nl) (email: bert.de.vries@tue.nl) is the responsible instructor for this course and teaches the [lectures with label B](#lectures).
 - [Dr. Wouter Kouw](https://biaslab.github.io/member/wouter/) (w.m.kouw@tue.nl) teaches the probabilistic programming [lectures with label W](#lectures).
-- [Tim Nisslbeck](https://biaslab.github.io/member/tim), [Sepideh Adamiat](https://biaslab.github.io/member/sepideh), [Wouter Nuijten](https://biaslab.github.io/member/woutern) and Fons van der Plas are the teaching assistants.
+- [Tim Nisslbeck](https://biaslab.github.io/member/tim), [Sepideh Adamiat](https://biaslab.github.io/member/sepideh), [Wouter Nuijten](https://biaslab.github.io/member/woutern) and [Fons van der Plas](https://biaslab.github.io/member/fons/) are the teaching assistants.
 
 ## Materials
 
@@ -72,7 +72,7 @@ The following book is optional but very useful for additional reading:
 - [Christopher M.
 Bishop](http://research.microsoft.com/en-us/um/people/cmbishop/index.htm) (2006), [Pattern Recognition and
 Machine
-Learning](https://www.microsoft.com/en-us/research/people/cmbishop/prml-book/). You can also buy a [hardcopy, e.g. at bol.com](https://tinyurl.com/thj7euq).
+Learning](https://www.microsoft.com/en-us/research/people/cmbishop/prml-book/). 
 
 <!---
 - [Ariel Caticha](https://www.albany.edu/physics/acaticha.shtml) (2012), [Entropic Inference and the Foundations of Physics](https://github.com/bertdv/BMLIP/blob/master/lessons/notebooks/files/Caticha-2012-Entropic-Inference-and-the-Foundations-of-Physics.pdf).
@@ -81,42 +81,13 @@ Learning](https://www.microsoft.com/en-us/research/people/cmbishop/prml-book/). 
 
 ### Software
 
-Please download the course material from [Github](https://github.com/bertdv/BMLIP) by pressing the green `Code` button and selecting `Download ZIP`. If you're familiar with git, we recommend cloning the repository.
-
-You will need certain pieces of software (VS Code, Julia, and Jupyter) to execute the lesson notebooks and work on the programming assignments. The following instructions will help you install them.
-
-#### Windows
-
-- We shall use `juliaup`, a program that manages versions of the Julia kernel. [This link](https://apps.microsoft.com/detail/9njnww8pvkmn?rtc=1&hl=en-us&gl=NL) will take you the Windows store. After installation, go to your Start menu, type `cmd` and open the Command Prompt. Now run `juliaup add lts` and `juliaup default lts`. This adds the long-term stable version of the Julia kernel and sets it as the default. If you open Julia now (see Start menu), it should report `Version 1.10.5`.
-- Download VS Code ([link](https://code.visualstudio.com/Download)) and follow the installation procedure.
-- Open VS Code and press the Extensions button in the left toolbar (the four cubes symbol; `Ctrl+Shift+X`). Search for and install the following three extensions: `Python`, `Julia`, and `Jupyter`.
-- In VS Code, go to `File` (top toolbar), and press `Open Folder` (`Ctrl+K+O`). Navigate to and select the `BMLIP` folder that you downloaded from Github. This will be your development environment for the course.
-- To test for succesful software installation, open one of the lesson notebooks (in the folder `lessons/notebooks/`) and select kernel on the top right. It should display the option `Julia` and then `julia lts channel`. You can then press the `run all` button on the top toolbar.
-
-#### Mac/Linux
-
-- For Julia, we shall use `juliaup`, a program that manages versions of the Julia kernel. Open a terminal and execute
-   ```sh
-   curl -fsSL https://install.julialang.org | sh
-   ```
-   After installing `juliaup`, enter the following commands in the terminal to add the `lts` (long-term stable) version of the Julia kernel.
-   ```sh
-   juliaup add lts
-   juliaup default lts
-   ```
-   To check which version of Julia you're running, use `juliaup status`. It should have an asterisk in front of the `lts` version.
-- Go to the VS Code website ([link](https://code.visualstudio.com/Download)), download the installer for your Linux distro / Apple CPU and follow the installation procedure.
-- Open VS Code and press the Extensions button in the left toolbar (the four cubes symbol; `Ctrl+Shift+X`). Search for and install the following three extensions: `Python`, `Julia` and `Jupyter`.
-- In VS Code, go to `File` (top toolbar), and press `Open Folder` (`Ctrl/Cmd+K+O`). Navigate to and select the `BMLIP` folder that you downloaded from Github. This will be your development environment for the course.
-- To test for succesful software installation, open one of the lesson notebooks (in the folder `lessons/notebooks/`) and then press `Select kernel` on the top right. It should display the option `Julia`, and then `julia lts channel`. Finalize the test with `run all` (top toolbar).
-
-If you encounter any problems, please contact us in class or on Piazza.
+Please follow the [software installation instructions](https://github.com/bertdv/BMLIP/blob/master/lessons/notebooks/Software-Installation.ipynb). If you encounter any problems, please contact us in class or on Piazza.
 
 ### <a name="lectures">Lecture notes, exercises, assignment and video recordings</a>
 
 <!--- The [source files for the lecture notes are accessible on github](https://github.com/bertdv/bmlip). If you want to download them, click the green `Code` button and then `Download ZIP`. The theory lectures are under `lessons/notebooks` and the programming notebooks are under `lessons/notebooks/probprog`. Note that you don't have to download them, --->
 
-You can access all lecture notes, videos and exercises online through the links below:
+You can access all lecture notes, assignments, videos and exercises online through the links below:
 
 <table border = "1"; style="text-align:center"; vertical-align: middle;>
          <tr>
