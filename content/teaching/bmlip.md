@@ -137,7 +137,7 @@ You can access all lecture notes, assignments, videos and exercises online throu
          <tr>
             <td>27-Nov-2024</td>
             <td style="color:green;">Introduction to Julia</td>
-            <td><a href="">W0</a></td>
+            <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Julia-Programming.ipynb">W0</a></td>
             <td></td>
             <td></td>
             <td></td>
