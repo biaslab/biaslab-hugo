@@ -89,7 +89,7 @@ You will need certain pieces of software (VS Code, Julia, and Jupyter) to execut
 
 - We shall use `juliaup`, a program that manages versions of the Julia kernel. [This link](https://apps.microsoft.com/detail/9njnww8pvkmn?rtc=1&hl=en-us&gl=NL) will take you the Windows store. After installation, go to your Start menu, type `cmd` and open the Command Prompt. Now run `juliaup add lts` and `juliaup default lts`. This adds the long-term stable version of the Julia kernel and sets it as the default. If you open Julia now (see Start menu), it should report `Version 1.10.5`.
 - Download VS Code ([link](https://code.visualstudio.com/Download)) and follow the installation procedure.
-- Open VS Code, press the Extensions button in the left toolbar (`Ctrl+Shift+X`), search for `Jupyter` and press `install`.
+- Open VS Code and press the Extensions button in the left toolbar (the four cubes symbol; `Ctrl+Shift+X`). Search for and install the following three extensions: `Python`, `Julia`, and `Jupyter`.
 - In VS Code, go to `File` (top toolbar), and press `Open Folder` (`Ctrl+K+O`). Navigate to and select the `BMLIP` folder that you downloaded from Github. This will be your development environment for the course.
 - To test for succesful software installation, open one of the lesson notebooks (in the folder `lessons/notebooks/`) and select kernel on the top right. It should display the option `Julia` and then `julia lts channel`. You can then press the `run all` button on the top toolbar.
 
@@ -106,7 +106,7 @@ You will need certain pieces of software (VS Code, Julia, and Jupyter) to execut
    ```
    To check which version of Julia you're running, use `juliaup status`. It should have an asterisk in front of the `lts` version.
 - Go to the VS Code website ([link](https://code.visualstudio.com/Download)), download the installer for your Linux distro / Apple CPU and follow the installation procedure.
-- Open VS Code, press the Extensions button in the left toolbar (or use `Ctrl/Cmd+Shift+X`), and add the Jupyter notebook extension ([tutorial link](https://code.visualstudio.com/learn/educators/notebooks)). If you do not have Python installed on your system, please follow [these instructions](https://code.visualstudio.com/docs/python/python-tutorial) first.
+- Open VS Code and press the Extensions button in the left toolbar (the four cubes symbol; `Ctrl+Shift+X`). Search for and install the following three extensions: `Python`, `Julia` and `Jupyter`.
 - In VS Code, go to `File` (top toolbar), and press `Open Folder` (`Ctrl/Cmd+K+O`). Navigate to and select the `BMLIP` folder that you downloaded from Github. This will be your development environment for the course.
 - To test for succesful software installation, open one of the lesson notebooks (in the folder `lessons/notebooks/`) and then press `Select kernel` on the top right. It should display the option `Julia`, and then `julia lts channel`. Finalize the test with `run all` (top toolbar).
 
