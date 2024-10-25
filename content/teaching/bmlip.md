@@ -70,9 +70,7 @@ The lecture notes are mandatory material for the exam:
 The following book is optional but very useful for additional reading:
 
 - [Christopher M.
-Bishop](http://research.microsoft.com/en-us/um/people/cmbishop/index.htm) (2006), [Pattern Recognition and
-Machine
-Learning](https://www.microsoft.com/en-us/research/people/cmbishop/prml-book/). 
+Bishop](http://research.microsoft.com/en-us/um/people/cmbishop/index.htm) (2006), [Pattern Recognition and Machine Learning](https://www.microsoft.com/en-us/research/people/cmbishop/prml-book/).
 
 <!---
 - [Ariel Caticha](https://www.albany.edu/physics/acaticha.shtml) (2012), [Entropic Inference and the Foundations of Physics](https://github.com/bertdv/BMLIP/blob/master/lessons/notebooks/files/Caticha-2012-Entropic-Inference-and-the-Foundations-of-Physics.pdf).
