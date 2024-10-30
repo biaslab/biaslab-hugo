@@ -61,8 +61,8 @@ In principle, you can download all needed materials from the links below.
 
 The lecture notes are mandatory material for the exam:
 
-- Bert de Vries (2023), [PDF bundle of all lecture notes for lessons B0 through B12](https://github.com/bertdv/BMLIP/blob/master/output/BMLIP-5SSD0-lecture-notes.pdf).
-- Wouter Kouw (2023), [PDF bundle of all probabilistic programming lecture notes for lessons W1 through W4](https://github.com/bertdv/BMLIP/blob/master/output/BMLIP-5SSD0-prob-prog.pdf).
+- Bert de Vries, [PDF bundle of all lecture notes for lessons B0 through B12](https://github.com/bertdv/BMLIP/blob/master/output/BMLIP-5SSD0-lecture-notes.pdf), version 30-Oct-2024.
+- Wouter Kouw, [PDF bundle of all probabilistic programming lecture notes for lessons W1 through W4](https://github.com/bertdv/BMLIP/blob/master/output/BMLIP-5SSD0-prob-prog.pdf) version 30-Oct-2024.
 
 
 ### Books
@@ -80,6 +80,7 @@ Bishop](http://research.microsoft.com/en-us/um/people/cmbishop/index.htm) (2006)
 ### Software
 
 Please follow the [software installation instructions](https://github.com/bertdv/BMLIP/blob/master/lessons/notebooks/Software-Installation.ipynb). If you encounter any problems, please contact us in class or on Piazza.
+
 
 ### <a name="lectures">Lecture notes, exercises, assignment and video recordings</a>
 
@@ -323,7 +324,7 @@ You can access all lecture notes, assignments, videos and exercises online throu
 
 - Consult the <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Course-Syllabus.ipynb">Course Syllabus</a> (lecture notes for 1st class) for advice on how to study the materials.
 
-<!-- - Each year there will be two written exam opportunities. The exams will be in multiple-choice format. Grading rules have been [posted at Piazza](https://piazza.com/class/l9n5gnieu4k6tl/post/23). **You cannot bring notes or books to the written exam sessions. All needed formulas are supplied at the exam sheet**. -->
+- When doing exercises from the above table, feel free to make use of Sam Roweis' cheat sheets for <a href="https://github.com/bertdv/BMLIP/blob/master/lessons/notebooks/files/Roweis-1999-matrix-identities.pdf">Matrix identities</a> and <a href="https://github.com/bertdv/BMLIP/blob/master/lessons/notebooks/files/Roweis-1999-gaussian-identities.pdf">Gaussian identities</a>.
 
 - In addition to the materials in the above table, we provide two representative practice written exams:
 
@@ -342,23 +343,10 @@ You can access all lecture notes, assignments, videos and exercises online throu
 - The final grade is composed of the results of assignments A1 (10%),  A2 (10%), and a final written exam (80%). The grade will be rounded to the nearest integer.
 
 <!---
-See [this Piazza note on how the final grade is computed](https://piazza.com/class/ln1m8n333g5aa/post/6).
---->
-
-<!---
 ## Projects
 
 - If you liked this class, [here is a short oversight](https://youtu.be/G7EJqWY4aq0) (~10 minutes) of internship and graduation projects that you may consider applying for.
 --->
-
-<!---
-### Assignment
-
-- The assignment may be downloaded [here](https://github.com/bertdv/BMLIP/blob/master/lessons/assignment/%5B5SSD0%5D%20Probabilistic%20Programming%20-%20Assignment.zip). The Jupyter notebook explains the problem in detail.
-- Please hand in the completed notebook file on Canvas.
-- The solution to this year's assignment can be found [here](https://github.com/bertdv/BMLIP/blob/master/lessons/assignment/Probabilistic%20Programming%20-%20Assignment%20%5BSolution%5D.ipynb).
---->
-
 
 <!---
 ### Oral Exam Guide
