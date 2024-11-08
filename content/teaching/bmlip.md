@@ -23,13 +23,13 @@ type = "teaching"
 
 +++
 
-
+<!---
 <h2 style="color:red;">
 Note: This site is currently under construction.
 </h2>
+--->
 
-
-The course "Bayesian Machine Learning and Information Processing" starts in November 2024 (Q2).
+The course "Bayesian Machine Learning and Information Processing" (5SSD0) starts in November 2024 (Q2).
 
 <img src="/img/teaching/5SSD0-banner.png" width="1200px">
 
