@@ -45,7 +45,9 @@ This course covers the fundamentals of a Bayesian (i.e., probabilistic) approach
 News and Announcements
 </h2>
 
-- (02-Dec-2024) Sometimes the online notebook viewer (NBviewer) for the lecture notes does not work. In that case, you can [view the lecture notebooks straight at the github repository](https://github.com/bertdv/BMLIP/tree/master/lessons/notebooks), since github has a built-in notebook viewer as well.
+- (02-Dec-2024) Sometimes the online notebook viewer (NBviewer) for the lecture notes does not work. In that case, you can view the lecture notebooks straight at the github repository https://github.com/bertdv/BMLIP, since github has a built-in notebook viewer as well. In particular, 
+  - [view the lecture notes here](https://github.com/bertdv/BMLIP/tree/master/lessons/notebooks).
+  - [view the exercises here](https://github.com/bertdv/BMLIP/tree/master/lessons/exercises).
 
 - (13-Nov-2024) Please sign up for Piazza (Q&A platform) at [signup link](https://piazza.com/tue.nl/winter2025/5ssd0). As much as possible we will use the Piazza site for new announcements as well.
 
