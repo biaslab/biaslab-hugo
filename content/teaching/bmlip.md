@@ -151,7 +151,7 @@ You can access all lecture notes, assignments, videos and exercises online throu
             <td></td>
             <td></td>
             <td>
-            <a href="">A0</a>
+            <a href="https://github.com/bertdv/BMLIP/blob/master/lessons/assignments/%5B5SSD0%5D%20Julia%20programming%20assignment.zip">A0</a>
             </td>
             <td></td>
          </tr>
@@ -183,10 +183,7 @@ You can access all lecture notes, assignments, videos and exercises online throu
             <td style="color:red;">Submission deadline assignment A0</td>
             <td></td>
             <td></td>
-            <td><a href="">link</a>
-            <!---
-            <br><a href="https://github.com/bertdv/BMLIP/blob/master/lessons/assignments/%5B5SSD0%5D%20Julia%20assignment%20-%20solutions.ipynb">A0-sol</a>
-            --->
+            <td><a href="mailto:w.m.kouw@tue.nl?subject=Julia programming assignment">submit</a>
             </td>
             <td></td>
          </tr>
@@ -197,7 +194,7 @@ You can access all lecture notes, assignments, videos and exercises online throu
             <td></td>
             <td></td>
             <td>
-            <a href="">A1</a>
+            <a href="https://github.com/bertdv/BMLIP/blob/master/lessons/assignments/%5B5SSD0%5D%20Probabilistic%20programming%201.zip">A1</a>
             </td>
             <td></td>
          </tr>
@@ -239,7 +236,7 @@ You can access all lecture notes, assignments, videos and exercises online throu
             <td>Submission deadline assignment A1</td>
             <td></td>
             <td></td>
-            <td><a href="">link</a>
+            <td><a href="mailto:w.m.kouw@tue.nl?subject=Programming assignment 1">submit</a>
             <!---
             <br><a href="https://github.com/bertdv/BMLIP/blob/master/lessons/assignments/%5B5SSD0%5D%20Probabilistic%20Programming%201%20-%20solutions.ipynb">A1-sol</a>
             --->
@@ -272,7 +269,7 @@ You can access all lecture notes, assignments, videos and exercises online throu
             <td></td>
             <td></td>
             <td>
-            <a href="">A2</a>
+            <a href="https://github.com/bertdv/BMLIP/blob/master/lessons/assignments/%5B5SSD0%5D%20Probabilistic%20programming%202.zip">A2</a>
             </td>
             <td></td>
          </tr>
@@ -297,7 +294,7 @@ You can access all lecture notes, assignments, videos and exercises online throu
             <td>Submission deadline assignment A2</td>
             <td></td>
             <td></td>
-            <td><a href="">link</a>
+            <td><a href="mailto:w.m.kouw@tue.nl?subject=Programming assignment 2">submit</a>
             <!---
             <br><a href="https://github.com/bertdv/BMLIP/blob/master/lessons/assignments/%5B5SSD0%5D%20Probabilistic%20Programming%201%20-%20solutions.ipynb">A2-sol</a>
             --->
