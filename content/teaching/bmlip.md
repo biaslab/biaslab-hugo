@@ -45,7 +45,7 @@ This course covers the fundamentals of a Bayesian (i.e., probabilistic) approach
 News and Announcements
 </h2>
 
-- (02-Dec-2024) Sometimes the online notebook viewer (NBviewer) for the lecture notes does not work. In that case, you can view the lecture notebooks straight at the github repository https://github.com/bertdv/BMLIP, since github has a built-in notebook viewer as well. In particular, 
+- (02-Dec-2024) Sometimes the online notebook viewer (NBviewer) for the lecture notes does not work. In that case, you can view the lecture notebooks straight at the github repository https://github.com/bertdv/BMLIP, since github has a built-in notebook viewer as well. In particular,
   - [view the lecture notes here](https://github.com/bertdv/BMLIP/tree/master/lessons/notebooks).
   - [view the exercises here](https://github.com/bertdv/BMLIP/tree/master/lessons/exercises).
 
@@ -362,7 +362,7 @@ You can access all lecture notes, assignments, videos and exercises online throu
 
 - The final grade is composed of the results of assignments A1 (10%),  A2 (10%), and a final written exam (80%). The grade will be rounded to the nearest integer.
 - For the resit:
-   - we use the same grading scheme: the resit written exam counts for 80%, and we will make available a new programming assignment for the resit that counts for 20%, see the table above. 
+   - we use the same grading scheme: the resit written exam counts for 80%, and we will make available a new programming assignment for the resit that counts for 20%, see the table above.
    - If you don't submit a resit programming assignment, we will use your results from this year's assignments A1 and A2. Programming assignments from previous years do not count.
    - If you do submit your resit programming assignment, we will use your score for the resit assignment (and not your previous scores for A1 and A2 if you submitted those as well).
 <!---
