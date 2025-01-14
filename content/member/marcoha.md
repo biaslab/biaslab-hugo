@@ -1,5 +1,5 @@
 +++
-date = "2023-8-22T15:51:48.32+00:00"
+date = "2023-08-22T15:51:48.32+00:00"
 id = "marcoha"
 interests = ["Bayesian Inference", "Signal Processing", "Biomedical Applications"]
 name = "Marco Hidalgo Araya"

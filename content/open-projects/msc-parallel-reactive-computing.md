@@ -1,6 +1,6 @@
 +++
 title = "MSc project: Parallel computing in reactive programs."
-date = "2022-03-1T12:00:00+02:00"
+date = "2022-03-01T12:00:00+02:00"
 
 description = "Software: develop a multi-core computation procedure for our toolbox ReactiveMP.jl"
 external_link = ""
