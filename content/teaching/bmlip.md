@@ -45,6 +45,7 @@ This course covers the fundamentals of a Bayesian (i.e., probabilistic) approach
 News and Announcements
 </h2>
 
+- (14-Jan 2025) Due to the recent cyber attack, the course schedule has been shifted after 14-Jan 2025. Please follow the news channel in Piazza, and check the updated table below!
 - (02-Dec-2024) Sometimes the online notebook viewer (NBviewer) for the lecture notes does not work. In that case, you can view the lecture notebooks straight at the github repository https://github.com/bertdv/BMLIP, since github has a built-in notebook viewer as well. In particular,
   - [view the lecture notes here](https://github.com/bertdv/BMLIP/tree/master/lessons/notebooks).
   - [view the exercises here](https://github.com/bertdv/BMLIP/tree/master/lessons/exercises).
@@ -273,24 +274,24 @@ You can access all lecture notes, assignments, videos and exercises online throu
             </td>
             <td></td>
          </tr>
-         <tr style="color:green;">
-            <td>15-Jan-2025</td>
-            <td>Probabilistic Programming 4 - Bayesian filters & smoothers</td>
-            <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-4.ipynb">W4</a></td>
-            <td></td>
-            <td></td>
-            <td><a href="https://youtu.be/Yp2vhndnjng">W4.1</a>, <a href="https://youtu.be/qnWofDRh5eo">W4.2</a></td>
-         </tr>
          <tr>
-            <td>17-Jan-2025</td>
+            <td><s>17</s> 22-Jan-2025</td>
             <td>B12: Intelligent Agents and Active Inference</td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Intelligent-Agents-and-Active-Inference.ipynb">B12,</a><br/> <a href="https://github.com/bertdv/BMLIP/blob/master/lessons/notebooks/files/BdV-Jan2024-Natural-Artificial-Intelligence.ppsx">slides</a> </td>
             <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Exercises-Intelligent-Agents-and-Active-Inference.ipynb">B12-ex</a><br/> <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/exercises/Solutions-Intelligent-Agents-and-Active-Inference.ipynb">B12-sol</a></td>
             <td></td>
             <td><a href="https://youtu.be/fBm1oAzlv0w">B12.1</a>,  <a href="https://youtu.be/UbOuLxv9EdI">B12.2</a> </td>
          </tr>
+         <tr style="color:green;">
+            <td><s>15</s> 24-Jan-2025</td>
+            <td>Probabilistic Programming 4 - Bayesian filters & smoothers</td>
+            <td><a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/probprog/Probabilistic-Programming-4.ipynb">W4</a></td>
+            <td></td>
+            <td></td>
+            <td><a href="https://youtu.be/Yp2vhndnjng">W4.1</a>, <a href="https://youtu.be/qnWofDRh5eo">W4.2</a></td>
+         </tr>
          <tr style="color:red;">
-            <td>24-Jan-2025</td>
+            <td><s>24</s> 31-Jan-2025</td>
             <td>Submission deadline assignment A2</td>
             <td></td>
             <td></td>
@@ -302,7 +303,7 @@ You can access all lecture notes, assignments, videos and exercises online throu
             <td></td>
          </tr>
          <tr style="color:blue;">
-            <td >30-Jan-2025</td>
+            <td ><s>30-Jan</s> 06-Feb-2025</td>
             <td colspan="5">written examination (13:30-16:30)</td>
          </tr>
          <tr>
