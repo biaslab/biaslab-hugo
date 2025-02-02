@@ -341,7 +341,14 @@ You can access all lecture notes, assignments, videos and exercises online throu
 
 ## Exams & Assignments
 
-### Preparation
+### Exam Rules 
+
+- You can not bring a formula sheet, nor use a phone or calculator at the exam. Any needed formulas are supplied in the pre-amble of the exam.
+ 
+
+### Exam Preparation
+
+- The written exam will be a multiple-choice exam, just like the examples below. This year there will be no probabilistic programming question in the written exam. 
 
 - Consult the <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Course-Syllabus.ipynb">Course Syllabus</a> (lecture notes for 1st class) for advice on how to study the materials.
 
@@ -352,20 +359,24 @@ You can access all lecture notes, assignments, videos and exercises online throu
   - 3-Feb-2022: <a href="https://github.com/bertdv/BMLIP/blob/master/exams/20220203-5SSD0-exam.pdf?dl=0">exam </a>; <a href="https://github.com/bertdv/BMLIP/blob/master/exams/20220203-5SSD0-exam-answers.pdf?dl=0">answers </a>; <a href="https://github.com/bertdv/BMLIP/blob/master/exams/20220203-5SSD0-exam-calculations.ipynb?dl=0">calculations</a>
   - 2-Feb-2023: <a href="https://github.com/bertdv/BMLIP/blob/master/exams/20230202-5SSD0-exam.pdf?dl=0">exam </a>; <a href="https://github.com/bertdv/BMLIP/blob/master/exams/20230202-5SSD0-exam-answers.pdf?dl=0">answers </a>; <a href="https://github.com/bertdv/BMLIP/blob/master/exams/20230202-5SSD0-exam-calculations.ipynb?dl=0">calculations</a>
 
+
 ### Programming Assignments
 
 - Programming assignments can be downloaded and submitted through the links in the above table.
+
 <!---
 - Programming assignments should be submitted before the indicated deadlines at the [Canvas Assignments tab](https://canvas.tue.nl/courses/26086/assignments).
 --->
 
 ### Grading
 
-- The final grade is composed of the results of assignments A1 (10%),  A2 (10%), and a final written exam (80%). The grade will be rounded to the nearest integer.
+- The final grade is composed of the results of assignments A1 (10%),  A2 (10%), and the final written exam (80%). The grade will be rounded to the nearest integer.
 - For the resit:
    - we use the same grading scheme: the resit written exam counts for 80%, and we will make available a new programming assignment for the resit that counts for 20%, see the table above.
    - If you don't submit a resit programming assignment, we will use your results from this year's assignments A1 and A2. Programming assignments from previous years do not count.
    - If you do submit your resit programming assignment, we will use your score for the resit assignment (and not your previous scores for A1 and A2 if you submitted those as well).
+
+
 <!---
 ## Projects
 
