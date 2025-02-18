@@ -307,7 +307,7 @@ You can access all lecture notes, assignments, videos and exercises online throu
             <td colspan="5">written examination (13:30-16:30)</td>
          </tr>
          <tr>
-            <td>TBD</td>
+            <td>21-March-2025</td>
             <td style="color:red;">Pick-up resit programming assignment</td>
             <td></td>
             <td></td>
@@ -317,7 +317,7 @@ You can access all lecture notes, assignments, videos and exercises online throu
             <td></td>
          </tr>
          <tr>
-            <td>TBD</td>
+            <td>4-April-2025</td>
             <td style="color:red;">Submission deadline resit assignment</td>
             <td></td>
             <td></td>
@@ -371,10 +371,10 @@ You can access all lecture notes, assignments, videos and exercises online throu
 ### Grading
 
 - The final grade is composed of the results of assignments A1 (10%),  A2 (10%), and the final written exam (80%). The grade will be rounded to the nearest integer.
-- For the resit:
-   - we use the same grading scheme: the resit written exam counts for 80%, and we will make available a new programming assignment for the resit that counts for 20%, see the table above.
-   - If you don't submit a resit programming assignment, we will use your results from this year's assignments A1 and A2. Programming assignments from previous years do not count.
-   - If you do submit your resit programming assignment, we will use your score for the resit assignment (and not your previous scores for A1 and A2 if you submitted those as well).
+
+### Resit
+
+- See [information at Piazza](https://piazza.com/class/m1ukrwkpd823oc/post/197) about resit.
 
 
 <!---
