@@ -311,8 +311,7 @@ You can access all lecture notes, assignments, videos and exercises online throu
             <td style="color:red;">Pick-up resit programming assignment</td>
             <td></td>
             <td></td>
-            <td>
-            <a href="">link</a>
+            <td><a href="https://github.com/bertdv/BMLIP/blob/master/lessons/assignments/%5B5SSD0%5D%20Probabilistic%20programming%20resit.zip">download</a>
             </td>
             <td></td>
          </tr>
@@ -321,7 +320,7 @@ You can access all lecture notes, assignments, videos and exercises online throu
             <td style="color:red;">Submission deadline resit assignment</td>
             <td></td>
             <td></td>
-            <td><a href="">link</a>
+            <td><a href="mailto:w.m.kouw@tue.nl?subject=5SSD0_Programming assignment resit">submit</a>
             </td>
             <td></td>
          </tr>
