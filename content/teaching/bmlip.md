@@ -340,14 +340,14 @@ You can access all lecture notes, assignments, videos and exercises online throu
 
 ## Exams & Assignments
 
-### Exam Rules 
+### Exam Rules
 
 - You can not bring a formula sheet, nor use a phone or calculator at the exam. Any needed formulas are supplied in the pre-amble of the exam.
- 
+
 
 ### Exam Preparation
 
-- The written exam will be a multiple-choice exam, just like the examples below. This year there will be no probabilistic programming question in the written exam. 
+- The written exam will be a multiple-choice exam, just like the examples below. This year there will be no probabilistic programming question in the written exam.
 
 - Consult the <a href="http://nbviewer.jupyter.org/github/bertdv/BMLIP/blob/master/lessons/notebooks/Course-Syllabus.ipynb">Course Syllabus</a> (lecture notes for 1st class) for advice on how to study the materials.
 
