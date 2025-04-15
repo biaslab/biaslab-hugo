@@ -4,8 +4,8 @@ date = "2025-04-14"
 image = ""
 image_preview = ""
 math = false
-publication = "JuliaCon 2025 Proceedings"
-publication_short = "JuliaCon 2025"
+publication = "JuliaCon 2024 Proceedings"
+publication_short = "JuliaCon 2024"
 to_be_published = false
 selected = false
 title = "ExponentialFamilyManifolds.jl: Representing exponential families as Riemannian manifolds"
@@ -15,7 +15,7 @@ url_pdf = "https://juliacon.github.io/proceedings-papers/jcon.00179/10.21105.jco
 url_project = ""
 url_video = ""
 url_custom = [
-    { name="JuliaCon 2025 Proceedings", url = "https://juliacon.github.io/proceedings-papers/jcon.00179/10.21105.jcon.00179.pdf"},
+    { name="JuliaCon 2024 Proceedings", url = "https://juliacon.github.io/proceedings-papers/jcon.00179/10.21105.jcon.00179.pdf"},
 ]
 
 [[authors]]
