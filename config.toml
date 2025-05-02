@@ -1,6 +1,7 @@
 publishdir = "public"
 static = "/static"
 builddrafts = false
+buildFuture = true
 # Replace this with your website URL
 baseurl = "https://biaslab.github.io"
 canonifyurls = true
