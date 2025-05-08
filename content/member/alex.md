@@ -24,8 +24,13 @@ sort_position = 5.1
 
 [[education]]
     course = "MSc in Cognitive Robotics"
-    institution = 'TU Delft'
+    institution = 'Delft University of Technology'
     year = 2024
+
+[[education]]
+    course = "BSc in Mechanical Engineering"
+    institution = 'University of California, Los Angeles'
+    year = 2017
 
 [[organizations]]
     name = "TU Eindhoven"
