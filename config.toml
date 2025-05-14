@@ -150,7 +150,7 @@ tag = "tags"
     identifier = "software"
     [[menu.main]]
       name = "RxInfer.jl"
-      url = "https://rxinfer.ml"
+      url = "https://rxinfer.com"
       parent = "software"
       weight = 1
     [[menu.main]]

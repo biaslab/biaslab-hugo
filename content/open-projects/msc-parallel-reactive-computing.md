@@ -25,7 +25,7 @@ In the second part of the project, you will evaluate the performance of parallel
 ## Project positioning
 [BIASlab](https://biaslab.github.io/) (FLUX-7.060) is a subgroup of the Signal Processing Systems (SPS) group that aims to develop \textbf{Intelligent Autonomous Agents}. These agents interact with their environment through their sensors and actuators in order to learn purposeful behavior without any supervision ("autonomously"), e.g., to navigate, play soccer or they may learn to decode speech signals under bad acoustic conditions. Our research projects are inspired by the latest insights from machine learning, computational neuroscience and signal processing.
 
-Intelligent agents process information through Bayesian inference. In our lab, we realize these agents as (Forney-style) \textbf{Factor Graphs} that execute Bayesian inference in complex models through message passing in a graph. In our team, we are developing a toolbox that supports message passing-based inference in factor graphs, see [RxInfer.jl](https://rxinfer.ml).
+Intelligent agents process information through Bayesian inference. In our lab, we realize these agents as (Forney-style) \textbf{Factor Graphs} that execute Bayesian inference in complex models through message passing in a graph. In our team, we are developing a toolbox that supports message passing-based inference in factor graphs, see [RxInfer.jl](https://rxinfer.com).
 
 ### Supervision:
 - Weekly progress meetings with Dmitry Bagaev.
