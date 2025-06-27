@@ -10,7 +10,7 @@ sort_position = 6.1
 [[social]]
     icon = "envelope"
     icon_pack = "fa"
-    link = "mailto:a.h.l.ledbetter@tue.nl"
+    link = "mailto:a.h.ledbetter@tue.nl"
 
 [[social]]
     icon = "linkedin"
