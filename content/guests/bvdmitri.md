@@ -4,9 +4,10 @@ id = "bvdmitri"
 interests = ["Bayesian Machine Learning", "Software Engineering", "Probabilistic Programming"]
 name = "Dmitry V. Bagaev"
 portrait = "portraits/bvdmitri.jpeg"
-short_bio = "I am a postdoctoral researcher at the Electrical Engineering department in Eindhoven University of Technology."
+short_bio = "Dmitry Bagaev is co-founder & CTO of [Lazy Dynamics](https://lazydynamics.com/)"
 title = "Dmitry V. Bagaev"
-sort_position = 3.2
+sort_position = 3.3
+external_link = "https://www.linkedin.com/in/bvdmitri/"
 
 [[social]]
     icon = "envelope"

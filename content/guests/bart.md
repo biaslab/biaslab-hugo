@@ -4,9 +4,10 @@ id = "bart"
 interests = ["Speech enhancement", "Personalized algorithms", "Bayesian Machine Learning", "Probabilistic approaches inspired by traditional techniques"]
 name = "Bart van Erp"
 portrait = "portraits/bart.jpg"
-short_bio = "I am a PhD candidate - Teaching Assistant at the Electrical Engineering department in Eindhoven University of Technology "
+short_bio = "Bart van Erp is co-founder & product lead of [Lazy Dynamics](https://lazydynamics.com/)"
 title = "Bart van Erp"
-sort_position = 4.2
+sort_position = 3.2
+external_link = "https://www.linkedin.com/in/bart-van-erp/"
 
 [[social]]
     icon = "envelope"
