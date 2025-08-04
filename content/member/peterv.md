@@ -23,7 +23,7 @@ cv_link = "https://retrospectiverotations.com/files/cv.pdf"
     course = "BSc in Applied Mathematics"
     institution = 'Eindhoven University of Technology'
     year = 2017
-	
+
 [[education]]
     course = "MSc in Industrial and Applied Mathematics"
     institution = 'Eindhoven University of Technology'
@@ -43,4 +43,4 @@ cv_link = "https://retrospectiverotations.com/files/cv.pdf"
 Peter develops models of reality based on data and physical interpretation to solve daily-life problems in logistics, maintenance and computer science. He specializes in stochastic models and simulations used in network, queueing and decision-making problems and has deep interests in computer science, (machine learning) algorithms and other related areas as well.
 
 Peter received his MSc (2020) and PhD (2025) degrees in Applied Mathematics from [Eindhoven University of Technology](http://tue.nl) (TU/e). Since August 2025, he has been working as a researcher in the Department of Electrical Engineering at TU/e, focusing on probabilistic AI for flexible energy management solutions. His research involves developing Bayesian AI agents to optimize the use of flexible energy resources and enhance the reliability of the Dutch energy networks.
- 
+
