@@ -140,7 +140,7 @@ tag = "tags"
     identifier="teaching"
     [[menu.main]]
       name = "5SSD0 (2024/2025)"
-      url = "/teaching/bmlip"
+      url = "https://github.com/bmlip/course#readme"
       parent = "teaching"
       weight = 1
 
