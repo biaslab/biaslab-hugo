@@ -139,8 +139,8 @@ tag = "tags"
     weight = 3
     identifier="teaching"
     [[menu.main]]
-      name = "5SSD0 (2024/2025)"
-      url = "https://github.com/bmlip/course#readme"
+      name = "5SSD0 – Bayesian Machine Learning and Information Processing"
+      url = "/teaching/bmlip"
       parent = "teaching"
       weight = 1
 
