@@ -2,7 +2,7 @@
 title = "MSc project: Robust Drift Control for ASML Scanning Manipulators"
 date = "2025-10-22"
 
-description = "Control systems: design a robust, learning-based drift prediction and control model for ASML TwinScan lithography systems."
+description = "Control systems: design a robust, learning-based drift prediction and control model for ASML TwinScan lithography systems"
 external_link = ""
 vacancy_id = "robust_drift_control"
 +++
@@ -13,14 +13,12 @@ A student will design a robust, learning-based drift prediction and control mode
 {{< figure src="/img/proposals/robust_drift_control.png" title="State-of-the-art static event-based controller. Figure courtesy of ASML." class="center" height="100px" >}}
 
 ## Project positioning
-(raaja please update/confirm)
-This project is sponsored by ASML. You will be working in the Bayesian Intelligent Autonomous Systems lab ([BIASlab](https://biaslab.github.io{BIASlab)) at TU Eindhoven. BIASlab develops probabilistic models and inference algorithms for signal processing and control problems. This graduation project is a part of a larger research initiative towards AIF agents for robot locomotion.
+This project is sponsored by ASML. You will be working in the Bayesian Intelligent Autonomous Systems lab ([BIASlab](https://biaslab.github.io{BIASlab)) at TU Eindhoven. BIASlab develops probabilistic models and inference algorithms for signal processing and control problems.
 
 ### Supervision
 - Weekly progress meetings with Raaja Ganapathy Subramanian.
 - Periodic progress meetings with BIASlab researchers.
 - The student should prepare for meetings in advance, e.g. with slides or notebooks.
-- Developed software will be open source, accessible through [BIASlab's github](https://github.com/biaslab/) organization. It should be legible / usable for future students.
 
 ## Student task description
 TwinScan lithography systems are used at a very high-speed to produce integrated circuits which requires sub-nanometer accuracy and precision. However, during the operation the system drifts—after all its just a combination of metals and materials, causing a negative impact on both the (sub-)nanometer-scale positioning and getting plauged by different classes of uncertainties (like changes in boundary condition, operation sequence induced errors, etc). The current drift control is nothing more than a nominal exponential moving average. Clearly, this poses several challenging control problems mainly because
@@ -41,4 +39,4 @@ The robust controller needs to have several intrinsic characteristics:
 The performance, advantages and disadvantages needs to be compared with benchmark and real-measurement data, and against the current state-of-the-art controller. Finally, the student is expected to finish the internship with a concise report/manuscript and talk(s) to be held at ASML and the university.
 
 ## Timeline
-(raaja please provide) 
+8-10 Months
