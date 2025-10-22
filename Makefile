@@ -1,5 +1,5 @@
 install-theme: ## Install theme
-	git clone git@github.com:biaslab/hugo-academic-group.git ./themes/academic-group;
+	git clone git@github.com:biaslab/hugo-academic-group.git ./themes/academic-group
 
 update-theme: ## update theme
 	cd ./themes/academic-group; git pull
