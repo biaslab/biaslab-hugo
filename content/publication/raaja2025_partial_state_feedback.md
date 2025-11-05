@@ -19,4 +19,8 @@ url_video = ""
 
 [[authors]]
     id = "raaja"
+[[authors]]
+    name = "Barry Moest"
+[[authors]]
+    name = "Bart Paarhuis"
 +++
