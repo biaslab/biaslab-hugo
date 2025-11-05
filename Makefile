@@ -13,6 +13,9 @@ preview-website: ## Preview website
 publish: ## Publish website
 	./publish.sh
 
+publish-windows: ## Publish website (Windows cmd)
+	publish.cmd
+
 rebuild-docs: ## Build docs
 	./rebuild_docs.sh
 
