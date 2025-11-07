@@ -36,7 +36,7 @@ The course "Bayesian Machine Learning and Information Processing" (5SSD0) starts
 
 <large>View the course website for 2025-2026 <a href="https://github.com/bmlip/course#readme">here</a>.</large>
 
-
+<!---
 ### Old course material
 Here is the archive of old course material:
 
@@ -49,3 +49,4 @@ Here is the archive of old course material:
 - [AIP 5SSB0](/teaching/archive/aip-5ssb0/)
 
 Archives of 2025 and beyond can be found in the GitHub releases: [https://github.com/bmlip/course/releases](https://github.com/bmlip/course/releases)
+--->
