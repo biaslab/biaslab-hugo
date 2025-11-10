@@ -174,16 +174,22 @@ tag = "tags"
       parent = "software"
       weight = 4
 
+  [[menu.main]]
+    name = "Colloquium"
+    url = "/colloquium/"
+    weight = 5
+    identifier = "colloquium"
+
   [[menu.main]] # Team
     name = "Team"
     url = "/#members"
-    weight = 5
+    weight = 6
     identifier="team"
 
   [[menu.main]] # Join us = [Open Projects, Starter's guide]
     name = "Join us"
     url = "#open-projects"
-    weight = 6
+    weight = 7
     identifier="joinus"
     [[menu.main]]
       name = "Starter's guide"
@@ -199,4 +205,4 @@ tag = "tags"
   [[menu.main]] # Contact
     name = "Contact"
     url = "/#contact"
-    weight = 7
+    weight = 8
