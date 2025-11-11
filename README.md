@@ -42,6 +42,21 @@ Working installation of GNU Make is recommended, but not required. You can test 
     * `build-website`: Generates all the static content for the website.
     * `preview-website`: Builds the website content and starts Hugo debugging server with live reload enabled.
     * `publish`: Publishes the contents of the `./public` directory to the `master` branch of [https://biaslab.github.io](https://biaslab.github.io) repository.
+    * `publish-windows`: Same as `publish`, but uses a Windows batch script (`publish.cmd`).
+
+### Windows users
+If you're on Windows using cmd.exe:
+
+- Ensure Git and Hugo are installed and available in your PATH (verify with `git --version` and `hugo version`).
+- To publish, run either:
+
+        publish.cmd
+
+  or, if you have GNU Make installed:
+
+        make publish-windows
+
+The Windows script mirrors the built site to a fresh clone of `biaslab/biaslab.github.io` under your `%TEMP%` directory, commits changes if any, and pushes to `master`.
 
 # How can I publish my Jupyter notebook on this website?
 
