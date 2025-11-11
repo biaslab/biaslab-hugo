@@ -2,37 +2,43 @@
 title = "Colloquium"
 +++
 
-# BIASlab Colloquium - Notices on Factor Graphs
+# Factor Graph Colloquium
 
-Welcome to **Notices on Factor Graphs** — a lightweight hub for people who share an interest in factor graph perspectives across diverse application areas.
+*** PUT THE TITLE IN A BANNNER ***
 
----
+Welcome to the **Factor Graph Colloquium**, a space where we host and archive online presentations on current research in factor graphs. Information about upcoming talks can be found in the [Agenda](/colloquium/agenda/).
 
 ## What are factor graphs?
 
-Factor graphs are graphical models that make the factorization structure of functions explicit, enabling efficient message passing-based inference and optimization algorithms in probabilistic models and beyond. Discover more about factor graphs in [Materials](/colloquium/materials/).
+Factor graphs are graphical models that make the factorization structure of functions explicit, enabling efficient message passing-based inference and optimization algorithms in probabilistic models and beyond. Discover more about factor graphs and message passing-based inference in the [Materials](/colloquium/materials/) section.
 
 
 ## Presentation themes & topics
 
-This site aims to connect researchers from different labs and disciplines to explore the full breadth of factor graph methods, from theoretical foundations and numerical techniques to applications in signal processing, control, communications, and beyond.
+Through this online colloquium, we aim to bring together researchers from different labs and disciplines to explore and discuss recent work on factor graph methods. Topics range from theoretical foundations and numerical techniques to applications in signal processing, control, communications, and related fields. As a guideline, we plan to host a new colloquium every few months.
 
+### Presentation structure
 
-We will host and archive online presentations on this website. Find out about upcoming talks in [Agenda](/colloquium/agenda/).
+We usually host a talk on **Wednesday at 2 PM (Central European Time, Amsterdam)**, but adjustments can be made when needed.
+
+A typical presentation is structured as follows:
+ - 30-40 minutes: Presentation
+ - up to 30 minutes: Discussion
+
+Past talks are archived on our [YouTube channel](). 
+
 ## How can I stay informed?
 
-Easy! Just sign up to our newsletter [here](https://forms.office.com/e/dRHED5wb0W).
+Easy! Just [sign up for our newsletter](https://forms.office.com/e/dRHED5wb0W) and you will receive an email whenever a new talk is announced.
 
 
-
-## Participation
+## Participation!
 
 If you're interested in giving a talk or attending the colloquium, please contact us per below!
 
+
 ## Contact
 
-If you want to subscribe to our newsletter, you can do so [here](https://forms.office.com/e/dRHED5wb0W).
-
-If you have any other questions or suggestions, reach out to our contact person Thijs Jenneskens by E-mail: t.c.w.jenneskens@tue.nl.
+If you have any questions or suggestions, please contact our coordinator [Thijs Jenneskens](https://biaslab.github.io/member/thijsJ/)￼at t.c.w.jenneskens@tue.nl.
 
 <img src="/img/colloquium/contact_person.jpeg" alt="Contact Person" width="200" height="150">
