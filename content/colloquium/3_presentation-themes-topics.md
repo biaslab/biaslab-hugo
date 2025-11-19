@@ -1,6 +1,6 @@
 +++
 title = "Presentation themes & topics"
-weight = 2
+weight = 3
 +++
 
 Through this online colloquium, we aim to bring together researchers from different labs and disciplines to explore and discuss recent work on factor graph methods. Topics range from theoretical foundations and numerical techniques to applications in signal processing, control, communications, and related fields. As a guideline, we plan to host a new colloquium every few months.

@@ -1,6 +1,6 @@
 +++
 title = "Contact"
-weight = 5
+weight = 6
 +++
 
 If you have any questions or suggestions, please contact our coordinator [Thijs Jenneskens](https://biaslab.github.io/member/thijsJ/) at t.c.w.jenneskens@tue.nl.

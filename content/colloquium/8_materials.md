@@ -1,6 +1,6 @@
 +++
 title = "Literature Materials"
-weight = 7
+weight = 8
 +++
 
 # Resources on Factor Graphs

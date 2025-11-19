@@ -176,7 +176,7 @@ tag = "tags"
 
   [[menu.main]]
     name = "Colloquium"
-    url = "/cq"
+    url = "/colloquium"
     weight = 5
     identifier = "colloquium"
 
