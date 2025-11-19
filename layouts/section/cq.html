@@ -1,0 +1,33 @@
+{{ partial "header.html" . }}
+{{ partial "navbar.html" . }}
+
+<section id="colloquium-intro" class="home-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-4 section-heading">
+                <h1>{{ .Title }}</h1>
+            </div>
+            <div class="col-xs-12 col-md-8">
+                {{ .Content }}
+            </div>
+        </div>
+    </div>
+</section>
+
+{{ range .Pages.ByWeight }}
+    <section id="{{ .File.BaseFileName }}" class="home-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-4 section-heading">
+                    <h1>{{ .Title }}</h1>
+                </div>
+                <div class="col-xs-12 col-md-8">
+                    {{ .Content }}
+                </div>
+            </div>
+        </div>
+    </section>
+{{ end }}
+
+{{ partial "footer_container.html" . }}
+{{ partial "footer.html" . }}

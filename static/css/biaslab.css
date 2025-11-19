@@ -176,3 +176,12 @@ a.open-positions {
     color: #fff;
     font: 400 1.5em "Lato", Helvetica, Arial, sans-serif;
 }
+
+.agenda-table {
+    margin-bottom: 1.5rem;
+}
+
+.agenda-table table th,
+.agenda-table table td {
+    vertical-align: middle;
+}

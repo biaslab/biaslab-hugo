@@ -1,0 +1,17 @@
+upcoming:
+  - date: 2025-01-14
+    speaker: TBD Speaker
+    title: "Factor graph talk title"
+    location: Online (MS Teams)
+    link_text: Join
+    link_url: "#"
+    materials_text: Slides / Paper
+    materials_url: "#"
+
+past:
+  - date: 2024-10-04
+    speaker: Example Speaker
+    title: "Past talk title"
+    location: Eindhoven
+    materials_text: Slides / Paper
+    materials_url: "#"

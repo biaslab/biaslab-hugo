@@ -1,0 +1,77 @@
+{{ $agenda := site.Data.cq.agenda }}
+
+{{ if $agenda.upcoming }}
+<h3>Upcoming Sessions</h3>
+<div class="table-responsive agenda-table">
+  <table class="table table-hover table-sm">
+    <thead>
+      <tr>
+        <th scope="col">Date</th>
+        <th scope="col">Speaker</th>
+        <th scope="col">Title</th>
+        <th scope="col">Location</th>
+        <th scope="col">Link</th>
+        <th scope="col">Materials</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{ range $agenda.upcoming }}
+      <tr>
+        <td>{{ .date }}</td>
+        <td>{{ .speaker }}</td>
+        <td>{{ .title }}</td>
+        <td>{{ .location }}</td>
+        <td>
+          {{ if .link_url }}
+            <a href="{{ .link_url }}" target="_blank" rel="noopener">{{ default "Join" .link_text }}</a>
+          {{ else }}
+            &mdash;
+          {{ end }}
+        </td>
+        <td>
+          {{ if .materials_url }}
+            <a href="{{ .materials_url }}" target="_blank" rel="noopener">{{ default "Slides / Paper" .materials_text }}</a>
+          {{ else }}
+            &mdash;
+          {{ end }}
+        </td>
+      </tr>
+      {{ end }}
+    </tbody>
+  </table>
+</div>
+{{ end }}
+
+{{ if $agenda.past }}
+<h3>Past Sessions</h3>
+<div class="table-responsive agenda-table">
+  <table class="table table-striped table-sm">
+    <thead>
+      <tr>
+        <th scope="col">Date</th>
+        <th scope="col">Speaker</th>
+        <th scope="col">Title</th>
+        <th scope="col">Location</th>
+        <th scope="col">Materials</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{ range $agenda.past }}
+      <tr>
+        <td>{{ .date }}</td>
+        <td>{{ .speaker }}</td>
+        <td>{{ .title }}</td>
+        <td>{{ .location }}</td>
+        <td>
+          {{ if .materials_url }}
+            <a href="{{ .materials_url }}" target="_blank" rel="noopener">{{ default "Slides / Paper" .materials_text }}</a>
+          {{ else }}
+            &mdash;
+          {{ end }}
+        </td>
+      </tr>
+      {{ end }}
+    </tbody>
+  </table>
+</div>
+{{ end }}
