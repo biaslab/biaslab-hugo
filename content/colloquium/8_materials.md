@@ -35,7 +35,7 @@ and State Space Methods](https://doi.org/https://doi.org/10.3929/ethz-c-00078598
 - Philipp Hennig, [Probibilistic Machine Learning - The Sum-Product Algorithm](https://youtu.be/VHLvOHwvbzs?si=NLqRmTgySyYP3bNY),  Summer term 2020 Lecture at University of Tuebingen, 2020 
 
 
-- Frederico Wadehn, [Probabilistic graphical models: Factor graphs and more](https://youtu.be/Fv2YbVg9Frc?si=MttF7uuvHRmJAyP5), invited lecture at Higher School of Economics, Moscow, 2014
+- Federico Wadehn, [Probabilistic graphical models: Factor graphs and more](https://youtu.be/Fv2YbVg9Frc?si=MttF7uuvHRmJAyP5), invited lecture at Higher School of Economics, Moscow, 2014
 
 - Dmitry Bagaev, [Fast Bayesian Inference with RxInfer.jl](https://youtu.be/KuluqEzFtm8?si=W88qa_EuhxNGJlXk), Online presentation at Julia User Group Munich, 2014
 
